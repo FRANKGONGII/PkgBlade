@@ -1,1 +1,1 @@
-{"./examples/link_1_lib/example": ["my_custom_function"]}
+{"./example": ["my_custom_function", "_ITM_deregisterTMCloneTable", "__gmon_start__", "_ITM_registerTMCloneTable"]}
