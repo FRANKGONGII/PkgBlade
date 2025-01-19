@@ -8,6 +8,10 @@ fi
 
 PACKAGE=$1
 
+# 创建新文件夹用于存放依赖源码
+mkdir "depends_source_code_"$1
+cd "depends_source_code_"$1
+
 # 创建deps.txt（如果不存在）
 touch deps.txt
 
@@ -16,6 +20,7 @@ apt show $PACKAGE 2>/dev/null | \
   grep -E '^Depends:' | \
   sed 's/^Depends: //; s/, /\n/g' | \
   awk '{print $1}' > deps.txt
+
 
 # 下载依赖包源码到当前目录
 while read -r dep; do
