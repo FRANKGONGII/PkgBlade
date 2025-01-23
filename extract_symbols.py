@@ -87,7 +87,7 @@ def get_dynamic_libraries():
 def make_tags(search_dir):
     # 生成 ctags 索引
     # print("Generating ctags index...")
-    print(search_dir)
+    # print(search_dir)
     if search_dir in symbols_in_ctags_file:
         return  
     try:
@@ -132,7 +132,7 @@ if __name__ == "__main__":
     depends_library_floder = "depends_source_code_" + package_name
     subfolders = get_subfolders(depends_library_floder)
     for depends_library_subfloder in subfolders:
-        make_tags(depends_library_subfloder)
+        make_tags(depends_library_floder + "/" + depends_library_subfloder)
     # for files in symbols_in_ctags_file:
     #     for symbol in symbols_in_ctags_file[files]:
     #         print(files, symbol, symbols_in_ctags_file[files][symbol])
