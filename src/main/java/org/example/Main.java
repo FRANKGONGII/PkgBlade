@@ -18,13 +18,13 @@ public class Main {
             System.out.println("i = " + i);
         }
 
-        BladeFunction function = new BladeFunction();
-        function.a = 1;
-        change(function);
-        System.out.println(function.a);
+        // BladeFunction function = new BladeFunction();
+        // function.a = 1;
+        // change(function);
+        // System.out.println(function.a);
     }
 
-    public static void change(BladeFunction function){
-        function.a = 3;
-    }
+    // public static void change(BladeFunction function){
+    //     function.a = 3;
+    // }
 }
