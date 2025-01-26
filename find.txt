@@ -1,0 +1,1766 @@
+intial symbols: ['ftell', '__errno_location', 'stdout', 'strcspn', 'curl_mime_headers', 'curl_multi_poll', 'strstr', 'curl_free', 'curl_global_init', 'getc', 'curl_slist_free_all', 'strtoul', 'strerror', 'curl_multi_remove_handle', 'strchr', 'curl_global_cleanup', 'curl_mime_addpart', 'curl_mime_free', 'strlen', 'mkdir', 'strncmp', 'curl_mvaprintf', 'strncpy', 'memset', 'curl_url_get', 'fcntl', 'geteuid', 'curl_easy_getinfo', 'curl_share_setopt', 'curl_mime_name', 'calloc', 'utimes', 'open', 'localtime', '__libc_start_main', 'curl_mime_encoder', 'strtod', 'curl_multi_perform', 'inflate', 'curl_mvfprintf', 'curl_version_info', 'stdin', 'memcpy', 'inflateInit2_', 'setlocale', 'stat', 'clock_gettime', 'time', 'strcpy', 'curl_share_init', 'curl_getenv', '__isoc99_sscanf', 'fclose', 'inflateEnd', 'fileno', 'fdopen', 'curl_msnprintf', '__ctype_b_loc', 'strcasecmp', 'curl_url', 'strrchr', 'fseek', 'memchr', '__stack_chk_fail', 'tcgetattr', 'fputs', 'curl_mime_init', 'curl_easy_setopt', 'getpwuid', 'fflush', 'fopen', 'signal', 'free', 'curl_url_cleanup', 'curl_strnequal', 'curl_easy_cleanup', 'fputc', 'curl_slist_append', 'tcsetattr', 'curl_easy_init', 'curl_easy_perform', 'malloc', 'stderr', 'curl_maprintf', 'pipe', 'curl_mprintf', 'ftruncate', '__memset_chk', 'curl_mime_data_cb', 'strcmp', 'strtol', 'ioctl', 'curl_url_set', 'curl_getdate', 'read', 'curl_easy_strerror', 'fread', 'curl_mime_subparts', 'poll', 'puts', 'curl_mfprintf', 'strtok', 'fgets', 'curl_mime_filedata', 'curl_version', 'gettimeofday', 'curl_multi_init', 'memmove', 'realloc', 'curl_multi_cleanup', 'fstat', '__memcpy_chk', 'curl_multi_info_read', 'isatty', 'curl_easy_escape', '_ITM_deregisterTMCloneTable', 'strpbrk', 'curl_mime_filename', 'curl_mime_type', 'curl_share_cleanup', 'fsetxattr', 'strdup', 'curl_multi_add_handle', 'lseek', 'curl_strequal', 'ferror', '__gmon_start__', 'curl_easy_pause', 'qsort', '_ITM_registerTMCloneTable', 'fwrite', 'close', 'curl_mime_data', '__cxa_finalize']
+Symbol 'curl_global_init' found in ./curl_o/easy.c.o
+Symbol 'curl_global_cleanup' found in ./curl_o/easy.c.o
+Symbol 'curl_easy_getinfo' found in ./curl_o/easy.c.o
+Symbol 'curl_easy_cleanup' found in ./curl_o/easy.c.o
+Symbol 'curl_easy_init' found in ./curl_o/easy.c.o
+Symbol 'curl_easy_perform' found in ./curl_o/easy.c.o
+Symbol 'curl_easy_pause' found in ./curl_o/easy.c.o
+Symbol 'curl_slist_free_all' found in ./curl_o/slist.c.o
+Symbol 'curl_slist_append' found in ./curl_o/slist.c.o
+Symbol 'curl_share_setopt' found in ./curl_o/share.c.o
+Symbol 'curl_share_init' found in ./curl_o/share.c.o
+Symbol 'curl_share_cleanup' found in ./curl_o/share.c.o
+Symbol 'curl_easy_strerror' found in ./curl_o/strerror.c.o
+Symbol 'curl_version_info' found in ./curl_o/version.c.o
+Symbol 'curl_version' found in ./curl_o/version.c.o
+Symbol 'curl_easy_setopt' found in ./curl_o/setopt.c.o
+Symbol 'curl_mime_headers' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_addpart' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_free' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_name' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_encoder' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_init' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_data_cb' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_subparts' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_filedata' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_filename' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_type' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_data' found in ./curl_o/mime.c.o
+Symbol 'curl_url_get' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url_cleanup' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url_set' found in ./curl_o/urlapi.c.o
+Symbol 'curl_getenv' found in ./curl_o/getenv.c.o
+Symbol 'curl_mvaprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_mvfprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_mprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_mfprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_getdate' found in ./curl_o/parsedate.c.o
+Symbol 'curl_strnequal' found in ./curl_o/strcase.c.o
+Symbol 'curl_strequal' found in ./curl_o/strcase.c.o
+Symbol 'curl_free' found in ./curl_o/escape.c.o
+Symbol 'curl_easy_escape' found in ./curl_o/escape.c.o
+Symbol 'curl_multi_poll' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_remove_handle' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_perform' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_init' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_cleanup' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_info_read' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_add_handle' found in ./curl_o/multi.c.o
+initial round ends,  ['easy.c.o', 'slist.c.o', 'share.c.o', 'strerror.c.o', 'version.c.o', 'setopt.c.o', 'mime.c.o', 'urlapi.c.o', 'getenv.c.o', 'mprintf.c.o', 'parsedate.c.o', 'strcase.c.o', 'escape.c.o', 'multi.c.o'] ['easy.c.o', 'slist.c.o', 'share.c.o', 'strerror.c.o', 'version.c.o', 'setopt.c.o', 'mime.c.o', 'urlapi.c.o', 'getenv.c.o', 'mprintf.c.o', 'parsedate.c.o', 'strcase.c.o', 'escape.c.o', 'multi.c.o']
+current files.  ['easy.c.o', 'slist.c.o', 'share.c.o', 'strerror.c.o', 'version.c.o', 'setopt.c.o', 'mime.c.o', 'urlapi.c.o', 'getenv.c.o', 'mprintf.c.o', 'parsedate.c.o', 'strcase.c.o', 'escape.c.o', 'multi.c.o']
+now handel file, easy.c.o
+now handle file imports,  ['calloc', 'Curl_altsvc_cleanup', 'Curl_attach_connnection', 'Curl_client_write', 'Curl_close', 'Curl_conncache_foreach', 'Curl_cookie_init', 'Curl_detach_connnection', 'Curl_dyn_free', 'Curl_dyn_init', 'Curl_dyn_len', 'Curl_dyn_ptr', 'Curl_expire', 'Curl_failf', 'Curl_free_request_state', 'Curl_freeset', 'Curl_getconnectinfo', 'Curl_getinfo', 'Curl_hsts_cleanup', 'Curl_hsts_init', 'Curl_hsts_loadcb', 'Curl_hsts_loadfile', 'Curl_http_auth_cleanup_digest', 'Curl_initinfo', 'Curl_init_userdefined', 'Curl_is_in_callback', 'Curl_memdup', 'Curl_mime_duppart', 'Curl_mime_initpart', 'Curl_mime_read', 'Curl_mime_unpause', 'curl_multi_add_handle', 'curl_multi_cleanup', 'Curl_multi_handle', 'curl_multi_info_read', 'curl_multi_perform', 'curl_multi_poll', 'curl_multi_remove_handle', 'curl_multi_setopt', 'Curl_open', 'Curl_read', 'Curl_resolver_duphandle', 'Curl_resolver_global_cleanup', 'Curl_resolver_global_init', 'Curl_setblobopt', 'Curl_setstropt', 'Curl_slist_duplicate', 'curl_slist_free_all', 'Curl_ssl_cleanup', 'Curl_ssl_init', 'Curl_ssl_set_engine', 'Curl_updatesocket', 'Curl_update_timer', 'Curl_write', 'curlx_sotouz', 'free', '_GLOBAL_OFFSET_TABLE_', 'malloc', 'realloc', 'sigaction', '__stack_chk_fail', 'strdup'] ./curl_o/easy.c.o
+Symbol 'Curl_getinfo' found in ./curl_o/getinfo.c.o
+Symbol 'Curl_initinfo' found in ./curl_o/getinfo.c.o
+Symbol 'Curl_getconnectinfo' found in ./curl_o/connect.c.o
+Symbol 'Curl_ssl_cleanup' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_init' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_set_engine' found in ./curl_o/vtls.c.o
+Symbol 'Curl_close' found in ./curl_o/url.c.o
+Symbol 'Curl_free_request_state' found in ./curl_o/url.c.o
+Symbol 'Curl_freeset' found in ./curl_o/url.c.o
+Symbol 'Curl_init_userdefined' found in ./curl_o/url.c.o
+Symbol 'Curl_open' found in ./curl_o/url.c.o
+Symbol 'Curl_slist_duplicate' found in ./curl_o/slist.c.o
+Symbol 'curl_slist_free_all' found in ./curl_o/slist.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_read' found in ./curl_o/sendf.c.o
+Symbol 'Curl_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_altsvc_cleanup' found in ./curl_o/altsvc.c.o
+Symbol 'Curl_setblobopt' found in ./curl_o/setopt.c.o
+Symbol 'Curl_setstropt' found in ./curl_o/setopt.c.o
+Symbol 'Curl_mime_duppart' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_initpart' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_read' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_unpause' found in ./curl_o/mime.c.o
+Symbol 'Curl_memdup' found in ./curl_o/strdup.c.o
+Symbol 'Curl_resolver_duphandle' found in ./curl_o/asyn-thread.c.o
+Symbol 'Curl_resolver_global_cleanup' found in ./curl_o/asyn-thread.c.o
+Symbol 'Curl_resolver_global_init' found in ./curl_o/asyn-thread.c.o
+Symbol 'curlx_sotouz' found in ./curl_o/warnless.c.o
+Symbol 'Curl_http_auth_cleanup_digest' found in ./curl_o/http_digest.c.o
+Symbol 'Curl_cookie_init' found in ./curl_o/cookie.c.o
+Symbol 'Curl_conncache_foreach' found in ./curl_o/conncache.c.o
+Symbol 'Curl_attach_connnection' found in ./curl_o/multi.c.o
+Symbol 'Curl_detach_connnection' found in ./curl_o/multi.c.o
+Symbol 'Curl_expire' found in ./curl_o/multi.c.o
+Symbol 'Curl_is_in_callback' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_add_handle' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_cleanup' found in ./curl_o/multi.c.o
+Symbol 'Curl_multi_handle' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_info_read' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_perform' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_poll' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_remove_handle' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_setopt' found in ./curl_o/multi.c.o
+Symbol 'Curl_updatesocket' found in ./curl_o/multi.c.o
+Symbol 'Curl_update_timer' found in ./curl_o/multi.c.o
+Symbol 'Curl_hsts_cleanup' found in ./curl_o/hsts.c.o
+Symbol 'Curl_hsts_init' found in ./curl_o/hsts.c.o
+Symbol 'Curl_hsts_loadcb' found in ./curl_o/hsts.c.o
+Symbol 'Curl_hsts_loadfile' found in ./curl_o/hsts.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o']
+now handel file, slist.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', '_GLOBAL_OFFSET_TABLE_'] ./curl_o/slist.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o']
+now handel file, share.c.o
+now handle file imports,  ['Curl_ccalloc', 'Curl_cfree', 'Curl_conncache_close_all_connections', 'Curl_conncache_destroy', 'Curl_conncache_init', 'Curl_cookie_cleanup', 'Curl_cookie_init', 'Curl_hash_destroy', 'Curl_hsts_cleanup', 'Curl_hsts_init', 'Curl_init_dnscache', 'Curl_ssl_kill_session', '_GLOBAL_OFFSET_TABLE_', '__stack_chk_fail'] ./curl_o/share.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_ssl_kill_session' found in ./curl_o/vtls.c.o
+Symbol 'Curl_init_dnscache' found in ./curl_o/hostip.c.o
+Symbol 'Curl_hash_destroy' found in ./curl_o/hash.c.o
+Symbol 'Curl_cookie_cleanup' found in ./curl_o/cookie.c.o
+Symbol 'Curl_cookie_init' found in ./curl_o/cookie.c.o
+Symbol 'Curl_conncache_close_all_connections' found in ./curl_o/conncache.c.o
+Symbol 'Curl_conncache_destroy' found in ./curl_o/conncache.c.o
+Symbol 'Curl_conncache_init' found in ./curl_o/conncache.c.o
+Symbol 'Curl_hsts_cleanup' found in ./curl_o/hsts.c.o
+Symbol 'Curl_hsts_init' found in ./curl_o/hsts.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o']
+now handel file, strerror.c.o
+now handle file imports,  ['curl_msnprintf', '__errno_location', 'strrchr', '__xpg_strerror_r'] ./curl_o/strerror.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o']
+now handel file, version.c.o
+now handle file imports,  ['curl_msnprintf', 'Curl_ssl', 'Curl_ssl_version', '_GLOBAL_OFFSET_TABLE_', 'memcpy', '__stack_chk_fail', 'strlen', 'zlibVersion'] ./curl_o/version.c.o
+Symbol 'Curl_ssl' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_version' found in ./curl_o/vtls.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o']
+now handel file, setopt.c.o
+now handle file imports,  ['Curl_all_content_encodings', 'Curl_altsvc_ctrl', 'Curl_altsvc_init', 'Curl_altsvc_load', 'Curl_cfree', 'Curl_cmalloc', 'Curl_cookie_add', 'Curl_cookie_cleanup', 'Curl_cookie_clearall', 'Curl_cookie_clearsess', 'Curl_cookie_init', 'Curl_cookie_loadfiles', 'Curl_cstrdup', 'Curl_flush_cookies', 'Curl_hsts_cleanup', 'Curl_hsts_init', 'Curl_mime_set_subparts', 'Curl_parse_login_details', 'Curl_share_lock', 'Curl_share_unlock', 'curl_slist_append', 'curl_slist_free_all', 'Curl_ssl', 'Curl_ssl_cert_status_request', 'Curl_ssl_false_start', 'Curl_ssl_set_engine', 'Curl_ssl_set_engine_default', 'Curl_ssl_tls13_ciphersuites', 'Curl_strcasecompare', 'curl_strnequal', 'curlx_sltosi', 'curlx_sltous', 'fread', 'fwrite', '_GLOBAL_OFFSET_TABLE_', 'memcpy', '__stack_chk_fail', 'stderr', 'strlen'] ./curl_o/setopt.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_ssl' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_cert_status_request' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_false_start' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_set_engine' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_set_engine_default' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_tls13_ciphersuites' found in ./curl_o/vtls.c.o
+Symbol 'Curl_all_content_encodings' found in ./curl_o/content_encoding.c.o
+Symbol 'Curl_parse_login_details' found in ./curl_o/url.c.o
+Symbol 'curl_slist_append' found in ./curl_o/slist.c.o
+Symbol 'curl_slist_free_all' found in ./curl_o/slist.c.o
+Symbol 'Curl_share_lock' found in ./curl_o/share.c.o
+Symbol 'Curl_share_unlock' found in ./curl_o/share.c.o
+Symbol 'Curl_altsvc_ctrl' found in ./curl_o/altsvc.c.o
+Symbol 'Curl_altsvc_init' found in ./curl_o/altsvc.c.o
+Symbol 'Curl_altsvc_load' found in ./curl_o/altsvc.c.o
+Symbol 'Curl_mime_set_subparts' found in ./curl_o/mime.c.o
+Symbol 'curlx_sltosi' found in ./curl_o/warnless.c.o
+Symbol 'curlx_sltous' found in ./curl_o/warnless.c.o
+Symbol 'Curl_cookie_add' found in ./curl_o/cookie.c.o
+Symbol 'Curl_cookie_cleanup' found in ./curl_o/cookie.c.o
+Symbol 'Curl_cookie_clearall' found in ./curl_o/cookie.c.o
+Symbol 'Curl_cookie_clearsess' found in ./curl_o/cookie.c.o
+Symbol 'Curl_cookie_init' found in ./curl_o/cookie.c.o
+Symbol 'Curl_cookie_loadfiles' found in ./curl_o/cookie.c.o
+Symbol 'Curl_flush_cookies' found in ./curl_o/cookie.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'curl_strnequal' found in ./curl_o/strcase.c.o
+Symbol 'Curl_hsts_cleanup' found in ./curl_o/hsts.c.o
+Symbol 'Curl_hsts_init' found in ./curl_o/hsts.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o']
+now handel file, mime.c.o
+now handle file imports,  ['access', 'Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', 'Curl_dyn_add', 'Curl_dyn_addn', 'Curl_dyn_init', 'Curl_dyn_ptr', 'Curl_failf', 'curl_mvaprintf', 'Curl_rand_hex', 'Curl_slist_append_nodup', 'Curl_slist_duplicate', 'curl_slist_free_all', 'Curl_strcasecompare', 'curl_strequal', 'Curl_strncasecompare', 'curlx_sotouz', 'fclose', 'feof', 'fopen64', '__fread_chk', 'fseek', '_GLOBAL_OFFSET_TABLE_', 'memcpy', 'memmove', '__stack_chk_fail', 'stat64', 'strlen', '__xpg_basename'] ./curl_o/mime.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_slist_append_nodup' found in ./curl_o/slist.c.o
+Symbol 'Curl_slist_duplicate' found in ./curl_o/slist.c.o
+Symbol 'curl_slist_free_all' found in ./curl_o/slist.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_rand_hex' found in ./curl_o/rand.c.o
+Symbol 'curl_mvaprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curlx_sotouz' found in ./curl_o/warnless.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'curl_strequal' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strncasecompare' found in ./curl_o/strcase.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o']
+now handel file, urlapi.c.o
+now handle file imports,  ['__ctype_tolower_loc', 'Curl_builtin_scheme', 'Curl_ccalloc', 'Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', 'Curl_dedotdotify', 'curl_easy_escape', 'Curl_inet_ntop', 'Curl_isalnum', 'Curl_iscntrl', 'Curl_isdigit', 'Curl_isgraph', 'Curl_isspace', 'Curl_isunreserved', 'Curl_isupper', 'Curl_isxdigit', 'curl_maprintf', 'curl_msnprintf', 'Curl_parse_login_details', 'Curl_strcasecompare', 'curl_strnequal', 'Curl_urldecode', '_GLOBAL_OFFSET_TABLE_', 'inet_pton', '__isoc99_sscanf', 'memcpy', '__stack_chk_fail', 'strchr', 'strcmp', 'strcpy', 'strcspn', 'strlen', 'strrchr', 'strspn', 'strstr', 'strtol', 'strtoul'] ./curl_o/urlapi.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_dedotdotify' found in ./curl_o/dotdot.c.o
+Symbol 'Curl_builtin_scheme' found in ./curl_o/url.c.o
+Symbol 'Curl_parse_login_details' found in ./curl_o/url.c.o
+Symbol 'Curl_inet_ntop' found in ./curl_o/inet_ntop.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_isalnum' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_iscntrl' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isdigit' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isgraph' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isspace' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isupper' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isxdigit' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'curl_strnequal' found in ./curl_o/strcase.c.o
+Symbol 'curl_easy_escape' found in ./curl_o/escape.c.o
+Symbol 'Curl_isunreserved' found in ./curl_o/escape.c.o
+Symbol 'Curl_urldecode' found in ./curl_o/escape.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o']
+now handel file, getenv.c.o
+now handle file imports,  ['Curl_cstrdup', 'getenv', '_GLOBAL_OFFSET_TABLE_'] ./curl_o/getenv.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o']
+now handel file, mprintf.c.o
+now handle file imports,  ['Curl_cstrdup', 'Curl_dyn_addn', 'Curl_dyn_free', 'Curl_dyn_init', 'Curl_dyn_len', 'Curl_dyn_ptr', 'Curl_isdigit', 'fputc', '_GLOBAL_OFFSET_TABLE_', '__sprintf_chk', '__stack_chk_fail', 'stdout', 'strlen', 'strtol'] ./curl_o/mprintf.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_isdigit' found in ./curl_o/curl_ctype.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o']
+now handel file, parsedate.c.o
+now handle file imports,  ['Curl_isalnum', 'Curl_isalpha', 'Curl_isdigit', 'Curl_strcasecompare', 'curlx_sltosi', '__errno_location', 'gmtime_r', '__isoc99_sscanf', '__stack_chk_fail', 'strlen', 'strtol'] ./curl_o/parsedate.c.o
+Symbol 'Curl_isalnum' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isalpha' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isdigit' found in ./curl_o/curl_ctype.c.o
+Symbol 'curlx_sltosi' found in ./curl_o/warnless.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o']
+now handel file, strcase.c.o
+now handle file imports,  ['strcmp'] ./curl_o/strcase.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o']
+now handel file, escape.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', 'Curl_dyn_add', 'Curl_dyn_addn', 'Curl_dyn_init', 'Curl_dyn_ptr', 'Curl_isxdigit', 'curl_msnprintf', 'curlx_ultouc', 'curlx_uztosi', '_GLOBAL_OFFSET_TABLE_', '__stack_chk_fail', 'strlen', 'strtoul'] ./curl_o/escape.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_isxdigit' found in ./curl_o/curl_ctype.c.o
+Symbol 'curlx_ultouc' found in ./curl_o/warnless.c.o
+Symbol 'curlx_uztosi' found in ./curl_o/warnless.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o']
+now handel file, multi.c.o
+now handle file imports,  ['close', 'Curl_ccalloc', 'Curl_cfree', 'Curl_cmalloc', 'Curl_conncache_close_all_connections', 'Curl_conncache_destroy', 'Curl_conncache_foreach', 'Curl_conncache_init', 'Curl_conncache_remove_conn', 'Curl_conncache_return_conn', 'Curl_conncontrol', 'Curl_connect', 'Curl_connect_complete', 'Curl_connect_done', 'Curl_connect_free', 'Curl_connect_getsock', 'Curl_connect_ongoing', 'Curl_disconnect', 'Curl_dyn_free', 'Curl_failf', 'Curl_fetch_addr', 'Curl_follow', 'Curl_free_request_state', 'Curl_hash_add', 'Curl_hash_delete', 'Curl_hash_destroy', 'Curl_hash_init', 'Curl_hash_next_element', 'Curl_hash_pick', 'Curl_hash_start_iterate', 'Curl_hostcache_clean', 'Curl_hostcache_prune', 'Curl_http_connect', 'Curl_infof', 'Curl_init_CONNECT', 'Curl_init_dnscache', 'Curl_init_do', 'Curl_ipv6works', 'Curl_is_connected', 'Curl_llist_count', 'Curl_llist_destroy', 'Curl_llist_init', 'Curl_llist_insert_next', 'Curl_llist_remove', 'curl_msnprintf', 'Curl_now', 'Curl_once_resolved', 'Curl_pgrsDone', 'Curl_pgrsLimitWaitTime', 'Curl_pgrsTime', 'Curl_pgrsUpdate', 'Curl_poll', 'Curl_posttransfer', 'Curl_pretransfer', 'Curl_proxy_connect', 'Curl_ratelimit', 'Curl_readwrite', 'Curl_resolv_check', 'Curl_resolver_kill', 'Curl_resolv_getsock', 'Curl_resolv_unlock', 'Curl_retry_request', 'Curl_share_lock', 'Curl_share_unlock', 'Curl_single_getsock', 'Curl_socketpair', 'Curl_SOCKS_getsock', 'Curl_speedcheck', 'Curl_splay', 'Curl_splaygetbest', 'Curl_splayinsert', 'Curl_splayremove', 'Curl_ssl', 'Curl_ssl_associate_conn', 'Curl_ssl_detach_conn', 'Curl_timediff', 'Curl_timeleft', 'Curl_wait_ms', 'Curl_wildcard_dtor', 'curlx_nonblock', 'curlx_sltoui', 'curlx_uztosi', '__errno_location', '__fdelt_chk', '_GLOBAL_OFFSET_TABLE_', 'recv', 'send', 'sigaction', '__stack_chk_fail'] ./curl_o/multi.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsDone' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsLimitWaitTime' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsTime' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsUpdate' found in ./curl_o/progress.c.o
+Symbol 'Curl_ratelimit' found in ./curl_o/progress.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_is_connected' found in ./curl_o/connect.c.o
+Symbol 'Curl_timeleft' found in ./curl_o/connect.c.o
+Symbol 'Curl_ssl' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_associate_conn' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_detach_conn' found in ./curl_o/vtls.c.o
+Symbol 'curlx_nonblock' found in ./curl_o/nonblock.c.o
+Symbol 'Curl_connect' found in ./curl_o/url.c.o
+Symbol 'Curl_disconnect' found in ./curl_o/url.c.o
+Symbol 'Curl_free_request_state' found in ./curl_o/url.c.o
+Symbol 'Curl_init_do' found in ./curl_o/url.c.o
+Symbol 'Curl_share_lock' found in ./curl_o/share.c.o
+Symbol 'Curl_share_unlock' found in ./curl_o/share.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+Symbol 'Curl_timediff' found in ./curl_o/timeval.c.o
+Symbol 'Curl_http_connect' found in ./curl_o/http.c.o
+Symbol 'Curl_splay' found in ./curl_o/splay.c.o
+Symbol 'Curl_splaygetbest' found in ./curl_o/splay.c.o
+Symbol 'Curl_splayinsert' found in ./curl_o/splay.c.o
+Symbol 'Curl_splayremove' found in ./curl_o/splay.c.o
+Symbol 'Curl_connect_complete' found in ./curl_o/http_proxy.c.o
+Symbol 'Curl_connect_done' found in ./curl_o/http_proxy.c.o
+Symbol 'Curl_connect_free' found in ./curl_o/http_proxy.c.o
+Symbol 'Curl_connect_getsock' found in ./curl_o/http_proxy.c.o
+Symbol 'Curl_connect_ongoing' found in ./curl_o/http_proxy.c.o
+Symbol 'Curl_proxy_connect' found in ./curl_o/http_proxy.c.o
+Symbol 'Curl_llist_count' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_destroy' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_init' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_insert_next' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_remove' found in ./curl_o/llist.c.o
+Symbol 'Curl_resolver_kill' found in ./curl_o/asyn-thread.c.o
+Symbol 'Curl_poll' found in ./curl_o/select.c.o
+Symbol 'Curl_wait_ms' found in ./curl_o/select.c.o
+Symbol 'Curl_fetch_addr' found in ./curl_o/hostip.c.o
+Symbol 'Curl_hostcache_clean' found in ./curl_o/hostip.c.o
+Symbol 'Curl_hostcache_prune' found in ./curl_o/hostip.c.o
+Symbol 'Curl_init_dnscache' found in ./curl_o/hostip.c.o
+Symbol 'Curl_ipv6works' found in ./curl_o/hostip.c.o
+Symbol 'Curl_once_resolved' found in ./curl_o/hostip.c.o
+Symbol 'Curl_resolv_check' found in ./curl_o/hostip.c.o
+Symbol 'Curl_resolv_getsock' found in ./curl_o/hostip.c.o
+Symbol 'Curl_resolv_unlock' found in ./curl_o/hostip.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_follow' found in ./curl_o/transfer.c.o
+Symbol 'Curl_init_CONNECT' found in ./curl_o/transfer.c.o
+Symbol 'Curl_posttransfer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_pretransfer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_readwrite' found in ./curl_o/transfer.c.o
+Symbol 'Curl_retry_request' found in ./curl_o/transfer.c.o
+Symbol 'Curl_single_getsock' found in ./curl_o/transfer.c.o
+Symbol 'Curl_socketpair' found in ./curl_o/socketpair.c.o
+Symbol 'curlx_sltoui' found in ./curl_o/warnless.c.o
+Symbol 'curlx_uztosi' found in ./curl_o/warnless.c.o
+Symbol 'Curl_wildcard_dtor' found in ./curl_o/wildcard.c.o
+Symbol 'Curl_hash_add' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_delete' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_destroy' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_init' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_next_element' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_pick' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_start_iterate' found in ./curl_o/hash.c.o
+Symbol 'Curl_conncache_close_all_connections' found in ./curl_o/conncache.c.o
+Symbol 'Curl_conncache_destroy' found in ./curl_o/conncache.c.o
+Symbol 'Curl_conncache_foreach' found in ./curl_o/conncache.c.o
+Symbol 'Curl_conncache_init' found in ./curl_o/conncache.c.o
+Symbol 'Curl_conncache_remove_conn' found in ./curl_o/conncache.c.o
+Symbol 'Curl_conncache_return_conn' found in ./curl_o/conncache.c.o
+Symbol 'Curl_speedcheck' found in ./curl_o/speedcheck.c.o
+Symbol 'Curl_SOCKS_getsock' found in ./curl_o/socks.c.o
+found files:  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o', 'progress.c.o', 'nonblock.c.o', 'timeval.c.o', 'http.c.o', 'splay.c.o', 'http_proxy.c.o', 'llist.c.o', 'select.c.o', 'transfer.c.o', 'socketpair.c.o', 'wildcard.c.o', 'speedcheck.c.o', 'socks.c.o']
+a round ends! ['easy.c.o', 'slist.c.o', 'share.c.o', 'strerror.c.o', 'version.c.o', 'setopt.c.o', 'mime.c.o', 'urlapi.c.o', 'getenv.c.o', 'mprintf.c.o', 'parsedate.c.o', 'strcase.c.o', 'escape.c.o', 'multi.c.o', 'getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o', 'progress.c.o', 'nonblock.c.o', 'timeval.c.o', 'http.c.o', 'splay.c.o', 'http_proxy.c.o', 'llist.c.o', 'select.c.o', 'transfer.c.o', 'socketpair.c.o', 'wildcard.c.o', 'speedcheck.c.o', 'socks.c.o']
+current files.  ['getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o', 'progress.c.o', 'nonblock.c.o', 'timeval.c.o', 'http.c.o', 'splay.c.o', 'http_proxy.c.o', 'llist.c.o', 'select.c.o', 'transfer.c.o', 'socketpair.c.o', 'wildcard.c.o', 'speedcheck.c.o', 'socks.c.o']
+now handel file, getinfo.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_cookie_list', 'Curl_getconnectinfo', 'Curl_ssl', 'Curl_ssl_backend', 'Curl_ssl_engines_list', 'Curl_ssl_free_certinfo', '_GLOBAL_OFFSET_TABLE_', '__stack_chk_fail'] ./curl_o/getinfo.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_getconnectinfo' found in ./curl_o/connect.c.o
+Symbol 'Curl_ssl' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_backend' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_engines_list' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_free_certinfo' found in ./curl_o/vtls.c.o
+Symbol 'Curl_cookie_list' found in ./curl_o/cookie.c.o
+found files:  []
+now handel file, connect.c.o
+now handle file imports,  ['bind', 'close', 'connect', 'Curl_conncache_foreach', 'Curl_expire', 'Curl_failf', 'Curl_if2ip', 'Curl_inet_ntop', 'Curl_infof', 'Curl_ipv6_scope', 'curl_msnprintf', 'Curl_multi_closed', 'Curl_now', 'Curl_num_addresses', 'Curl_pgrsTime', 'Curl_printable_address', 'Curl_recv_has_postponed_data', 'Curl_resolv', 'Curl_resolver_wait_resolv', 'Curl_resolv_unlock', 'Curl_set_in_callback', 'Curl_socket_check', 'Curl_SOCKS4', 'Curl_SOCKS5', 'Curl_ssl_check_cxn', 'Curl_ssl_data_pending', 'Curl_strerror', 'Curl_timediff', 'Curl_verboseconnect', 'curlx_nonblock', 'curlx_sltosi', '__errno_location', 'getpeername', 'getsockname', 'getsockopt', 'inet_pton', 'recv', 'setsockopt', 'socket', '__stack_chk_fail', 'strchr', 'strlen', 'strncmp', 'strtol'] ./curl_o/connect.c.o
+Symbol 'Curl_pgrsTime' found in ./curl_o/progress.c.o
+Symbol 'Curl_ssl_check_cxn' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_data_pending' found in ./curl_o/vtls.c.o
+Symbol 'curlx_nonblock' found in ./curl_o/nonblock.c.o
+Symbol 'Curl_verboseconnect' found in ./curl_o/url.c.o
+Symbol 'Curl_strerror' found in ./curl_o/strerror.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_recv_has_postponed_data' found in ./curl_o/sendf.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+Symbol 'Curl_timediff' found in ./curl_o/timeval.c.o
+Symbol 'Curl_inet_ntop' found in ./curl_o/inet_ntop.c.o
+Symbol 'Curl_if2ip' found in ./curl_o/if2ip.c.o
+Symbol 'Curl_ipv6_scope' found in ./curl_o/if2ip.c.o
+Symbol 'Curl_resolver_wait_resolv' found in ./curl_o/asyn-thread.c.o
+Symbol 'Curl_socket_check' found in ./curl_o/select.c.o
+Symbol 'Curl_num_addresses' found in ./curl_o/hostip.c.o
+Symbol 'Curl_printable_address' found in ./curl_o/hostip.c.o
+Symbol 'Curl_resolv' found in ./curl_o/hostip.c.o
+Symbol 'Curl_resolv_unlock' found in ./curl_o/hostip.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curlx_sltosi' found in ./curl_o/warnless.c.o
+Symbol 'Curl_conncache_foreach' found in ./curl_o/conncache.c.o
+Symbol 'Curl_expire' found in ./curl_o/multi.c.o
+Symbol 'Curl_multi_closed' found in ./curl_o/multi.c.o
+Symbol 'Curl_set_in_callback' found in ./curl_o/multi.c.o
+Symbol 'Curl_SOCKS4' found in ./curl_o/socks.c.o
+Symbol 'Curl_SOCKS5' found in ./curl_o/socks.c.o
+found files:  ['if2ip.c.o']
+now handel file, vtls.c.o
+now handle file imports,  ['Curl_base64_decode', 'Curl_base64_encode', 'Curl_ccalloc', 'Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', 'Curl_failf', 'curl_getenv', 'Curl_infof', 'curl_msnprintf', 'Curl_pgrsTime', 'Curl_recv_plain', 'Curl_safecmp', 'Curl_safe_strcasecompare', 'Curl_send_plain', 'Curl_share_lock', 'Curl_share_unlock', 'Curl_slist_append_nodup', 'curl_slist_free_all', 'Curl_ssl_openssl', 'Curl_strcasecompare', 'curlx_sotouz', 'fclose', 'fopen64', 'fread', 'fseek', 'ftell', '_GLOBAL_OFFSET_TABLE_', 'memcmp', 'memcpy', 'memset', '__stack_chk_fail', 'strcpy', 'strlen', 'strncmp', 'strncpy', 'strstr'] ./curl_o/vtls.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsTime' found in ./curl_o/progress.c.o
+Symbol 'Curl_slist_append_nodup' found in ./curl_o/slist.c.o
+Symbol 'curl_slist_free_all' found in ./curl_o/slist.c.o
+Symbol 'Curl_base64_decode' found in ./curl_o/base64.c.o
+Symbol 'Curl_base64_encode' found in ./curl_o/base64.c.o
+Symbol 'Curl_share_lock' found in ./curl_o/share.c.o
+Symbol 'Curl_share_unlock' found in ./curl_o/share.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_recv_plain' found in ./curl_o/sendf.c.o
+Symbol 'Curl_send_plain' found in ./curl_o/sendf.c.o
+Symbol 'curl_getenv' found in ./curl_o/getenv.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curlx_sotouz' found in ./curl_o/warnless.c.o
+Symbol 'Curl_safecmp' found in ./curl_o/strcase.c.o
+Symbol 'Curl_safe_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_ssl_openssl' found in ./curl_o/openssl.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o']
+now handel file, url.c.o
+now handle file imports,  ['__ctype_tolower_loc', 'Curl_alpnid2str', 'Curl_altsvc_cleanup', 'Curl_altsvc_lookup', 'Curl_altsvc_save', 'Curl_attach_connnection', 'Curl_ccalloc', 'Curl_cfree', 'Curl_clone_primary_ssl_config', 'Curl_closesocket', 'Curl_cmalloc', 'Curl_conncache_add_conn', 'Curl_conncache_extract_bundle', 'Curl_conncache_extract_oldest', 'Curl_conncache_find_bundle', 'Curl_conncache_foreach', 'Curl_conncache_remove_conn', 'Curl_conncache_size', 'Curl_conncontrol', 'Curl_connecthost', 'Curl_conninfo_local', 'Curl_cstrdup', 'Curl_detach_connnection', 'Curl_dyn_free', 'Curl_dyn_init', 'Curl_expire_clear', 'Curl_failf', 'Curl_flush_cookies', 'Curl_free_primary_ssl_config', 'curl_getenv', 'Curl_handler_dict', 'Curl_handler_file', 'Curl_handler_ftp', 'Curl_handler_ftps', 'Curl_handler_gopher', 'Curl_handler_gophers', 'Curl_handler_http', 'Curl_handler_https', 'Curl_handler_imap', 'Curl_handler_imaps', 'Curl_handler_mqtt', 'Curl_handler_pop3', 'Curl_handler_pop3s', 'Curl_handler_rtsp', 'Curl_handler_smb', 'Curl_handler_smbs', 'Curl_handler_smtp', 'Curl_handler_smtps', 'Curl_handler_telnet', 'Curl_handler_tftp', 'Curl_hsts', 'Curl_hsts_cleanup', 'Curl_hsts_save', 'Curl_http_auth_cleanup_digest', 'Curl_http_auth_cleanup_ntlm', 'Curl_infof', 'Curl_initinfo', 'Curl_is_absolute_url', 'Curl_isalpha', 'Curl_isxdigit', 'Curl_llist_destroy', 'Curl_llist_init', 'curl_maprintf', 'Curl_mime_cleanpart', 'Curl_mime_initpart', 'curl_msnprintf', 'curl_multi_cleanup', 'Curl_multi_max_host_connections', 'Curl_multi_max_total_connections', 'Curl_multiplex_wanted', 'curl_multi_remove_handle', 'Curl_now', 'Curl_parsenetrc', 'Curl_persistconninfo', 'Curl_pgrsSetDownloadCounter', 'Curl_pgrsSetUploadCounter', 'Curl_pgrsTime', 'Curl_preconnect', 'Curl_recv_plain', 'Curl_resolver_cancel', 'Curl_resolver_cleanup', 'Curl_resolver_init', 'Curl_resolv_timeout', 'Curl_resolv_unlock', 'Curl_safe_strcasecompare', 'Curl_send_plain', 'Curl_setstropt', 'Curl_setup_transfer', 'Curl_share_lock', 'Curl_share_unlock', 'curl_slist_free_all', 'Curl_socket_check', 'Curl_speedinit', 'Curl_ssl', 'Curl_ssl_backend', 'Curl_ssl_close', 'Curl_ssl_close_all', 'Curl_ssl_config_matches', 'Curl_ssl_free_certinfo', 'Curl_strcasecompare', 'Curl_strerror', 'Curl_strncasecompare', 'Curl_strntoupper', 'Curl_timediff', 'Curl_timeleft', 'Curl_timestrcmp', 'Curl_unix2addr', 'Curl_updateconninfo', 'curl_url', 'curl_url_cleanup', 'Curl_urldecode', 'curl_url_dup', 'curl_url_get', 'curl_url_set', 'Curl_wildcard_dtor', 'curlx_ultous', '__errno_location', 'fread', 'fwrite', '_GLOBAL_OFFSET_TABLE_', 'if_nametoindex', 'memcpy', '__stack_chk_fail', 'stderr', 'stdin', 'stdout', 'strchr', 'strcmp', 'strlen', 'strtol', 'strtoul'] ./curl_o/url.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_initinfo' found in ./curl_o/getinfo.c.o
+Symbol 'Curl_pgrsSetDownloadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsTime' found in ./curl_o/progress.c.o
+Symbol 'Curl_closesocket' found in ./curl_o/connect.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_connecthost' found in ./curl_o/connect.c.o
+Symbol 'Curl_conninfo_local' found in ./curl_o/connect.c.o
+Symbol 'Curl_persistconninfo' found in ./curl_o/connect.c.o
+Symbol 'Curl_timeleft' found in ./curl_o/connect.c.o
+Symbol 'Curl_updateconninfo' found in ./curl_o/connect.c.o
+Symbol 'Curl_clone_primary_ssl_config' found in ./curl_o/vtls.c.o
+Symbol 'Curl_free_primary_ssl_config' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_backend' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_close' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_close_all' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_config_matches' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_free_certinfo' found in ./curl_o/vtls.c.o
+Symbol 'Curl_handler_ftp' found in ./curl_o/ftp.c.o
+Symbol 'Curl_handler_ftps' found in ./curl_o/ftp.c.o
+Symbol 'Curl_handler_smb' found in ./curl_o/smb.c.o
+Symbol 'Curl_handler_smbs' found in ./curl_o/smb.c.o
+Symbol 'curl_slist_free_all' found in ./curl_o/slist.c.o
+Symbol 'Curl_share_lock' found in ./curl_o/share.c.o
+Symbol 'Curl_share_unlock' found in ./curl_o/share.c.o
+Symbol 'Curl_strerror' found in ./curl_o/strerror.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_recv_plain' found in ./curl_o/sendf.c.o
+Symbol 'Curl_send_plain' found in ./curl_o/sendf.c.o
+Symbol 'Curl_http_auth_cleanup_ntlm' found in ./curl_o/http_ntlm.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+Symbol 'Curl_timediff' found in ./curl_o/timeval.c.o
+Symbol 'Curl_handler_tftp' found in ./curl_o/tftp.c.o
+Symbol 'Curl_handler_mqtt' found in ./curl_o/mqtt.c.o
+Symbol 'Curl_alpnid2str' found in ./curl_o/altsvc.c.o
+Symbol 'Curl_altsvc_cleanup' found in ./curl_o/altsvc.c.o
+Symbol 'Curl_altsvc_lookup' found in ./curl_o/altsvc.c.o
+Symbol 'Curl_altsvc_save' found in ./curl_o/altsvc.c.o
+Symbol 'Curl_unix2addr' found in ./curl_o/curl_addrinfo.c.o
+Symbol 'Curl_handler_http' found in ./curl_o/http.c.o
+Symbol 'Curl_handler_https' found in ./curl_o/http.c.o
+Symbol 'Curl_handler_smtp' found in ./curl_o/smtp.c.o
+Symbol 'Curl_handler_smtps' found in ./curl_o/smtp.c.o
+Symbol 'Curl_handler_pop3' found in ./curl_o/pop3.c.o
+Symbol 'Curl_handler_pop3s' found in ./curl_o/pop3.c.o
+Symbol 'Curl_setstropt' found in ./curl_o/setopt.c.o
+Symbol 'Curl_handler_rtsp' found in ./curl_o/rtsp.c.o
+Symbol 'Curl_mime_cleanpart' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_initpart' found in ./curl_o/mime.c.o
+Symbol 'Curl_handler_file' found in ./curl_o/file.c.o
+Symbol 'Curl_is_absolute_url' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url_cleanup' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url_dup' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url_get' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url_set' found in ./curl_o/urlapi.c.o
+Symbol 'Curl_llist_destroy' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_init' found in ./curl_o/llist.c.o
+Symbol 'curl_getenv' found in ./curl_o/getenv.c.o
+Symbol 'Curl_resolver_cancel' found in ./curl_o/asyn-thread.c.o
+Symbol 'Curl_resolver_cleanup' found in ./curl_o/asyn-thread.c.o
+Symbol 'Curl_resolver_init' found in ./curl_o/asyn-thread.c.o
+Symbol 'Curl_socket_check' found in ./curl_o/select.c.o
+Symbol 'Curl_handler_gopher' found in ./curl_o/gopher.c.o
+Symbol 'Curl_handler_gophers' found in ./curl_o/gopher.c.o
+Symbol 'Curl_resolv_timeout' found in ./curl_o/hostip.c.o
+Symbol 'Curl_resolv_unlock' found in ./curl_o/hostip.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_setup_transfer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_isalpha' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isxdigit' found in ./curl_o/curl_ctype.c.o
+Symbol 'curlx_ultous' found in ./curl_o/warnless.c.o
+Symbol 'Curl_http_auth_cleanup_digest' found in ./curl_o/http_digest.c.o
+Symbol 'Curl_wildcard_dtor' found in ./curl_o/wildcard.c.o
+Symbol 'Curl_handler_dict' found in ./curl_o/dict.c.o
+Symbol 'Curl_handler_telnet' found in ./curl_o/telnet.c.o
+Symbol 'Curl_flush_cookies' found in ./curl_o/cookie.c.o
+Symbol 'Curl_parsenetrc' found in ./curl_o/netrc.c.o
+Symbol 'Curl_safe_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strncasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strntoupper' found in ./curl_o/strcase.c.o
+Symbol 'Curl_timestrcmp' found in ./curl_o/strcase.c.o
+Symbol 'Curl_conncache_add_conn' found in ./curl_o/conncache.c.o
+Symbol 'Curl_conncache_extract_bundle' found in ./curl_o/conncache.c.o
+Symbol 'Curl_conncache_extract_oldest' found in ./curl_o/conncache.c.o
+Symbol 'Curl_conncache_find_bundle' found in ./curl_o/conncache.c.o
+Symbol 'Curl_conncache_foreach' found in ./curl_o/conncache.c.o
+Symbol 'Curl_conncache_remove_conn' found in ./curl_o/conncache.c.o
+Symbol 'Curl_conncache_size' found in ./curl_o/conncache.c.o
+Symbol 'Curl_handler_imap' found in ./curl_o/imap.c.o
+Symbol 'Curl_handler_imaps' found in ./curl_o/imap.c.o
+Symbol 'Curl_urldecode' found in ./curl_o/escape.c.o
+Symbol 'Curl_attach_connnection' found in ./curl_o/multi.c.o
+Symbol 'Curl_detach_connnection' found in ./curl_o/multi.c.o
+Symbol 'Curl_expire_clear' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_cleanup' found in ./curl_o/multi.c.o
+Symbol 'Curl_multi_max_host_connections' found in ./curl_o/multi.c.o
+Symbol 'Curl_multi_max_total_connections' found in ./curl_o/multi.c.o
+Symbol 'Curl_multiplex_wanted' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_remove_handle' found in ./curl_o/multi.c.o
+Symbol 'Curl_preconnect' found in ./curl_o/multi.c.o
+Symbol 'Curl_hsts' found in ./curl_o/hsts.c.o
+Symbol 'Curl_hsts_cleanup' found in ./curl_o/hsts.c.o
+Symbol 'Curl_hsts_save' found in ./curl_o/hsts.c.o
+Symbol 'Curl_speedinit' found in ./curl_o/speedcheck.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o']
+now handel file, sendf.c.o
+now handle file imports,  ['Curl_dyn_addn', 'Curl_dyn_init', 'curl_mvsnprintf', 'Curl_set_in_callback', 'Curl_strerror', '__errno_location', 'fwrite', 'memchr', 'memmove', 'recv', 'send', '__stack_chk_fail', 'strcpy'] ./curl_o/sendf.c.o
+Symbol 'Curl_strerror' found in ./curl_o/strerror.c.o
+Symbol 'curl_mvsnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_set_in_callback' found in ./curl_o/multi.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o']
+now handel file, altsvc.c.o
+now handle file imports,  ['Curl_ccalloc', 'Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', 'Curl_fopen', 'Curl_getdate_capped', 'Curl_get_line', 'Curl_gmtime', 'Curl_infof', 'Curl_isalnum', 'Curl_llist_init', 'Curl_llist_insert_next', 'Curl_llist_remove', 'curl_mfprintf', 'Curl_rename', 'Curl_strcasecompare', 'curlx_ultous', 'fclose', 'fopen64', 'fwrite', '_GLOBAL_OFFSET_TABLE_', '__isoc99_sscanf', 'memcpy', '__memcpy_chk', '__stack_chk_fail', 'strtoul', 'time', 'unlink'] ./curl_o/altsvc.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_fopen' found in ./curl_o/fopen.c.o
+Symbol 'Curl_llist_init' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_insert_next' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_remove' found in ./curl_o/llist.c.o
+Symbol 'curl_mfprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_getdate_capped' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_gmtime' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_isalnum' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_rename' found in ./curl_o/rename.c.o
+Symbol 'curlx_ultous' found in ./curl_o/warnless.c.o
+Symbol 'Curl_get_line' found in ./curl_o/curl_get_line.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o']
+now handel file, strdup.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_cmalloc', 'Curl_crealloc', '_GLOBAL_OFFSET_TABLE_', 'memcpy'] ./curl_o/strdup.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_crealloc' found in ./curl_o/easy.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o']
+now handel file, asyn-thread.c.o
+now handle file imports,  ['close', 'Curl_addrinfo_callback', 'Curl_ccalloc', 'Curl_cfree', 'Curl_cmalloc', 'Curl_conncontrol', 'Curl_cstrdup', 'Curl_expire', 'Curl_failf', 'Curl_freeaddrinfo', 'Curl_getaddrinfo_ex', 'Curl_ipv6works', 'curl_msnprintf', 'Curl_multi_closed', 'Curl_now', 'Curl_resolver_error', 'Curl_socketpair', 'Curl_thread_create', 'Curl_thread_destroy', 'Curl_thread_join', 'Curl_timediff', '__errno_location', '_GLOBAL_OFFSET_TABLE_', 'pthread_mutex_destroy', 'pthread_mutex_init', 'pthread_mutex_lock', 'pthread_mutex_unlock', 'send', '__stack_chk_fail'] ./curl_o/asyn-thread.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+Symbol 'Curl_timediff' found in ./curl_o/timeval.c.o
+Symbol 'Curl_addrinfo_callback' found in ./curl_o/hostasyn.c.o
+Symbol 'Curl_freeaddrinfo' found in ./curl_o/curl_addrinfo.c.o
+Symbol 'Curl_getaddrinfo_ex' found in ./curl_o/curl_addrinfo.c.o
+Symbol 'Curl_thread_create' found in ./curl_o/curl_threads.c.o
+Symbol 'Curl_thread_destroy' found in ./curl_o/curl_threads.c.o
+Symbol 'Curl_thread_join' found in ./curl_o/curl_threads.c.o
+Symbol 'Curl_ipv6works' found in ./curl_o/hostip.c.o
+Symbol 'Curl_resolver_error' found in ./curl_o/hostip.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_socketpair' found in ./curl_o/socketpair.c.o
+Symbol 'Curl_expire' found in ./curl_o/multi.c.o
+Symbol 'Curl_multi_closed' found in ./curl_o/multi.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o']
+now handel file, warnless.c.o
+now handle file imports,  [] ./curl_o/warnless.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o']
+now handel file, http_digest.c.o
+now handle file imports,  ['Curl_auth_create_digest_http_message', 'Curl_auth_decode_digest_http_message', 'Curl_auth_digest_cleanup', 'Curl_cfree', 'Curl_cstrdup', 'Curl_isspace', 'curl_maprintf', 'curl_strnequal', '_GLOBAL_OFFSET_TABLE_', '__stack_chk_fail', 'strchr'] ./curl_o/http_digest.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_auth_create_digest_http_message' found in ./curl_o/digest.c.o
+Symbol 'Curl_auth_decode_digest_http_message' found in ./curl_o/digest.c.o
+Symbol 'Curl_auth_digest_cleanup' found in ./curl_o/digest.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_isspace' found in ./curl_o/curl_ctype.c.o
+Symbol 'curl_strnequal' found in ./curl_o/strcase.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o']
+now handel file, cookie.c.o
+now handle file imports,  ['Curl_ccalloc', 'Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', 'curl_easy_strerror', 'Curl_fopen', 'Curl_getdate_capped', 'Curl_get_line', 'Curl_host_is_ipnum', 'Curl_infof', 'curl_maprintf', 'Curl_memrchr', 'curl_mfprintf', 'Curl_raw_toupper', 'Curl_rename', 'Curl_share_lock', 'Curl_share_unlock', 'Curl_slist_append_nodup', 'curl_slist_free_all', 'Curl_strcasecompare', 'Curl_strncasecompare', 'curl_strnequal', 'curlx_strtoofft', 'fclose', 'fopen64', 'fwrite', '_GLOBAL_OFFSET_TABLE_', '__isoc99_sscanf', 'memcpy', 'memmove', 'qsort', '__stack_chk_fail', 'stdin', 'stdout', 'strchr', 'strcmp', 'strcspn', 'strlen', 'strncmp', 'strrchr', 'strtok_r', 'time', 'unlink'] ./curl_o/cookie.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_slist_append_nodup' found in ./curl_o/slist.c.o
+Symbol 'curl_slist_free_all' found in ./curl_o/slist.c.o
+Symbol 'Curl_share_lock' found in ./curl_o/share.c.o
+Symbol 'Curl_share_unlock' found in ./curl_o/share.c.o
+Symbol 'curl_easy_strerror' found in ./curl_o/strerror.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'curlx_strtoofft' found in ./curl_o/strtoofft.c.o
+Symbol 'Curl_fopen' found in ./curl_o/fopen.c.o
+Symbol 'Curl_memrchr' found in ./curl_o/curl_memrchr.c.o
+Symbol 'Curl_host_is_ipnum' found in ./curl_o/hostip.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_mfprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_getdate_capped' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_rename' found in ./curl_o/rename.c.o
+Symbol 'Curl_get_line' found in ./curl_o/curl_get_line.c.o
+Symbol 'Curl_raw_toupper' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strncasecompare' found in ./curl_o/strcase.c.o
+Symbol 'curl_strnequal' found in ./curl_o/strcase.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o']
+now handel file, conncache.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_close', 'Curl_cmalloc', 'Curl_conncontrol', 'Curl_disconnect', 'curl_easy_init', 'Curl_hash_add', 'Curl_hash_delete', 'Curl_hash_destroy', 'Curl_hash_init', 'Curl_hash_next_element', 'Curl_hash_pick', 'Curl_hash_start_iterate', 'Curl_hash_str', 'Curl_hostcache_clean', 'Curl_infof', 'Curl_llist_destroy', 'Curl_llist_init', 'Curl_llist_insert_next', 'Curl_llist_remove', 'curl_msnprintf', 'Curl_now', 'Curl_share_lock', 'Curl_share_unlock', 'Curl_str_key_compare', 'Curl_strntolower', 'Curl_timediff', '_GLOBAL_OFFSET_TABLE_', 'sigaction', '__stack_chk_fail', 'strlen'] ./curl_o/conncache.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'curl_easy_init' found in ./curl_o/easy.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_close' found in ./curl_o/url.c.o
+Symbol 'Curl_disconnect' found in ./curl_o/url.c.o
+Symbol 'Curl_share_lock' found in ./curl_o/share.c.o
+Symbol 'Curl_share_unlock' found in ./curl_o/share.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+Symbol 'Curl_timediff' found in ./curl_o/timeval.c.o
+Symbol 'Curl_llist_destroy' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_init' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_insert_next' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_remove' found in ./curl_o/llist.c.o
+Symbol 'Curl_hostcache_clean' found in ./curl_o/hostip.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_hash_add' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_delete' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_destroy' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_init' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_next_element' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_pick' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_start_iterate' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_str' found in ./curl_o/hash.c.o
+Symbol 'Curl_str_key_compare' found in ./curl_o/hash.c.o
+Symbol 'Curl_strntolower' found in ./curl_o/strcase.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o']
+now handel file, hsts.c.o
+now handle file imports,  ['Curl_ccalloc', 'Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', 'Curl_fopen', 'Curl_getdate_capped', 'Curl_get_line', 'Curl_gmtime', 'Curl_host_is_ipnum', 'Curl_isspace', 'Curl_llist_init', 'Curl_llist_insert_next', 'Curl_llist_remove', 'curl_mfprintf', 'curl_msnprintf', 'Curl_rename', 'Curl_share_lock', 'Curl_share_unlock', 'Curl_strcasecompare', 'Curl_strncasecompare', 'curlx_strtoofft', 'fclose', 'fopen64', 'fwrite', '_GLOBAL_OFFSET_TABLE_', '__isoc99_sscanf', '__stack_chk_fail', 'strlen', 'time', 'unlink'] ./curl_o/hsts.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_share_lock' found in ./curl_o/share.c.o
+Symbol 'Curl_share_unlock' found in ./curl_o/share.c.o
+Symbol 'curlx_strtoofft' found in ./curl_o/strtoofft.c.o
+Symbol 'Curl_fopen' found in ./curl_o/fopen.c.o
+Symbol 'Curl_llist_init' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_insert_next' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_remove' found in ./curl_o/llist.c.o
+Symbol 'Curl_host_is_ipnum' found in ./curl_o/hostip.c.o
+Symbol 'curl_mfprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_getdate_capped' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_gmtime' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_isspace' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_rename' found in ./curl_o/rename.c.o
+Symbol 'Curl_get_line' found in ./curl_o/curl_get_line.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strncasecompare' found in ./curl_o/strcase.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o']
+now handel file, hostip.c.o
+now handle file imports,  ['close', '__ctype_tolower_loc', 'Curl_ccalloc', 'Curl_cfree', 'Curl_cmalloc', 'Curl_conncache_remove_conn', 'Curl_detach_connnection', 'Curl_disconnect', 'Curl_doh', 'Curl_doh_is_resolved', 'Curl_failf', 'Curl_freeaddrinfo', 'Curl_getaddrinfo', 'Curl_hash_add', 'Curl_hash_clean', 'Curl_hash_clean_with_criterium', 'Curl_hash_delete', 'Curl_hash_init', 'Curl_hash_pick', 'Curl_hash_str', 'Curl_inet_ntop', 'Curl_infof', 'Curl_ip2addr', 'Curl_ipvalid', 'curl_msnprintf', 'Curl_rand', 'Curl_resolver_getsock', 'Curl_resolver_is_resolved', 'Curl_set_in_callback', 'Curl_setup_conn', 'Curl_share_lock', 'Curl_share_unlock', 'Curl_str2addr', 'Curl_strcasecompare', 'Curl_str_key_compare', '_GLOBAL_OFFSET_TABLE_', 'inet_pton', '__isoc99_sscanf', '__memcpy_chk', 'socket', '__stack_chk_fail', 'strchr', 'strlen', 'strtoul', 'time'] ./curl_o/hostip.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_disconnect' found in ./curl_o/url.c.o
+Symbol 'Curl_setup_conn' found in ./curl_o/url.c.o
+Symbol 'Curl_share_lock' found in ./curl_o/share.c.o
+Symbol 'Curl_share_unlock' found in ./curl_o/share.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_ipvalid' found in ./curl_o/hostip6.c.o
+Symbol 'Curl_rand' found in ./curl_o/rand.c.o
+Symbol 'Curl_getaddrinfo' found in ./curl_o/hostasyn.c.o
+Symbol 'Curl_inet_ntop' found in ./curl_o/inet_ntop.c.o
+Symbol 'Curl_freeaddrinfo' found in ./curl_o/curl_addrinfo.c.o
+Symbol 'Curl_ip2addr' found in ./curl_o/curl_addrinfo.c.o
+Symbol 'Curl_str2addr' found in ./curl_o/curl_addrinfo.c.o
+Symbol 'Curl_resolver_getsock' found in ./curl_o/asyn-thread.c.o
+Symbol 'Curl_resolver_is_resolved' found in ./curl_o/asyn-thread.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_hash_add' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_clean' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_clean_with_criterium' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_delete' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_init' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_pick' found in ./curl_o/hash.c.o
+Symbol 'Curl_hash_str' found in ./curl_o/hash.c.o
+Symbol 'Curl_str_key_compare' found in ./curl_o/hash.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_conncache_remove_conn' found in ./curl_o/conncache.c.o
+Symbol 'Curl_detach_connnection' found in ./curl_o/multi.c.o
+Symbol 'Curl_set_in_callback' found in ./curl_o/multi.c.o
+Symbol 'Curl_doh' found in ./curl_o/doh.c.o
+Symbol 'Curl_doh_is_resolved' found in ./curl_o/doh.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o']
+now handel file, hash.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_cmalloc', 'Curl_llist_destroy', 'Curl_llist_init', 'Curl_llist_insert_next', 'Curl_llist_remove', '_GLOBAL_OFFSET_TABLE_', 'memcmp', 'memcpy'] ./curl_o/hash.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_llist_destroy' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_init' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_insert_next' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_remove' found in ./curl_o/llist.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o']
+now handel file, content_encoding.c.o
+now handle file imports,  ['Curl_ccalloc', 'Curl_cfree', 'Curl_client_write', 'Curl_cmalloc', 'Curl_cstrdup', 'Curl_failf', 'Curl_httpchunk_init', 'Curl_isspace', 'Curl_saferealloc', 'Curl_strcasecompare', 'Curl_strncasecompare', '_GLOBAL_OFFSET_TABLE_', 'inflate', 'inflateEnd', 'inflateInit_', 'inflateInit2_', 'memcpy', '__stack_chk_fail', 'stpcpy', 'strcmp', 'strlen', 'zlibVersion'] ./curl_o/content_encoding.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_httpchunk_init' found in ./curl_o/http_chunks.c.o
+Symbol 'Curl_saferealloc' found in ./curl_o/strdup.c.o
+Symbol 'Curl_isspace' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strncasecompare' found in ./curl_o/strcase.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o']
+now handel file, rand.c.o
+now handle file imports,  ['close', 'Curl_infof', 'Curl_now', 'Curl_ssl_random', 'open64', 'read', '__stack_chk_fail'] ./curl_o/rand.c.o
+Symbol 'Curl_ssl_random' found in ./curl_o/vtls.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o']
+now handel file, dotdot.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', '_GLOBAL_OFFSET_TABLE_', 'memcpy', 'strchr', 'strcmp', 'strlen', 'strncmp'] ./curl_o/dotdot.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o']
+now handel file, inet_ntop.c.o
+now handle file imports,  ['curl_msnprintf', '__errno_location', '__stack_chk_fail', 'strcpy', 'strlen'] ./curl_o/inet_ntop.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o']
+now handel file, curl_ctype.c.o
+now handle file imports,  [] ./curl_o/curl_ctype.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o']
+now handel file, progress.c.o
+now handle file imports,  ['Curl_failf', 'curl_mfprintf', 'curl_msnprintf', 'Curl_now', 'Curl_set_in_callback', 'Curl_timediff', 'Curl_timediff_us', 'fflush', '__stack_chk_fail'] ./curl_o/progress.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+Symbol 'Curl_timediff' found in ./curl_o/timeval.c.o
+Symbol 'Curl_timediff_us' found in ./curl_o/timeval.c.o
+Symbol 'curl_mfprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_set_in_callback' found in ./curl_o/multi.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o']
+now handel file, nonblock.c.o
+now handle file imports,  ['fcntl64'] ./curl_o/nonblock.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o']
+now handel file, timeval.c.o
+now handle file imports,  ['clock_gettime', 'gettimeofday', '__stack_chk_fail'] ./curl_o/timeval.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o']
+now handel file, http.c.o
+now handle file imports,  ['Curl_altsvc_parse', 'Curl_auth_is_digest_supported', 'Curl_auth_is_ntlm_supported', 'Curl_base64_encode', 'Curl_build_unencoding_stack', 'Curl_ccalloc', 'Curl_cfree', 'Curl_checkheaders', 'Curl_client_write', 'Curl_cmalloc', 'Curl_conncontrol', 'Curl_connect_ongoing', 'Curl_cookie_add', 'Curl_cookie_freelist', 'Curl_cookie_getlist', 'Curl_cstrdup', 'Curl_debug', 'Curl_done_sending', 'Curl_dyn_add', 'Curl_dyn_addf', 'Curl_dyn_addn', 'Curl_dyn_free', 'Curl_dyn_init', 'Curl_dyn_len', 'Curl_dyn_ptr', 'Curl_dyn_reset', 'Curl_expire_done', 'Curl_failf', 'Curl_getdate_capped', 'Curl_getformdata', 'Curl_get_upload_buffer', 'Curl_gmtime', 'Curl_hsts_parse', 'Curl_infof', 'Curl_input_digest', 'Curl_input_ntlm', 'Curl_isdigit', 'Curl_isspace', 'curl_maprintf', 'Curl_meets_timecondition', 'Curl_mime_cleanpart', 'curl_mime_headers', 'Curl_mime_initpart', 'Curl_mime_prepare_headers', 'Curl_mime_read', 'Curl_mime_rewind', 'Curl_mime_size', 'Curl_month', 'curl_msnprintf', 'Curl_output_aws_sigv4', 'Curl_output_digest', 'Curl_output_ntlm', 'Curl_pgrsSetDownloadSize', 'Curl_pgrsSetUploadCounter', 'Curl_pgrsSetUploadSize', 'Curl_pgrsUpdate', 'Curl_proxy_connect', 'Curl_raw_toupper', 'Curl_readrewind', 'Curl_rtsp_parseheader', 'Curl_set_in_callback', 'Curl_setup_transfer', 'Curl_share_lock', 'Curl_share_unlock', 'Curl_ssl', 'Curl_ssl_connect_nonblocking', 'Curl_strcasecompare', 'Curl_strncasecompare', 'curl_strnequal', 'Curl_unencode_cleanup', 'curl_url_cleanup', 'curl_url_dup', 'curl_url_get', 'curl_url_set', 'Curl_wkday', 'Curl_write', 'curlx_sotouz', 'curlx_strtoofft', 'curlx_uitous', '_GLOBAL_OFFSET_TABLE_', '__isoc99_sscanf', 'memchr', 'memcpy', 'memmove', '__stack_chk_fail', 'strchr', 'strcmp', 'strlen', 'strstr', 'time'] ./curl_o/http.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_auth_is_digest_supported' found in ./curl_o/digest.c.o
+Symbol 'Curl_pgrsSetDownloadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsUpdate' found in ./curl_o/progress.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_ssl' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_connect_nonblocking' found in ./curl_o/vtls.c.o
+Symbol 'Curl_build_unencoding_stack' found in ./curl_o/content_encoding.c.o
+Symbol 'Curl_unencode_cleanup' found in ./curl_o/content_encoding.c.o
+Symbol 'Curl_output_aws_sigv4' found in ./curl_o/http_aws_sigv4.c.o
+Symbol 'Curl_base64_encode' found in ./curl_o/base64.c.o
+Symbol 'Curl_share_lock' found in ./curl_o/share.c.o
+Symbol 'Curl_share_unlock' found in ./curl_o/share.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_debug' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_input_ntlm' found in ./curl_o/http_ntlm.c.o
+Symbol 'Curl_output_ntlm' found in ./curl_o/http_ntlm.c.o
+Symbol 'curlx_strtoofft' found in ./curl_o/strtoofft.c.o
+Symbol 'Curl_altsvc_parse' found in ./curl_o/altsvc.c.o
+Symbol 'Curl_rtsp_parseheader' found in ./curl_o/rtsp.c.o
+Symbol 'Curl_mime_cleanpart' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_headers' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_initpart' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_prepare_headers' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_read' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_rewind' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_size' found in ./curl_o/mime.c.o
+Symbol 'Curl_connect_ongoing' found in ./curl_o/http_proxy.c.o
+Symbol 'Curl_proxy_connect' found in ./curl_o/http_proxy.c.o
+Symbol 'curl_url_cleanup' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url_dup' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url_get' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url_set' found in ./curl_o/urlapi.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_checkheaders' found in ./curl_o/transfer.c.o
+Symbol 'Curl_done_sending' found in ./curl_o/transfer.c.o
+Symbol 'Curl_get_upload_buffer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_meets_timecondition' found in ./curl_o/transfer.c.o
+Symbol 'Curl_readrewind' found in ./curl_o/transfer.c.o
+Symbol 'Curl_setup_transfer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_getdate_capped' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_gmtime' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_month' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_wkday' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_getformdata' found in ./curl_o/formdata.c.o
+Symbol 'Curl_isdigit' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isspace' found in ./curl_o/curl_ctype.c.o
+Symbol 'curlx_sotouz' found in ./curl_o/warnless.c.o
+Symbol 'curlx_uitous' found in ./curl_o/warnless.c.o
+Symbol 'Curl_auth_is_ntlm_supported' found in ./curl_o/ntlm.c.o
+Symbol 'Curl_input_digest' found in ./curl_o/http_digest.c.o
+Symbol 'Curl_output_digest' found in ./curl_o/http_digest.c.o
+Symbol 'Curl_cookie_add' found in ./curl_o/cookie.c.o
+Symbol 'Curl_cookie_freelist' found in ./curl_o/cookie.c.o
+Symbol 'Curl_cookie_getlist' found in ./curl_o/cookie.c.o
+Symbol 'Curl_raw_toupper' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strncasecompare' found in ./curl_o/strcase.c.o
+Symbol 'curl_strnequal' found in ./curl_o/strcase.c.o
+Symbol 'Curl_expire_done' found in ./curl_o/multi.c.o
+Symbol 'Curl_set_in_callback' found in ./curl_o/multi.c.o
+Symbol 'Curl_hsts_parse' found in ./curl_o/hsts.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o']
+now handel file, splay.c.o
+now handle file imports,  ['__stack_chk_fail'] ./curl_o/splay.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o']
+now handel file, http_proxy.c.o
+now handle file imports,  ['Curl_add_custom_headers', 'Curl_buffer_send', 'Curl_ccalloc', 'Curl_cfree', 'Curl_checkProxyheaders', 'Curl_client_write', 'Curl_closesocket', 'Curl_compareheader', 'Curl_conncontrol', 'Curl_conn_data_pending', 'Curl_copy_header_value', 'Curl_debug', 'Curl_dyn_add', 'Curl_dyn_addf', 'Curl_dyn_addn', 'Curl_dyn_free', 'Curl_dyn_init', 'Curl_dyn_len', 'Curl_dyn_ptr', 'Curl_dyn_reset', 'Curl_failf', 'Curl_fillreadbuffer', 'Curl_get_upload_buffer', 'Curl_http_auth_act', 'Curl_httpchunk_init', 'Curl_httpchunk_read', 'Curl_http_input_auth', 'Curl_http_output_auth', 'Curl_infof', 'curl_maprintf', 'Curl_pgrsUpdate', 'Curl_read', 'Curl_ssl_connect_nonblocking', 'curl_strnequal', 'Curl_timeleft', 'Curl_write', 'curlx_strtoofft', '_GLOBAL_OFFSET_TABLE_', '__isoc99_sscanf', '__stack_chk_fail', 'strchr'] ./curl_o/http_proxy.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsUpdate' found in ./curl_o/progress.c.o
+Symbol 'Curl_closesocket' found in ./curl_o/connect.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_conn_data_pending' found in ./curl_o/connect.c.o
+Symbol 'Curl_timeleft' found in ./curl_o/connect.c.o
+Symbol 'Curl_ssl_connect_nonblocking' found in ./curl_o/vtls.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_debug' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_read' found in ./curl_o/sendf.c.o
+Symbol 'Curl_write' found in ./curl_o/sendf.c.o
+Symbol 'curlx_strtoofft' found in ./curl_o/strtoofft.c.o
+Symbol 'Curl_httpchunk_init' found in ./curl_o/http_chunks.c.o
+Symbol 'Curl_httpchunk_read' found in ./curl_o/http_chunks.c.o
+Symbol 'Curl_add_custom_headers' found in ./curl_o/http.c.o
+Symbol 'Curl_buffer_send' found in ./curl_o/http.c.o
+Symbol 'Curl_checkProxyheaders' found in ./curl_o/http.c.o
+Symbol 'Curl_compareheader' found in ./curl_o/http.c.o
+Symbol 'Curl_copy_header_value' found in ./curl_o/http.c.o
+Symbol 'Curl_http_auth_act' found in ./curl_o/http.c.o
+Symbol 'Curl_http_input_auth' found in ./curl_o/http.c.o
+Symbol 'Curl_http_output_auth' found in ./curl_o/http.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_fillreadbuffer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_get_upload_buffer' found in ./curl_o/transfer.c.o
+Symbol 'curl_strnequal' found in ./curl_o/strcase.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o']
+now handel file, llist.c.o
+now handle file imports,  [] ./curl_o/llist.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o']
+now handel file, select.c.o
+now handle file imports,  ['__errno_location', 'poll', '__stack_chk_fail'] ./curl_o/select.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o']
+now handel file, transfer.c.o
+now handle file imports,  ['Curl_builtin_scheme', 'Curl_cfree', 'Curl_chunked_strerror', 'Curl_client_write', 'Curl_cmalloc', 'Curl_conncontrol', 'Curl_cookie_loadfiles', 'Curl_cstrdup', 'Curl_debug', 'Curl_dyn_free', 'Curl_dyn_init', 'Curl_dyn_len', 'Curl_dyn_ptr', 'Curl_expire', 'Curl_expire_done', 'Curl_failf', 'Curl_hsts_loadcb', 'Curl_hsts_loadfiles', 'Curl_httpchunk_read', 'Curl_http_compile_trailers', 'Curl_http_firstwrite', 'Curl_http_readwrite_headers', 'Curl_infof', 'Curl_initinfo', 'Curl_is_absolute_url', 'Curl_loadhostpairs', 'curl_maprintf', 'Curl_mime_rewind', 'curl_msnprintf', 'Curl_now', 'Curl_pgrsResetTransferSizes', 'Curl_pgrsSetDownloadCounter', 'Curl_pgrsSetDownloadSize', 'Curl_pgrsSetUploadCounter', 'Curl_pgrsStartNow', 'Curl_pgrsTime', 'Curl_pgrsUpdate', 'Curl_pop3_write', 'Curl_read', 'Curl_set_in_callback', 'Curl_setstropt', 'curl_slist_free_all', 'Curl_smtp_escape_eob', 'Curl_socket_check', 'Curl_speedcheck', 'Curl_ssl_data_pending', 'Curl_ssl_initsessions', 'Curl_strncasecompare', 'Curl_timediff', 'Curl_timeleft', 'Curl_uc_to_curlcode', 'Curl_unencode_write', 'curl_url', 'curl_url_cleanup', 'curl_url_get', 'curl_url_set', 'Curl_wildcard_init', 'Curl_write', 'fread', 'fseek', '_GLOBAL_OFFSET_TABLE_', 'memcpy', '__stack_chk_fail', 'strlen', 'strtol'] ./curl_o/transfer.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_initinfo' found in ./curl_o/getinfo.c.o
+Symbol 'Curl_pgrsResetTransferSizes' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetDownloadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetDownloadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsStartNow' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsTime' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsUpdate' found in ./curl_o/progress.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_timeleft' found in ./curl_o/connect.c.o
+Symbol 'Curl_ssl_data_pending' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_initsessions' found in ./curl_o/vtls.c.o
+Symbol 'Curl_unencode_write' found in ./curl_o/content_encoding.c.o
+Symbol 'Curl_builtin_scheme' found in ./curl_o/url.c.o
+Symbol 'Curl_uc_to_curlcode' found in ./curl_o/url.c.o
+Symbol 'curl_slist_free_all' found in ./curl_o/slist.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_debug' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_read' found in ./curl_o/sendf.c.o
+Symbol 'Curl_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+Symbol 'Curl_timediff' found in ./curl_o/timeval.c.o
+Symbol 'Curl_chunked_strerror' found in ./curl_o/http_chunks.c.o
+Symbol 'Curl_httpchunk_read' found in ./curl_o/http_chunks.c.o
+Symbol 'Curl_http_compile_trailers' found in ./curl_o/http.c.o
+Symbol 'Curl_http_firstwrite' found in ./curl_o/http.c.o
+Symbol 'Curl_http_readwrite_headers' found in ./curl_o/http.c.o
+Symbol 'Curl_smtp_escape_eob' found in ./curl_o/smtp.c.o
+Symbol 'Curl_pop3_write' found in ./curl_o/pop3.c.o
+Symbol 'Curl_setstropt' found in ./curl_o/setopt.c.o
+Symbol 'Curl_mime_rewind' found in ./curl_o/mime.c.o
+Symbol 'Curl_is_absolute_url' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url_cleanup' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url_get' found in ./curl_o/urlapi.c.o
+Symbol 'curl_url_set' found in ./curl_o/urlapi.c.o
+Symbol 'Curl_socket_check' found in ./curl_o/select.c.o
+Symbol 'Curl_loadhostpairs' found in ./curl_o/hostip.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_wildcard_init' found in ./curl_o/wildcard.c.o
+Symbol 'Curl_cookie_loadfiles' found in ./curl_o/cookie.c.o
+Symbol 'Curl_strncasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_expire' found in ./curl_o/multi.c.o
+Symbol 'Curl_expire_done' found in ./curl_o/multi.c.o
+Symbol 'Curl_set_in_callback' found in ./curl_o/multi.c.o
+Symbol 'Curl_hsts_loadcb' found in ./curl_o/hsts.c.o
+Symbol 'Curl_hsts_loadfiles' found in ./curl_o/hsts.c.o
+Symbol 'Curl_speedcheck' found in ./curl_o/speedcheck.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o']
+now handel file, socketpair.c.o
+now handle file imports,  ['accept', 'bind', 'close', 'connect', 'Curl_poll', 'curlx_nonblock', 'getpeername', 'getsockname', 'listen', 'setsockopt', 'socket', '__stack_chk_fail'] ./curl_o/socketpair.c.o
+Symbol 'curlx_nonblock' found in ./curl_o/nonblock.c.o
+Symbol 'Curl_poll' found in ./curl_o/select.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o']
+now handel file, wildcard.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_fileinfo_cleanup', 'Curl_llist_destroy', 'Curl_llist_init', '_GLOBAL_OFFSET_TABLE_'] ./curl_o/wildcard.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_fileinfo_cleanup' found in ./curl_o/fileinfo.c.o
+Symbol 'Curl_llist_destroy' found in ./curl_o/llist.c.o
+Symbol 'Curl_llist_init' found in ./curl_o/llist.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o', 'fileinfo.c.o']
+now handel file, speedcheck.c.o
+now handle file imports,  ['Curl_expire', 'Curl_failf', 'Curl_timediff'] ./curl_o/speedcheck.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_timediff' found in ./curl_o/timeval.c.o
+Symbol 'Curl_expire' found in ./curl_o/multi.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o', 'fileinfo.c.o']
+now handel file, socks.c.o
+now handle file imports,  ['curl_easy_strerror', 'Curl_failf', 'Curl_fetch_addr', 'Curl_infof', 'curl_msnprintf', 'Curl_printable_address', 'Curl_read_plain', 'Curl_resolv', 'Curl_resolv_check', 'Curl_resolv_unlock', 'Curl_write_plain', 'inet_pton', 'memcpy', '__stack_chk_fail', 'strlen'] ./curl_o/socks.c.o
+Symbol 'curl_easy_strerror' found in ./curl_o/strerror.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_read_plain' found in ./curl_o/sendf.c.o
+Symbol 'Curl_write_plain' found in ./curl_o/sendf.c.o
+Symbol 'Curl_fetch_addr' found in ./curl_o/hostip.c.o
+Symbol 'Curl_printable_address' found in ./curl_o/hostip.c.o
+Symbol 'Curl_resolv' found in ./curl_o/hostip.c.o
+Symbol 'Curl_resolv_check' found in ./curl_o/hostip.c.o
+Symbol 'Curl_resolv_unlock' found in ./curl_o/hostip.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+found files:  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o', 'fileinfo.c.o']
+a round ends! ['easy.c.o', 'slist.c.o', 'share.c.o', 'strerror.c.o', 'version.c.o', 'setopt.c.o', 'mime.c.o', 'urlapi.c.o', 'getenv.c.o', 'mprintf.c.o', 'parsedate.c.o', 'strcase.c.o', 'escape.c.o', 'multi.c.o', 'getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o', 'progress.c.o', 'nonblock.c.o', 'timeval.c.o', 'http.c.o', 'splay.c.o', 'http_proxy.c.o', 'llist.c.o', 'select.c.o', 'transfer.c.o', 'socketpair.c.o', 'wildcard.c.o', 'speedcheck.c.o', 'socks.c.o', 'if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o', 'fileinfo.c.o']
+current files.  ['if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o', 'fileinfo.c.o']
+now handel file, if2ip.c.o
+now handle file imports,  ['close', 'Curl_inet_ntop', 'ioctl', '__memcpy_chk', 'socket', '__stack_chk_fail', 'strlen'] ./curl_o/if2ip.c.o
+Symbol 'Curl_inet_ntop' found in ./curl_o/inet_ntop.c.o
+found files:  []
+now handel file, base64.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_cmalloc', 'curl_msnprintf', 'curlx_ultouc', '_GLOBAL_OFFSET_TABLE_', 'strlen'] ./curl_o/base64.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curlx_ultouc' found in ./curl_o/warnless.c.o
+found files:  []
+now handel file, openssl.c.o
+now handle file imports,  ['ASN1_STRING_get0_data', 'ASN1_STRING_length', 'ASN1_STRING_print', 'ASN1_STRING_to_UTF8', 'ASN1_STRING_type', 'ASN1_TIME_print', 'BIO_ctrl', 'BIO_free', 'BIO_f_ssl', 'BIO_new', 'BIO_new_mem_buf', 'BIO_printf', 'BIO_puts', 'BIO_s_file', 'BIO_s_mem', 'BN_clear_free', 'BN_num_bits', 'BN_print', 'CRYPTO_free', 'CRYPTO_get_ex_new_index', 'CRYPTO_malloc', 'Curl_cert_hostcheck', 'Curl_cfree', 'Curl_cmalloc', 'Curl_conncontrol', 'Curl_debug', 'Curl_failf', 'Curl_infof', 'curl_msnprintf', 'Curl_multiuse_state', 'Curl_none_false_start', 'Curl_pin_peer_pubkey', 'Curl_set_in_callback', 'curl_slist_append', 'curl_slist_free_all', 'Curl_socket_check', 'Curl_ssl_addsessionid', 'Curl_ssl_delsessionid', 'Curl_ssl_getsessionid', 'Curl_ssl_getsock', 'Curl_ssl_init_certinfo', 'Curl_ssl_push_certinfo_len', 'Curl_ssl_sessionid_lock', 'Curl_ssl_sessionid_unlock', 'Curl_strcasecompare', 'Curl_strerror', 'Curl_strncasecompare', 'Curl_strntolower', 'Curl_timeleft', 'Curl_tls_keylog_close', 'Curl_tls_keylog_enabled', 'Curl_tls_keylog_open', 'Curl_tls_keylog_write_line', 'curlx_uztosi', 'd2i_OCSP_RESPONSE', 'd2i_PKCS12_bio', 'd2i_PrivateKey_bio', 'd2i_X509_bio', 'ENGINE_by_id', 'ENGINE_ctrl', 'ENGINE_ctrl_cmd', 'ENGINE_finish', 'ENGINE_free', 'ENGINE_get_first', 'ENGINE_get_id', 'ENGINE_get_next', 'ENGINE_init', 'ENGINE_load_private_key', 'ENGINE_set_default', 'ERR_clear_error', 'ERR_error_string_n', 'ERR_get_error', '__errno_location', 'ERR_peek_error', 'ERR_peek_last_error', 'EVP_DigestFinal_ex', 'EVP_DigestInit', 'EVP_DigestUpdate', 'EVP_MD_CTX_free', 'EVP_MD_CTX_new', 'EVP_PKEY_copy_parameters', 'EVP_PKEY_free', 'EVP_PKEY_get1_RSA', 'EVP_PKEY_get_bn_param', 'EVP_PKEY_get_id', 'EVP_sha1', 'EVP_sha256', 'GENERAL_NAMES_free', '_GLOBAL_OFFSET_TABLE_', 'i2a_ASN1_OBJECT', 'i2d_X509_PUBKEY', 'i2t_ASN1_OBJECT', 'inet_pton', 'memcmp', 'memcpy', '__memcpy_chk', 'OCSP_BASICRESP_free', 'OCSP_basic_verify', 'OCSP_CERTID_free', 'OCSP_cert_status_str', 'OCSP_cert_to_id', 'OCSP_check_validity', 'OCSP_crl_reason_str', 'OCSP_resp_find_status', 'OCSP_RESPONSE_free', 'OCSP_response_get1_basic', 'OCSP_response_status', 'OCSP_response_status_str', 'OPENSSL_init_ssl', 'OPENSSL_sk_num', 'OPENSSL_sk_pop', 'OPENSSL_sk_pop_free', 'OPENSSL_sk_value', 'OpenSSL_version', 'PEM_read_bio_PrivateKey', 'PEM_read_bio_X509', 'PEM_read_bio_X509_AUX', 'PEM_write_bio_X509', 'PEM_X509_INFO_read_bio', 'PKCS12_free', 'PKCS12_parse', 'PKCS12_PBE_add', 'RAND_bytes', 'RAND_status', 'recv', 'RSA_flags', 'RSA_free', 'SSL_alert_desc_string_long', 'SSL_CIPHER_get_name', 'SSL_connect', 'SSL_ctrl', 'SSL_CTX_add_client_CA', 'SSL_CTX_check_private_key', 'SSL_CTX_ctrl', 'SSL_CTX_free', 'SSL_CTX_get_cert_store', 'SSL_CTX_load_verify_dir', 'SSL_CTX_load_verify_file', 'SSL_CTX_new', 'SSL_CTX_sess_set_new_cb', 'SSL_CTX_set_alpn_protos', 'SSL_CTX_set_cipher_list', 'SSL_CTX_set_ciphersuites', 'SSL_CTX_set_default_passwd_cb', 'SSL_CTX_set_default_passwd_cb_userdata', 'SSL_CTX_set_keylog_callback', 'SSL_CTX_set_msg_callback', 'SSL_CTX_set_next_proto_select_cb', 'SSL_CTX_set_options', 'SSL_CTX_set_post_handshake_auth', 'SSL_CTX_set_verify', 'SSL_CTX_use_certificate', 'SSL_CTX_use_certificate_chain_file', 'SSL_CTX_use_certificate_file', 'SSL_CTX_use_PrivateKey', 'SSL_CTX_use_PrivateKey_file', 'SSL_free', 'SSL_get0_alpn_selected', 'SSL_get1_peer_certificate', 'SSL_get_certificate', 'SSL_get_current_cipher', 'SSL_get_error', 'SSL_get_ex_data', 'SSL_get_peer_cert_chain', 'SSL_get_privatekey', 'SSL_get_shutdown', 'SSL_get_verify_result', 'SSL_get_version', 'SSL_new', 'SSL_pending', 'SSL_read', 'SSL_SESSION_free', 'SSL_set_bio', 'SSL_set_connect_state', 'SSL_set_ex_data', 'SSL_set_fd', 'SSL_set_session', 'SSL_shutdown', 'SSL_write', '__stack_chk_fail', 'strlen', 'strncpy', 'TLS_client_method', 'UI_create_method', 'UI_destroy_method', 'UI_get0_user_data', 'UI_get_input_flags', 'UI_get_string_type', 'UI_method_get_closer', 'UI_method_get_opener', 'UI_method_get_reader', 'UI_method_get_writer', 'UI_method_set_closer', 'UI_method_set_opener', 'UI_method_set_reader', 'UI_method_set_writer', 'UI_OpenSSL', 'UI_set_result', 'X509_check_issued', 'X509_EXTENSION_get_data', 'X509_EXTENSION_get_object', 'X509_free', 'X509_get0_extensions', 'X509_get0_notAfter', 'X509_get0_notBefore', 'X509_get0_signature', 'X509_get_ext_d2i', 'X509_get_issuer_name', 'X509_get_pubkey', 'X509_get_serialNumber', 'X509_get_subject_name', 'X509_get_version', 'X509_get_X509_PUBKEY', 'X509_INFO_free', 'X509_load_crl_file', 'X509_LOOKUP_file', 'X509_NAME_ENTRY_get_data', 'X509_NAME_get_entry', 'X509_NAME_get_index_by_NID', 'X509_NAME_print_ex', 'X509_PUBKEY_get0_param', 'X509_STORE_add_cert', 'X509_STORE_add_crl', 'X509_STORE_add_lookup', 'X509_STORE_set_flags', 'X509V3_EXT_print', 'X509_verify_cert_error_string'] ./curl_o/openssl.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_timeleft' found in ./curl_o/connect.c.o
+Symbol 'Curl_none_false_start' found in ./curl_o/vtls.c.o
+Symbol 'Curl_pin_peer_pubkey' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_addsessionid' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_delsessionid' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_getsessionid' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_getsock' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_init_certinfo' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_push_certinfo_len' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_sessionid_lock' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_sessionid_unlock' found in ./curl_o/vtls.c.o
+Symbol 'curl_slist_append' found in ./curl_o/slist.c.o
+Symbol 'curl_slist_free_all' found in ./curl_o/slist.c.o
+Symbol 'Curl_strerror' found in ./curl_o/strerror.c.o
+Symbol 'Curl_debug' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_cert_hostcheck' found in ./curl_o/hostcheck.c.o
+Symbol 'Curl_socket_check' found in ./curl_o/select.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_tls_keylog_close' found in ./curl_o/keylog.c.o
+Symbol 'Curl_tls_keylog_enabled' found in ./curl_o/keylog.c.o
+Symbol 'Curl_tls_keylog_open' found in ./curl_o/keylog.c.o
+Symbol 'Curl_tls_keylog_write_line' found in ./curl_o/keylog.c.o
+Symbol 'curlx_uztosi' found in ./curl_o/warnless.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strncasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strntolower' found in ./curl_o/strcase.c.o
+Symbol 'Curl_multiuse_state' found in ./curl_o/multi.c.o
+Symbol 'Curl_set_in_callback' found in ./curl_o/multi.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o']
+now handel file, ftp.c.o
+now handle file imports,  ['accept', 'bind', 'Curl_ccalloc', 'Curl_cfree', 'Curl_client_write', 'Curl_closesocket', 'Curl_cmalloc', 'Curl_conncontrol', 'Curl_conn_data_pending', 'Curl_connecthost', 'Curl_connect_ongoing', 'Curl_conninfo_remote', 'Curl_cstrdup', 'curl_easy_strerror', 'Curl_expire', 'Curl_failf', 'Curl_ftp_parselist', 'Curl_ftp_parselist_data_alloc', 'Curl_ftp_parselist_data_free', 'Curl_ftp_parselist_geterror', 'Curl_getdate_capped', 'Curl_gmtime', 'Curl_if2ip', 'Curl_inet_ntop', 'Curl_infof', 'Curl_ipv6_scope', 'Curl_is_connected', 'Curl_isdigit', 'Curl_llist_remove', 'curl_maprintf', 'Curl_month', 'curl_msnprintf', 'Curl_now', 'Curl_pgrsSetDownloadCounter', 'Curl_pgrsSetDownloadSize', 'Curl_pgrsSetUploadCounter', 'Curl_pgrsSetUploadSize', 'Curl_pgrsTime', 'Curl_pgrsUpdate', 'Curl_pp_disconnect', 'Curl_pp_flushsend', 'Curl_pp_getsock', 'Curl_pp_init', 'Curl_pp_readresp', 'Curl_pp_sendf', 'Curl_pp_setup', 'Curl_pp_statemach', 'Curl_pp_state_timeout', 'Curl_printable_address', 'Curl_proxy_connect', 'Curl_proxyCONNECT', 'Curl_range', 'Curl_raw_toupper', 'Curl_resolv', 'Curl_resolver_wait_resolv', 'Curl_resolv_unlock', 'Curl_set_in_callback', 'Curl_setup_transfer', 'Curl_socket', 'Curl_socket_check', 'Curl_SOCKS_getsock', 'Curl_ssl_close', 'Curl_ssl_connect', 'Curl_ssl_shutdown', 'Curl_strcasecompare', 'Curl_strerror', 'Curl_timediff', 'Curl_timeleft', 'Curl_urldecode', 'Curl_wkday', 'curlx_nonblock', 'curlx_sltosi', 'curlx_sotouz', 'curlx_strtoofft', 'curlx_ultous', '__errno_location', 'getsockname', '_GLOBAL_OFFSET_TABLE_', 'inet_pton', '__isoc99_sscanf', 'listen', '__memcpy_chk', '__stack_chk_fail', 'strchr', 'strcpy', 'strlen', 'strncmp', 'strncpy', 'strrchr', 'strstr', 'strtol', 'strtoul'] ./curl_o/ftp.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsSetDownloadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetDownloadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsTime' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsUpdate' found in ./curl_o/progress.c.o
+Symbol 'Curl_closesocket' found in ./curl_o/connect.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_conn_data_pending' found in ./curl_o/connect.c.o
+Symbol 'Curl_connecthost' found in ./curl_o/connect.c.o
+Symbol 'Curl_conninfo_remote' found in ./curl_o/connect.c.o
+Symbol 'Curl_is_connected' found in ./curl_o/connect.c.o
+Symbol 'Curl_socket' found in ./curl_o/connect.c.o
+Symbol 'Curl_timeleft' found in ./curl_o/connect.c.o
+Symbol 'Curl_ssl_close' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_connect' found in ./curl_o/vtls.c.o
+Symbol 'Curl_ssl_shutdown' found in ./curl_o/vtls.c.o
+Symbol 'curlx_nonblock' found in ./curl_o/nonblock.c.o
+Symbol 'Curl_range' found in ./curl_o/curl_range.c.o
+Symbol 'curl_easy_strerror' found in ./curl_o/strerror.c.o
+Symbol 'Curl_strerror' found in ./curl_o/strerror.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+Symbol 'Curl_timediff' found in ./curl_o/timeval.c.o
+Symbol 'curlx_strtoofft' found in ./curl_o/strtoofft.c.o
+Symbol 'Curl_ftp_parselist' found in ./curl_o/ftplistparser.c.o
+Symbol 'Curl_ftp_parselist_data_alloc' found in ./curl_o/ftplistparser.c.o
+Symbol 'Curl_ftp_parselist_data_free' found in ./curl_o/ftplistparser.c.o
+Symbol 'Curl_ftp_parselist_geterror' found in ./curl_o/ftplistparser.c.o
+Symbol 'Curl_inet_ntop' found in ./curl_o/inet_ntop.c.o
+Symbol 'Curl_if2ip' found in ./curl_o/if2ip.c.o
+Symbol 'Curl_ipv6_scope' found in ./curl_o/if2ip.c.o
+Symbol 'Curl_connect_ongoing' found in ./curl_o/http_proxy.c.o
+Symbol 'Curl_proxy_connect' found in ./curl_o/http_proxy.c.o
+Symbol 'Curl_proxyCONNECT' found in ./curl_o/http_proxy.c.o
+Symbol 'Curl_llist_remove' found in ./curl_o/llist.c.o
+Symbol 'Curl_resolver_wait_resolv' found in ./curl_o/asyn-thread.c.o
+Symbol 'Curl_socket_check' found in ./curl_o/select.c.o
+Symbol 'Curl_printable_address' found in ./curl_o/hostip.c.o
+Symbol 'Curl_resolv' found in ./curl_o/hostip.c.o
+Symbol 'Curl_resolv_unlock' found in ./curl_o/hostip.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_setup_transfer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_getdate_capped' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_gmtime' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_month' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_wkday' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_pp_disconnect' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_flushsend' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_getsock' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_init' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_readresp' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_sendf' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_setup' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_statemach' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_state_timeout' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_isdigit' found in ./curl_o/curl_ctype.c.o
+Symbol 'curlx_sltosi' found in ./curl_o/warnless.c.o
+Symbol 'curlx_sotouz' found in ./curl_o/warnless.c.o
+Symbol 'curlx_ultous' found in ./curl_o/warnless.c.o
+Symbol 'Curl_raw_toupper' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_urldecode' found in ./curl_o/escape.c.o
+Symbol 'Curl_expire' found in ./curl_o/multi.c.o
+Symbol 'Curl_set_in_callback' found in ./curl_o/multi.c.o
+Symbol 'Curl_SOCKS_getsock' found in ./curl_o/socks.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o']
+now handel file, smb.c.o
+now handle file imports,  ['Curl_ccalloc', 'Curl_cfree', 'Curl_client_write', 'Curl_cmalloc', 'Curl_conncontrol', 'Curl_cstrdup', 'Curl_failf', 'Curl_fillreadbuffer', 'Curl_get_upload_buffer', 'Curl_ntlm_core_lm_resp', 'Curl_ntlm_core_mk_lm_hash', 'Curl_ntlm_core_mk_nt_hash', 'Curl_pgrsSetDownloadCounter', 'Curl_pgrsSetDownloadSize', 'Curl_pgrsSetUploadCounter', 'Curl_pgrsSetUploadSize', 'Curl_read', 'Curl_read16_be', 'Curl_read16_le', 'Curl_ssl_connect_nonblocking', 'Curl_urldecode', 'Curl_write', 'getpid', '_GLOBAL_OFFSET_TABLE_', 'memcpy', '__stack_chk_fail', 'strchr', 'strcpy', '__strcpy_chk', 'strlen'] ./curl_o/smb.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsSetDownloadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetDownloadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_ssl_connect_nonblocking' found in ./curl_o/vtls.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_read' found in ./curl_o/sendf.c.o
+Symbol 'Curl_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_fillreadbuffer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_get_upload_buffer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_ntlm_core_lm_resp' found in ./curl_o/curl_ntlm_core.c.o
+Symbol 'Curl_ntlm_core_mk_lm_hash' found in ./curl_o/curl_ntlm_core.c.o
+Symbol 'Curl_ntlm_core_mk_nt_hash' found in ./curl_o/curl_ntlm_core.c.o
+Symbol 'Curl_read16_be' found in ./curl_o/curl_endian.c.o
+Symbol 'Curl_read16_le' found in ./curl_o/curl_endian.c.o
+Symbol 'Curl_urldecode' found in ./curl_o/escape.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o']
+now handel file, http_ntlm.c.o
+now handle file imports,  ['Curl_auth_cleanup_ntlm', 'Curl_auth_create_ntlm_type1_message', 'Curl_auth_create_ntlm_type3_message', 'Curl_auth_decode_ntlm_type2_message', 'Curl_base64_decode', 'Curl_base64_encode', 'Curl_bufref_free', 'Curl_bufref_init', 'Curl_bufref_len', 'Curl_bufref_ptr', 'Curl_bufref_set', 'Curl_cfree', 'curl_free', 'Curl_infof', 'Curl_isspace', 'curl_maprintf', 'curl_strnequal', '_GLOBAL_OFFSET_TABLE_', '__stack_chk_fail'] ./curl_o/http_ntlm.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_base64_decode' found in ./curl_o/base64.c.o
+Symbol 'Curl_base64_encode' found in ./curl_o/base64.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_bufref_free' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_init' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_len' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_ptr' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_set' found in ./curl_o/bufref.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_isspace' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_auth_cleanup_ntlm' found in ./curl_o/ntlm.c.o
+Symbol 'Curl_auth_create_ntlm_type1_message' found in ./curl_o/ntlm.c.o
+Symbol 'Curl_auth_create_ntlm_type3_message' found in ./curl_o/ntlm.c.o
+Symbol 'Curl_auth_decode_ntlm_type2_message' found in ./curl_o/ntlm.c.o
+Symbol 'curl_strnequal' found in ./curl_o/strcase.c.o
+Symbol 'curl_free' found in ./curl_o/escape.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o']
+now handel file, tftp.c.o
+now handle file imports,  ['bind', 'Curl_ccalloc', 'Curl_cfree', 'Curl_client_write', 'Curl_conncontrol', 'Curl_failf', 'Curl_fillreadbuffer', 'Curl_infof', 'curl_msnprintf', 'Curl_now', 'Curl_pgrsDone', 'Curl_pgrsSetDownloadCounter', 'Curl_pgrsSetDownloadSize', 'Curl_pgrsSetUploadCounter', 'Curl_pgrsSetUploadSize', 'Curl_pgrsStartNow', 'Curl_pgrsUpdate', 'Curl_raw_toupper', 'Curl_setup_transfer', 'Curl_socket_check', 'Curl_speedcheck', 'Curl_strerror', 'curl_strnequal', 'Curl_timeleft', 'Curl_urldecode', '__errno_location', '_GLOBAL_OFFSET_TABLE_', 'memchr', 'memcpy', 'recvfrom', 'sendto', '__stack_chk_fail', 'strlen', 'strstr', 'strtol', 'time'] ./curl_o/tftp.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsDone' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetDownloadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetDownloadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsStartNow' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsUpdate' found in ./curl_o/progress.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_timeleft' found in ./curl_o/connect.c.o
+Symbol 'Curl_strerror' found in ./curl_o/strerror.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+Symbol 'Curl_socket_check' found in ./curl_o/select.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_fillreadbuffer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_setup_transfer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_raw_toupper' found in ./curl_o/strcase.c.o
+Symbol 'curl_strnequal' found in ./curl_o/strcase.c.o
+Symbol 'Curl_urldecode' found in ./curl_o/escape.c.o
+Symbol 'Curl_speedcheck' found in ./curl_o/speedcheck.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o']
+now handel file, mqtt.c.o
+now handle file imports,  ['Curl_ccalloc', 'Curl_cfree', 'Curl_client_write', 'Curl_cmalloc', 'Curl_debug', 'Curl_failf', 'Curl_infof', 'Curl_memdup', 'Curl_pgrsSetDownloadCounter', 'Curl_pgrsSetDownloadSize', 'Curl_rand_hex', 'Curl_read', 'Curl_urldecode', 'Curl_write', '_GLOBAL_OFFSET_TABLE_', 'memcpy', 'memset', '__stack_chk_fail', 'strlen'] ./curl_o/mqtt.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsSetDownloadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetDownloadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_debug' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_read' found in ./curl_o/sendf.c.o
+Symbol 'Curl_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_rand_hex' found in ./curl_o/rand.c.o
+Symbol 'Curl_memdup' found in ./curl_o/strdup.c.o
+Symbol 'Curl_urldecode' found in ./curl_o/escape.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o']
+now handel file, curl_addrinfo.c.o
+now handle file imports,  ['Curl_ccalloc', 'Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', 'freeaddrinfo', 'getaddrinfo', '_GLOBAL_OFFSET_TABLE_', 'inet_pton', 'memcpy', '__stack_chk_fail', 'strlen'] ./curl_o/curl_addrinfo.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o']
+now handel file, smtp.c.o
+now handle file imports,  ['Curl_bufref_ptr', 'Curl_bufref_set', 'Curl_ccalloc', 'Curl_cfree', 'Curl_checkheaders', 'Curl_client_write', 'Curl_cmalloc', 'Curl_conncontrol', 'Curl_cstrdup', 'Curl_failf', 'Curl_free_idnconverted_hostname', 'Curl_gethostname', 'Curl_idnconvert_hostname', 'Curl_infof', 'Curl_is_ASCII_name', 'Curl_isdigit', 'curl_maprintf', 'Curl_mime_add_header', 'curl_mime_headers', 'Curl_mime_prepare_headers', 'Curl_mime_read', 'Curl_mime_rewind', 'Curl_mime_size', 'Curl_now', 'Curl_pgrsSetDownloadCounter', 'Curl_pgrsSetDownloadSize', 'Curl_pgrsSetUploadCounter', 'Curl_pgrsSetUploadSize', 'Curl_pp_disconnect', 'Curl_pp_flushsend', 'Curl_pp_getsock', 'Curl_pp_init', 'Curl_pp_moredata', 'Curl_pp_readresp', 'Curl_pp_sendf', 'Curl_pp_setup', 'Curl_pp_statemach', 'Curl_sasl_can_authenticate', 'Curl_sasl_cleanup', 'Curl_sasl_continue', 'Curl_sasl_decode_mech', 'Curl_sasl_init', 'Curl_sasl_parse_url_auth_option', 'Curl_sasl_start', 'Curl_setup_transfer', 'Curl_ssl_connect_nonblocking', 'Curl_strncasecompare', 'Curl_urldecode', 'Curl_write', 'curlx_sltosi', '_GLOBAL_OFFSET_TABLE_', 'memcpy', '__stack_chk_fail', 'strchr', 'strcmp', 'strlen', 'strtol'] ./curl_o/smtp.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsSetDownloadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetDownloadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_ssl_connect_nonblocking' found in ./curl_o/vtls.c.o
+Symbol 'Curl_free_idnconverted_hostname' found in ./curl_o/url.c.o
+Symbol 'Curl_idnconvert_hostname' found in ./curl_o/url.c.o
+Symbol 'Curl_is_ASCII_name' found in ./curl_o/url.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+Symbol 'Curl_sasl_can_authenticate' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_cleanup' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_continue' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_decode_mech' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_init' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_parse_url_auth_option' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_start' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_bufref_ptr' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_set' found in ./curl_o/bufref.c.o
+Symbol 'Curl_mime_add_header' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_headers' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_prepare_headers' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_read' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_rewind' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_size' found in ./curl_o/mime.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_checkheaders' found in ./curl_o/transfer.c.o
+Symbol 'Curl_setup_transfer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_pp_disconnect' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_flushsend' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_getsock' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_init' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_moredata' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_readresp' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_sendf' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_setup' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_statemach' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_isdigit' found in ./curl_o/curl_ctype.c.o
+Symbol 'curlx_sltosi' found in ./curl_o/warnless.c.o
+Symbol 'Curl_strncasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_gethostname' found in ./curl_o/curl_gethostname.c.o
+Symbol 'Curl_urldecode' found in ./curl_o/escape.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o']
+now handel file, pop3.c.o
+now handle file imports,  ['Curl_bufref_ptr', 'Curl_bufref_set', 'Curl_ccalloc', 'Curl_cfree', 'Curl_client_write', 'Curl_conncontrol', 'Curl_DIGEST_MD5', 'Curl_failf', 'Curl_infof', 'Curl_MD5_final', 'Curl_MD5_init', 'Curl_MD5_update', 'curl_msnprintf', 'Curl_pgrsSetDownloadCounter', 'Curl_pgrsSetDownloadSize', 'Curl_pgrsSetUploadCounter', 'Curl_pgrsSetUploadSize', 'Curl_pp_disconnect', 'Curl_pp_flushsend', 'Curl_pp_getsock', 'Curl_pp_init', 'Curl_pp_moredata', 'Curl_pp_readresp', 'Curl_pp_sendf', 'Curl_pp_setup', 'Curl_pp_statemach', 'Curl_sasl_can_authenticate', 'Curl_sasl_cleanup', 'Curl_sasl_continue', 'Curl_sasl_decode_mech', 'Curl_sasl_init', 'Curl_sasl_parse_url_auth_option', 'Curl_sasl_start', 'Curl_setup_transfer', 'Curl_ssl_connect_nonblocking', 'Curl_strncasecompare', 'Curl_urldecode', 'curlx_uztoui', '_GLOBAL_OFFSET_TABLE_', 'memcpy', '__stack_chk_fail', 'strchr', 'strlen'] ./curl_o/pop3.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsSetDownloadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetDownloadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_ssl_connect_nonblocking' found in ./curl_o/vtls.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_sasl_can_authenticate' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_cleanup' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_continue' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_decode_mech' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_init' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_parse_url_auth_option' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_start' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_bufref_ptr' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_set' found in ./curl_o/bufref.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_DIGEST_MD5' found in ./curl_o/md5.c.o
+Symbol 'Curl_MD5_final' found in ./curl_o/md5.c.o
+Symbol 'Curl_MD5_init' found in ./curl_o/md5.c.o
+Symbol 'Curl_MD5_update' found in ./curl_o/md5.c.o
+Symbol 'Curl_setup_transfer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_pp_disconnect' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_flushsend' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_getsock' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_init' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_moredata' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_readresp' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_sendf' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_setup' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_statemach' found in ./curl_o/pingpong.c.o
+Symbol 'curlx_uztoui' found in ./curl_o/warnless.c.o
+Symbol 'Curl_strncasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_urldecode' found in ./curl_o/escape.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o']
+now handel file, rtsp.c.o
+now handle file imports,  ['Curl_add_custom_headers', 'Curl_add_timecondition', 'Curl_buffer_send', 'Curl_ccalloc', 'Curl_cfree', 'Curl_checkheaders', 'Curl_cmalloc', 'Curl_connalive', 'Curl_dyn_add', 'Curl_dyn_addf', 'Curl_dyn_addn', 'Curl_dyn_init', 'Curl_failf', 'Curl_http_connect', 'Curl_http_done', 'Curl_http_output_auth', 'Curl_infof', 'Curl_isspace', 'curl_maprintf', 'Curl_pgrsSetUploadCounter', 'Curl_pgrsUpdate', 'Curl_saferealloc', 'Curl_set_in_callback', 'Curl_setup_transfer', 'Curl_socket_check', 'curl_strnequal', '_GLOBAL_OFFSET_TABLE_', '__isoc99_sscanf', 'memcpy', '__stack_chk_fail', 'strlen', 'strncmp'] ./curl_o/rtsp.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsSetUploadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsUpdate' found in ./curl_o/progress.c.o
+Symbol 'Curl_connalive' found in ./curl_o/connect.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_add_custom_headers' found in ./curl_o/http.c.o
+Symbol 'Curl_add_timecondition' found in ./curl_o/http.c.o
+Symbol 'Curl_buffer_send' found in ./curl_o/http.c.o
+Symbol 'Curl_http_connect' found in ./curl_o/http.c.o
+Symbol 'Curl_http_done' found in ./curl_o/http.c.o
+Symbol 'Curl_http_output_auth' found in ./curl_o/http.c.o
+Symbol 'Curl_saferealloc' found in ./curl_o/strdup.c.o
+Symbol 'Curl_socket_check' found in ./curl_o/select.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_checkheaders' found in ./curl_o/transfer.c.o
+Symbol 'Curl_setup_transfer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_isspace' found in ./curl_o/curl_ctype.c.o
+Symbol 'curl_strnequal' found in ./curl_o/strcase.c.o
+Symbol 'Curl_set_in_callback' found in ./curl_o/multi.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o']
+now handel file, file.c.o
+now handle file imports,  ['close', 'Curl_ccalloc', 'Curl_cfree', 'Curl_client_write', 'Curl_failf', 'Curl_fillreadbuffer', 'Curl_gmtime', 'Curl_meets_timecondition', 'Curl_month', 'curl_msnprintf', 'Curl_now', 'Curl_pgrsSetDownloadCounter', 'Curl_pgrsSetDownloadSize', 'Curl_pgrsSetUploadCounter', 'Curl_pgrsSetUploadSize', 'Curl_pgrsStartNow', 'Curl_pgrsTime', 'Curl_pgrsUpdate', 'Curl_range', 'Curl_speedcheck', 'Curl_urldecode', 'Curl_wkday', 'curlx_sotouz', 'fstat64', '_GLOBAL_OFFSET_TABLE_', 'lseek64', 'memchr', 'open64', 'read', '__stack_chk_fail', 'strchr', 'strlen', 'write'] ./curl_o/file.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsSetDownloadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetDownloadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsStartNow' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsTime' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsUpdate' found in ./curl_o/progress.c.o
+Symbol 'Curl_range' found in ./curl_o/curl_range.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_fillreadbuffer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_meets_timecondition' found in ./curl_o/transfer.c.o
+Symbol 'Curl_gmtime' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_month' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_wkday' found in ./curl_o/parsedate.c.o
+Symbol 'curlx_sotouz' found in ./curl_o/warnless.c.o
+Symbol 'Curl_urldecode' found in ./curl_o/escape.c.o
+Symbol 'Curl_speedcheck' found in ./curl_o/speedcheck.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o']
+now handel file, gopher.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_client_write', 'Curl_conncontrol', 'Curl_cstrdup', 'Curl_failf', 'curl_maprintf', 'Curl_setup_transfer', 'Curl_socket_check', 'Curl_ssl_connect', 'Curl_timeleft', 'Curl_urldecode', 'Curl_write', 'curlx_uztosz', '_GLOBAL_OFFSET_TABLE_', '__stack_chk_fail', 'strlen'] ./curl_o/gopher.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_timeleft' found in ./curl_o/connect.c.o
+Symbol 'Curl_ssl_connect' found in ./curl_o/vtls.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_socket_check' found in ./curl_o/select.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_setup_transfer' found in ./curl_o/transfer.c.o
+Symbol 'curlx_uztosz' found in ./curl_o/warnless.c.o
+Symbol 'Curl_urldecode' found in ./curl_o/escape.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o']
+now handel file, dict.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_cmalloc', 'Curl_debug', 'Curl_failf', 'Curl_infof', 'curl_mvaprintf', 'Curl_setup_transfer', 'Curl_strncasecompare', 'Curl_urldecode', 'Curl_write', '_GLOBAL_OFFSET_TABLE_', '__stack_chk_fail', 'strchr', 'strlen'] ./curl_o/dict.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_debug' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_write' found in ./curl_o/sendf.c.o
+Symbol 'curl_mvaprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_setup_transfer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_strncasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_urldecode' found in ./curl_o/escape.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o']
+now handel file, telnet.c.o
+now handle file imports,  ['Curl_ccalloc', 'Curl_cfree', 'Curl_client_write', 'Curl_cmalloc', 'Curl_failf', 'Curl_infof', 'curl_msnprintf', 'Curl_now', 'Curl_pgrsSetDownloadCounter', 'Curl_pgrsSetUploadCounter', 'Curl_pgrsUpdate', 'Curl_poll', 'Curl_read', 'Curl_setup_transfer', 'curl_slist_append', 'curl_slist_free_all', 'Curl_strcasecompare', 'Curl_timediff', 'Curl_write', '__errno_location', 'fileno', '_GLOBAL_OFFSET_TABLE_', '__isoc99_sscanf', 'read', 'send', '__stack_chk_fail', 'strlen', 'strncpy', 'strtol'] ./curl_o/telnet.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsSetDownloadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsUpdate' found in ./curl_o/progress.c.o
+Symbol 'curl_slist_append' found in ./curl_o/slist.c.o
+Symbol 'curl_slist_free_all' found in ./curl_o/slist.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_read' found in ./curl_o/sendf.c.o
+Symbol 'Curl_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+Symbol 'Curl_timediff' found in ./curl_o/timeval.c.o
+Symbol 'Curl_poll' found in ./curl_o/select.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_setup_transfer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o']
+now handel file, netrc.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_cstrdup', 'curl_getenv', 'curl_maprintf', 'Curl_strcasecompare', 'Curl_timestrcmp', 'fclose', 'fgets', 'fopen64', 'geteuid', 'getpwuid_r', '_GLOBAL_OFFSET_TABLE_', '__stack_chk_fail', 'strtok_r'] ./curl_o/netrc.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'curl_getenv' found in ./curl_o/getenv.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_timestrcmp' found in ./curl_o/strcase.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o']
+now handel file, imap.c.o
+now handle file imports,  ['Curl_bufref_ptr', 'Curl_bufref_set', 'Curl_ccalloc', 'Curl_cfree', 'Curl_checkheaders', 'Curl_client_write', 'Curl_cmalloc', 'Curl_conncontrol', 'Curl_cstrdup', 'Curl_dyn_addf', 'Curl_dyn_free', 'Curl_dyn_init', 'Curl_dyn_ptr', 'Curl_dyn_reset', 'Curl_failf', 'Curl_infof', 'Curl_isdigit', 'Curl_mime_add_header', 'curl_mime_headers', 'Curl_mime_prepare_headers', 'Curl_mime_read', 'Curl_mime_rewind', 'Curl_mime_size', 'curl_msnprintf', 'Curl_pgrsSetDownloadCounter', 'Curl_pgrsSetDownloadSize', 'Curl_pgrsSetUploadCounter', 'Curl_pgrsSetUploadSize', 'Curl_pp_disconnect', 'Curl_pp_flushsend', 'Curl_pp_getsock', 'Curl_pp_init', 'Curl_pp_moredata', 'Curl_pp_readresp', 'Curl_pp_sendf', 'Curl_pp_setup', 'Curl_pp_statemach', 'Curl_pp_vsendf', 'Curl_sasl_can_authenticate', 'Curl_sasl_cleanup', 'Curl_sasl_continue', 'Curl_sasl_decode_mech', 'Curl_sasl_init', 'Curl_sasl_parse_url_auth_option', 'Curl_sasl_start', 'Curl_setup_transfer', 'Curl_ssl_connect_nonblocking', 'Curl_strcasecompare', 'Curl_strncasecompare', 'Curl_urldecode', 'curl_url_get', 'curlx_sltosi', 'curlx_strtoofft', '_GLOBAL_OFFSET_TABLE_', '__isoc99_sscanf', 'memcmp', 'memmove', '__stack_chk_fail', 'strlen'] ./curl_o/imap.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsSetDownloadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetDownloadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadCounter' found in ./curl_o/progress.c.o
+Symbol 'Curl_pgrsSetUploadSize' found in ./curl_o/progress.c.o
+Symbol 'Curl_conncontrol' found in ./curl_o/connect.c.o
+Symbol 'Curl_ssl_connect_nonblocking' found in ./curl_o/vtls.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'curlx_strtoofft' found in ./curl_o/strtoofft.c.o
+Symbol 'Curl_sasl_can_authenticate' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_cleanup' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_continue' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_decode_mech' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_init' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_parse_url_auth_option' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_sasl_start' found in ./curl_o/curl_sasl.c.o
+Symbol 'Curl_bufref_ptr' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_set' found in ./curl_o/bufref.c.o
+Symbol 'Curl_mime_add_header' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_headers' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_prepare_headers' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_read' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_rewind' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_size' found in ./curl_o/mime.c.o
+Symbol 'curl_url_get' found in ./curl_o/urlapi.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_checkheaders' found in ./curl_o/transfer.c.o
+Symbol 'Curl_setup_transfer' found in ./curl_o/transfer.c.o
+Symbol 'Curl_pp_disconnect' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_flushsend' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_getsock' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_init' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_moredata' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_readresp' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_sendf' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_setup' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_statemach' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_pp_vsendf' found in ./curl_o/pingpong.c.o
+Symbol 'Curl_isdigit' found in ./curl_o/curl_ctype.c.o
+Symbol 'curlx_sltosi' found in ./curl_o/warnless.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strncasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_urldecode' found in ./curl_o/escape.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o']
+now handel file, fopen.c.o
+now handle file imports,  ['close', 'Curl_cfree', 'curl_maprintf', 'Curl_rand_hex', 'fchmod', 'fdopen', 'fopen64', 'fstat64', '_GLOBAL_OFFSET_TABLE_', 'open64', '__stack_chk_fail', 'stat64', 'unlink'] ./curl_o/fopen.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_rand_hex' found in ./curl_o/rand.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o']
+now handel file, rename.c.o
+now handle file imports,  ['rename'] ./curl_o/rename.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o']
+now handel file, curl_get_line.c.o
+now handle file imports,  ['__fgets_chk', 'strlen'] ./curl_o/curl_get_line.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o']
+now handel file, hostasyn.c.o
+now handle file imports,  ['Curl_cache_addr', 'Curl_freeaddrinfo', 'Curl_resolver_getaddrinfo', 'Curl_share_lock', 'Curl_share_unlock'] ./curl_o/hostasyn.c.o
+Symbol 'Curl_share_lock' found in ./curl_o/share.c.o
+Symbol 'Curl_share_unlock' found in ./curl_o/share.c.o
+Symbol 'Curl_freeaddrinfo' found in ./curl_o/curl_addrinfo.c.o
+Symbol 'Curl_resolver_getaddrinfo' found in ./curl_o/asyn-thread.c.o
+Symbol 'Curl_cache_addr' found in ./curl_o/hostip.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o']
+now handel file, curl_threads.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_cmalloc', '_GLOBAL_OFFSET_TABLE_', 'pthread_create', 'pthread_detach', 'pthread_join'] ./curl_o/curl_threads.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o']
+now handel file, digest.c.o
+now handle file imports,  ['Curl_auth_build_spn', 'Curl_base64_encode', 'Curl_bufref_len', 'Curl_bufref_ptr', 'Curl_bufref_set', 'Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', 'Curl_DIGEST_MD5', 'curl_free', 'Curl_isspace', 'curl_maprintf', 'Curl_MD5_final', 'Curl_MD5_init', 'Curl_md5it', 'Curl_MD5_update', 'curl_msnprintf', 'Curl_rand_hex', 'Curl_sha256it', 'Curl_strcasecompare', 'curlx_uztoui', '_GLOBAL_OFFSET_TABLE_', '__stack_chk_fail', 'strlen', 'strstr', 'strtok_r'] ./curl_o/digest.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_sha256it' found in ./curl_o/sha256.c.o
+Symbol 'Curl_base64_encode' found in ./curl_o/base64.c.o
+Symbol 'Curl_rand_hex' found in ./curl_o/rand.c.o
+Symbol 'Curl_bufref_len' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_ptr' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_set' found in ./curl_o/bufref.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_DIGEST_MD5' found in ./curl_o/md5.c.o
+Symbol 'Curl_MD5_final' found in ./curl_o/md5.c.o
+Symbol 'Curl_MD5_init' found in ./curl_o/md5.c.o
+Symbol 'Curl_md5it' found in ./curl_o/md5.c.o
+Symbol 'Curl_MD5_update' found in ./curl_o/md5.c.o
+Symbol 'Curl_auth_build_spn' found in ./curl_o/vauth.c.o
+Symbol 'Curl_isspace' found in ./curl_o/curl_ctype.c.o
+Symbol 'curlx_uztoui' found in ./curl_o/warnless.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'curl_free' found in ./curl_o/escape.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o']
+now handel file, strtoofft.c.o
+now handle file imports,  ['Curl_isspace', '__errno_location', '__stack_chk_fail', 'strtol'] ./curl_o/strtoofft.c.o
+Symbol 'Curl_isspace' found in ./curl_o/curl_ctype.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o']
+now handel file, curl_memrchr.c.o
+now handle file imports,  [] ./curl_o/curl_memrchr.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o']
+now handel file, hostip6.c.o
+now handle file imports,  ['Curl_ipv6works'] ./curl_o/hostip6.c.o
+Symbol 'Curl_ipv6works' found in ./curl_o/hostip.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o']
+now handel file, doh.c.o
+now handle file imports,  ['Curl_cache_addr', 'Curl_ccalloc', 'Curl_cfree', 'Curl_close', 'Curl_dyn_add', 'Curl_dyn_addn', 'Curl_dyn_free', 'Curl_dyn_init', 'Curl_dyn_len', 'Curl_dyn_ptr', 'Curl_dyn_uptr', 'curl_easy_setopt', 'curl_easy_strerror', 'Curl_expire', 'Curl_failf', 'Curl_freeaddrinfo', 'Curl_infof', 'Curl_ipv6works', 'curl_msnprintf', 'curl_multi_add_handle', 'curl_multi_remove_handle', 'Curl_open', 'Curl_share_lock', 'Curl_share_unlock', 'curl_slist_append', 'curl_slist_free_all', 'Curl_timeleft', '_GLOBAL_OFFSET_TABLE_', 'memcpy', '__stack_chk_fail', 'stderr', 'strchr', 'strlen'] ./curl_o/doh.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_timeleft' found in ./curl_o/connect.c.o
+Symbol 'Curl_close' found in ./curl_o/url.c.o
+Symbol 'Curl_open' found in ./curl_o/url.c.o
+Symbol 'curl_slist_append' found in ./curl_o/slist.c.o
+Symbol 'curl_slist_free_all' found in ./curl_o/slist.c.o
+Symbol 'Curl_share_lock' found in ./curl_o/share.c.o
+Symbol 'Curl_share_unlock' found in ./curl_o/share.c.o
+Symbol 'curl_easy_strerror' found in ./curl_o/strerror.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_freeaddrinfo' found in ./curl_o/curl_addrinfo.c.o
+Symbol 'curl_easy_setopt' found in ./curl_o/setopt.c.o
+Symbol 'Curl_cache_addr' found in ./curl_o/hostip.c.o
+Symbol 'Curl_ipv6works' found in ./curl_o/hostip.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_expire' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_add_handle' found in ./curl_o/multi.c.o
+Symbol 'curl_multi_remove_handle' found in ./curl_o/multi.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o']
+now handel file, http_chunks.c.o
+now handle file imports,  ['Curl_client_write', 'Curl_dyn_add', 'Curl_dyn_addn', 'Curl_dyn_init', 'Curl_dyn_len', 'Curl_dyn_ptr', 'Curl_dyn_reset', 'Curl_isxdigit', 'Curl_unencode_write', 'curlx_sotouz', 'curlx_strtoofft', '__stack_chk_fail'] ./curl_o/http_chunks.c.o
+Symbol 'Curl_unencode_write' found in ./curl_o/content_encoding.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'curlx_strtoofft' found in ./curl_o/strtoofft.c.o
+Symbol 'Curl_isxdigit' found in ./curl_o/curl_ctype.c.o
+Symbol 'curlx_sotouz' found in ./curl_o/warnless.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o']
+now handel file, http_aws_sigv4.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_checkheaders', 'Curl_cmalloc', 'Curl_cstrdup', 'Curl_gmtime', 'Curl_hmacit', 'Curl_HMAC_SHA256', 'Curl_http_method', 'Curl_infof', 'curl_maprintf', 'Curl_memdup', 'curl_msnprintf', 'Curl_raw_toupper', 'Curl_sha256it', 'Curl_strntolower', 'Curl_strntoupper', '_GLOBAL_OFFSET_TABLE_', '__stack_chk_fail', 'strchr', 'strftime', 'strlen', 'time'] ./curl_o/http_aws_sigv4.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_HMAC_SHA256' found in ./curl_o/sha256.c.o
+Symbol 'Curl_sha256it' found in ./curl_o/sha256.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_http_method' found in ./curl_o/http.c.o
+Symbol 'Curl_memdup' found in ./curl_o/strdup.c.o
+Symbol 'Curl_hmacit' found in ./curl_o/hmac.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_checkheaders' found in ./curl_o/transfer.c.o
+Symbol 'Curl_gmtime' found in ./curl_o/parsedate.c.o
+Symbol 'Curl_raw_toupper' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strntolower' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strntoupper' found in ./curl_o/strcase.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o', 'hmac.c.o']
+now handel file, formdata.c.o
+now handle file imports,  ['Curl_ccalloc', 'Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', 'Curl_memdup', 'curl_mime_addpart', 'Curl_mime_cleanpart', 'Curl_mime_contenttype', 'curl_mime_data', 'curl_mime_data_cb', 'curl_mime_filedata', 'curl_mime_filename', 'curl_mime_headers', 'curl_mime_init', 'Curl_mime_initpart', 'curl_mime_name', 'Curl_mime_prepare_headers', 'Curl_mime_read', 'curl_mime_subparts', 'curl_mime_type', 'fread', 'fseek', '_GLOBAL_OFFSET_TABLE_', 'memcpy', '__stack_chk_fail', 'stdin', 'strlen'] ./curl_o/formdata.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'curl_mime_addpart' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_cleanpart' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_contenttype' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_data' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_data_cb' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_filedata' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_filename' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_headers' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_init' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_initpart' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_name' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_prepare_headers' found in ./curl_o/mime.c.o
+Symbol 'Curl_mime_read' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_subparts' found in ./curl_o/mime.c.o
+Symbol 'curl_mime_type' found in ./curl_o/mime.c.o
+Symbol 'Curl_memdup' found in ./curl_o/strdup.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o', 'hmac.c.o']
+now handel file, ntlm.c.o
+now handle file imports,  ['Curl_bufref_len', 'Curl_bufref_memdup', 'Curl_bufref_ptr', 'Curl_bufref_set', 'Curl_cfree', 'Curl_cmalloc', 'Curl_failf', 'curl_free', 'Curl_gethostname', 'Curl_infof', 'curl_maprintf', 'curl_msnprintf', 'Curl_ntlm_core_lm_resp', 'Curl_ntlm_core_mk_lm_hash', 'Curl_ntlm_core_mk_lmv2_resp', 'Curl_ntlm_core_mk_nt_hash', 'Curl_ntlm_core_mk_ntlmv2_hash', 'Curl_ntlm_core_mk_ntlmv2_resp', 'Curl_rand', 'Curl_read16_le', 'Curl_read32_le', '_GLOBAL_OFFSET_TABLE_', 'memcpy', '__stack_chk_fail', 'strchr', 'strlen'] ./curl_o/ntlm.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_rand' found in ./curl_o/rand.c.o
+Symbol 'Curl_bufref_len' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_memdup' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_ptr' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_set' found in ./curl_o/bufref.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_ntlm_core_lm_resp' found in ./curl_o/curl_ntlm_core.c.o
+Symbol 'Curl_ntlm_core_mk_lm_hash' found in ./curl_o/curl_ntlm_core.c.o
+Symbol 'Curl_ntlm_core_mk_lmv2_resp' found in ./curl_o/curl_ntlm_core.c.o
+Symbol 'Curl_ntlm_core_mk_nt_hash' found in ./curl_o/curl_ntlm_core.c.o
+Symbol 'Curl_ntlm_core_mk_ntlmv2_hash' found in ./curl_o/curl_ntlm_core.c.o
+Symbol 'Curl_ntlm_core_mk_ntlmv2_resp' found in ./curl_o/curl_ntlm_core.c.o
+Symbol 'Curl_read16_le' found in ./curl_o/curl_endian.c.o
+Symbol 'Curl_read32_le' found in ./curl_o/curl_endian.c.o
+Symbol 'Curl_gethostname' found in ./curl_o/curl_gethostname.c.o
+Symbol 'curl_free' found in ./curl_o/escape.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o', 'hmac.c.o']
+now handel file, fileinfo.c.o
+now handle file imports,  ['Curl_ccalloc', 'Curl_cfree', '_GLOBAL_OFFSET_TABLE_'] ./curl_o/fileinfo.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+found files:  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o', 'hmac.c.o']
+a round ends! ['easy.c.o', 'slist.c.o', 'share.c.o', 'strerror.c.o', 'version.c.o', 'setopt.c.o', 'mime.c.o', 'urlapi.c.o', 'getenv.c.o', 'mprintf.c.o', 'parsedate.c.o', 'strcase.c.o', 'escape.c.o', 'multi.c.o', 'getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o', 'progress.c.o', 'nonblock.c.o', 'timeval.c.o', 'http.c.o', 'splay.c.o', 'http_proxy.c.o', 'llist.c.o', 'select.c.o', 'transfer.c.o', 'socketpair.c.o', 'wildcard.c.o', 'speedcheck.c.o', 'socks.c.o', 'if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o', 'fileinfo.c.o', 'hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o', 'hmac.c.o']
+current files.  ['hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o', 'hmac.c.o']
+now handel file, hostcheck.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_cstrdup', 'Curl_host_is_ipnum', 'Curl_strcasecompare', 'Curl_strncasecompare', '_GLOBAL_OFFSET_TABLE_', 'strchr', 'strlen'] ./curl_o/hostcheck.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_host_is_ipnum' found in ./curl_o/hostip.c.o
+Symbol 'Curl_strcasecompare' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strncasecompare' found in ./curl_o/strcase.c.o
+found files:  []
+now handel file, keylog.c.o
+now handle file imports,  ['Curl_cfree', 'curl_getenv', 'fclose', 'fopen64', 'fputs', '_GLOBAL_OFFSET_TABLE_', '__memcpy_chk', 'setvbuf', '__stack_chk_fail', 'strlen'] ./curl_o/keylog.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'curl_getenv' found in ./curl_o/getenv.c.o
+found files:  []
+now handel file, curl_range.c.o
+now handle file imports,  ['Curl_isspace', 'curlx_strtoofft', '__stack_chk_fail'] ./curl_o/curl_range.c.o
+Symbol 'curlx_strtoofft' found in ./curl_o/strtoofft.c.o
+Symbol 'Curl_isspace' found in ./curl_o/curl_ctype.c.o
+found files:  []
+now handel file, ftplistparser.c.o
+now handle file imports,  ['Curl_ccalloc', 'Curl_cfree', 'Curl_cmalloc', 'Curl_crealloc', 'Curl_fileinfo_alloc', 'Curl_fileinfo_cleanup', 'Curl_fnmatch', 'Curl_isalnum', 'Curl_isdigit', 'Curl_isspace', 'Curl_llist_insert_next', 'Curl_set_in_callback', 'curlx_strtoofft', '_GLOBAL_OFFSET_TABLE_', '__stack_chk_fail', 'strchr', 'strcmp', 'strncmp', 'strstr', 'strtol'] ./curl_o/ftplistparser.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_crealloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_fnmatch' found in ./curl_o/curl_fnmatch.c.o
+Symbol 'curlx_strtoofft' found in ./curl_o/strtoofft.c.o
+Symbol 'Curl_fileinfo_alloc' found in ./curl_o/fileinfo.c.o
+Symbol 'Curl_fileinfo_cleanup' found in ./curl_o/fileinfo.c.o
+Symbol 'Curl_llist_insert_next' found in ./curl_o/llist.c.o
+Symbol 'Curl_isalnum' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isdigit' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isspace' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_set_in_callback' found in ./curl_o/multi.c.o
+found files:  ['curl_fnmatch.c.o']
+now handel file, pingpong.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_client_write', 'Curl_cmalloc', 'Curl_debug', 'Curl_dyn_addn', 'Curl_dyn_free', 'Curl_dyn_init', 'Curl_dyn_len', 'Curl_dyn_ptr', 'Curl_dyn_reset', 'Curl_dyn_vaddf', 'Curl_failf', 'Curl_infof', 'Curl_now', 'Curl_pgrsUpdate', 'Curl_read', 'Curl_socket_check', 'Curl_speedcheck', 'Curl_ssl_data_pending', 'Curl_timediff', 'Curl_write', '_GLOBAL_OFFSET_TABLE_', 'memcpy', 'memmove', '__stack_chk_fail'] ./curl_o/pingpong.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_pgrsUpdate' found in ./curl_o/progress.c.o
+Symbol 'Curl_ssl_data_pending' found in ./curl_o/vtls.c.o
+Symbol 'Curl_client_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_debug' found in ./curl_o/sendf.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_infof' found in ./curl_o/sendf.c.o
+Symbol 'Curl_read' found in ./curl_o/sendf.c.o
+Symbol 'Curl_write' found in ./curl_o/sendf.c.o
+Symbol 'Curl_now' found in ./curl_o/timeval.c.o
+Symbol 'Curl_timediff' found in ./curl_o/timeval.c.o
+Symbol 'Curl_socket_check' found in ./curl_o/select.c.o
+Symbol 'Curl_speedcheck' found in ./curl_o/speedcheck.c.o
+found files:  ['curl_fnmatch.c.o']
+now handel file, curl_ntlm_core.c.o
+now handle file imports,  ['Curl_ccalloc', 'Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', 'Curl_hmacit', 'Curl_HMAC_MD5', 'Curl_md4it', 'curl_msnprintf', 'Curl_raw_toupper', 'Curl_strntoupper', 'DES_ecb_encrypt', 'DES_set_key_unchecked', 'DES_set_odd_parity', '_GLOBAL_OFFSET_TABLE_', 'memcpy', '__stack_chk_fail', 'strlen', 'time'] ./curl_o/curl_ntlm_core.c.o
+Symbol 'Curl_ccalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_cstrdup' found in ./curl_o/easy.c.o
+Symbol 'Curl_md4it' found in ./curl_o/md4.c.o
+Symbol 'Curl_hmacit' found in ./curl_o/hmac.c.o
+Symbol 'curl_msnprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_HMAC_MD5' found in ./curl_o/md5.c.o
+Symbol 'Curl_raw_toupper' found in ./curl_o/strcase.c.o
+Symbol 'Curl_strntoupper' found in ./curl_o/strcase.c.o
+found files:  ['curl_fnmatch.c.o', 'md4.c.o']
+now handel file, curl_endian.c.o
+now handle file imports,  [] ./curl_o/curl_endian.c.o
+found files:  ['curl_fnmatch.c.o', 'md4.c.o']
+now handel file, bufref.c.o
+now handle file imports,  ['Curl_cmalloc', 'curl_free', '_GLOBAL_OFFSET_TABLE_', 'memcpy'] ./curl_o/bufref.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'curl_free' found in ./curl_o/escape.c.o
+found files:  ['curl_fnmatch.c.o', 'md4.c.o']
+now handel file, curl_sasl.c.o
+now handle file imports,  ['Curl_auth_cleanup_ntlm', 'Curl_auth_create_cram_md5_message', 'Curl_auth_create_digest_md5_message', 'Curl_auth_create_external_message', 'Curl_auth_create_login_message', 'Curl_auth_create_ntlm_type1_message', 'Curl_auth_create_ntlm_type3_message', 'Curl_auth_create_oauth_bearer_message', 'Curl_auth_create_plain_message', 'Curl_auth_create_xoauth_bearer_message', 'Curl_auth_decode_ntlm_type2_message', 'Curl_auth_is_digest_supported', 'Curl_auth_is_ntlm_supported', 'Curl_base64_decode', 'Curl_base64_encode', 'Curl_bufref_free', 'Curl_bufref_init', 'Curl_bufref_len', 'Curl_bufref_ptr', 'Curl_bufref_set', 'Curl_failf', 'curl_free', 'Curl_isdigit', 'Curl_isupper', '_GLOBAL_OFFSET_TABLE_', 'memcmp', '__stack_chk_fail', 'strlen', 'strncmp'] ./curl_o/curl_sasl.c.o
+Symbol 'Curl_auth_create_digest_md5_message' found in ./curl_o/digest.c.o
+Symbol 'Curl_auth_is_digest_supported' found in ./curl_o/digest.c.o
+Symbol 'Curl_auth_create_external_message' found in ./curl_o/cleartext.c.o
+Symbol 'Curl_auth_create_login_message' found in ./curl_o/cleartext.c.o
+Symbol 'Curl_auth_create_plain_message' found in ./curl_o/cleartext.c.o
+Symbol 'Curl_auth_create_cram_md5_message' found in ./curl_o/cram.c.o
+Symbol 'Curl_base64_decode' found in ./curl_o/base64.c.o
+Symbol 'Curl_base64_encode' found in ./curl_o/base64.c.o
+Symbol 'Curl_failf' found in ./curl_o/sendf.c.o
+Symbol 'Curl_bufref_free' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_init' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_len' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_ptr' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_set' found in ./curl_o/bufref.c.o
+Symbol 'Curl_isdigit' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isupper' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_auth_cleanup_ntlm' found in ./curl_o/ntlm.c.o
+Symbol 'Curl_auth_create_ntlm_type1_message' found in ./curl_o/ntlm.c.o
+Symbol 'Curl_auth_create_ntlm_type3_message' found in ./curl_o/ntlm.c.o
+Symbol 'Curl_auth_decode_ntlm_type2_message' found in ./curl_o/ntlm.c.o
+Symbol 'Curl_auth_is_ntlm_supported' found in ./curl_o/ntlm.c.o
+Symbol 'Curl_auth_create_oauth_bearer_message' found in ./curl_o/oauth2.c.o
+Symbol 'Curl_auth_create_xoauth_bearer_message' found in ./curl_o/oauth2.c.o
+Symbol 'curl_free' found in ./curl_o/escape.c.o
+found files:  ['curl_fnmatch.c.o', 'md4.c.o', 'cleartext.c.o', 'cram.c.o', 'oauth2.c.o']
+now handel file, curl_gethostname.c.o
+now handle file imports,  ['gethostname', 'strchr'] ./curl_o/curl_gethostname.c.o
+found files:  ['curl_fnmatch.c.o', 'md4.c.o', 'cleartext.c.o', 'cram.c.o', 'oauth2.c.o']
+now handel file, md5.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_cmalloc', 'curlx_uztoui', '_GLOBAL_OFFSET_TABLE_', 'MD5_Final', 'MD5_Init', 'MD5_Update', '__stack_chk_fail'] ./curl_o/md5.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'curlx_uztoui' found in ./curl_o/warnless.c.o
+found files:  ['curl_fnmatch.c.o', 'md4.c.o', 'cleartext.c.o', 'cram.c.o', 'oauth2.c.o']
+now handel file, sha256.c.o
+now handle file imports,  ['curlx_uztoui', 'EVP_DigestFinal_ex', 'EVP_DigestInit_ex', 'EVP_DigestUpdate', 'EVP_MD_CTX_free', 'EVP_MD_CTX_new', 'EVP_sha256'] ./curl_o/sha256.c.o
+Symbol 'curlx_uztoui' found in ./curl_o/warnless.c.o
+found files:  ['curl_fnmatch.c.o', 'md4.c.o', 'cleartext.c.o', 'cram.c.o', 'oauth2.c.o']
+now handel file, vauth.c.o
+now handle file imports,  ['curl_maprintf', 'strlen', 'strpbrk'] ./curl_o/vauth.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+found files:  ['curl_fnmatch.c.o', 'md4.c.o', 'cleartext.c.o', 'cram.c.o', 'oauth2.c.o']
+now handel file, hmac.c.o
+now handle file imports,  ['Curl_cfree', 'Curl_cmalloc', 'curlx_uztoui', '_GLOBAL_OFFSET_TABLE_', '__stack_chk_fail'] ./curl_o/hmac.c.o
+Symbol 'Curl_cfree' found in ./curl_o/easy.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'curlx_uztoui' found in ./curl_o/warnless.c.o
+found files:  ['curl_fnmatch.c.o', 'md4.c.o', 'cleartext.c.o', 'cram.c.o', 'oauth2.c.o']
+a round ends! ['easy.c.o', 'slist.c.o', 'share.c.o', 'strerror.c.o', 'version.c.o', 'setopt.c.o', 'mime.c.o', 'urlapi.c.o', 'getenv.c.o', 'mprintf.c.o', 'parsedate.c.o', 'strcase.c.o', 'escape.c.o', 'multi.c.o', 'getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o', 'progress.c.o', 'nonblock.c.o', 'timeval.c.o', 'http.c.o', 'splay.c.o', 'http_proxy.c.o', 'llist.c.o', 'select.c.o', 'transfer.c.o', 'socketpair.c.o', 'wildcard.c.o', 'speedcheck.c.o', 'socks.c.o', 'if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o', 'fileinfo.c.o', 'hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o', 'hmac.c.o', 'curl_fnmatch.c.o', 'md4.c.o', 'cleartext.c.o', 'cram.c.o', 'oauth2.c.o']
+current files.  ['curl_fnmatch.c.o', 'md4.c.o', 'cleartext.c.o', 'cram.c.o', 'oauth2.c.o']
+now handel file, curl_fnmatch.c.o
+now handle file imports,  ['Curl_isalnum', 'Curl_isalpha', 'Curl_isdigit', 'Curl_isgraph', 'Curl_islower', 'Curl_isprint', 'Curl_isspace', 'Curl_isupper', 'Curl_isxdigit', '__stack_chk_fail', 'strcmp'] ./curl_o/curl_fnmatch.c.o
+Symbol 'Curl_isalnum' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isalpha' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isdigit' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isgraph' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_islower' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isprint' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isspace' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isupper' found in ./curl_o/curl_ctype.c.o
+Symbol 'Curl_isxdigit' found in ./curl_o/curl_ctype.c.o
+found files:  []
+now handel file, md4.c.o
+now handle file imports,  ['curlx_ultouc', 'curlx_uztoui', 'memcpy', '__memcpy_chk', '__stack_chk_fail'] ./curl_o/md4.c.o
+Symbol 'curlx_ultouc' found in ./curl_o/warnless.c.o
+Symbol 'curlx_uztoui' found in ./curl_o/warnless.c.o
+found files:  []
+now handel file, cleartext.c.o
+now handle file imports,  ['Curl_bufref_set', 'Curl_cmalloc', 'curl_free', '_GLOBAL_OFFSET_TABLE_', 'memcpy', 'strlen'] ./curl_o/cleartext.c.o
+Symbol 'Curl_cmalloc' found in ./curl_o/easy.c.o
+Symbol 'Curl_bufref_set' found in ./curl_o/bufref.c.o
+Symbol 'curl_free' found in ./curl_o/escape.c.o
+found files:  []
+now handel file, cram.c.o
+now handle file imports,  ['Curl_bufref_len', 'Curl_bufref_ptr', 'Curl_bufref_set', 'curl_free', 'Curl_HMAC_final', 'Curl_HMAC_init', 'Curl_HMAC_MD5', 'Curl_HMAC_update', 'curl_maprintf', 'curlx_uztoui', '_GLOBAL_OFFSET_TABLE_', '__stack_chk_fail', 'strlen'] ./curl_o/cram.c.o
+Symbol 'Curl_bufref_len' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_ptr' found in ./curl_o/bufref.c.o
+Symbol 'Curl_bufref_set' found in ./curl_o/bufref.c.o
+Symbol 'Curl_HMAC_final' found in ./curl_o/hmac.c.o
+Symbol 'Curl_HMAC_init' found in ./curl_o/hmac.c.o
+Symbol 'Curl_HMAC_update' found in ./curl_o/hmac.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'Curl_HMAC_MD5' found in ./curl_o/md5.c.o
+Symbol 'curlx_uztoui' found in ./curl_o/warnless.c.o
+Symbol 'curl_free' found in ./curl_o/escape.c.o
+found files:  []
+now handel file, oauth2.c.o
+now handle file imports,  ['Curl_bufref_set', 'curl_free', 'curl_maprintf', '_GLOBAL_OFFSET_TABLE_', 'strlen'] ./curl_o/oauth2.c.o
+Symbol 'Curl_bufref_set' found in ./curl_o/bufref.c.o
+Symbol 'curl_maprintf' found in ./curl_o/mprintf.c.o
+Symbol 'curl_free' found in ./curl_o/escape.c.o
+found files:  []
+a round ends! ['easy.c.o', 'slist.c.o', 'share.c.o', 'strerror.c.o', 'version.c.o', 'setopt.c.o', 'mime.c.o', 'urlapi.c.o', 'getenv.c.o', 'mprintf.c.o', 'parsedate.c.o', 'strcase.c.o', 'escape.c.o', 'multi.c.o', 'getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o', 'progress.c.o', 'nonblock.c.o', 'timeval.c.o', 'http.c.o', 'splay.c.o', 'http_proxy.c.o', 'llist.c.o', 'select.c.o', 'transfer.c.o', 'socketpair.c.o', 'wildcard.c.o', 'speedcheck.c.o', 'socks.c.o', 'if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o', 'fileinfo.c.o', 'hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o', 'hmac.c.o', 'curl_fnmatch.c.o', 'md4.c.o', 'cleartext.c.o', 'cram.c.o', 'oauth2.c.o']
+['easy.c.o', 'slist.c.o', 'share.c.o', 'strerror.c.o', 'version.c.o', 'setopt.c.o', 'mime.c.o', 'urlapi.c.o', 'getenv.c.o', 'mprintf.c.o', 'parsedate.c.o', 'strcase.c.o', 'escape.c.o', 'multi.c.o', 'getinfo.c.o', 'connect.c.o', 'vtls.c.o', 'url.c.o', 'sendf.c.o', 'altsvc.c.o', 'strdup.c.o', 'asyn-thread.c.o', 'warnless.c.o', 'http_digest.c.o', 'cookie.c.o', 'conncache.c.o', 'hsts.c.o', 'hostip.c.o', 'hash.c.o', 'content_encoding.c.o', 'rand.c.o', 'dotdot.c.o', 'inet_ntop.c.o', 'curl_ctype.c.o', 'progress.c.o', 'nonblock.c.o', 'timeval.c.o', 'http.c.o', 'splay.c.o', 'http_proxy.c.o', 'llist.c.o', 'select.c.o', 'transfer.c.o', 'socketpair.c.o', 'wildcard.c.o', 'speedcheck.c.o', 'socks.c.o', 'if2ip.c.o', 'base64.c.o', 'openssl.c.o', 'ftp.c.o', 'smb.c.o', 'http_ntlm.c.o', 'tftp.c.o', 'mqtt.c.o', 'curl_addrinfo.c.o', 'smtp.c.o', 'pop3.c.o', 'rtsp.c.o', 'file.c.o', 'gopher.c.o', 'dict.c.o', 'telnet.c.o', 'netrc.c.o', 'imap.c.o', 'fopen.c.o', 'rename.c.o', 'curl_get_line.c.o', 'hostasyn.c.o', 'curl_threads.c.o', 'digest.c.o', 'strtoofft.c.o', 'curl_memrchr.c.o', 'hostip6.c.o', 'doh.c.o', 'http_chunks.c.o', 'http_aws_sigv4.c.o', 'formdata.c.o', 'ntlm.c.o', 'fileinfo.c.o', 'hostcheck.c.o', 'keylog.c.o', 'curl_range.c.o', 'ftplistparser.c.o', 'pingpong.c.o', 'curl_ntlm_core.c.o', 'curl_endian.c.o', 'bufref.c.o', 'curl_sasl.c.o', 'curl_gethostname.c.o', 'md5.c.o', 'sha256.c.o', 'vauth.c.o', 'hmac.c.o', 'curl_fnmatch.c.o', 'md4.c.o', 'cleartext.c.o', 'cram.c.o', 'oauth2.c.o'] 99
