@@ -19,6 +19,8 @@ symbols_related_files = {}
 # 处理ctags文件，直接整理每个符号的信息
 symbols_in_ctags_file = {}
 
+
+
 def get_subfolders(path):
     try:
         # os.walk 的第一个返回值是当前路径，第二个是子文件夹列表
@@ -143,9 +145,16 @@ if __name__ == "__main__":
         for symbol in dynamic_symbols.keys():
             library = dynamic_symbols[symbol]
             print(f"{symbol:<30} {library}")
+        # 符号
         for symbol in dynamic_symbols.keys():
+            # 符号所属于的库
             for files in symbols_in_ctags_file:
+                # 符号被定义和声明的文件
                 if symbol in symbols_in_ctags_file[files]:
-                    print(files, symbol, symbols_in_ctags_file[files][symbol]) 
+                    print(symbol, files, symbols_in_ctags_file[files][symbol]) 
+        
+        with open('symbols.txt', 'w') as f:
+            for symbol in dynamic_symbols.keys():
+                f.write(symbol + "\n")
     else:
         print("No dynamic symbols found.")
