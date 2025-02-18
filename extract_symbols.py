@@ -3,6 +3,7 @@ import re
 import json
 import sys
 import os
+import glob
 
 # 目标可执行文件
 # 暂时这样写，要不然用参数不好写，路径长
@@ -93,6 +94,8 @@ def make_tags(search_dir):
     if search_dir in symbols_in_ctags_file:
         return  
     try:
+        # TODO：使用注释掉的这个命令，下面open的文件也是一样
+        # subprocess.run(["ctags", "--c-kinds=+fp", "-R", "-f", "tags_" + search_dir, search_dir], check=True)
         subprocess.run(["ctags","--c-kinds=+fp", "-R", search_dir], check=True)
     except FileNotFoundError:
         print("Error: 'ctags' command not found. Please install ctags first.")
@@ -114,8 +117,42 @@ def make_tags(search_dir):
     except FileNotFoundError:
         print("Error: 'tags' file not found. Ensure ctags ran successfully.")
         return
+    
+def get_exe(package):
+    try:
+        output = subprocess.check_output(
+            ['dpkg', '-L',  package],
+            stderr=subprocess.DEVNULL,
+            text=True
+        )
+    except subprocess.CalledProcessError:
+        print(f"Error: Failed to get package info for '{package}'.")
+    for line in output.splitlines():
+        if (line.startswith("/usr/bin") or "bin" in line.split("/")) and line.split("/")[-1] != "bin":
+            # 存在可执行的文件，line就是文件地址
+            print("get line:", line)
+            try: 
+                output = subprocess.check_output(
+                    ["cp", line, "./"],
+                    stderr=subprocess.DEVNULL,
+                    text=True
+                )
+            except subprocess.CalledProcessError:
+                print(f"Error: Failed to copy exe_file for '{package}'.")
+            print(f"sucessfully copy exe_file '{line}' ")
 
 
+def get_depends(package):
+    # 运行依赖脚本
+    try:
+        output = subprocess.check_output(
+            ['./get_depends.sh', package],
+            stderr=subprocess.DEVNULL,
+            text=True
+        )
+    except subprocess.CalledProcessError:
+        print(f"Error: Failed to get package info for '{package}'.")
+    
 if __name__ == "__main__":
     # 检查输入参数，这个后续再完善设计
     if len(sys.argv) < 0:
@@ -124,6 +161,13 @@ if __name__ == "__main__":
 
     # 获取参数，注意是1
     package_name = sys.argv[1]
+
+    # 获取源码
+    get_depends(package_name)
+
+    # 找exe文件
+    print("start get exe")
+    get_exe(package_name)
 
     # 输出结果
     libraries = []
