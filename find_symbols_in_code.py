@@ -231,7 +231,7 @@ def functional_trimming(target_dir):
     with open("tags", "r", encoding="utf-8") as f:
         for line in f:
             parts = line.strip().split("\t")
-            # TODO: f代表只处理函数
+            # TODO: f代表只处理函数，暂时现就这样
             if len(parts) <= 3 or parts[3] != 'f':
                 continue
             symbol = parts[0]
@@ -268,11 +268,49 @@ def functional_trimming(target_dir):
             to_match_pattern = to_comment_symbols[to_match_symbol]
             # print(to_match_pattern)
             for i, line in enumerate(lines, start=1):
+                if line[0] == '#':
+                    continue
                 # print(f"Checking pattern: {to_match_pattern}")
                 # TODO:有一些pattern居然是空的
                 if to_match_pattern == line.strip():
                     print(to_match_symbol, "||||" , to_match_pattern, "line: ", i)
-                    break
+                    # 开始统计
+                    left_count = 0
+                    right_count = 0
+                    end_line = i
+                    for j in range(i, len(lines)):
+                        line_j = lines[j]
+                        for ch in line_j:
+                            # print(line_j)
+                            if ch == '{':
+                                left_count += 1
+                                # print("found { :", j, line_j)
+                            elif ch == '}':
+                                right_count += 1
+                                # print("found } :", j, line_j)
+                        if left_count == right_count and left_count != 0:
+                            end_line = j + 1
+                            break
+                    # 注释掉[i,end_line]内的全部内容，写回文件， 注意这两个都是在文件内的行数目，不是下标（要-1）
+                    print(i ,end_line)
+                    # 确认开始行，防止函数返回值和函数名称不在同一行的情况，以(为检查点
+                    line_start = lines[i-1]
+                    line_start_split = line_start.split(" ")
+                    check_point = -1
+                    for s in range(0, len(line_start_split) - 1):
+                        if '(' in line_start_split[s]:
+                            check_point = s
+                            break;
+                    if (lines[check_point][0] == '(' and check_point <= 1) or (lines[check_point][0] != '(' and check_point == 0):
+                        i -= 1 
+                    for k in range(i - 1, end_line):
+                        lines[k] = "// " + lines[k]
+                    print(i ,end_line)
+        # TODO：写回操作可以优化！
+        with open(source_file_path, "w") as f:
+            f.writelines(lines)
+
+                    
 
 
 
