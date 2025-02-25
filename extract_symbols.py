@@ -7,7 +7,7 @@ import glob
 
 # 目标可执行文件
 # 暂时这样写，要不然用参数不好写，路径长
-binary_file = "./curl"
+package_exe_file = "./curl"
 # 程序参数1 - 要处理的软件包名字
 package_name = ""
 
@@ -38,7 +38,7 @@ def get_dynamic_symbols():
     # 运行 objdump -T
     try:
         result = subprocess.run(
-            ["objdump", "-T", binary_file],
+            ["objdump", "-T", package_exe_file],
             text=True,
             capture_output=True,
             check=True
@@ -60,7 +60,7 @@ def get_dynamic_symbols():
 def get_dynamic_libraries():
     try:
         # 执行 ldd 命令
-        output = subprocess.check_output(['ldd', binary_file], text=True)
+        output = subprocess.check_output(['ldd', package_exe_file], text=True)
         # 解析输出
         libraries = {}
         for line in output.splitlines():
@@ -103,9 +103,16 @@ def make_tags(search_dir):
     except subprocess.CalledProcessError as e:
         print(f"Error while running ctags: {e}")
         return
+    # 修改tags文件名，不知道为什么ctags命令指定名字有点问题
+    try:
+        print("tags_" + search_dir.split("/")[-1])
+        subprocess.run(["mv", "tags", "tags_" + search_dir.split("/")[-1]])
+    except FileNotFoundError:
+        print("Error: tags file not found, check if ctags successfully finished")
+        return
     try:
         symbols_in_ctags_file[search_dir] = {}
-        with open("tags", "r", encoding="utf-8", errors="replace") as tags_file:
+        with open("tags_" + search_dir.split("/")[-1], "r", encoding="utf-8", errors="replace") as tags_file:
             for line in tags_file:
                 split_line = line.split("\t")
                 # print(split_line)
@@ -119,6 +126,7 @@ def make_tags(search_dir):
         return
     
 def get_exe(package):
+    global package_exe_file
     try:
         output = subprocess.check_output(
             ['dpkg', '-L',  package],
@@ -128,9 +136,10 @@ def get_exe(package):
     except subprocess.CalledProcessError:
         print(f"Error: Failed to get package info for '{package}'.")
     for line in output.splitlines():
+        # TODO: 这里可能有一点问题，一个软件包会不会有多个可执行文件呢？。。
         if (line.startswith("/usr/bin") or "bin" in line.split("/")) and line.split("/")[-1] != "bin":
             # 存在可执行的文件，line就是文件地址
-            print("get line:", line)
+            # print("get line:", line)
             try: 
                 output = subprocess.check_output(
                     ["cp", line, "./"],
@@ -139,6 +148,7 @@ def get_exe(package):
                 )
             except subprocess.CalledProcessError:
                 print(f"Error: Failed to copy exe_file for '{package}'.")
+            package_exe_file = line.split('/')[-1]
             print(f"sucessfully copy exe_file '{line}' ")
 
 
@@ -153,20 +163,14 @@ def get_depends(package):
     except subprocess.CalledProcessError:
         print(f"Error: Failed to get package info for '{package}'.")
     
-if __name__ == "__main__":
-    # 检查输入参数，这个后续再完善设计
-    if len(sys.argv) < 0:
-        print("Usage: python extract_symbol.py <symbol> <directory>")
-        sys.exit(1)
 
-    # 获取参数，注意是1
-    package_name = sys.argv[1]
-
+def run(package_name):
     # 获取源码
+    print("downloading dependencies...")
     get_depends(package_name)
 
     # 找exe文件
-    print("start get exe")
+    print("copying executable file...")
     get_exe(package_name)
 
     # 输出结果
@@ -202,3 +206,14 @@ if __name__ == "__main__":
                 f.write(symbol + "\n")
     else:
         print("No dynamic symbols found.")
+
+if __name__ == "__main__":
+    # 检查输入参数，这个后续再完善设计
+    if len(sys.argv) < 0:
+        print("Usage: python extract_symbol.py <symbol> <directory>")
+        sys.exit(1)
+
+    # 获取参数，注意是1
+    package_name = sys.argv[1]
+    run(package_name)
+    

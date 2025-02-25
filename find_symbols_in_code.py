@@ -3,6 +3,7 @@ import subprocess
 import copy
 import shutil
 import re
+import sys
 
 
 # TODO：筛选的这些数据结构计划上是每一轮循环取并集
@@ -24,13 +25,14 @@ file_import_symbols = {}
 file_export_symbols = {}
 
 # TODO：硬编码，后续需要删掉
-target_package = "curl"
+target_package = "wget"
 
 # 需要检查的符号文件和目标文件目录
 symbols_file = 'symbols.txt'  # 符号列表文件
 # 目标文件所在目录
-target_dir = 'curl_o'  
+# target_dir = 'pcre_o'  
 # target_dir = "glibc_o"
+# dependency_real_name = 'pcre2-10.39'  
 
 
 
@@ -94,6 +96,7 @@ def find_symbols_in_files(symbols, target_dir):
     """
     查找所有符号在目标文件中的导出符号
     """
+    # 修改一下，首先构建文件的符号
     for symbol in symbols:
         iffind = False
         for root, dirs, files in os.walk(target_dir):
@@ -103,6 +106,7 @@ def find_symbols_in_files(symbols, target_dir):
                     # print(f"Checking file: {file_path}")
                     # 提取目标文件的导出符号
                     target_symbols = extract_exported_symbols_from_file(file_path)
+                    # print("symbols: ",target_symbols)
                     if symbol in target_symbols:
                         print(f"Symbol '{symbol}' found in {file_path}")
                         iffind = True
@@ -134,7 +138,8 @@ def generate_need_object_file(target_dir, need_files):
     复制需要的目标文件，对于不要的文件实现(.c)注释掉全部
     """
     new_dir = target_dir + "_needed"
-    source_dir = "depends_source_code_" +  target_package + "/curl-7.81.0"
+    source_dir = "depends_source_code_" +  target_package + "/" + target_dir[:-2]
+    print(source_dir, "------")
     inneed_files = []
     # 创建目标文件夹，如果不存在
     if not os.path.exists(new_dir):
@@ -152,15 +157,30 @@ def generate_need_object_file(target_dir, need_files):
     # 修改一下目标文件文件名为源文件文件名
     for i in range(len(need_files)):
         need_files[i] = need_files[i][:-2]
+        if need_files[i].endswith(".c") == False:
+            need_files[i] = need_files[i] + ".c"
+
+
+    # need_files内保证以.c结尾
+    print("need files," ,need_files, len(need_files))
 
     # 构建不需要的文件名list
+    # 注意有.c.o和.c两种可能的文件名字结尾
     for dirpath, _, filenames in os.walk(target_dir):
         for filename in filenames:
-            if filename[:-2] in need_files:
+            # 如果是.c.o, 那么用.c判断
+            if filename.endswith(".c.o") and filename[:-2] in need_files:
+                continue
+            # 如果是.o，那么去掉之后加上.c判断
+            elif filename.endswith(".o") and filename[:-2] + ".c" in need_files:
                 continue
             else:
-                inneed_files.append(filename[:-2])
-    print(inneed_files)
+                if filename.endswith(".o"):
+                    filename = filename[:-2]
+                if filename.endswith(".c") == False:
+                    filename = filename + ".c"
+                inneed_files.append(filename)
+    print("inneed files to delete: ", inneed_files, len(inneed_files))
 
     # 把不需要的文件注释掉，不影响构建
     # 遍历依赖源文件夹
@@ -168,6 +188,7 @@ def generate_need_object_file(target_dir, need_files):
         for filename in filenames:
             if filename in inneed_files:
                 file_path = os.path.join(dirpath, filename)
+                print("delete file path: ", file_path)
                 # 允许列表可以是完整路径，也可以是文件名
                 if file_path in need_files or filename in need_files:
                     print(f"Skipping {file_path} (allowed)")
@@ -189,7 +210,7 @@ def functional_trimming(target_dir):
     """
     处理筛选出的需要的目标文件集合，找出其中没有被使用的符号
     """
-    print("strat symbols check")
+    print("start symbols check")
     print(symbols)
     need_dir = target_dir + "_needed"
     all_import_symbols = set()
@@ -228,7 +249,7 @@ def functional_trimming(target_dir):
     # 获取symbol的位置
     # TODO：考虑同名问题：符号&文件
     # TODO：修改tags文件名字
-    with open("tags", "r", encoding="utf-8") as f:
+    with open("tags_" + target_dir[:-2], "r", encoding="utf-8") as f:
         for line in f:
             parts = line.strip().split("\t")
             # TODO: f代表只处理函数，暂时现就这样
@@ -312,29 +333,14 @@ def functional_trimming(target_dir):
 
                     
 
-
-
-
-
-
-
-
-
-
-            
-
-            
-
-            
-
-
-if __name__ == "__main__":
-    # 加载符号列表
-    symbols = load_symbols(symbols_file)
-    print("intial symbols:", symbols)
-
+def handle_each_depend(now_target_dir):
+    """
+    以每个文件夹为单位处理依赖
+    """
+    print("now target: ", now_target_dir, "symbols:", symbols)
     # 查找符号在目标文件中的导出情况
-    find_symbols_in_files(symbols, target_dir)
+    find_symbols_in_files(symbols, now_target_dir)
+    print("now_handle_files_depends: ", now_handle_files_depends)
     need_files = copy.deepcopy(now_handle_files_depends)
     now_handle_files = copy.deepcopy(need_files)
 
@@ -349,23 +355,75 @@ if __name__ == "__main__":
         # 对每个文件进行符号导入检查
         for file in current_files:
             print("now handle file,", file)
-            file_path = os.path.join(target_dir, file)
+            file_path = os.path.join(now_target_dir, file)
             if os.path.exists(file_path):
                 # 提取导入符号
                 target_symbols = extract_imported_symbols_from_file(file_path)
                 print("now handle file imports, ", target_symbols, file_path)
                 # 查找导入符号的定义文件
-                find_symbols_in_files(target_symbols, target_dir)
+                find_symbols_in_files(target_symbols, now_target_dir)
                 print("found files: ", now_handle_files_depends)
             else:
                 print("no such file:" + file_path)
+        # 通过有没有新的来判断
+        ifNewFile = False
         for file in now_handle_files_depends:
             if file not in need_files:
                 need_files.append(file)
+                ifNewFile = True
+        if ifNewFile == False:
+            break;
         now_handle_files = copy.deepcopy(now_handle_files_depends)
-        print("a round ends!", need_files)
+        print("now handle files: ", len(now_handle_files), now_handle_files)
+        print("a round ends!", len(need_files), need_files)
 
 
     print(need_files, len(need_files))
-    generate_need_object_file(target_dir, need_files)
-    functional_trimming(target_dir)
+    generate_need_object_file(now_target_dir, need_files)
+    if "glibc" not in now_target_dir.split("-"):
+        functional_trimming(now_target_dir)
+
+
+
+def run(target_package_name):
+    # 这里要直接修改全局的symbols。。
+    global symbols
+    symbols = load_symbols(symbols_file)
+    print("intial symbols:", symbols)
+    folder_path = "./depends_source_code_" + target_package_name
+
+    dependencies_source_code = [entry.name for entry in os.scandir(folder_path) if entry.is_dir()]
+
+    print(dependencies_source_code)
+
+    if_handle_dependency = {}
+
+    for depends in dependencies_source_code:
+        print(depends)
+        sys.stdout.flush()
+        command = input("print y to handle this dependency...\n")
+        if command == "y":
+            handle_each_depend(depends + "_o")
+            if_handle_dependency[depends] = {"yes"}
+        else:
+            if_handle_dependency[depends] = {"no"}
+
+if __name__ == "__main__":
+
+    # 检查输入参数，这个后续再完善设计
+    if len(sys.argv) < 0:
+        print("Usage: python extract_symbol.py <symbol> <directory>")
+        sys.exit(1)
+
+    target_package = sys.argv[1]
+
+    run(target_package)
+
+    
+    # handle_each_depend("pcre2-10.39_o")
+
+    # handle_each_depend("libidn2-2.3.2_o")
+
+    # handle_each_depend("glibc-2.35_o")
+
+    
