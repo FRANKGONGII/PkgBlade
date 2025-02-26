@@ -108,13 +108,14 @@ def find_symbols_in_files(symbols, target_dir):
                     target_symbols = extract_exported_symbols_from_file(file_path)
                     # print("symbols: ",target_symbols)
                     if symbol in target_symbols:
-                        print(f"Symbol '{symbol}' found in {file_path}")
+                        # print(f"Symbol '{symbol}' found in {file_path}")
                         iffind = True
                         # 不要重复添加
                         if file not in need_files and file not in now_handle_files_depends:
                             now_handle_files_depends.append(file)
         if iffind == False:
-            print("cannot find symbol", symbol)
+            # print("cannot find symbol", symbol)
+            a = 1
 
 def load_symbols(symbols_file):
     """
@@ -385,7 +386,10 @@ def handle_each_depend(now_target_dir):
 
 
 
-def run(target_package_name):
+def run(target_package_name : str) -> map:
+    """
+        裁减的入口，返回值是每个依赖是否被处理了
+    """
     # 这里要直接修改全局的symbols。。
     global symbols
     symbols = load_symbols(symbols_file)
@@ -404,9 +408,13 @@ def run(target_package_name):
         command = input("print y to handle this dependency...\n")
         if command == "y":
             handle_each_depend(depends + "_o")
-            if_handle_dependency[depends] = {"yes"}
+            if_handle_dependency[depends] = "yes"
         else:
-            if_handle_dependency[depends] = {"no"}
+            if_handle_dependency[depends] = "no"
+    return if_handle_dependency
+
+
+
 
 if __name__ == "__main__":
 

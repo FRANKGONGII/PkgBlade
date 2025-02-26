@@ -7,7 +7,7 @@ import glob
 
 # 目标可执行文件
 # 暂时这样写，要不然用参数不好写，路径长
-package_exe_file = "./curl"
+package_exe_file = "./NO_EXE_FILE_FOUND"
 # 程序参数1 - 要处理的软件包名字
 package_name = ""
 
@@ -36,6 +36,7 @@ def get_subfolders(path):
 
 def get_dynamic_symbols():
     # 运行 objdump -T
+    print("run objdump for: ", package_exe_file)
     try:
         result = subprocess.run(
             ["objdump", "-T", package_exe_file],
@@ -78,7 +79,7 @@ def get_dynamic_libraries():
                 # vdso 格式: linux-vdso.so.1 (address)
                 lib_name = parts[0].strip().split()[0]
                 libraries[lib_name] = "(vdso)"
-        print(libraries)
+        print("ldd result: ", libraries)
         return libraries
     except subprocess.CalledProcessError as e:
         print(f"Error running ldd: {e}")
@@ -88,6 +89,9 @@ def get_dynamic_libraries():
         return {}
 
 def make_tags(search_dir):
+    """
+    TODO: 2025/2/26: 如果tags文件存在就不要再生成一次了
+    """
     # 生成 ctags 索引
     # print("Generating ctags index...")
     # print(search_dir)
@@ -127,6 +131,7 @@ def make_tags(search_dir):
     
 def get_exe(package):
     global package_exe_file
+    print("get exe or so for: ", package)
     try:
         output = subprocess.check_output(
             ['dpkg', '-L',  package],
@@ -134,9 +139,15 @@ def get_exe(package):
             text=True
         )
     except subprocess.CalledProcessError:
-        print(f"Error: Failed to get package info for '{package}'.")
+        print(f"Error: error occur while running script for getting package info'.")
+    if_find_exe = False
+    print(output.splitlines())
     for line in output.splitlines():
-        # TODO: 这里可能有一点问题，一个软件包会不会有多个可执行文件呢？。。
+        """
+        TODO: 2025/2/26: 
+        有的软件包可能就没有可执行文件，例如libpcre2-8-0，因此so文件也是处理的对象。
+        或者说除了第一轮循环，都应该以so为优先的处理对象！！这点可以后续再看看要不要实现，如果要就是函数多加上一个参数
+        """        
         if (line.startswith("/usr/bin") or "bin" in line.split("/")) and line.split("/")[-1] != "bin":
             # 存在可执行的文件，line就是文件地址
             # print("get line:", line)
@@ -149,8 +160,25 @@ def get_exe(package):
             except subprocess.CalledProcessError:
                 print(f"Error: Failed to copy exe_file for '{package}'.")
             package_exe_file = line.split('/')[-1]
+            if_find_exe = True
             print(f"sucessfully copy exe_file '{line}' ")
 
+
+    if if_find_exe == False:
+        for line in output.splitlines():
+            # 现在暂时设计成没有exe才来获取so，后续必须改动
+            if (line.startswith("/usr/lib") or line.startswith("/lib")) and line.split("/")[-1] != "lib" and any(".so" in s for s in line.split("/")):
+                try: 
+                    output = subprocess.check_output(
+                        ["cp", line, "./"],
+                        stderr=subprocess.DEVNULL,
+                        text=True
+                    )
+                except subprocess.CalledProcessError:
+                    print(f"Error: Failed to copy so_file for '{package}'.")
+                package_exe_file = line.split('/')[-1]
+                print(f"sucessfully copy so_file '{line}' ")
+                break
 
 def get_depends(package):
     # 运行依赖脚本
@@ -165,6 +193,18 @@ def get_depends(package):
     
 
 def run(package_name):
+    global dynamic_symbols
+
+    # 清空数据结构
+    dynamic_symbols = {}
+    dynamic_libraries = {}
+    symbols_related_files = {}
+    symbols_in_ctags_file = {}
+
+    folder_name = "depends_source_code_" + package_name
+    if os.path.isdir(folder_name):
+        print(f"folder '{folder_name}' exists, this package has been handled")
+        return
     # 获取源码
     print("downloading dependencies...")
     get_depends(package_name)
@@ -177,6 +217,7 @@ def run(package_name):
     libraries = []
     dynamic_symbols = get_dynamic_symbols()
     dynamic_libraries = get_dynamic_libraries()
+
 
     # 首先预处理依赖库内的所有符号
     depends_library_floder = "depends_source_code_" + package_name
