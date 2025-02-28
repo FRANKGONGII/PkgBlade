@@ -134,7 +134,27 @@ def find_file(directory, target_name):
             return os.path.join(root, target_name)
     return None  # 未找到文件
 
+
+
+def check_file_exists(directory: str, filename: str) -> bool:
+    """
+    检查指定目录下是否存在指定名称的文件。
+    
+    :param directory: 目录路径
+    :param filename: 要检查的文件名
+    :return: 如果存在返回 True，否则返回 False
+    """
+    file_path = os.path.join(directory, filename)
+    return os.path.isfile(file_path)
+
+
+
+
 def generate_need_object_file(target_dir, need_files):
+
+    """
+    TODO： 2025/2/27：把注释文件这一步提取出来，先不要注释，等到整个循环都完成了再去处理
+    """
     """
     复制需要的目标文件，对于不要的文件实现(.c)注释掉全部
     """
@@ -150,6 +170,7 @@ def generate_need_object_file(target_dir, need_files):
         if os.path.exists(file_path):
             # 构造目标路径
             target_path = os.path.join(new_dir, os.path.basename(file_path))
+            print("check if file already exits: ", check_file_exists(new_dir, need_files[i]))
             shutil.copy(file_path, target_path)
             print(f'Copied: {file_path} -> {target_path}')
         else:
@@ -163,7 +184,7 @@ def generate_need_object_file(target_dir, need_files):
 
 
     # need_files内保证以.c结尾
-    print("need files," ,need_files, len(need_files))
+    print("need files," ,target_dir ,need_files, len(need_files))
 
     # 构建不需要的文件名list
     # 注意有.c.o和.c两种可能的文件名字结尾
@@ -181,31 +202,35 @@ def generate_need_object_file(target_dir, need_files):
                 if filename.endswith(".c") == False:
                     filename = filename + ".c"
                 inneed_files.append(filename)
-    print("inneed files to delete: ", inneed_files, len(inneed_files))
+    print("inneed files to delete: ", target_dir, inneed_files, len(inneed_files))
 
+
+    """
+    TODO：2027/2/27：这块抽象为一个函数后续在main调用
+    """
     # 把不需要的文件注释掉，不影响构建
     # 遍历依赖源文件夹
-    for dirpath, _, filenames in os.walk(source_dir):
-        for filename in filenames:
-            if filename in inneed_files:
-                file_path = os.path.join(dirpath, filename)
-                print("delete file path: ", file_path)
-                # 允许列表可以是完整路径，也可以是文件名
-                if file_path in need_files or filename in need_files:
-                    print(f"Skipping {file_path} (allowed)")
-                    continue
+    # for dirpath, _, filenames in os.walk(source_dir):
+    #     for filename in filenames:
+    #         if filename in inneed_files:
+    #             file_path = os.path.join(dirpath, filename)
+    #             print("delete file path: ", file_path)
+    #             # 允许列表可以是完整路径，也可以是文件名
+    #             if file_path in need_files or filename in need_files:
+    #                 print(f"Skipping {file_path} (allowed)")
+    #                 continue
 
-                with open(file_path, "r", encoding="utf-8") as f:
-                    lines = f.readlines()
+    #             with open(file_path, "r", encoding="utf-8") as f:
+    #                 lines = f.readlines()
 
-                # 注释掉所有行（避免重复注释已存在的注释行）
-                commented_lines = ["// " + line if not line.lstrip().startswith("//") else line for line in lines]
+    #             # 注释掉所有行（避免重复注释已存在的注释行）
+    #             commented_lines = ["// " + line if not line.lstrip().startswith("//") else line for line in lines]
 
-                # 写回文件
-                with open(file_path, "w", encoding="utf-8") as f:
-                    f.writelines(commented_lines)
+    #             # 写回文件
+    #             with open(file_path, "w", encoding="utf-8") as f:
+    #                 f.writelines(commented_lines)
 
-                print(f"Finished commenting {file_path}")
+    #             print(f"Finished commenting {file_path}")
 
 def functional_trimming(target_dir):
     """
@@ -335,6 +360,9 @@ def functional_trimming(target_dir):
                     
 
 def handle_each_depend(now_target_dir):
+    global need_files
+    global now_handle_files
+    global now_handle_files_depends
     """
     以每个文件夹为单位处理依赖
     """
@@ -351,19 +379,19 @@ def handle_each_depend(now_target_dir):
     while now_handle_files:
         # 当前待处理文件
         current_files = copy.deepcopy(now_handle_files)
-        print("current files. ",current_files)
+        # print("current files. ",current_files)
         now_handle_files_depends.clear()
         # 对每个文件进行符号导入检查
         for file in current_files:
-            print("now handle file,", file)
+            # print("now handle file,", file)
             file_path = os.path.join(now_target_dir, file)
             if os.path.exists(file_path):
                 # 提取导入符号
                 target_symbols = extract_imported_symbols_from_file(file_path)
-                print("now handle file imports, ", target_symbols, file_path)
+                # print("now handle file imports, ", target_symbols, file_path)
                 # 查找导入符号的定义文件
                 find_symbols_in_files(target_symbols, now_target_dir)
-                print("found files: ", now_handle_files_depends)
+                # print("found files: ", now_handle_files_depends)
             else:
                 print("no such file:" + file_path)
         # 通过有没有新的来判断
@@ -375,14 +403,14 @@ def handle_each_depend(now_target_dir):
         if ifNewFile == False:
             break;
         now_handle_files = copy.deepcopy(now_handle_files_depends)
-        print("now handle files: ", len(now_handle_files), now_handle_files)
-        print("a round ends!", len(need_files), need_files)
+        # print("now handle files: ", len(now_handle_files), now_handle_files)
+        print("a round ends!", len(need_files))
 
 
-    print(need_files, len(need_files))
+    print(len(need_files), need_files)
     generate_need_object_file(now_target_dir, need_files)
-    if "glibc" not in now_target_dir.split("-"):
-        functional_trimming(now_target_dir)
+    # if "glibc" not in now_target_dir.split("-"):
+    #     functional_trimming(now_target_dir)
 
 
 
@@ -398,7 +426,7 @@ def run(target_package_name : str) -> map:
 
     dependencies_source_code = [entry.name for entry in os.scandir(folder_path) if entry.is_dir()]
 
-    print(dependencies_source_code)
+    print("package dependencies: ", dependencies_source_code)
 
     if_handle_dependency = {}
 
@@ -411,9 +439,16 @@ def run(target_package_name : str) -> map:
             if_handle_dependency[depends] = "yes"
         else:
             if_handle_dependency[depends] = "no"
+
+    # 结束run前清空数据结构
+    need_files.clear()
+    now_handle_files.clear()
+    now_handle_files_depends.clear()
+    symbols.clear()
+    inneed_file_symbols.clear()
+    file_import_symbols.clear()
+    file_export_symbols.clear()
     return if_handle_dependency
-
-
 
 
 if __name__ == "__main__":

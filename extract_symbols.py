@@ -34,30 +34,63 @@ def get_subfolders(path):
         print(f"An error occurred: {e}")
         return []
 
-def get_dynamic_symbols():
+def get_dynamic_symbols(ifInit:bool, package_name_2_version:set):
     # 运行 objdump -T
-    print("run objdump for: ", package_exe_file)
-    try:
-        result = subprocess.run(
-            ["objdump", "-T", package_exe_file],
-            text=True,
-            capture_output=True,
-            check=True
-        )
-    except subprocess.CalledProcessError as e:
-        print("Error running objdump:", e)
-        exit(1)
+    # 如果是第一次运行，那么是应该从可执行文件中获取符号表
+    print("check point: get dynamic symbols", ifInit, package_name_2_version, package_name)
+    if ifInit == True:
+        print("run objdump for: ", package_exe_file)
+        try:
+            result = subprocess.run(
+                ["objdump", "-T", package_exe_file],
+                text=True,
+                capture_output=True,
+                check=True
+            )
+        except subprocess.CalledProcessError as e:
+            print("Error running objdump:", e)
+            exit(1)
 
-    # 提取动态符号和所属库
-    for line in result.stdout.splitlines():
-        # 匹配行：过滤出符号地址、库名称、符号名称
-        # 注意这里不管是不是没有定义的符号，因为可能动态链接器还没找到库
-        split_line = line.split()
-        if len(split_line) > 0 and split_line[-2] != "文件格式" and split_line[-2] != "SYMBOL":
-            library, symbol = split_line[-2].strip("()"), split_line[-1]
-            dynamic_symbols[symbol] = library
+        # 提取动态符号和所属库
+        for line in result.stdout.splitlines():
+            # 匹配行：过滤出符号地址、库名称、符号名称
+            # 注意这里不管是不是没有定义的符号，因为可能动态链接器还没找到库
+            split_line = line.split()
+            if len(split_line) > 0 and split_line[-2] != "文件格式" and split_line[-2] != "SYMBOL":
+                library, symbol = split_line[-2].strip("()"), split_line[-1]
+                dynamic_symbols[symbol] = library
+
+    # 如果不是第一次执行，那么应该从_need文件夹中获取，详细见TODO
+    # 这里选择nm -g -u命令
+    else:
+        print("check point: ", package_name_2_version, package_name)
+        
+        need_o_folder_name = package_name_2_version[package_name] + "_o_needed"
+        print("check point 2/27 not init", need_o_folder_name)
+        for root, _, files in os.walk(need_o_folder_name):
+            for file in files:
+                if file.endswith(".o"):
+                    file_path = os.path.join(root, file)
+                    # print(f"Processing: {file_path}")
+                    try:
+                        # 使用nm获取符号表，-g表示只列出外部符号，-u表示只列出未定义符号（导入符号）
+                        result = subprocess.run(['nm', '-g', '-u', file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+                        if result.returncode != 0:
+                            print(f"Error processing {file_path}: {result.stderr}")
+                            return []
+                        
+                        # 解析nm的输出，提取外部导入符号名
+                        for line in result.stdout.splitlines():
+                            parts = line.split()
+                            if len(parts) >= 2 and parts[0] == 'U':  # 'U'表示未定义（导入的符号）
+                                # here: symbol = parts[1]
+                                # 只要key，value用不上
+                                dynamic_symbols[parts[1]] = {}
+
+                    except Exception as e:
+                        print(f"Error processing {file_path}: {e}")
+                        return []
     return dynamic_symbols;
-
 def get_dynamic_libraries():
     try:
         # 执行 ldd 命令
@@ -89,17 +122,17 @@ def get_dynamic_libraries():
         return {}
 
 def make_tags(search_dir):
-    """
-    TODO: 2025/2/26: 如果tags文件存在就不要再生成一次了
-    """
+    
+    # 如果tags文件存在就不要再生成一次了
+    if os.path.isfile("tags_" + search_dir.split("/")[-1]):
+        print(f"tags file: " + "tags_" + '{search_dir.split("/")[-1]]}' +  "already exists")
+        return 
     # 生成 ctags 索引
     # print("Generating ctags index...")
     # print(search_dir)
     if search_dir in symbols_in_ctags_file:
         return  
     try:
-        # TODO：使用注释掉的这个命令，下面open的文件也是一样
-        # subprocess.run(["ctags", "--c-kinds=+fp", "-R", "-f", "tags_" + search_dir, search_dir], check=True)
         subprocess.run(["ctags","--c-kinds=+fp", "-R", search_dir], check=True)
     except FileNotFoundError:
         print("Error: 'ctags' command not found. Please install ctags first.")
@@ -141,7 +174,6 @@ def get_exe(package):
     except subprocess.CalledProcessError:
         print(f"Error: error occur while running script for getting package info'.")
     if_find_exe = False
-    print(output.splitlines())
     for line in output.splitlines():
         """
         TODO: 2025/2/26: 
@@ -192,8 +224,10 @@ def get_depends(package):
         print(f"Error: Failed to get package info for '{package}'.")
     
 
-def run(package_name):
+def run(now_handle_package_name:str, ifInit:bool, package_name_2_version:set):
     global dynamic_symbols
+    global package_name
+    package_name = now_handle_package_name
 
     # 清空数据结构
     dynamic_symbols = {}
@@ -211,11 +245,18 @@ def run(package_name):
 
     # 找exe文件
     print("copying executable file...")
-    get_exe(package_name)
+    if ifInit:
+        get_exe(package_name)
 
     # 输出结果
     libraries = []
-    dynamic_symbols = get_dynamic_symbols()
+    """
+    TODO：2025/2/27
+    1：每次提取符号表应该从_need中提取，而不是.so或者.exe，除了开始的起点
+    2：优化为只从上次刚刚放入这个_need文件夹中的.o文件中提取
+    """
+    dynamic_symbols = get_dynamic_symbols(ifInit=ifInit, 
+                                          package_name_2_version=package_name_2_version)
     dynamic_libraries = get_dynamic_libraries()
 
 
@@ -229,18 +270,18 @@ def run(package_name):
     #         print(files, symbol, symbols_in_ctags_file[files][symbol])
 
     if dynamic_symbols:
-        print(f"{'Symbol':<30} {'Library'}")
-        print("-" * 50)
-        for symbol in dynamic_symbols.keys():
-            library = dynamic_symbols[symbol]
-            print(f"{symbol:<30} {library}")
-        # 符号
-        for symbol in dynamic_symbols.keys():
-            # 符号所属于的库
-            for files in symbols_in_ctags_file:
-                # 符号被定义和声明的文件
-                if symbol in symbols_in_ctags_file[files]:
-                    print(symbol, files, symbols_in_ctags_file[files][symbol]) 
+        # print(f"{'Symbol':<30} {'Library'}")
+        # print("-" * 50)
+        # for symbol in dynamic_symbols.keys():
+        #     library = dynamic_symbols[symbol]
+        #     print(f"{symbol:<30} {library}")
+        # # 符号
+        # for symbol in dynamic_symbols.keys():
+        #     # 符号所属于的库
+        #     for files in symbols_in_ctags_file:
+        #         # 符号被定义和声明的文件
+        #         if symbol in symbols_in_ctags_file[files]:
+        #             print(symbol, files, symbols_in_ctags_file[files][symbol]) 
         
         with open('symbols.txt', 'w') as f:
             for symbol in dynamic_symbols.keys():

@@ -15,6 +15,12 @@ now_handle_package_dependcies = set()
 """
 all_dependcies_info = {}
 
+# 记录下载的源码的文件夹名称和包名的联系
+"""
+libpcre2-8-10 - Source:pcre2 - Folder Name:pcre2-10.39
+"""
+package_name_2_version = {}
+
 def extract_depends(line: str) -> list:
     """
         从依赖关系字符串中提取软件包名称，去掉版本号要求
@@ -70,13 +76,13 @@ if __name__ == "__main__":
         if line.startswith("Depends:"):
             now_handle_package_dependcies = extract_depends(line=line)
 
-
+    ifInit = True
     while ifEnd():
-
         # 开始处理
         # 获取源码&开始裁减
         for package_name in now_handle_package:
-            extract_symbols.run(package_name)
+            print("now handle dependencies of package: ", package_name)
+            extract_symbols.run(package_name, ifInit=ifInit, package_name_2_version=package_name_2_version)
             print("extract ends!")
             handle_result = find_symbols_in_code.run(package_name)
             print("slimming ends!", handle_result)
@@ -113,13 +119,14 @@ if __name__ == "__main__":
                     if "IfHandle" in all_dependcies_info[depend] and all_dependcies_info[depend]["IfHandle"] == "no":
                         break
                     all_dependcies_info[depend]["IfHandle"] = handle_result[depend_source_detail]
+                    package_name_2_version[depend] = depend_source_detail
                     break
 
         print("all_dependency_info: ", all_dependcies_info)
 
         now_handle_package.clear()
         for package in now_handle_package_dependcies:
-            if all_dependcies_info[package]["IfHandle"] == "yes":
+            if "IfHandle" in all_dependcies_info[package] and all_dependcies_info[package]["IfHandle"] == "yes":
                 now_handle_package.add(package)
             else:
                 print("package: ", package ," has been assigned not to slim")
@@ -133,3 +140,5 @@ if __name__ == "__main__":
                     now_handle_package_dependcies.add(package_depend)
             else:
                 print("package: ", package_name ," has been assigned not to slim")
+
+        ifInit = False
