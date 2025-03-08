@@ -210,34 +210,34 @@ def generate_need_object_file(target_dir, need_files):
     """
     # 把不需要的文件注释掉，不影响构建
     # 遍历依赖源文件夹
-    # for dirpath, _, filenames in os.walk(source_dir):
-    #     for filename in filenames:
-    #         if filename in inneed_files:
-    #             file_path = os.path.join(dirpath, filename)
-    #             print("delete file path: ", file_path)
-    #             # 允许列表可以是完整路径，也可以是文件名
-    #             if file_path in need_files or filename in need_files:
-    #                 print(f"Skipping {file_path} (allowed)")
-    #                 continue
+    for dirpath, _, filenames in os.walk(source_dir):
+        for filename in filenames:
+            if filename in inneed_files:
+                file_path = os.path.join(dirpath, filename)
+                print("delete file path: ", file_path)
+                # 允许列表可以是完整路径，也可以是文件名
+                if file_path in need_files or filename in need_files:
+                    print(f"Skipping {file_path} (allowed)")
+                    continue
 
-    #             with open(file_path, "r", encoding="utf-8") as f:
-    #                 lines = f.readlines()
+                with open(file_path, "r", encoding="utf-8") as f:
+                    lines = f.readlines()
 
-    #             # 注释掉所有行（避免重复注释已存在的注释行）
-    #             commented_lines = ["// " + line if not line.lstrip().startswith("//") else line for line in lines]
+                # 注释掉所有行（避免重复注释已存在的注释行）
+                commented_lines = ["// " + line if not line.lstrip().startswith("//") else line for line in lines]
 
-    #             # 写回文件
-    #             with open(file_path, "w", encoding="utf-8") as f:
-    #                 f.writelines(commented_lines)
+                # 写回文件
+                with open(file_path, "w", encoding="utf-8") as f:
+                    f.writelines(commented_lines)
 
-    #             print(f"Finished commenting {file_path}")
+                print(f"Finished commenting {file_path}")
 
 def functional_trimming(target_dir):
     """
     处理筛选出的需要的目标文件集合，找出其中没有被使用的符号
     """
     print("start symbols check")
-    print(symbols)
+    # print(symbols)
     need_dir = target_dir + "_needed"
     all_import_symbols = set()
     # 这里是把目标软件包的直接依赖也加进来
@@ -260,7 +260,7 @@ def functional_trimming(target_dir):
             for symbol in file_import_symbols:
                 # 记录每个引用符号
                 all_import_symbols.add(symbol)
-            print(file, file_import_symbols, file_output_symbols)
+            # print(file, file_import_symbols, file_output_symbols)
     # 处理不需要的符号
     for export_symbol in all_export_symbols:
         if export_symbol not in all_import_symbols:
@@ -366,14 +366,14 @@ def handle_each_depend(now_target_dir):
     """
     以每个文件夹为单位处理依赖
     """
-    print("now target: ", now_target_dir, "symbols:", symbols)
+    # print("now target: ", now_target_dir, "symbols:", symbols)
     # 查找符号在目标文件中的导出情况
     find_symbols_in_files(symbols, now_target_dir)
-    print("now_handle_files_depends: ", now_handle_files_depends)
+    # print("now_handle_files_depends: ", now_handle_files_depends)
     need_files = copy.deepcopy(now_handle_files_depends)
     now_handle_files = copy.deepcopy(need_files)
 
-    print("initial round ends, ", now_handle_files, now_handle_files_depends)
+    # print("initial round ends, ", now_handle_files, now_handle_files_depends)
 
     # 目前now_handle_files就是需要的文件(第一轮)
     while now_handle_files:
@@ -407,10 +407,10 @@ def handle_each_depend(now_target_dir):
         print("a round ends!", len(need_files))
 
 
-    print(len(need_files), need_files)
+    # print(len(need_files), need_files)
     generate_need_object_file(now_target_dir, need_files)
-    # if "glibc" not in now_target_dir.split("-"):
-    #     functional_trimming(now_target_dir)
+    if "glibc" not in now_target_dir.split("-"):
+        functional_trimming(now_target_dir)
 
 
 

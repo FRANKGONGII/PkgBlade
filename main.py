@@ -112,6 +112,10 @@ if __name__ == "__main__":
         # 重新处理handle_result
         # 现在才处理的原因是裁减函数不知道depend的包名
         for depend in all_dependcies_info:
+            # debconf直接没有Source，跳过
+            if "Source" not in all_dependcies_info[depend]:
+                all_dependcies_info[depend]["IfHandle"] = "no"
+                continue
             depend_source = all_dependcies_info[depend]["Source"]
             for depend_source_detail in handle_result:
                 if depend_source_detail.rsplit("-", 1)[0] == depend_source:
