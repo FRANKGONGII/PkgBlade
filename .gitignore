@@ -36,3 +36,9 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# 忽略以 _needed 结尾的文件夹
+*_needed/
+
+# 忽略以 _o 结尾的文件夹
+*_o/

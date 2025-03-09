@@ -1,0 +1,772 @@
+now handle dependencies of package:  curl
+downloading dependencies...
+copying executable file...
+get exe or so for:  curl
+sucessfully copy exe_file '/usr/bin/curl' 
+check point: get dynamic symbols True {} curl
+run objdump for:  curl
+ldd result:  {'linux-vdso.so.1': '(vdso)', 'libcurl.so.4': '/lib/x86_64-linux-gnu/libcurl.so.4', 'libz.so.1': '/lib/x86_64-linux-gnu/libz.so.1', 'libc.so.6': '/lib/x86_64-linux-gnu/libc.so.6', 'libnghttp2.so.14': '/lib/x86_64-linux-gnu/libnghttp2.so.14', 'libidn2.so.0': '/lib/x86_64-linux-gnu/libidn2.so.0', 'librtmp.so.1': '/lib/x86_64-linux-gnu/librtmp.so.1', 'libssh.so.4': '/lib/x86_64-linux-gnu/libssh.so.4', 'libpsl.so.5': '/lib/x86_64-linux-gnu/libpsl.so.5', 'libssl.so.3': '/lib/x86_64-linux-gnu/libssl.so.3', 'libcrypto.so.3': '/lib/x86_64-linux-gnu/libcrypto.so.3', 'libgssapi_krb5.so.2': '/lib/x86_64-linux-gnu/libgssapi_krb5.so.2', 'libldap-2.5.so.0': '/lib/x86_64-linux-gnu/libldap-2.5.so.0', 'liblber-2.5.so.0': '/lib/x86_64-linux-gnu/liblber-2.5.so.0', 'libzstd.so.1': '/lib/x86_64-linux-gnu/libzstd.so.1', 'libbrotlidec.so.1': '/lib/x86_64-linux-gnu/libbrotlidec.so.1', '/lib64/ld-linux-x86-64.so.2': '(vdso)', 'libunistring.so.2': '/lib/x86_64-linux-gnu/libunistring.so.2', 'libgnutls.so.30': '/lib/x86_64-linux-gnu/libgnutls.so.30', 'libhogweed.so.6': '/lib/x86_64-linux-gnu/libhogweed.so.6', 'libnettle.so.8': '/lib/x86_64-linux-gnu/libnettle.so.8', 'libgmp.so.10': '/lib/x86_64-linux-gnu/libgmp.so.10', 'libkrb5.so.3': '/lib/x86_64-linux-gnu/libkrb5.so.3', 'libk5crypto.so.3': '/lib/x86_64-linux-gnu/libk5crypto.so.3', 'libcom_err.so.2': '/lib/x86_64-linux-gnu/libcom_err.so.2', 'libkrb5support.so.0': '/lib/x86_64-linux-gnu/libkrb5support.so.0', 'libsasl2.so.2': '/lib/x86_64-linux-gnu/libsasl2.so.2', 'libbrotlicommon.so.1': '/lib/x86_64-linux-gnu/libbrotlicommon.so.1', 'libp11-kit.so.0': '/lib/x86_64-linux-gnu/libp11-kit.so.0', 'libtasn1.so.6': '/lib/x86_64-linux-gnu/libtasn1.so.6', 'libkeyutils.so.1': '/lib/x86_64-linux-gnu/libkeyutils.so.1', 'libresolv.so.2': '/lib/x86_64-linux-gnu/libresolv.so.2', 'libffi.so.8': '/lib/x86_64-linux-gnu/libffi.so.8'}
+tags_glibc-2.35
+tags_curl-7.81.0
+tags_zlib-1.2.11.dfsg
+extract ends!
+intial symbols: ['elf64-x86-64', 'ftell', '__errno_location', 'stdout', 'strcspn', 'curl_mime_headers', 'curl_multi_poll', 'strstr', 'curl_free', 'curl_global_init', 'getc', 'curl_slist_free_all', 'strtoul', 'strerror', 'curl_multi_remove_handle', 'strchr', 'curl_global_cleanup', 'curl_mime_addpart', 'curl_mime_free', 'strlen', 'mkdir', 'strncmp', 'curl_mvaprintf', 'strncpy', 'memset', 'curl_url_get', 'fcntl', 'geteuid', 'curl_easy_getinfo', 'curl_share_setopt', 'curl_mime_name', 'calloc', 'utimes', 'open', 'localtime', '__libc_start_main', 'curl_mime_encoder', 'strtod', 'curl_multi_perform', 'inflate', 'curl_mvfprintf', 'curl_version_info', 'stdin', 'memcpy', 'inflateInit2_', 'setlocale', 'stat', 'clock_gettime', 'time', 'strcpy', 'curl_share_init', 'curl_getenv', '__isoc99_sscanf', 'fclose', 'inflateEnd', 'fileno', 'fdopen', 'curl_msnprintf', '__ctype_b_loc', 'strcasecmp', 'curl_url', 'strrchr', 'fseek', 'memchr', '__stack_chk_fail', 'tcgetattr', 'fputs', 'curl_mime_init', 'curl_easy_setopt', 'getpwuid', 'fflush', 'fopen', 'signal', 'free', 'curl_url_cleanup', 'curl_strnequal', 'curl_easy_cleanup', 'fputc', 'curl_slist_append', 'tcsetattr', 'curl_easy_init', 'curl_easy_perform', 'malloc', 'stderr', 'curl_maprintf', 'pipe', 'curl_mprintf', 'ftruncate', '__memset_chk', 'curl_mime_data_cb', 'strcmp', 'strtol', 'ioctl', 'curl_url_set', 'curl_getdate', 'read', 'curl_easy_strerror', 'fread', 'curl_mime_subparts', 'poll', 'puts', 'curl_mfprintf', 'strtok', 'fgets', 'curl_mime_filedata', 'curl_version', 'gettimeofday', 'curl_multi_init', 'memmove', 'realloc', 'curl_multi_cleanup', 'fstat', '__memcpy_chk', 'curl_multi_info_read', 'isatty', 'curl_easy_escape', '_ITM_deregisterTMCloneTable', 'strpbrk', 'curl_mime_filename', 'curl_mime_type', 'curl_share_cleanup', 'fsetxattr', 'strdup', 'curl_multi_add_handle', 'lseek', 'curl_strequal', 'ferror', '__gmon_start__', 'curl_easy_pause', 'qsort', '_ITM_registerTMCloneTable', 'fwrite', 'close', 'curl_mime_data', '__cxa_finalize']
+package dependencies:  ['glibc-2.35', 'curl-7.81.0', 'zlib-1.2.11.dfsg']
+glibc-2.35
+print y to handle this dependency...
+curl-7.81.0
+print y to handle this dependency...
+a round ends! 48
+a round ends! 81
+a round ends! 95
+a round ends! 100
+depends_source_code_curl/curl-7.81.0 ------
+check if file already exits:  False
+Copied: curl-7.81.0_o/mime.c.o -> curl-7.81.0_o_needed/mime.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/multi.c.o -> curl-7.81.0_o_needed/multi.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/escape.c.o -> curl-7.81.0_o_needed/escape.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/easy.c.o -> curl-7.81.0_o_needed/easy.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/slist.c.o -> curl-7.81.0_o_needed/slist.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/mprintf.c.o -> curl-7.81.0_o_needed/mprintf.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/urlapi.c.o -> curl-7.81.0_o_needed/urlapi.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/share.c.o -> curl-7.81.0_o_needed/share.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/version.c.o -> curl-7.81.0_o_needed/version.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/getenv.c.o -> curl-7.81.0_o_needed/getenv.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/setopt.c.o -> curl-7.81.0_o_needed/setopt.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/strcase.c.o -> curl-7.81.0_o_needed/strcase.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/parsedate.c.o -> curl-7.81.0_o_needed/parsedate.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/strerror.c.o -> curl-7.81.0_o_needed/strerror.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/dynbuf.c.o -> curl-7.81.0_o_needed/dynbuf.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/sendf.c.o -> curl-7.81.0_o_needed/sendf.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/rand.c.o -> curl-7.81.0_o_needed/rand.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/warnless.c.o -> curl-7.81.0_o_needed/warnless.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/conncache.c.o -> curl-7.81.0_o_needed/conncache.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/connect.c.o -> curl-7.81.0_o_needed/connect.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/url.c.o -> curl-7.81.0_o_needed/url.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/http_proxy.c.o -> curl-7.81.0_o_needed/http_proxy.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/hostip.c.o -> curl-7.81.0_o_needed/hostip.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/transfer.c.o -> curl-7.81.0_o_needed/transfer.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/hash.c.o -> curl-7.81.0_o_needed/hash.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/http.c.o -> curl-7.81.0_o_needed/http.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/llist.c.o -> curl-7.81.0_o_needed/llist.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/timeval.c.o -> curl-7.81.0_o_needed/timeval.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/progress.c.o -> curl-7.81.0_o_needed/progress.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/select.c.o -> curl-7.81.0_o_needed/select.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/asyn-thread.c.o -> curl-7.81.0_o_needed/asyn-thread.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/socketpair.c.o -> curl-7.81.0_o_needed/socketpair.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/socks.c.o -> curl-7.81.0_o_needed/socks.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/speedcheck.c.o -> curl-7.81.0_o_needed/speedcheck.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/splay.c.o -> curl-7.81.0_o_needed/splay.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/vtls.c.o -> curl-7.81.0_o_needed/vtls.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/wildcard.c.o -> curl-7.81.0_o_needed/wildcard.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/nonblock.c.o -> curl-7.81.0_o_needed/nonblock.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/curl_ctype.c.o -> curl-7.81.0_o_needed/curl_ctype.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/altsvc.c.o -> curl-7.81.0_o_needed/altsvc.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/cookie.c.o -> curl-7.81.0_o_needed/cookie.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/getinfo.c.o -> curl-7.81.0_o_needed/getinfo.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/hsts.c.o -> curl-7.81.0_o_needed/hsts.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/http_digest.c.o -> curl-7.81.0_o_needed/http_digest.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/strdup.c.o -> curl-7.81.0_o_needed/strdup.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/dotdot.c.o -> curl-7.81.0_o_needed/dotdot.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/inet_ntop.c.o -> curl-7.81.0_o_needed/inet_ntop.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/content_encoding.c.o -> curl-7.81.0_o_needed/content_encoding.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/if2ip.c.o -> curl-7.81.0_o_needed/if2ip.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/dict.c.o -> curl-7.81.0_o_needed/dict.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/file.c.o -> curl-7.81.0_o_needed/file.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/ftp.c.o -> curl-7.81.0_o_needed/ftp.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/gopher.c.o -> curl-7.81.0_o_needed/gopher.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/imap.c.o -> curl-7.81.0_o_needed/imap.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/mqtt.c.o -> curl-7.81.0_o_needed/mqtt.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/pop3.c.o -> curl-7.81.0_o_needed/pop3.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/rtsp.c.o -> curl-7.81.0_o_needed/rtsp.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/smb.c.o -> curl-7.81.0_o_needed/smb.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/smtp.c.o -> curl-7.81.0_o_needed/smtp.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/telnet.c.o -> curl-7.81.0_o_needed/telnet.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/tftp.c.o -> curl-7.81.0_o_needed/tftp.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/http_ntlm.c.o -> curl-7.81.0_o_needed/http_ntlm.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/netrc.c.o -> curl-7.81.0_o_needed/netrc.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/curl_addrinfo.c.o -> curl-7.81.0_o_needed/curl_addrinfo.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/http_chunks.c.o -> curl-7.81.0_o_needed/http_chunks.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/strtoofft.c.o -> curl-7.81.0_o_needed/strtoofft.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/doh.c.o -> curl-7.81.0_o_needed/doh.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/hostasyn.c.o -> curl-7.81.0_o_needed/hostasyn.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/hostip6.c.o -> curl-7.81.0_o_needed/hostip6.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/digest.c.o -> curl-7.81.0_o_needed/digest.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/ntlm.c.o -> curl-7.81.0_o_needed/ntlm.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/base64.c.o -> curl-7.81.0_o_needed/base64.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/formdata.c.o -> curl-7.81.0_o_needed/formdata.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/http_aws_sigv4.c.o -> curl-7.81.0_o_needed/http_aws_sigv4.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/curl_threads.c.o -> curl-7.81.0_o_needed/curl_threads.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/openssl.c.o -> curl-7.81.0_o_needed/openssl.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/fileinfo.c.o -> curl-7.81.0_o_needed/fileinfo.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/fopen.c.o -> curl-7.81.0_o_needed/fopen.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/curl_get_line.c.o -> curl-7.81.0_o_needed/curl_get_line.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/rename.c.o -> curl-7.81.0_o_needed/rename.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/curl_memrchr.c.o -> curl-7.81.0_o_needed/curl_memrchr.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/curl_range.c.o -> curl-7.81.0_o_needed/curl_range.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/ftplistparser.c.o -> curl-7.81.0_o_needed/ftplistparser.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/pingpong.c.o -> curl-7.81.0_o_needed/pingpong.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/bufref.c.o -> curl-7.81.0_o_needed/bufref.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/curl_sasl.c.o -> curl-7.81.0_o_needed/curl_sasl.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/md5.c.o -> curl-7.81.0_o_needed/md5.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/curl_ntlm_core.c.o -> curl-7.81.0_o_needed/curl_ntlm_core.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/curl_endian.c.o -> curl-7.81.0_o_needed/curl_endian.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/curl_gethostname.c.o -> curl-7.81.0_o_needed/curl_gethostname.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/vauth.c.o -> curl-7.81.0_o_needed/vauth.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/sha256.c.o -> curl-7.81.0_o_needed/sha256.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/hmac.c.o -> curl-7.81.0_o_needed/hmac.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/hostcheck.c.o -> curl-7.81.0_o_needed/hostcheck.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/keylog.c.o -> curl-7.81.0_o_needed/keylog.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/curl_fnmatch.c.o -> curl-7.81.0_o_needed/curl_fnmatch.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/cram.c.o -> curl-7.81.0_o_needed/cram.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/cleartext.c.o -> curl-7.81.0_o_needed/cleartext.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/oauth2.c.o -> curl-7.81.0_o_needed/oauth2.c.o
+check if file already exits:  False
+Copied: curl-7.81.0_o/md4.c.o -> curl-7.81.0_o_needed/md4.c.o
+need files, curl-7.81.0_o ['mime.c', 'multi.c', 'escape.c', 'easy.c', 'slist.c', 'mprintf.c', 'urlapi.c', 'share.c', 'version.c', 'getenv.c', 'setopt.c', 'strcase.c', 'parsedate.c', 'strerror.c', 'dynbuf.c', 'sendf.c', 'rand.c', 'warnless.c', 'conncache.c', 'connect.c', 'url.c', 'http_proxy.c', 'hostip.c', 'transfer.c', 'hash.c', 'http.c', 'llist.c', 'timeval.c', 'progress.c', 'select.c', 'asyn-thread.c', 'socketpair.c', 'socks.c', 'speedcheck.c', 'splay.c', 'vtls.c', 'wildcard.c', 'nonblock.c', 'curl_ctype.c', 'altsvc.c', 'cookie.c', 'getinfo.c', 'hsts.c', 'http_digest.c', 'strdup.c', 'dotdot.c', 'inet_ntop.c', 'content_encoding.c', 'if2ip.c', 'dict.c', 'file.c', 'ftp.c', 'gopher.c', 'imap.c', 'mqtt.c', 'pop3.c', 'rtsp.c', 'smb.c', 'smtp.c', 'telnet.c', 'tftp.c', 'http_ntlm.c', 'netrc.c', 'curl_addrinfo.c', 'http_chunks.c', 'strtoofft.c', 'doh.c', 'hostasyn.c', 'hostip6.c', 'digest.c', 'ntlm.c', 'base64.c', 'formdata.c', 'http_aws_sigv4.c', 'curl_threads.c', 'openssl.c', 'fileinfo.c', 'fopen.c', 'curl_get_line.c', 'rename.c', 'curl_memrchr.c', 'curl_range.c', 'ftplistparser.c', 'pingpong.c', 'bufref.c', 'curl_sasl.c', 'md5.c', 'curl_ntlm_core.c', 'curl_endian.c', 'curl_gethostname.c', 'vauth.c', 'sha256.c', 'hmac.c', 'hostcheck.c', 'keylog.c', 'curl_fnmatch.c', 'cram.c', 'cleartext.c', 'oauth2.c', 'md4.c'] 100
+inneed files to delete:  curl-7.81.0_o ['quiche.c', 'tool_paramhlp.c', 'socks_sspi.c', 'krb5.c', 'tool_helpers.c', 'curl_des.c', 'ntlm_sspi.c', 'tool_cb_hdr.c', 'gsasl.c', 'ldap.c', 'memdebug.c', 'easyoptions.c', 'tool_panykey.c', 'tool_findfile.c', 'libssh.c', 'tool_cb_prg.c', 'tool_util.c', 'curl_ntlm_wb.c', 'strtok.c', 'tool_help.c', 'easygetopt.c', 'curl_sspi.c', 'krb5_sspi.c', 'http2.c', 'tool_getparam.c', 'schannel_verify.c', 'openldap.c', 'digest_sspi.c', 'curl_gssapi.c', 'mesalink.c', 'tool_cb_wrt.c', 'tool_strdup.c', 'tool_main.c', 'inet_pton.c', 'spnego_gssapi.c', 'idn_win32.c', 'tool_dirhie.c', 'tool_cfgable.c', 'ngtcp2.c', 'tool_writeout_json.c', 'http_negotiate.c', 'tool_msgs.c', 'tool_bname.c', 'tool_vms.c', 'tool_doswin.c', 'version_win32.c', 'krb5_gssapi.c', 'tool_libinfo.c', 'tool_cb_dbg.c', 'wolfssl.c', 'tool_sleep.c', 'tool_cb_see.c', 'tool_formparse.c', 'bearssl.c', 'tool_filetime.c', 'c-hyper.c', 'mbedtls.c', 'tool_cb_rea.c', 'asyn-ares.c', 'tool_hugehelp.c', 'tool_parsecfg.c', 'mbedtls_threadlock.c', 'psl.c', 'tool_easysrc.c', 'tool_operhlp.c', 'curl_multibyte.c', 'spnego_sspi.c', 'schannel.c', 'tool_listhelp.c', 'gtls.c', 'amigaos.c', 'libssh2.c', 'rustls.c', 'tool_urlglob.c', 'x509asn1.c', 'tool_binmode.c', 'tool_progress.c', 'tool_convert.c', 'wolfssh.c', 'sectransp.c', 'tool_writeout.c', 'tool_getpass.c', 'hostip4.c', 'tool_xattr.c', 'socks_gssapi.c', 'nss.c', 'tool_operate.c', 'hostsyn.c', 'tool_setopt.c', 'slist_wc.c', 'vquic.c', 'curl_path.c', 'gskit.c', 'curl_rtmp.c', 'non-ascii.c', 'system_win32.c'] 96
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2024-7264-pre1.patch/lib/x509asn1.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2024-7264-pre1.patch/lib/x509asn1.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2022-27781.patch/lib/vtls/nss.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2022-27781.patch/lib/vtls/nss.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2024-8096.patch/lib/vtls/gtls.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2024-8096.patch/lib/vtls/gtls.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-27535-pre1.patch/lib/vauth/digest_sspi.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-27535-pre1.patch/lib/vauth/digest_sspi.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-28322.patch/lib/curl_rtmp.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-28322.patch/lib/curl_rtmp.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-28322.patch/lib/vssh/wolfssh.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-28322.patch/lib/vssh/wolfssh.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-28322.patch/lib/vssh/libssh2.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-28322.patch/lib/vssh/libssh2.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-28322.patch/lib/vssh/libssh.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-28322.patch/lib/vssh/libssh.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-23914_5-2.patch/src/tool_operate.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-23914_5-2.patch/src/tool_operate.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2024-7264.patch/lib/x509asn1.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2024-7264.patch/lib/x509asn1.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2022-27782.patch/lib/vtls/nss.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2022-27782.patch/lib/vtls/nss.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2022-27782.patch/lib/vtls/gtls.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2022-27782.patch/lib/vtls/gtls.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2022-32208.patch/lib/krb5.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2022-32208.patch/lib/krb5.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-27534.patch/lib/curl_path.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-27534.patch/lib/curl_path.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2024-2398.patch/lib/http2.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2024-2398.patch/lib/http2.c
+delete file path:  depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-27534-pre1.patch/lib/curl_path.c
+Finished commenting depends_source_code_curl/curl-7.81.0/.pc/CVE-2023-27534-pre1.patch/lib/curl_path.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/slist_wc.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/slist_wc.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_strdup.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_strdup.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_libinfo.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_libinfo.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_operhlp.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_operhlp.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_cb_prg.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_cb_prg.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_sleep.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_sleep.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_cb_wrt.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_cb_wrt.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_help.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_help.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_cb_see.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_cb_see.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_xattr.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_xattr.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_bname.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_bname.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_easysrc.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_easysrc.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_parsecfg.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_parsecfg.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_cb_dbg.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_cb_dbg.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_getpass.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_getpass.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_doswin.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_doswin.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_setopt.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_setopt.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_dirhie.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_dirhie.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_writeout.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_writeout.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_cfgable.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_cfgable.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_panykey.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_panykey.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_formparse.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_formparse.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_hugehelp.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_hugehelp.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_msgs.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_msgs.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_findfile.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_findfile.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_convert.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_convert.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_progress.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_progress.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_writeout_json.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_writeout_json.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_cb_hdr.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_cb_hdr.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_urlglob.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_urlglob.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_getparam.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_getparam.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_util.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_util.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_main.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_main.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_operate.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_operate.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_cb_rea.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_cb_rea.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_paramhlp.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_paramhlp.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_helpers.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_helpers.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_filetime.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_filetime.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_vms.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_vms.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_listhelp.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_listhelp.c
+delete file path:  depends_source_code_curl/curl-7.81.0/src/tool_binmode.c
+Finished commenting depends_source_code_curl/curl-7.81.0/src/tool_binmode.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/c-hyper.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/c-hyper.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/curl_ntlm_wb.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/curl_ntlm_wb.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/curl_rtmp.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/curl_rtmp.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/socks_sspi.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/socks_sspi.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/hostip4.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/hostip4.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/krb5.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/krb5.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/hostsyn.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/hostsyn.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/amigaos.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/amigaos.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/memdebug.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/memdebug.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/x509asn1.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/x509asn1.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/asyn-ares.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/asyn-ares.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/system_win32.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/system_win32.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/http2.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/http2.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/curl_gssapi.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/curl_gssapi.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/inet_pton.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/inet_pton.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/version_win32.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/version_win32.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/curl_sspi.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/curl_sspi.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/curl_path.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/curl_path.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/openldap.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/openldap.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/easygetopt.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/easygetopt.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/socks_gssapi.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/socks_gssapi.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/psl.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/psl.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/curl_des.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/curl_des.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/curl_multibyte.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/curl_multibyte.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/ldap.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/ldap.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/strtok.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/strtok.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/http_negotiate.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/http_negotiate.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/easyoptions.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/easyoptions.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/idn_win32.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/idn_win32.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/non-ascii.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/non-ascii.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vtls/rustls.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vtls/rustls.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vtls/gskit.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vtls/gskit.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vtls/sectransp.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vtls/sectransp.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vtls/nss.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vtls/nss.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vtls/mbedtls.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vtls/mbedtls.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vtls/schannel.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vtls/schannel.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vtls/mesalink.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vtls/mesalink.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vtls/bearssl.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vtls/bearssl.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vtls/wolfssl.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vtls/wolfssl.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vtls/schannel_verify.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vtls/schannel_verify.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vtls/mbedtls_threadlock.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vtls/mbedtls_threadlock.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vtls/gtls.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vtls/gtls.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vssh/wolfssh.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vssh/wolfssh.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vssh/libssh2.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vssh/libssh2.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vssh/libssh.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vssh/libssh.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vquic/quiche.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vquic/quiche.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vquic/ngtcp2.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vquic/ngtcp2.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vquic/vquic.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vquic/vquic.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vauth/spnego_sspi.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vauth/spnego_sspi.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vauth/spnego_gssapi.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vauth/spnego_gssapi.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vauth/krb5_gssapi.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vauth/krb5_gssapi.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vauth/gsasl.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vauth/gsasl.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vauth/digest_sspi.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vauth/digest_sspi.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vauth/ntlm_sspi.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vauth/ntlm_sspi.c
+delete file path:  depends_source_code_curl/curl-7.81.0/lib/vauth/krb5_sspi.c
+Finished commenting depends_source_code_curl/curl-7.81.0/lib/vauth/krb5_sspi.c
+start symbols check
+finish unused symbols check:  {'multi.c.o': {'Curl_multi_add_perform': {}, 'curl_multi_assign': {}, 'curl_multi_fdset': {}, 'Curl_multi_max_concurrent_streams': {}, 'curl_multi_socket': {}, 'curl_multi_socket_action': {}, 'curl_multi_socket_all': {}, 'curl_multi_timeout': {}, 'curl_multi_wait': {}, 'curl_multi_wakeup': {}}, 'formdata.c.o': {'curl_formadd': {}, 'curl_formfree': {}, 'curl_formget': {}}, 'strerror.c.o': {'curl_multi_strerror': {}, 'curl_share_strerror': {}, 'curl_url_strerror': {}}, 'setopt.c.o': {'Curl_vsetopt': {}}, 'keylog.c.o': {'Curl_tls_keylog_write': {}}, 'digest.c.o': {'Curl_auth_digest_get_pair': {}}, 'asyn-thread.c.o': {'Curl_set_dns_interface': {}, 'Curl_set_dns_local_ip4': {}, 'Curl_set_dns_local_ip6': {}, 'Curl_set_dns_servers': {}}, 'warnless.c.o': {'curlx_sitouz': {}, 'curlx_sztosi': {}, 'curlx_uztoso': {}, 'curlx_uztoul': {}}, 'openssl.c.o': {'Curl_ossl_verifyhost': {}}, 'base64.c.o': {'Curl_base64url_encode': {}}, 'escape.c.o': {'curl_easy_unescape': {}, 'curl_escape': {}, 'curl_unescape': {}}, 'easy.c.o': {'curl_easy_duphandle': {}, 'curl_easy_recv': {}, 'curl_easy_reset': {}, 'curl_easy_send': {}, 'curl_easy_upkeep': {}, 'curl_global_init_mem': {}}, 'curl_addrinfo.c.o': {'Curl_he2ai': {}}, 'http.c.o': {'Curl_http': {}, 'Curl_http_body': {}, 'Curl_http_bodysend': {}, 'Curl_http_cookies': {}, 'Curl_http_header': {}, 'Curl_http_host': {}, 'Curl_http_range': {}, 'Curl_http_resume': {}, 'Curl_http_size': {}, 'Curl_http_statusline': {}, 'Curl_http_target': {}, 'Curl_http_useragent': {}, 'Curl_transferencode': {}, 'Curl_use_http_1_1plus': {}}, 'connect.c.o': {'Curl_addr2string': {}}, 'ftp.c.o': {'Curl_GetFTPResponse': {}}, 'mprintf.c.o': {'curl_msprintf': {}, 'curl_mvprintf': {}, 'curl_mvsprintf': {}}, 'vauth.c.o': {'Curl_auth_user_contains_domain': {}}, 'vtls.c.o': {'curl_global_sslset': {}, 'Curl_none_cert_status_request': {}, 'Curl_none_check_cxn': {}, 'Curl_none_cleanup': {}, 'Curl_none_close_all': {}, 'Curl_none_data_pending': {}, 'Curl_none_engines_list': {}, 'Curl_none_init': {}, 'Curl_none_random': {}, 'Curl_none_session_free': {}, 'Curl_none_set_engine': {}, 'Curl_none_set_engine_default': {}, 'Curl_none_shutdown': {}, 'Curl_ssl_push_certinfo': {}}, 'hostip.c.o': {'curl_jmpenv': {}}}
+finish unused symbols find:  {'multi.c.o': {'Curl_multi_add_perform': 'CURLMcode Curl_multi_add_perform(struct Curl_multi *multi,', 'curl_multi_assign': 'CURLMcode curl_multi_assign(struct Curl_multi *multi, curl_socket_t s,', 'curl_multi_fdset': 'CURLMcode curl_multi_fdset(struct Curl_multi *multi,', 'Curl_multi_max_concurrent_streams': 'unsigned int Curl_multi_max_concurrent_streams(struct Curl_multi *multi)', 'curl_multi_socket': 'CURLMcode curl_multi_socket(struct Curl_multi *multi, curl_socket_t s,', 'curl_multi_socket_action': 'CURLMcode curl_multi_socket_action(struct Curl_multi *multi, curl_socket_t s,', 'curl_multi_socket_all': 'CURLMcode curl_multi_socket_all(struct Curl_multi *multi, int *running_handles)', 'curl_multi_timeout': 'CURLMcode curl_multi_timeout(struct Curl_multi *multi,', 'curl_multi_wait': 'CURLMcode curl_multi_wait(struct Curl_multi *multi,', 'curl_multi_wakeup': 'CURLMcode curl_multi_wakeup(struct Curl_multi *multi)', 'multi.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/multi.c'}, 'formdata.c.o': {'curl_formadd': 'CURLFORMcode curl_formadd(struct curl_httppost **httppost,', 'curl_formfree': 'void curl_formfree(struct curl_httppost *form)', 'curl_formget': 'int curl_formget(struct curl_httppost *form, void *arg,', 'formdata.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/formdata.c'}, 'strerror.c.o': {'curl_multi_strerror': 'curl_multi_strerror(CURLMcode error)', 'curl_share_strerror': 'curl_share_strerror(CURLSHcode error)', 'curl_url_strerror': 'curl_url_strerror(CURLUcode error)', 'strerror.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/strerror.c'}, 'setopt.c.o': {'Curl_vsetopt': 'CURLcode Curl_vsetopt(struct Curl_easy *data, CURLoption option, va_list param)', 'setopt.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/setopt.c'}, 'keylog.c.o': {'Curl_tls_keylog_write': 'Curl_tls_keylog_write(const char *label,', 'keylog.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/vtls/keylog.c'}, 'digest.c.o': {'Curl_auth_digest_get_pair': 'bool Curl_auth_digest_get_pair(const char *str, char *value, char *content,', 'digest.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/vauth/digest.c'}, 'asyn-thread.c.o': {'Curl_set_dns_interface': 'CURLcode Curl_set_dns_interface(struct Curl_easy *data,', 'Curl_set_dns_local_ip4': 'CURLcode Curl_set_dns_local_ip4(struct Curl_easy *data,', 'Curl_set_dns_local_ip6': 'CURLcode Curl_set_dns_local_ip6(struct Curl_easy *data,', 'Curl_set_dns_servers': 'CURLcode Curl_set_dns_servers(struct Curl_easy *data,', 'asyn-thread.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/asyn-thread.c'}, 'warnless.c.o': {'curlx_sitouz': 'size_t curlx_sitouz(int sinum)', 'curlx_sztosi': 'int curlx_sztosi(ssize_t sznum)', 'curlx_uztoso': 'curl_off_t curlx_uztoso(size_t uznum)', 'curlx_uztoul': 'unsigned long curlx_uztoul(size_t uznum)', 'warnless.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/warnless.c'}, 'openssl.c.o': {'Curl_ossl_verifyhost': 'CURLcode Curl_ossl_verifyhost(struct Curl_easy *data, struct connectdata *conn,', 'openssl.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/vtls/openssl.c'}, 'base64.c.o': {'Curl_base64url_encode': 'CURLcode Curl_base64url_encode(struct Curl_easy *data,', 'base64.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/base64.c'}, 'escape.c.o': {'curl_easy_unescape': 'char *curl_easy_unescape(struct Curl_easy *data, const char *string,', 'curl_escape': 'char *curl_escape(const char *string, int inlength)', 'curl_unescape': 'char *curl_unescape(const char *string, int length)', 'escape.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/escape.c'}, 'easy.c.o': {'curl_easy_duphandle': 'struct Curl_easy *curl_easy_duphandle(struct Curl_easy *data)', 'curl_easy_recv': 'CURLcode curl_easy_recv(struct Curl_easy *data, void *buffer, size_t buflen,', 'curl_easy_reset': 'void curl_easy_reset(struct Curl_easy *data)', 'curl_easy_send': 'CURLcode curl_easy_send(struct Curl_easy *data, const void *buffer,', 'curl_easy_upkeep': 'CURLcode curl_easy_upkeep(struct Curl_easy *data)', 'curl_global_init_mem': 'CURLcode curl_global_init_mem(long flags, curl_malloc_callback m,', 'easy.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/easy.c'}, 'curl_addrinfo.c.o': {'Curl_he2ai': 'Curl_he2ai(const struct hostent *he, int port)', 'curl_addrinfo.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/curl_addrinfo.c'}, 'http.c.o': {'Curl_http': 'CURLcode Curl_http(struct Curl_easy *data, bool *done)', 'Curl_http_body': 'CURLcode Curl_http_body(struct Curl_easy *data, struct connectdata *conn,', 'Curl_http_bodysend': 'CURLcode Curl_http_bodysend(struct Curl_easy *data, struct connectdata *conn,', 'Curl_http_cookies': 'CURLcode Curl_http_cookies(struct Curl_easy *data,', 'Curl_http_header': 'CURLcode Curl_http_header(struct Curl_easy *data, struct connectdata *conn,', 'Curl_http_host': 'CURLcode Curl_http_host(struct Curl_easy *data, struct connectdata *conn)', 'Curl_http_range': 'CURLcode Curl_http_range(struct Curl_easy *data,', 'Curl_http_resume': 'CURLcode Curl_http_resume(struct Curl_easy *data,', 'Curl_http_size': 'CURLcode Curl_http_size(struct Curl_easy *data)', 'Curl_http_statusline': 'CURLcode Curl_http_statusline(struct Curl_easy *data,', 'Curl_http_target': 'CURLcode Curl_http_target(struct Curl_easy *data,', 'Curl_http_useragent': 'CURLcode Curl_http_useragent(struct Curl_easy *data)', 'Curl_transferencode': 'CURLcode Curl_transferencode(struct Curl_easy *data)', 'Curl_use_http_1_1plus': 'bool Curl_use_http_1_1plus(const struct Curl_easy *data,', 'http.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/http.c'}, 'connect.c.o': {'Curl_addr2string': 'bool Curl_addr2string(struct sockaddr *sa, curl_socklen_t salen,', 'connect.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/connect.c'}, 'ftp.c.o': {'Curl_GetFTPResponse': 'CURLcode Curl_GetFTPResponse(struct Curl_easy *data,', 'ftp.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/ftp.c'}, 'mprintf.c.o': {'curl_msprintf': 'int curl_msprintf(char *buffer, const char *format, ...)', 'curl_mvprintf': 'int curl_mvprintf(const char *format, va_list ap_save)', 'curl_mvsprintf': 'int curl_mvsprintf(char *buffer, const char *format, va_list ap_save)', 'mprintf.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/mprintf.c'}, 'vauth.c.o': {'Curl_auth_user_contains_domain': 'bool Curl_auth_user_contains_domain(const char *user)', 'vauth.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/vauth/vauth.c'}, 'vtls.c.o': {'curl_global_sslset': 'CURLsslset curl_global_sslset(curl_sslbackend id, const char *name,', 'Curl_none_cert_status_request': 'bool Curl_none_cert_status_request(void)', 'Curl_none_check_cxn': 'int Curl_none_check_cxn(struct connectdata *conn UNUSED_PARAM)', 'Curl_none_cleanup': 'void Curl_none_cleanup(void)', 'Curl_none_close_all': 'void Curl_none_close_all(struct Curl_easy *data UNUSED_PARAM)', 'Curl_none_data_pending': 'bool Curl_none_data_pending(const struct connectdata *conn UNUSED_PARAM,', 'Curl_none_engines_list': 'struct curl_slist *Curl_none_engines_list(struct Curl_easy *data UNUSED_PARAM)', 'Curl_none_init': 'int Curl_none_init(void)', 'Curl_none_random': 'CURLcode Curl_none_random(struct Curl_easy *data UNUSED_PARAM,', 'Curl_none_session_free': 'void Curl_none_session_free(void *ptr UNUSED_PARAM)', 'Curl_none_set_engine': 'CURLcode Curl_none_set_engine(struct Curl_easy *data UNUSED_PARAM,', 'Curl_none_set_engine_default': 'CURLcode Curl_none_set_engine_default(struct Curl_easy *data UNUSED_PARAM)', 'Curl_none_shutdown': 'int Curl_none_shutdown(struct Curl_easy *data UNUSED_PARAM,', 'Curl_ssl_push_certinfo': 'CURLcode Curl_ssl_push_certinfo(struct Curl_easy *data,', 'vtls.c.o_path': 'depends_source_code_curl/curl-7.81.0/lib/vtls/vtls.c'}, 'hostip.c.o': {'curl_jmpenv': {}}}
+multi.c.o depends_source_code_curl/curl-7.81.0/lib/multi.c
+Curl_multi_add_perform |||| CURLMcode Curl_multi_add_perform(struct Curl_multi *multi, line:  1530
+1530 1553
+1530 1553
+curl_multi_assign |||| CURLMcode curl_multi_assign(struct Curl_multi *multi, curl_socket_t s, line:  3559
+3559 3575
+3559 3575
+curl_multi_fdset |||| CURLMcode curl_multi_fdset(struct Curl_multi *multi, line:  1061
+1061 1119
+1061 1119
+Curl_multi_max_concurrent_streams |||| unsigned int Curl_multi_max_concurrent_streams(struct Curl_multi *multi) line:  3676
+3676 3680
+3676 3680
+curl_multi_socket |||| CURLMcode curl_multi_socket(struct Curl_multi *multi, curl_socket_t s, line:  3234
+3234 3244
+3234 3244
+curl_multi_socket_action |||| CURLMcode curl_multi_socket_action(struct Curl_multi *multi, curl_socket_t s, line:  3246
+3246 3256
+3246 3256
+curl_multi_socket_all |||| CURLMcode curl_multi_socket_all(struct Curl_multi *multi, int *running_handles) line:  3258
+3258 3267
+3258 3267
+curl_multi_timeout |||| CURLMcode curl_multi_timeout(struct Curl_multi *multi, line:  3313
+3313 3324
+3313 3324
+curl_multi_wait |||| CURLMcode curl_multi_wait(struct Curl_multi *multi, line:  1442
+1442 1450
+1442 1450
+curl_multi_wakeup |||| CURLMcode curl_multi_wakeup(struct Curl_multi *multi) line:  1462
+1462 1512
+1462 1512
+formdata.c.o depends_source_code_curl/curl-7.81.0/lib/formdata.c
+curl_formadd |||| CURLFORMcode curl_formadd(struct curl_httppost **httppost, line:  693
+693 703
+693 703
+curl_formadd |||| CURLFORMcode curl_formadd(struct curl_httppost **httppost, line:  928
+928 935
+928 935
+curl_formfree |||| void curl_formfree(struct curl_httppost *form) line:  746
+746 771
+746 771
+curl_formfree |||| void curl_formfree(struct curl_httppost *form) line:  946
+946 950
+946 950
+curl_formget |||| int curl_formget(struct curl_httppost *form, void *arg, line:  712
+712 740
+712 740
+curl_formget |||| int curl_formget(struct curl_httppost *form, void *arg, line:  937
+937 944
+937 944
+strerror.c.o depends_source_code_curl/curl-7.81.0/lib/strerror.c
+curl_multi_strerror |||| curl_multi_strerror(CURLMcode error) line:  367
+367 421
+366 421
+curl_share_strerror |||| curl_share_strerror(CURLSHcode error) line:  424
+424 457
+423 457
+curl_url_strerror |||| curl_url_strerror(CURLUcode error) line:  460
+460 565
+459 565
+setopt.c.o depends_source_code_curl/curl-7.81.0/lib/setopt.c
+Curl_vsetopt |||| CURLcode Curl_vsetopt(struct Curl_easy *data, CURLoption option, va_list param) line:  160
+160 3090
+160 3090
+keylog.c.o depends_source_code_curl/curl-7.81.0/lib/vtls/keylog.c
+Curl_tls_keylog_write |||| Curl_tls_keylog_write(const char *label, line:  115
+115 156
+114 156
+digest.c.o depends_source_code_curl/curl-7.81.0/lib/vauth/digest.c
+Curl_auth_digest_get_pair |||| bool Curl_auth_digest_get_pair(const char *str, char *value, char *content, line:  74
+74 139
+74 139
+asyn-thread.c.o depends_source_code_curl/curl-7.81.0/lib/asyn-thread.c
+Curl_set_dns_interface |||| CURLcode Curl_set_dns_interface(struct Curl_easy *data, line:  736
+736 742
+736 742
+Curl_set_dns_local_ip4 |||| CURLcode Curl_set_dns_local_ip4(struct Curl_easy *data, line:  744
+744 750
+744 750
+Curl_set_dns_local_ip6 |||| CURLcode Curl_set_dns_local_ip6(struct Curl_easy *data, line:  752
+752 758
+752 758
+Curl_set_dns_servers |||| CURLcode Curl_set_dns_servers(struct Curl_easy *data, line:  727
+727 734
+727 734
+warnless.c.o depends_source_code_curl/curl-7.81.0/lib/warnless.c
+curlx_sitouz |||| size_t curlx_sitouz(int sinum) line:  326
+326 339
+326 339
+curlx_sztosi |||| int curlx_sztosi(ssize_t sznum) line:  285
+285 301
+285 301
+curlx_uztoso |||| curl_off_t curlx_uztoso(size_t uznum) line:  100
+100 116
+100 116
+curlx_uztoul |||| unsigned long curlx_uztoul(size_t uznum) line:  141
+141 156
+141 156
+openssl.c.o depends_source_code_curl/curl-7.81.0/lib/vtls/openssl.c
+Curl_ossl_verifyhost |||| CURLcode Curl_ossl_verifyhost(struct Curl_easy *data, struct connectdata *conn, line:  1684
+1684 1880
+1684 1880
+base64.c.o depends_source_code_curl/curl-7.81.0/lib/base64.c
+Curl_base64url_encode |||| CURLcode Curl_base64url_encode(struct Curl_easy *data, line:  322
+322 327
+322 327
+escape.c.o depends_source_code_curl/curl-7.81.0/lib/escape.c
+curl_easy_unescape |||| char *curl_easy_unescape(struct Curl_easy *data, const char *string, line:  217
+217 238
+217 238
+curl_escape |||| char *curl_escape(const char *string, int inlength) line:  68
+68 71
+68 71
+curl_unescape |||| char *curl_unescape(const char *string, int length) line:  74
+74 77
+74 77
+easy.c.o depends_source_code_curl/curl-7.81.0/lib/easy.c
+curl_easy_duphandle |||| struct Curl_easy *curl_easy_duphandle(struct Curl_easy *data) line:  822
+822 960
+822 960
+curl_easy_recv |||| CURLcode curl_easy_recv(struct Curl_easy *data, void *buffer, size_t buflen, line:  1131
+1131 1160
+1131 1160
+curl_easy_reset |||| void curl_easy_reset(struct Curl_easy *data) line:  966
+966 992
+966 992
+curl_easy_send |||| CURLcode curl_easy_send(struct Curl_easy *data, const void *buffer, line:  1166
+1166 1202
+1166 1202
+curl_easy_upkeep |||| CURLcode curl_easy_upkeep(struct Curl_easy *data) line:  1243
+1243 1257
+1243 1257
+curl_global_init_mem |||| CURLcode curl_global_init_mem(long flags, curl_malloc_callback m, line:  224
+224 250
+224 250
+curl_addrinfo.c.o depends_source_code_curl/curl-7.81.0/lib/curl_addrinfo.c
+Curl_he2ai |||| Curl_he2ai(const struct hostent *he, int port) line:  259
+259 347
+258 347
+http.c.o depends_source_code_curl/curl-7.81.0/lib/http.c
+Curl_http |||| CURLcode Curl_http(struct Curl_easy *data, bool *done) line:  3020
+3020 3300
+3020 3300
+Curl_http_body |||| CURLcode Curl_http_body(struct Curl_easy *data, struct connectdata *conn, line:  2291
+2291 2377
+2291 2377
+Curl_http_bodysend |||| CURLcode Curl_http_bodysend(struct Curl_easy *data, struct connectdata *conn, line:  2379
+2379 2706
+2379 2706
+Curl_http_cookies |||| CURLcode Curl_http_cookies(struct Curl_easy *data, line:  2710
+2710 2779
+2710 2779
+Curl_http_header |||| CURLcode Curl_http_header(struct Curl_easy *data, struct connectdata *conn, line:  3411
+3411 3713
+3411 3713
+Curl_http_host |||| CURLcode Curl_http_host(struct Curl_easy *data, struct connectdata *conn) line:  2085
+2085 2175
+2085 2175
+Curl_http_range |||| CURLcode Curl_http_range(struct Curl_easy *data, line:  2782
+2782 2836
+2782 2836
+Curl_http_resume |||| CURLcode Curl_http_resume(struct Curl_easy *data, line:  2838
+2838 2916
+2838 2916
+Curl_http_size |||| CURLcode Curl_http_size(struct Curl_easy *data) line:  3799
+3799 3815
+3799 3815
+Curl_http_statusline |||| CURLcode Curl_http_statusline(struct Curl_easy *data, line:  3720
+3720 3792
+3720 3792
+Curl_http_target |||| CURLcode Curl_http_target(struct Curl_easy *data, line:  2180
+2180 2289
+2180 2289
+Curl_http_useragent |||| CURLcode Curl_http_useragent(struct Curl_easy *data) line:  2071
+2071 2082
+2071 2082
+Curl_transferencode |||| CURLcode Curl_transferencode(struct Curl_easy *data) line:  2982
+2982 3011
+2982 3011
+Curl_use_http_1_1plus |||| bool Curl_use_http_1_1plus(const struct Curl_easy *data, line:  1681
+1681 1691
+1681 1691
+connect.c.o depends_source_code_curl/curl-7.81.0/lib/connect.c
+Curl_addr2string |||| bool Curl_addr2string(struct sockaddr *sa, curl_socklen_t salen, line:  626
+626 679
+626 679
+ftp.c.o depends_source_code_curl/curl-7.81.0/lib/ftp.c
+Curl_GetFTPResponse |||| CURLcode Curl_GetFTPResponse(struct Curl_easy *data, line:  611
+611 711
+611 711
+mprintf.c.o depends_source_code_curl/curl-7.81.0/lib/mprintf.c
+curl_msprintf |||| int curl_msprintf(char *buffer, const char *format, ...) line:  1111
+1111 1120
+1111 1120
+curl_mvprintf |||| int curl_mvprintf(const char *format, va_list ap_save) line:  1151
+1151 1154
+1151 1154
+curl_mvsprintf |||| int curl_mvsprintf(char *buffer, const char *format, va_list ap_save) line:  1143
+1143 1149
+1143 1149
+vauth.c.o depends_source_code_curl/curl-7.81.0/lib/vauth/vauth.c
+Curl_auth_user_contains_domain |||| bool Curl_auth_user_contains_domain(const char *user) line:  125
+125 144
+125 144
+vtls.c.o depends_source_code_curl/curl-7.81.0/lib/vtls/vtls.c
+curl_global_sslset |||| CURLsslset curl_global_sslset(curl_sslbackend id, const char *name, line:  1438
+1438 1465
+1438 1465
+curl_global_sslset |||| CURLsslset curl_global_sslset(curl_sslbackend id, const char *name, line:  1468
+1468 1475
+1468 1475
+Curl_none_cert_status_request |||| bool Curl_none_cert_status_request(void) line:  1184
+1184 1187
+1184 1187
+Curl_none_check_cxn |||| int Curl_none_check_cxn(struct connectdata *conn UNUSED_PARAM) line:  1150
+1150 1154
+1150 1154
+Curl_none_cleanup |||| void Curl_none_cleanup(void) line:  1137
+1137 1138
+1137 1138
+Curl_none_close_all |||| void Curl_none_close_all(struct Curl_easy *data UNUSED_PARAM) line:  1166
+1166 1169
+1166 1169
+Curl_none_data_pending |||| bool Curl_none_data_pending(const struct connectdata *conn UNUSED_PARAM, line:  1176
+1176 1182
+1176 1182
+Curl_none_engines_list |||| struct curl_slist *Curl_none_engines_list(struct Curl_easy *data UNUSED_PARAM) line:  1203
+1203 1207
+1203 1207
+Curl_none_init |||| int Curl_none_init(void) line:  1132
+1132 1135
+1132 1135
+Curl_none_random |||| CURLcode Curl_none_random(struct Curl_easy *data UNUSED_PARAM, line:  1156
+1156 1164
+1156 1164
+Curl_none_session_free |||| void Curl_none_session_free(void *ptr UNUSED_PARAM) line:  1171
+1171 1174
+1171 1174
+Curl_none_set_engine |||| CURLcode Curl_none_set_engine(struct Curl_easy *data UNUSED_PARAM, line:  1189
+1189 1195
+1189 1195
+Curl_none_set_engine_default |||| CURLcode Curl_none_set_engine_default(struct Curl_easy *data UNUSED_PARAM) line:  1197
+1197 1201
+1197 1201
+Curl_none_shutdown |||| int Curl_none_shutdown(struct Curl_easy *data UNUSED_PARAM, line:  1140
+1140 1148
+1140 1148
+Curl_ssl_push_certinfo |||| CURLcode Curl_ssl_push_certinfo(struct Curl_easy *data, line:  869
+869 877
+869 877
+zlib-1.2.11.dfsg
+print y to handle this dependency...
+slimming ends! {'glibc-2.35': 'no', 'curl-7.81.0': 'yes', 'zlib-1.2.11.dfsg': 'no'}
+now_handle_package:  {'curl'}
+now_handle_dependency:  {'zlib1g', 'libcurl4', 'libc6'}
+all_dependency_info:  {'zlib1g': {'Source': 'zlib', 'Depend': {'libc6'}, 'IfHandle': 'no'}, 'libcurl4': {'Source': 'curl', 'Depend': {'zlib1g', 'libpsl5', 'librtmp1', 'libnghttp2-14', 'libssh-4', 'libssl3', 'libidn2-0', 'libzstd1', 'libldap-2.5-0', 'libbrotli1', 'libc6', 'libgssapi-krb5-2'}, 'IfHandle': 'yes'}, 'libc6': {'Source': 'glibc', 'Depend': {'libgcc-s1', 'libcrypt1'}, 'IfHandle': 'no'}}
+package:  zlib1g  has been assigned not to slim
+package:  libc6  has been assigned not to slim
+now handle dependencies of package:  libcurl4
+downloading dependencies...
+copying executable file...
+check point: get dynamic symbols False {'zlib1g': 'zlib-1.2.11.dfsg', 'libcurl4': 'curl-7.81.0', 'libc6': 'glibc-2.35'} libcurl4
+check point:  {'zlib1g': 'zlib-1.2.11.dfsg', 'libcurl4': 'curl-7.81.0', 'libc6': 'glibc-2.35'} libcurl4
+check point 2/27 not init curl-7.81.0_o_needed
+ldd result:  {'linux-vdso.so.1': '(vdso)', 'libcurl.so.4': '/lib/x86_64-linux-gnu/libcurl.so.4', 'libz.so.1': '/lib/x86_64-linux-gnu/libz.so.1', 'libc.so.6': '/lib/x86_64-linux-gnu/libc.so.6', 'libnghttp2.so.14': '/lib/x86_64-linux-gnu/libnghttp2.so.14', 'libidn2.so.0': '/lib/x86_64-linux-gnu/libidn2.so.0', 'librtmp.so.1': '/lib/x86_64-linux-gnu/librtmp.so.1', 'libssh.so.4': '/lib/x86_64-linux-gnu/libssh.so.4', 'libpsl.so.5': '/lib/x86_64-linux-gnu/libpsl.so.5', 'libssl.so.3': '/lib/x86_64-linux-gnu/libssl.so.3', 'libcrypto.so.3': '/lib/x86_64-linux-gnu/libcrypto.so.3', 'libgssapi_krb5.so.2': '/lib/x86_64-linux-gnu/libgssapi_krb5.so.2', 'libldap-2.5.so.0': '/lib/x86_64-linux-gnu/libldap-2.5.so.0', 'liblber-2.5.so.0': '/lib/x86_64-linux-gnu/liblber-2.5.so.0', 'libzstd.so.1': '/lib/x86_64-linux-gnu/libzstd.so.1', 'libbrotlidec.so.1': '/lib/x86_64-linux-gnu/libbrotlidec.so.1', '/lib64/ld-linux-x86-64.so.2': '(vdso)', 'libunistring.so.2': '/lib/x86_64-linux-gnu/libunistring.so.2', 'libgnutls.so.30': '/lib/x86_64-linux-gnu/libgnutls.so.30', 'libhogweed.so.6': '/lib/x86_64-linux-gnu/libhogweed.so.6', 'libnettle.so.8': '/lib/x86_64-linux-gnu/libnettle.so.8', 'libgmp.so.10': '/lib/x86_64-linux-gnu/libgmp.so.10', 'libkrb5.so.3': '/lib/x86_64-linux-gnu/libkrb5.so.3', 'libk5crypto.so.3': '/lib/x86_64-linux-gnu/libk5crypto.so.3', 'libcom_err.so.2': '/lib/x86_64-linux-gnu/libcom_err.so.2', 'libkrb5support.so.0': '/lib/x86_64-linux-gnu/libkrb5support.so.0', 'libsasl2.so.2': '/lib/x86_64-linux-gnu/libsasl2.so.2', 'libbrotlicommon.so.1': '/lib/x86_64-linux-gnu/libbrotlicommon.so.1', 'libp11-kit.so.0': '/lib/x86_64-linux-gnu/libp11-kit.so.0', 'libtasn1.so.6': '/lib/x86_64-linux-gnu/libtasn1.so.6', 'libkeyutils.so.1': '/lib/x86_64-linux-gnu/libkeyutils.so.1', 'libresolv.so.2': '/lib/x86_64-linux-gnu/libresolv.so.2', 'libffi.so.8': '/lib/x86_64-linux-gnu/libffi.so.8'}
+tags_openldap-2.5.18+dfsg
+tags file: tags_{search_dir.split("/")[-1]]}already exists
+tags_krb5-1.19.2
+tags_nghttp2-1.43.0
+tags_libidn2-2.3.2
+tags_rtmpdump-2.4+20151223.gitfa8646d.1
+tags_libpsl-0.21.0
+tags_openssl-3.0.2
+tags_libssh-0.9.6
+tags_libzstd-1.4.8+dfsg
+tags_brotli-1.0.9
+tags file: tags_{search_dir.split("/")[-1]]}already exists
+extract ends!
+intial symbols: ['curlx_uztoui', 'EVP_DigestFinal_ex', 'EVP_DigestInit_ex', 'EVP_DigestUpdate', 'EVP_MD_CTX_free', 'EVP_MD_CTX_new', 'EVP_sha256', 'Curl_ccalloc', 'Curl_cfree', 'Curl_cmalloc', 'Curl_cstrdup', 'curl_easy_strerror', 'Curl_fopen', 'Curl_getdate_capped', 'Curl_get_line', 'Curl_host_is_ipnum', 'Curl_infof', 'curl_maprintf', 'Curl_memrchr', 'curl_mfprintf', 'Curl_raw_toupper', 'Curl_rename', 'Curl_share_lock', 'Curl_share_unlock', 'Curl_slist_append_nodup', 'curl_slist_free_all', 'Curl_strcasecompare', 'Curl_strncasecompare', 'curl_strnequal', 'curlx_strtoofft', 'fclose', 'fopen64', 'fwrite', '_GLOBAL_OFFSET_TABLE_', '__isoc99_sscanf', 'memcpy', 'memmove', 'qsort', '__stack_chk_fail', 'stdin', 'stdout', 'strchr', 'strcmp', 'strcspn', 'strlen', 'strncmp', 'strrchr', 'strtok_r', 'time', 'unlink', '__errno_location', 'poll', 'close', 'Curl_conncache_close_all_connections', 'Curl_conncache_destroy', 'Curl_conncache_foreach', 'Curl_conncache_init', 'Curl_conncache_remove_conn', 'Curl_conncache_return_conn', 'Curl_conncontrol', 'Curl_connect', 'Curl_connect_complete', 'Curl_connect_done', 'Curl_connect_free', 'Curl_connect_getsock', 'Curl_connect_ongoing', 'Curl_disconnect', 'Curl_dyn_free', 'Curl_failf', 'Curl_fetch_addr', 'Curl_follow', 'Curl_free_request_state', 'Curl_hash_add', 'Curl_hash_delete', 'Curl_hash_destroy', 'Curl_hash_init', 'Curl_hash_next_element', 'Curl_hash_pick', 'Curl_hash_start_iterate', 'Curl_hostcache_clean', 'Curl_hostcache_prune', 'Curl_http_connect', 'Curl_init_CONNECT', 'Curl_init_dnscache', 'Curl_init_do', 'Curl_ipv6works', 'Curl_is_connected', 'Curl_llist_count', 'Curl_llist_destroy', 'Curl_llist_init', 'Curl_llist_insert_next', 'Curl_llist_remove', 'curl_msnprintf', 'Curl_now', 'Curl_once_resolved', 'Curl_pgrsDone', 'Curl_pgrsLimitWaitTime', 'Curl_pgrsTime', 'Curl_pgrsUpdate', 'Curl_poll', 'Curl_posttransfer', 'Curl_pretransfer', 'Curl_proxy_connect', 'Curl_ratelimit', 'Curl_readwrite', 'Curl_resolv_check', 'Curl_resolver_kill', 'Curl_resolv_getsock', 'Curl_resolv_unlock', 'Curl_retry_request', 'Curl_single_getsock', 'Curl_socketpair', 'Curl_SOCKS_getsock', 'Curl_speedcheck', 'Curl_splay', 'Curl_splaygetbest', 'Curl_splayinsert', 'Curl_splayremove', 'Curl_ssl', 'Curl_ssl_associate_conn', 'Curl_ssl_detach_conn', 'Curl_timediff', 'Curl_timeleft', 'Curl_wait_ms', 'Curl_wildcard_dtor', 'curlx_nonblock', 'curlx_sltoui', 'curlx_uztosi', '__fdelt_chk', 'recv', 'send', 'sigaction', 'Curl_memdup', 'curl_mime_addpart', 'Curl_mime_cleanpart', 'Curl_mime_contenttype', 'curl_mime_data', 'curl_mime_data_cb', 'curl_mime_filedata', 'curl_mime_filename', 'curl_mime_headers', 'curl_mime_init', 'Curl_mime_initpart', 'curl_mime_name', 'Curl_mime_prepare_headers', 'Curl_mime_read', 'curl_mime_subparts', 'curl_mime_type', 'fread', 'fseek', 'curl_free', '__fgets_chk', 'Curl_client_write', 'Curl_dyn_add', 'Curl_dyn_addn', 'Curl_dyn_init', 'Curl_dyn_len', 'Curl_dyn_ptr', 'Curl_dyn_reset', 'Curl_isxdigit', 'Curl_unencode_write', 'curlx_sotouz', '__xpg_strerror_r', 'Curl_fileinfo_cleanup', 'Curl_fillreadbuffer', 'Curl_get_upload_buffer', 'Curl_ntlm_core_lm_resp', 'Curl_ntlm_core_mk_lm_hash', 'Curl_ntlm_core_mk_nt_hash', 'Curl_pgrsSetDownloadCounter', 'Curl_pgrsSetDownloadSize', 'Curl_pgrsSetUploadCounter', 'Curl_pgrsSetUploadSize', 'Curl_read', 'Curl_read16_be', 'Curl_read16_le', 'Curl_ssl_connect_nonblocking', 'Curl_urldecode', 'Curl_write', 'getpid', 'strcpy', '__strcpy_chk', 'Curl_rand_hex', 'fchmod', 'fdopen', 'fstat64', 'open64', 'stat64', 'memcmp', 'Curl_close', 'curl_easy_init', 'Curl_hash_str', 'Curl_str_key_compare', 'Curl_strntolower', 'Curl_all_content_encodings', 'Curl_altsvc_ctrl', 'Curl_altsvc_init', 'Curl_altsvc_load', 'Curl_cookie_add', 'Curl_cookie_cleanup', 'Curl_cookie_clearall', 'Curl_cookie_clearsess', 'Curl_cookie_init', 'Curl_cookie_loadfiles', 'Curl_flush_cookies', 'Curl_hsts_cleanup', 'Curl_hsts_init', 'Curl_mime_set_subparts', 'Curl_parse_login_details', 'curl_slist_append', 'Curl_ssl_cert_status_request', 'Curl_ssl_false_start', 'Curl_ssl_set_engine', 'Curl_ssl_set_engine_default', 'Curl_ssl_tls13_ciphersuites', 'curlx_sltosi', 'curlx_sltous', 'stderr', 'curl_mvsnprintf', 'Curl_set_in_callback', 'Curl_strerror', 'memchr', 'gethostname', 'curl_getenv', 'fputs', '__memcpy_chk', 'setvbuf', 'Curl_auth_build_spn', 'Curl_base64_encode', 'Curl_bufref_len', 'Curl_bufref_ptr', 'Curl_bufref_set', 'Curl_DIGEST_MD5', 'Curl_isspace', 'Curl_MD5_final', 'Curl_MD5_init', 'Curl_md5it', 'Curl_MD5_update', 'Curl_sha256it', 'strstr', '__ctype_tolower_loc', 'Curl_alpnid2str', 'Curl_altsvc_cleanup', 'Curl_altsvc_lookup', 'Curl_altsvc_save', 'Curl_attach_connnection', 'Curl_clone_primary_ssl_config', 'Curl_closesocket', 'Curl_conncache_add_conn', 'Curl_conncache_extract_bundle', 'Curl_conncache_extract_oldest', 'Curl_conncache_find_bundle', 'Curl_conncache_size', 'Curl_connecthost', 'Curl_conninfo_local', 'Curl_detach_connnection', 'Curl_expire_clear', 'Curl_free_primary_ssl_config', 'Curl_handler_dict', 'Curl_handler_file', 'Curl_handler_ftp', 'Curl_handler_ftps', 'Curl_handler_gopher', 'Curl_handler_gophers', 'Curl_handler_http', 'Curl_handler_https', 'Curl_handler_imap', 'Curl_handler_imaps', 'Curl_handler_mqtt', 'Curl_handler_pop3', 'Curl_handler_pop3s', 'Curl_handler_rtsp', 'Curl_handler_smb', 'Curl_handler_smbs', 'Curl_handler_smtp', 'Curl_handler_smtps', 'Curl_handler_telnet', 'Curl_handler_tftp', 'Curl_hsts', 'Curl_hsts_save', 'Curl_http_auth_cleanup_digest', 'Curl_http_auth_cleanup_ntlm', 'Curl_initinfo', 'Curl_is_absolute_url', 'Curl_isalpha', 'curl_multi_cleanup', 'Curl_multi_max_host_connections', 'Curl_multi_max_total_connections', 'Curl_multiplex_wanted', 'curl_multi_remove_handle', 'Curl_parsenetrc', 'Curl_persistconninfo', 'Curl_preconnect', 'Curl_recv_plain', 'Curl_resolver_cancel', 'Curl_resolver_cleanup', 'Curl_resolver_init', 'Curl_resolv_timeout', 'Curl_safe_strcasecompare', 'Curl_send_plain', 'Curl_setstropt', 'Curl_setup_transfer', 'Curl_socket_check', 'Curl_speedinit', 'Curl_ssl_backend', 'Curl_ssl_close', 'Curl_ssl_close_all', 'Curl_ssl_config_matches', 'Curl_ssl_free_certinfo', 'Curl_strntoupper', 'Curl_timestrcmp', 'Curl_unix2addr', 'Curl_updateconninfo', 'curl_url', 'curl_url_cleanup', 'curl_url_dup', 'curl_url_get', 'curl_url_set', 'curlx_ultous', 'if_nametoindex', 'strtol', 'strtoul', 'Curl_gmtime', 'Curl_meets_timecondition', 'Curl_month', 'Curl_pgrsStartNow', 'Curl_range', 'Curl_wkday', 'lseek64', 'read', 'write', 'getenv', 'Curl_hmacit', 'Curl_HMAC_MD5', 'Curl_md4it', 'DES_ecb_encrypt', 'DES_set_key_unchecked', 'DES_set_odd_parity', 'Curl_addrinfo_callback', 'Curl_expire', 'Curl_freeaddrinfo', 'Curl_getaddrinfo_ex', 'Curl_multi_closed', 'Curl_resolver_error', 'Curl_thread_create', 'Curl_thread_destroy', 'Curl_thread_join', 'pthread_mutex_destroy', 'pthread_mutex_init', 'pthread_mutex_lock', 'pthread_mutex_unlock', 'Curl_debug', 'curl_mvaprintf', 'Curl_dyn_vaddf', 'Curl_ssl_data_pending', 'Curl_add_custom_headers', 'Curl_add_timecondition', 'Curl_buffer_send', 'Curl_checkheaders', 'Curl_connalive', 'Curl_dyn_addf', 'Curl_http_done', 'Curl_http_output_auth', 'Curl_saferealloc', 'pthread_create', 'pthread_detach', 'pthread_join', 'Curl_ssl_kill_session', 'Curl_auth_create_digest_http_message', 'Curl_auth_decode_digest_http_message', 'Curl_auth_digest_cleanup', 'rename', 'Curl_checkProxyheaders', 'Curl_compareheader', 'Curl_conn_data_pending', 'Curl_copy_header_value', 'Curl_http_auth_act', 'Curl_httpchunk_init', 'Curl_httpchunk_read', 'Curl_http_input_auth', 'Curl_ssl_connect', 'curlx_uztosz', 'Curl_cache_addr', 'Curl_resolver_getaddrinfo', 'ASN1_STRING_get0_data', 'ASN1_STRING_length', 'ASN1_STRING_print', 'ASN1_STRING_to_UTF8', 'ASN1_STRING_type', 'ASN1_TIME_print', 'BIO_ctrl', 'BIO_free', 'BIO_f_ssl', 'BIO_new', 'BIO_new_mem_buf', 'BIO_printf', 'BIO_puts', 'BIO_s_file', 'BIO_s_mem', 'BN_clear_free', 'BN_num_bits', 'BN_print', 'CRYPTO_free', 'CRYPTO_get_ex_new_index', 'CRYPTO_malloc', 'Curl_cert_hostcheck', 'Curl_multiuse_state', 'Curl_none_false_start', 'Curl_pin_peer_pubkey', 'Curl_ssl_addsessionid', 'Curl_ssl_delsessionid', 'Curl_ssl_getsessionid', 'Curl_ssl_getsock', 'Curl_ssl_init_certinfo', 'Curl_ssl_push_certinfo_len', 'Curl_ssl_sessionid_lock', 'Curl_ssl_sessionid_unlock', 'Curl_tls_keylog_close', 'Curl_tls_keylog_enabled', 'Curl_tls_keylog_open', 'Curl_tls_keylog_write_line', 'd2i_OCSP_RESPONSE', 'd2i_PKCS12_bio', 'd2i_PrivateKey_bio', 'd2i_X509_bio', 'ENGINE_by_id', 'ENGINE_ctrl', 'ENGINE_ctrl_cmd', 'ENGINE_finish', 'ENGINE_free', 'ENGINE_get_first', 'ENGINE_get_id', 'ENGINE_get_next', 'ENGINE_init', 'ENGINE_load_private_key', 'ENGINE_set_default', 'ERR_clear_error', 'ERR_error_string_n', 'ERR_get_error', 'ERR_peek_error', 'ERR_peek_last_error', 'EVP_DigestInit', 'EVP_PKEY_copy_parameters', 'EVP_PKEY_free', 'EVP_PKEY_get1_RSA', 'EVP_PKEY_get_bn_param', 'EVP_PKEY_get_id', 'EVP_sha1', 'GENERAL_NAMES_free', 'i2a_ASN1_OBJECT', 'i2d_X509_PUBKEY', 'i2t_ASN1_OBJECT', 'inet_pton', 'OCSP_BASICRESP_free', 'OCSP_basic_verify', 'OCSP_CERTID_free', 'OCSP_cert_status_str', 'OCSP_cert_to_id', 'OCSP_check_validity', 'OCSP_crl_reason_str', 'OCSP_resp_find_status', 'OCSP_RESPONSE_free', 'OCSP_response_get1_basic', 'OCSP_response_status', 'OCSP_response_status_str', 'OPENSSL_init_ssl', 'OPENSSL_sk_num', 'OPENSSL_sk_pop', 'OPENSSL_sk_pop_free', 'OPENSSL_sk_value', 'OpenSSL_version', 'PEM_read_bio_PrivateKey', 'PEM_read_bio_X509', 'PEM_read_bio_X509_AUX', 'PEM_write_bio_X509', 'PEM_X509_INFO_read_bio', 'PKCS12_free', 'PKCS12_parse', 'PKCS12_PBE_add', 'RAND_bytes', 'RAND_status', 'RSA_flags', 'RSA_free', 'SSL_alert_desc_string_long', 'SSL_CIPHER_get_name', 'SSL_connect', 'SSL_ctrl', 'SSL_CTX_add_client_CA', 'SSL_CTX_check_private_key', 'SSL_CTX_ctrl', 'SSL_CTX_free', 'SSL_CTX_get_cert_store', 'SSL_CTX_load_verify_dir', 'SSL_CTX_load_verify_file', 'SSL_CTX_new', 'SSL_CTX_sess_set_new_cb', 'SSL_CTX_set_alpn_protos', 'SSL_CTX_set_cipher_list', 'SSL_CTX_set_ciphersuites', 'SSL_CTX_set_default_passwd_cb', 'SSL_CTX_set_default_passwd_cb_userdata', 'SSL_CTX_set_keylog_callback', 'SSL_CTX_set_msg_callback', 'SSL_CTX_set_next_proto_select_cb', 'SSL_CTX_set_options', 'SSL_CTX_set_post_handshake_auth', 'SSL_CTX_set_verify', 'SSL_CTX_use_certificate', 'SSL_CTX_use_certificate_chain_file', 'SSL_CTX_use_certificate_file', 'SSL_CTX_use_PrivateKey', 'SSL_CTX_use_PrivateKey_file', 'SSL_free', 'SSL_get0_alpn_selected', 'SSL_get1_peer_certificate', 'SSL_get_certificate', 'SSL_get_current_cipher', 'SSL_get_error', 'SSL_get_ex_data', 'SSL_get_peer_cert_chain', 'SSL_get_privatekey', 'SSL_get_shutdown', 'SSL_get_verify_result', 'SSL_get_version', 'SSL_new', 'SSL_pending', 'SSL_read', 'SSL_SESSION_free', 'SSL_set_bio', 'SSL_set_connect_state', 'SSL_set_ex_data', 'SSL_set_fd', 'SSL_set_session', 'SSL_shutdown', 'SSL_write', 'strncpy', 'TLS_client_method', 'UI_create_method', 'UI_destroy_method', 'UI_get0_user_data', 'UI_get_input_flags', 'UI_get_string_type', 'UI_method_get_closer', 'UI_method_get_opener', 'UI_method_get_reader', 'UI_method_get_writer', 'UI_method_set_closer', 'UI_method_set_opener', 'UI_method_set_reader', 'UI_method_set_writer', 'UI_OpenSSL', 'UI_set_result', 'X509_check_issued', 'X509_EXTENSION_get_data', 'X509_EXTENSION_get_object', 'X509_free', 'X509_get0_extensions', 'X509_get0_notAfter', 'X509_get0_notBefore', 'X509_get0_signature', 'X509_get_ext_d2i', 'X509_get_issuer_name', 'X509_get_pubkey', 'X509_get_serialNumber', 'X509_get_subject_name', 'X509_get_version', 'X509_get_X509_PUBKEY', 'X509_INFO_free', 'X509_load_crl_file', 'X509_LOOKUP_file', 'X509_NAME_ENTRY_get_data', 'X509_NAME_get_entry', 'X509_NAME_get_index_by_NID', 'X509_NAME_print_ex', 'X509_PUBKEY_get0_param', 'X509_STORE_add_cert', 'X509_STORE_add_crl', 'X509_STORE_add_lookup', 'X509_STORE_set_flags', 'X509V3_EXT_print', 'X509_verify_cert_error_string', 'Curl_isalnum', 'Curl_isdigit', 'Curl_isgraph', 'Curl_islower', 'Curl_isprint', 'Curl_isupper', 'Curl_crealloc', 'Curl_dyn_vprintf', 'curlx_ultouc', 'access', 'Curl_slist_duplicate', 'curl_strequal', 'feof', '__fread_chk', '__xpg_basename', 'Curl_free_idnconverted_hostname', 'Curl_gethostname', 'Curl_idnconvert_hostname', 'Curl_is_ASCII_name', 'Curl_mime_add_header', 'Curl_mime_rewind', 'Curl_mime_size', 'Curl_pp_disconnect', 'Curl_pp_flushsend', 'Curl_pp_getsock', 'Curl_pp_init', 'Curl_pp_moredata', 'Curl_pp_readresp', 'Curl_pp_sendf', 'Curl_pp_setup', 'Curl_pp_statemach', 'Curl_sasl_can_authenticate', 'Curl_sasl_cleanup', 'Curl_sasl_continue', 'Curl_sasl_decode_mech', 'Curl_sasl_init', 'Curl_sasl_parse_url_auth_option', 'Curl_sasl_start', 'Curl_fileinfo_alloc', 'Curl_fnmatch', 'memset', 'Curl_ssl_random', 'calloc', 'Curl_freeset', 'Curl_getconnectinfo', 'Curl_getinfo', 'Curl_hsts_loadcb', 'Curl_hsts_loadfile', 'Curl_init_userdefined', 'Curl_is_in_callback', 'Curl_mime_duppart', 'Curl_mime_unpause', 'curl_multi_add_handle', 'Curl_multi_handle', 'curl_multi_info_read', 'curl_multi_perform', 'curl_multi_poll', 'curl_multi_setopt', 'Curl_open', 'Curl_resolver_duphandle', 'Curl_resolver_global_cleanup', 'Curl_resolver_global_init', 'Curl_setblobopt', 'Curl_ssl_cleanup', 'Curl_ssl_init', 'Curl_updatesocket', 'Curl_update_timer', 'free', 'malloc', 'realloc', 'strdup', 'Curl_auth_cleanup_ntlm', 'Curl_auth_create_ntlm_type1_message', 'Curl_auth_create_ntlm_type3_message', 'Curl_auth_decode_ntlm_type2_message', 'Curl_base64_decode', 'Curl_bufref_free', 'Curl_bufref_init', 'Curl_cookie_list', 'Curl_ssl_engines_list', 'Curl_builtin_scheme', 'Curl_dedotdotify', 'curl_easy_escape', 'Curl_inet_ntop', 'Curl_iscntrl', 'Curl_isunreserved', 'strspn', 'Curl_bufref_memdup', 'Curl_ntlm_core_mk_lmv2_resp', 'Curl_ntlm_core_mk_ntlmv2_hash', 'Curl_ntlm_core_mk_ntlmv2_resp', 'Curl_rand', 'Curl_read32_le', 'MD5_Final', 'MD5_Init', 'MD5_Update', 'Curl_dyn_uptr', 'curl_easy_setopt', 'accept', 'bind', 'connect', 'getpeername', 'getsockname', 'listen', 'setsockopt', 'socket', 'ioctl', 'inflate', 'inflateEnd', 'inflateInit_', 'inflateInit2_', 'stpcpy', 'zlibVersion', 'Curl_HMAC_final', 'Curl_HMAC_init', 'Curl_HMAC_update', 'clock_gettime', 'gettimeofday', 'freeaddrinfo', 'getaddrinfo', 'Curl_altsvc_parse', 'Curl_auth_is_digest_supported', 'Curl_auth_is_ntlm_supported', 'Curl_build_unencoding_stack', 'Curl_cookie_freelist', 'Curl_cookie_getlist', 'Curl_done_sending', 'Curl_expire_done', 'Curl_getformdata', 'Curl_hsts_parse', 'Curl_input_digest', 'Curl_input_ntlm', 'Curl_output_aws_sigv4', 'Curl_output_digest', 'Curl_output_ntlm', 'Curl_readrewind', 'Curl_rtsp_parseheader', 'Curl_unencode_cleanup', 'curlx_uitous', 'Curl_if2ip', 'Curl_ipv6_scope', 'Curl_num_addresses', 'Curl_printable_address', 'Curl_recv_has_postponed_data', 'Curl_resolv', 'Curl_resolver_wait_resolv', 'Curl_SOCKS4', 'Curl_SOCKS5', 'Curl_ssl_check_cxn', 'Curl_verboseconnect', 'getsockopt', 'fcntl64', 'Curl_conninfo_remote', 'Curl_ftp_parselist', 'Curl_ftp_parselist_data_alloc', 'Curl_ftp_parselist_data_free', 'Curl_ftp_parselist_geterror', 'Curl_pp_state_timeout', 'Curl_proxyCONNECT', 'Curl_socket', 'Curl_ssl_shutdown', 'Curl_auth_create_cram_md5_message', 'Curl_auth_create_digest_md5_message', 'Curl_auth_create_external_message', 'Curl_auth_create_login_message', 'Curl_auth_create_oauth_bearer_message', 'Curl_auth_create_plain_message', 'Curl_auth_create_xoauth_bearer_message', 'gmtime_r', 'Curl_pp_vsendf', 'Curl_timediff_us', 'fflush', 'fileno', 'recvfrom', 'sendto', 'Curl_read_plain', 'Curl_write_plain', 'fgets', 'geteuid', 'getpwuid_r', 'Curl_chunked_strerror', 'Curl_hsts_loadfiles', 'Curl_http_compile_trailers', 'Curl_http_firstwrite', 'Curl_http_readwrite_headers', 'Curl_loadhostpairs', 'Curl_pgrsResetTransferSizes', 'Curl_pop3_write', 'Curl_smtp_escape_eob', 'Curl_ssl_initsessions', 'Curl_uc_to_curlcode', 'Curl_wildcard_init', 'fputc', '__sprintf_chk', 'strpbrk', 'Curl_safecmp', 'Curl_ssl_openssl', 'ftell', 'Curl_HMAC_SHA256', 'Curl_http_method', 'strftime', 'Curl_ssl_version', 'Curl_doh', 'Curl_doh_is_resolved', 'Curl_getaddrinfo', 'Curl_hash_clean', 'Curl_hash_clean_with_criterium', 'Curl_ip2addr', 'Curl_ipvalid', 'Curl_resolver_getsock', 'Curl_resolver_is_resolved', 'Curl_setup_conn', 'Curl_str2addr']
+package dependencies:  ['openldap-2.5.18+dfsg', 'glibc-2.35', 'krb5-1.19.2', 'nghttp2-1.43.0', 'libidn2-2.3.2', 'rtmpdump-2.4+20151223.gitfa8646d.1', 'libpsl-0.21.0', 'openssl-3.0.2', 'libssh-0.9.6', 'libzstd-1.4.8+dfsg', 'brotli-1.0.9', 'zlib-1.2.11.dfsg']
+openldap-2.5.18+dfsg
+print y to handle this dependency...
+glibc-2.35
+print y to handle this dependency...
+krb5-1.19.2
+print y to handle this dependency...
+nghttp2-1.43.0
+print y to handle this dependency...
+libidn2-2.3.2
+print y to handle this dependency...
+rtmpdump-2.4+20151223.gitfa8646d.1
+print y to handle this dependency...
+libpsl-0.21.0
+print y to handle this dependency...
+openssl-3.0.2
+print y to handle this dependency...
+libssh-0.9.6
+print y to handle this dependency...
+libzstd-1.4.8+dfsg
+print y to handle this dependency...
+brotli-1.0.9
+print y to handle this dependency...
+zlib-1.2.11.dfsg
+print y to handle this dependency...
+slimming ends! {'openldap-2.5.18+dfsg': 'no', 'glibc-2.35': 'no', 'krb5-1.19.2': 'no', 'nghttp2-1.43.0': 'no', 'libidn2-2.3.2': 'no', 'rtmpdump-2.4+20151223.gitfa8646d.1': 'no', 'libpsl-0.21.0': 'no', 'openssl-3.0.2': 'no', 'libssh-0.9.6': 'no', 'libzstd-1.4.8+dfsg': 'no', 'brotli-1.0.9': 'no', 'zlib-1.2.11.dfsg': 'no'}
+now_handle_package:  {'libcurl4'}
+now_handle_dependency:  {'zlib1g', 'libpsl5', 'librtmp1', 'libnghttp2-14', 'libssh-4', 'libidn2-0', 'libzstd1', 'libbrotli1', 'libldap-2.5-0', 'libssl3', 'libc6', 'libgssapi-krb5-2'}
+all_dependency_info:  {'zlib1g': {'Source': 'zlib', 'Depend': {'libc6'}, 'IfHandle': 'no'}, 'libcurl4': {'Source': 'curl', 'Depend': {'zlib1g', 'libpsl5', 'librtmp1', 'libnghttp2-14', 'libssh-4', 'libssl3', 'libidn2-0', 'libzstd1', 'libldap-2.5-0', 'libbrotli1', 'libc6', 'libgssapi-krb5-2'}, 'IfHandle': 'yes'}, 'libc6': {'Source': 'glibc', 'Depend': {'libgcc-s1', 'libcrypt1'}, 'IfHandle': 'no'}, 'libpsl5': {'Source': 'libpsl', 'Depend': {'libidn2-0', 'libunistring2', 'libc6'}, 'IfHandle': 'no'}, 'librtmp1': {'Source': 'rtmpdump', 'Depend': {'zlib1g', 'libgmp10', 'libhogweed6', 'libgnutls30', 'libc6', 'libnettle8'}, 'IfHandle': 'no'}, 'libnghttp2-14': {'Source': 'nghttp2', 'Depend': {'libc6'}, 'IfHandle': 'no'}, 'libssh-4': {'Source': 'libssh', 'Depend': {'zlib1g', 'libssl3', 'libgssapi-krb5-2', 'libc6'}, 'IfHandle': 'no'}, 'libidn2-0': {'Source': 'libidn2', 'Depend': {'libunistring2', 'libc6'}, 'IfHandle': 'no'}, 'libzstd1': {'Source': 'libzstd', 'Depend': {'libc6'}, 'IfHandle': 'no'}, 'libbrotli1': {'Source': 'brotli', 'Depend': {'libc6'}, 'IfHandle': 'no'}, 'libldap-2.5-0': {'Source': 'openldap', 'Depend': {'libgnutls30', 'libsasl2-2', 'libc6'}, 'IfHandle': 'no'}, 'libssl3': {'Source': 'openssl', 'Depend': {'debconf', 'libc6'}, 'IfHandle': 'no'}, 'libgssapi-krb5-2': {'Source': 'krb5', 'Depend': {'libcom-err2', 'libkrb5support0', 'libk5crypto3', 'libkrb5-3', 'libc6'}, 'IfHandle': 'no'}}
+package:  zlib1g  has been assigned not to slim
+package:  libpsl5  has been assigned not to slim
+package:  librtmp1  has been assigned not to slim
+package:  libnghttp2-14  has been assigned not to slim
+package:  libssh-4  has been assigned not to slim
+package:  libidn2-0  has been assigned not to slim
+package:  libzstd1  has been assigned not to slim
+package:  libbrotli1  has been assigned not to slim
+package:  libldap-2.5-0  has been assigned not to slim
+package:  libssl3  has been assigned not to slim
+package:  libc6  has been assigned not to slim
+package:  libgssapi-krb5-2  has been assigned not to slim

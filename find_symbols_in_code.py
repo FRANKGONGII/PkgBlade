@@ -353,7 +353,7 @@ def functional_trimming(target_dir):
                     for k in range(i - 1, end_line):
                         lines[k] = "// " + lines[k]
                     print(i ,end_line)
-        # TODO：写回操作可以优化！
+        # 写回
         with open(source_file_path, "w") as f:
             f.writelines(lines)
 
@@ -420,7 +420,9 @@ def run(target_package_name : str) -> map:
     """
     # 这里要直接修改全局的symbols。。
     global symbols
+    global target_package
     symbols = load_symbols(symbols_file)
+    target_package = target_package_name
     print("intial symbols:", symbols)
     folder_path = "./depends_source_code_" + target_package_name
 

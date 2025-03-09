@@ -1,0 +1,35 @@
+now handle dependencies of package:  wget
+downloading dependencies...
+copying executable file...
+get exe or so for:  wget
+sucessfully copy exe_file '/usr/bin/wget' 
+check point: get dynamic symbols True {} wget
+run objdump for:  wget
+ldd result:  {'linux-vdso.so.1': '(vdso)', 'libpcre2-8.so.0': '/lib/x86_64-linux-gnu/libpcre2-8.so.0', 'libuuid.so.1': '/lib/x86_64-linux-gnu/libuuid.so.1', 'libidn2.so.0': '/lib/x86_64-linux-gnu/libidn2.so.0', 'libssl.so.3': '/lib/x86_64-linux-gnu/libssl.so.3', 'libcrypto.so.3': '/lib/x86_64-linux-gnu/libcrypto.so.3', 'libz.so.1': '/lib/x86_64-linux-gnu/libz.so.1', 'libpsl.so.5': '/lib/x86_64-linux-gnu/libpsl.so.5', 'libc.so.6': '/lib/x86_64-linux-gnu/libc.so.6', '/lib64/ld-linux-x86-64.so.2': '(vdso)', 'libunistring.so.2': '/lib/x86_64-linux-gnu/libunistring.so.2'}
+tags_glibc-2.35
+tags_util-linux-2.37.2
+tags_libidn2-2.3.2
+tags_libpsl-0.21.0
+tags_pcre2-10.39
+tags_openssl-3.0.2
+tags_zlib-1.2.11.dfsg
+extract ends!
+intial symbols: ['elf64-x86-64', '__printf_chk', 'SSL_CTX_use_PrivateKey_file', 'MD4_Init', 'SSL_get_error', 'ERR_peek_last_error', '__errno_location', 'X509_NAME_print_ex', 'symlink', 'SSL_read', 'stdout', 'SSL_CTX_free', 'strcspn', 'strptime', '__ctype_get_mb_cur_max', 'strndup', '__ctype_toupper_loc', 'rewind', 'strtoll', 'bind', '__ctype_tolower_loc', 'clearerr', 'sprintf', 'DES_set_odd_parity', '__longjmp_chk', 'idn2_free', 'i2d_X509_PUBKEY', 'strstr', 'srandom', 'SSL_CTX_set_verify', 'socket', 'fork', '__vfprintf_chk', '__environ', 'getc', 'ASN1_OCTET_STRING_free', 'wcrtomb', 'SSL_CTX_set_post_handshake_auth', 'getpgrp', 'accept', 'ERR_error_string', 'recv', 'idn2_strerror', 'strerror', 'write', 'SSL_set_connect_state', 'strchr', 'SSL_get_verify_result', 'SSL_ctrl', 'strspn', 'strlen', 'memcmp', 'mkdir', 'ftruncate64', 'RAND_file_name', 'unlink', 'strncmp', '__strncat_chk', 'DES_ecb_encrypt', 'X509_VERIFY_PARAM_free', 'getuid', 'OPENSSL_sk_num', 'TLS_client_method', 'psl_is_cookie_domain_acceptable', 'random', 'iswctype', 'pcre2_compile_8', 'X509_free', 'utime', 'optarg', 'memset', 'abort', 'wctype', 'SSL_free', 'munmap', 'SSL_CTX_set1_param', '__sprintf_chk', 'SSL_set_fd', '__snprintf_chk', 'tcgetpgrp', 'rename', 'sysconf', 'CRYPTO_free', 'calloc', 'mktime', 'dcgettext', 'group_member', 'X509_verify_cert_error_string', 'GENERAL_NAME_free', 'strchrnul', 'getpeername', 'localtime', '__libc_start_main', 'X509_STORE_set_flags', 'sleep', 'pthread_mutex_unlock', 'iconv_open', 'psl_str_to_utf8lower', 'inflate', 'uuid_generate', 'BIO_number_written', 'btowc', 'iconv_close', 'strftime', 'stdin', '__vsnprintf_chk', 'memcpy', '__freading', 'connect', 'SSL_set_session', 'perror', 'MD4_Final', 'mbsinit', 'lseek64', 'inflateInit2_', 'pcre2_match_data_free_8', 'gmtime', 'BIO_s_mem', 'mkostemp64', 'X509_STORE_add_lookup', 'OPENSSL_init_ssl', 'setlocale', 'SSL_CTX_ctrl', 'towlower', 'posix_spawn_file_actions_adddup2', 'pcre2_match_8', 'clock_gettime', 'chmod', 'time', 'getsockname', 'strcpy', 'SSL_peek', 'uuid_unparse', 'freopen64', 'select', 'mmap64', 'ASN1_STRING_to_UTF8', 'SSL_CTX_set_cipher_list', 'nl_langinfo', '__isoc99_sscanf', 'fclose', 'X509_get_issuer_name', 'SSL_new', 'wcwidth', 'BIO_free', 'bindtextdomain', 'inet_ntop', 'inflateEnd', 'fileno', 'fdopen', 'X509_get_subject_name', 'readlink', '__ctype_b_loc', 'RAND_load_file', 'setsid', 'SSL_CTX_set_default_verify_paths', 'strrchr', 'memchr', '__stack_chk_fail', 'DES_set_key', 'SSL_shutdown', 'fopen64', 'fputs', 'listen', 'RAND_status', 'BIO_read', 'dcngettext', 'getpwuid', 'X509_NAME_get_entry', 'pthread_mutex_destroy', 'fflush', 'X509_NAME_get_text_by_NID', 'signal', 'free', 'exit', 'getenv', 'X509_LOOKUP_file', 'SSL_is_init_finished', 'towupper', 'pcre2_match_data_create_from_pattern_8', 'X509_get_ext_d2i', 'posix_spawn_file_actions_init', 'fputc', 'SSL_CTX_load_verify_locations', 'getaddrinfo', 'strncasecmp', 'X509_NAME_get_index_by_NID', 'OPENSSL_sk_value', 'freeaddrinfo', 'ERR_get_error', 'X509_get_X509_PUBKEY', 'malloc', 'ERR_clear_error', 'a2i_IPADDRESS', 'iswprint', 'MD4_Update', 'stderr', 'SSL_CTX_use_certificate_file', 'pipe', 'fread_unlocked', 'X509_VERIFY_PARAM_new', 'optind', 'SSL_get_session', 'gai_strerror', 'strtol', 'SSL_connect', 'ioctl', 'lstat64', 'usleep', '__sigsetjmp', 'SSL_CTX_new', 'read', 'gzwrite', 'getpid', 'pthread_mutex_lock', 'X509_VERIFY_PARAM_set_flags', 'setitimer', 'idn2_lookup_u8', 'pthread_mutex_init', 'fread', 'dup', 'ftello64', 'feof', 'pathconf', 'strtok', 'fgetc', 'textdomain', 'mbrtowc', '__fdelt_chk', 'fcntl64', 'memrchr', 'memmove', 'realloc', '__fprintf_chk', 'fseeko64', 'getopt_long', 'iswalnum', 'error', 'BIO_new', 'environ', '__memcpy_chk', 'gzclose', 'opterr', 'timegm', 'stat64', 'open64', 'getpass', 'isatty', '_ITM_deregisterTMCloneTable', 'strpbrk', 'iconv', 'OPENSSL_sk_pop_free', 'setsockopt', 'fstat64', 'gzdopen', 'strtok_r', 'fsetxattr', 'posix_spawnp', 'strdup', '__vasprintf_chk', 'SSL_get1_peer_certificate', 'CRYPTO_malloc', 'ASN1_STRING_length', 'SSL_CTX_get_cert_store', 'secure_getenv', 'ferror', 'ERR_reason_error_string', 'flock', 'SSL_CTX_set_options', '__gmon_start__', 'clock_getres', 'iswcntrl', 'qsort', 'psl_latest', '_ITM_registerTMCloneTable', 'X509_load_crl_file', 'SSL_write', 'putc', 'fwrite', 'close', 'SSL_pending', 'ASN1_STRING_cmp', '__getdelim', 'X509_NAME_ENTRY_get_data', '__cxa_finalize', 'fnmatch', 'strcasecmp', 'strcmp', 'locale_charset']
+package dependencies:  ['glibc-2.35', 'util-linux-2.37.2', 'libidn2-2.3.2', 'libpsl-0.21.0', 'pcre2-10.39', 'openssl-3.0.2', 'zlib-1.2.11.dfsg']
+glibc-2.35
+print y to handle this dependency...
+util-linux-2.37.2
+print y to handle this dependency...
+libidn2-2.3.2
+print y to handle this dependency...
+libpsl-0.21.0
+print y to handle this dependency...
+pcre2-10.39
+print y to handle this dependency...
+openssl-3.0.2
+print y to handle this dependency...
+a round ends! 363
+a round ends! 727
+a round ends! 1098
+a round ends! 1443
+a round ends! 1596
