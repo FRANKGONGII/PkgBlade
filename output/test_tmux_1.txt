@@ -1,0 +1,647 @@
+now handle dependencies of package:  tmux
+downloading dependencies...
+copying executable file...
+get exe or so for:  tmux
+sucessfully copy exe_file '/usr/bin/tmux' 
+check point: get dynamic symbols True {} tmux
+run objdump for:  tmux
+ldd result:  {'linux-vdso.so.1': '(vdso)', 'libutempter.so.0': '/lib/x86_64-linux-gnu/libutempter.so.0', 'libtinfo.so.6': '/lib/x86_64-linux-gnu/libtinfo.so.6', 'libevent_core-2.1.so.7': '/lib/x86_64-linux-gnu/libevent_core-2.1.so.7', 'libm.so.6': '/lib/x86_64-linux-gnu/libm.so.6', 'libresolv.so.2': '/lib/x86_64-linux-gnu/libresolv.so.2', 'libc.so.6': '/lib/x86_64-linux-gnu/libc.so.6', '/lib64/ld-linux-x86-64.so.2': '(vdso)'}
+tags_glibc-2.35
+tags_ncurses-6.3
+tags_libevent-2.1.12-stable
+tags_libutempter-1.2.1
+extract ends!
+intial symbols: ['elf64-x86-64', 'daemon', 'chmod', 'event_loop', 'evbuffer_drain', 'tcsetattr', 'chdir', 'dirname', 'dup2', 'bufferevent_write_buffer', '__getdelim', 'strcasestr', 'mbtowc', 'memset', 'evbuffer_new', 'event_initialized', 'shutdown', 'event_get_version', 'event_set', 'close', 'environ', 'ioctl', 'ttyname', 'memchr', 'clock_gettime', 'nl_langinfo', '__fprintf_chk', 'isatty', '__gmon_start__', 'recvmsg', 'uname', 'evbuffer_add', 'forkpty', 'evbuffer_read', '__isoc99_sscanf', 'execvp', 'bufferevent_free', 'exit', '__printf_chk', 'strcasecmp', 'bufferevent_enable', 'prctl', 'gettimeofday', 'setvbuf', 'program_invocation_short_name', 'strsignal', 'execl', 'reallocarray', 'strncmp', 'malloc', 'fopen', 'sigfillset', 'dup', 'regexec', 'system', 'tigetflag', 'unlink', '_exit', '__memcpy_chk', 'getpid', '__vsnprintf_chk', 'event_active', 'tzset', '__environ', 'getpwuid', '_ITM_deregisterTMCloneTable', 'evbuffer_get_length', 'fmod', 'evbuffer_free', 'event_get_method', 'ungetc', '__ctype_toupper_loc', 'fputc', 'del_curterm', '__b64_pton', 'tcflush', 'free', 'fnmatch', 'strlen', '_ITM_registerTMCloneTable', 'ferror', '__asprintf_chk', '__xpg_basename', '__ctype_get_mb_cur_max', 'listen', '__ctype_b_loc', 'cfsetospeed', 'evbuffer_write', 'event_pending', 'stdin', 'fgetc', 'fdopen', 'strrchr', 'tigetnum', 'ftello', 'sendmsg', 'event_reinit', 'evbuffer_add_vprintf', 'gmtime_r', 'flock', 'kill', 'usleep', 'strerror', 'strstr', 'sigprocmask', 'cfgetispeed', 'cfmakeraw', 'event_del', 'sigaction', 'socketpair', '__explicit_bzero_chk', 'fputs', 'strtol', 'readlink', 'connect', 'gethostname', 'event_add', 'regcomp', 'event_once', 'tcgetattr', 'bufferevent_new', '__progname', 'signal', 'strspn', 'memmove', 'event_init', 'strchr', 'waitpid', 'socket', 'fread', 'setenv', 'getenv', 'evbuffer_pullup', 'cfgetospeed', '__errno_location', 'qsort', 'strdup', 'mkstemp', 'strncasecmp', 'getdtablesize', '__stack_chk_fail', 'killpg', 'bufferevent_setwatermark', 'strcmp', '__memset_chk', 'bufferevent_write', 'evbuffer_add_printf', 'evbuffer_readline', 'cfsetispeed', 'wcwidth', 'getcwd', '__b64_ntop', 'glob', 'getuid', 'memmem', 'regfree', '__ctype_tolower_loc', 'memcmp', 'calloc', 'globfree', 'wctomb', 'fclose', 'localtime_r', 'fseeko', 'errx', 'unsetenv', 'stderr', 'strcspn', 'evbuffer_readln', '__realpath_chk', 'round', '__snprintf_chk', 'strsep', 'access', 'fork', 'sigemptyset', 'getppid', 'strtoll', 'bind', 'tparm', 'fwrite', 'realloc', 'event_set_log_callback', 'lstat', 'setlocale', 'localtime', '__libc_start_main', 'bufferevent_get_output', 'write', 'bufferevent_disable', 'ctime_r', 'utempter_remove_record', 'strftime', 'tigetstr', 'tcgetpgrp', 'stat', 'accept', 'strtoul', 'umask', 'memcpy', 'fcntl', 'cur_term', 'open', '__vasprintf_chk', 'getpwnam', 'strndup', 'strtod', 'stdout', 'closefrom', 'mkdir', 'time', 'setupterm', 'fflush', 'malloc_trim', 'getc', 'utempter_add_record', '__cxa_finalize']
+package dependencies:  ['glibc-2.35', 'ncurses-6.3', 'libevent-2.1.12-stable', 'libutempter-1.2.1']
+glibc-2.35
+print y to handle this dependency...
+ncurses-6.3
+print y to handle this dependency...
+libevent-2.1.12-stable
+print y to handle this dependency...
+a round ends! 17
+a round ends! 18
+depends_source_code_tmux/libevent-2.1.12-stable ------
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/event.c.o -> libevent-2.1.12-stable_o_needed/event.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/buffer.c.o -> libevent-2.1.12-stable_o_needed/buffer.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/bufferevent.c.o -> libevent-2.1.12-stable_o_needed/bufferevent.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/bufferevent_sock.c.o -> libevent-2.1.12-stable_o_needed/bufferevent_sock.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/log.c.o -> libevent-2.1.12-stable_o_needed/log.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/epoll.c.o -> libevent-2.1.12-stable_o_needed/epoll.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/evmap.c.o -> libevent-2.1.12-stable_o_needed/evmap.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/signal.c.o -> libevent-2.1.12-stable_o_needed/signal.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/evthread.c.o -> libevent-2.1.12-stable_o_needed/evthread.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/evutil.c.o -> libevent-2.1.12-stable_o_needed/evutil.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/evutil_time.c.o -> libevent-2.1.12-stable_o_needed/evutil_time.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/evutil_rand.c.o -> libevent-2.1.12-stable_o_needed/evutil_rand.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/poll.c.o -> libevent-2.1.12-stable_o_needed/poll.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/select.c.o -> libevent-2.1.12-stable_o_needed/select.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/bufferevent_ratelim.c.o -> libevent-2.1.12-stable_o_needed/bufferevent_ratelim.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/bufferevent_filter.c.o -> libevent-2.1.12-stable_o_needed/bufferevent_filter.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/bufferevent_pair.c.o -> libevent-2.1.12-stable_o_needed/bufferevent_pair.c.o
+check if file already exits:  True
+Copied: libevent-2.1.12-stable_o/strlcpy.c.o -> libevent-2.1.12-stable_o_needed/strlcpy.c.o
+need files, libevent-2.1.12-stable_o ['event.c', 'buffer.c', 'bufferevent.c', 'bufferevent_sock.c', 'log.c', 'epoll.c', 'evmap.c', 'signal.c', 'evthread.c', 'evutil.c', 'evutil_time.c', 'evutil_rand.c', 'poll.c', 'select.c', 'bufferevent_ratelim.c', 'bufferevent_filter.c', 'bufferevent_pair.c', 'strlcpy.c'] 18
+inneed files to delete:  libevent-2.1.12-stable_o ['regress_et.c', 'evdns.c', 'regress_main.c', 'openssl_hostname_validation.c', 'evrpc.c', 'test-weof.c', 'regress_listener.c', 'bench_http.c', 'regress_dns.c', 'regress_testutils.c', 'http-server.c', 'evthread_pthread.c', 'event-read-fifo.c', 'hostcheck.c', 'test-ratelim.c', 'regress.c', 'time-test.c', 'hello-world.c', 'listener.c', 'le-proxy.c', 'test-eof.c', 'regress.gen.c', 'regress_http.c', 'https-client.c', 'test-changelist.c', 'bench_httpclient.c', 'regress_util.c', 'http-connect.c', 'regress_rpc.c', 'test-time.c', 'regress_buffer.c', 'regress_ssl.c', 'regress_thread.c', 'bench_cascade.c', 'dns-example.c', 'signal-test.c', 'regress_finalize.c', 'regress_minheap.c', 'regress_bufferevent.c', 'test-init.c', 'http.c', 'regress_zlib.c', 'tinytest.c', 'test-fdleak.c', 'bufferevent_openssl.c', 'bench.c', 'event_tagging.c', 'test-closed.c', 'test-dumpevents.c'] 49
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/bufferevent_openssl.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/bufferevent_openssl.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/event_tagging.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/event_tagging.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/evdns.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/evdns.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/evrpc.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/evrpc.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/evthread_pthread.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/evthread_pthread.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/listener.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/listener.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/http.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/http.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/test-weof.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/test-weof.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/test-weof.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/bench_http.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/bench_http.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/bench_http.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/test-fdleak.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/test-fdleak.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/test-fdleak.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_http.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_http.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/test-ratelim.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/test-ratelim.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/test-ratelim.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/test-dumpevents.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/test-dumpevents.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/test-dumpevents.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_util.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_util.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_rpc.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_rpc.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_listener.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_listener.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/test-time.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/test-time.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/test-time.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/test-changelist.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/test-changelist.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/test-changelist.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_minheap.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_minheap.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_et.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_et.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/bench_cascade.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/bench_cascade.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/bench_cascade.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_buffer.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_buffer.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_bufferevent.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_bufferevent.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_thread.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_thread.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/bench.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/bench.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/bench.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/test-closed.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/test-closed.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/test-closed.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/test-eof.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/test-eof.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/test-eof.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_finalize.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_finalize.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_testutils.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_testutils.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_zlib.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_zlib.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/test-init.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/test-init.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/test-init.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_dns.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_dns.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_ssl.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_ssl.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/tinytest.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/tinytest.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/bench_httpclient.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/bench_httpclient.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/bench_httpclient.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress.gen.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress.gen.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/test/regress_main.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/test/regress_main.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/test/regress_main.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/sample/dns-example.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/sample/dns-example.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/sample/dns-example.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/sample/time-test.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/sample/time-test.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/sample/time-test.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/sample/hello-world.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/sample/hello-world.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/sample/hello-world.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/sample/https-client.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/sample/https-client.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/sample/https-client.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/sample/openssl_hostname_validation.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/sample/openssl_hostname_validation.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/sample/http-server.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/sample/http-server.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/sample/http-server.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/sample/signal-test.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/sample/signal-test.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/sample/signal-test.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/sample/le-proxy.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/sample/le-proxy.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/sample/le-proxy.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/sample/hostcheck.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/sample/hostcheck.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/sample/http-connect.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/sample/http-connect.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/sample/http-connect.c
+delete file path:  depends_source_code_tmux/libevent-2.1.12-stable/sample/event-read-fifo.c
+==================================== depends_source_code_tmux/libevent-2.1.12-stable/sample/event-read-fifo.c
+Finished commenting depends_source_code_tmux/libevent-2.1.12-stable/sample/event-read-fifo.c
+start symbols check
+finish unused symbols check:  {'evutil_time.c.o': {'evutil_configure_monotonic_time': {}, 'evutil_date_rfc1123': {}, 'evutil_gettime_monotonic': {}, 'evutil_monotonic_timer_free': {}, 'evutil_monotonic_timer_new': {}, 'evutil_usleep_': {}}, 'log.c.o': {'event_enable_debug_logging': {}, 'event_logv_': {}, 'event_set_fatal_callback': {}}, 'signal.c.o': {'evsig_restore_handler_': {}, 'evsig_set_handler_': {}}, 'buffer.c.o': {'evbuffer_add_buffer_reference': {}, 'evbuffer_add_file': {}, 'evbuffer_add_file_segment': {}, 'evbuffer_add_iovec': {}, 'evbuffer_add_reference': {}, 'evbuffer_chain_pin_': {}, 'evbuffer_chain_unpin_': {}, 'evbuffer_clear_flags': {}, 'evbuffer_commit_space': {}, 'evbuffer_copyout': {}, 'evbuffer_copyout_from': {}, 'evbuffer_decref_and_unlock_': {}, 'evbuffer_defer_callbacks': {}, 'evbuffer_expand': {}, 'evbuffer_expand_fast_': {}, 'evbuffer_file_segment_add_cleanup_cb': {}, 'evbuffer_file_segment_free': {}, 'evbuffer_file_segment_new': {}, 'evbuffer_find': {}, 'evbuffer_get_contiguous_space': {}, 'evbuffer_incref_': {}, 'evbuffer_incref_and_lock_': {}, 'evbuffer_invoke_callbacks_': {}, 'evbuffer_lock': {}, 'evbuffer_peek': {}, 'evbuffer_prepend': {}, 'evbuffer_prepend_buffer': {}, 'evbuffer_ptr_set': {}, 'evbuffer_read_setup_vecs_': {}, 'evbuffer_remove_cb': {}, 'evbuffer_reserve_space': {}, 'evbuffer_search': {}, 'evbuffer_search_eol': {}, 'evbuffer_search_range': {}, 'evbuffer_setcb': {}, 'evbuffer_unlock': {}}, 'bufferevent_sock.c.o': {'bufferevent_base_set': {}, 'bufferevent_ops_socket': {}, 'bufferevent_priority_set': {}, 'bufferevent_socket_connect': {}, 'bufferevent_socket_connect_hostname': {}, 'bufferevent_socket_get_conn_address_': {}, 'bufferevent_socket_get_dns_error': {}, 'bufferevent_socket_new': {}, 'bufferevent_socket_set_conn_address_': {}, 'bufferevent_socket_set_conn_address_fd_': {}}, 'bufferevent.c.o': {'bufferevent_disable_hard_': {}, 'bufferevent_get_base': {}, 'bufferevent_getcb': {}, 'bufferevent_get_enabled': {}, 'bufferevent_get_input': {}, 'bufferevent_get_options_': {}, 'bufferevent_get_priority': {}, 'bufferevent_get_underlying': {}, 'bufferevent_getwatermark': {}, 'bufferevent_lock': {}, 'bufferevent_read': {}, 'bufferevent_read_buffer': {}, 'bufferevent_settimeout': {}, 'bufferevent_set_timeouts': {}, 'bufferevent_trigger': {}, 'bufferevent_trigger_event': {}, 'bufferevent_unlock': {}}, 'event.c.o': {'event_active_later_': {}, 'event_active_later_nolock_': {}, 'event_base_active_by_fd': {}, 'event_base_active_by_signal': {}, 'event_base_add_virtual_': {}, 'event_base_assert_ok_': {}, 'event_base_assert_ok_nolock_': {}, 'event_base_del_virtual_': {}, 'event_base_dispatch': {}, 'event_base_dump_events': {}, 'event_base_foreach_event': {}, 'event_base_foreach_event_nolock_': {}, 'event_base_free': {}, 'event_base_free_nofinalize': {}, 'event_base_get_features': {}, 'event_base_get_max_events': {}, 'event_base_get_method': {}, 'event_base_get_num_events': {}, 'event_base_get_running_event': {}, 'event_base_got_break': {}, 'event_base_got_exit': {}, 'event_base_init_common_timeout': {}, 'event_base_loop': {}, 'event_base_loopbreak': {}, 'event_base_loopcontinue': {}, 'event_base_loopexit': {}, 'event_base_new': {}, 'event_base_new_with_config': {}, 'event_base_once': {}, 'event_base_priority_init': {}, 'event_base_start_iocp_': {}, 'event_base_stop_iocp_': {}, 'event_base_update_cache_time': {}, 'event_callback_activate_': {}, 'event_callback_activate_later_nolock_': {}, 'event_callback_activate_nolock_': {}, 'event_callback_cancel_': {}, 'event_callback_cancel_nolock_': {}, 'event_callback_finalize_': {}, 'event_callback_finalize_nolock_': {}, 'event_callback_init_': {}, 'event_config_avoid_method': {}, 'event_config_free': {}, 'event_config_new': {}, 'event_config_require_features': {}, 'event_config_set_flag': {}, 'event_config_set_max_dispatch_interval': {}, 'event_config_set_num_cpus_hint': {}, 'event_debug_map_HT_CLEAR': {}, 'event_debug_map_HT_GROW': {}, 'event_debug_map_HT_REP_IS_BAD_': {}, 'event_del_block': {}, 'event_del_noblock': {}, 'event_del_nolock_': {}, 'event_disable_debug_mode': {}, 'event_dispatch': {}, 'event_enable_debug_mode': {}, 'event_finalize': {}, 'event_free': {}, 'event_free_finalize': {}, 'event_get_assignment': {}, 'event_get_callback': {}, 'event_get_callback_arg': {}, 'event_get_events': {}, 'event_get_struct_event_size': {}, 'event_get_supported_methods': {}, 'event_gettime_monotonic': {}, 'event_get_version_number': {}, 'event_global_current_base_': {}, 'event_loopbreak': {}, 'event_loopexit': {}, 'event_new': {}, 'event_priority_init': {}, 'event_remove_timer_nolock_': {}, 'event_self_cbarg': {}, 'event_set_mem_functions': {}, 'evthread_make_base_notifiable': {}, 'libevent_global_shutdown': {}, 'nil_eventop': {}}, 'evutil_rand.c.o': {'evutil_secure_rng_add_bytes': {}, 'evutil_secure_rng_get_bytes': {}, 'evutil_secure_rng_init': {}, 'evutil_secure_rng_set_urandom_device_file': {}}, 'bufferevent_ratelim.c.o': {'bufferevent_add_to_rate_limit_group': {}, 'bufferevent_decrement_read_limit': {}, 'bufferevent_decrement_write_limit': {}, 'bufferevent_get_max_single_read': {}, 'bufferevent_get_max_single_write': {}, 'bufferevent_get_max_to_read': {}, 'bufferevent_get_max_to_write': {}, 'bufferevent_get_read_limit': {}, 'bufferevent_get_token_bucket_cfg': {}, 'bufferevent_get_write_limit': {}, 'bufferevent_rate_limit_group_decrement_read': {}, 'bufferevent_rate_limit_group_decrement_write': {}, 'bufferevent_rate_limit_group_free': {}, 'bufferevent_rate_limit_group_get_read_limit': {}, 'bufferevent_rate_limit_group_get_totals': {}, 'bufferevent_rate_limit_group_get_write_limit': {}, 'bufferevent_rate_limit_group_new': {}, 'bufferevent_rate_limit_group_reset_totals': {}, 'bufferevent_rate_limit_group_set_cfg': {}, 'bufferevent_rate_limit_group_set_min_share': {}, 'bufferevent_remove_from_rate_limit_group': {}, 'bufferevent_set_max_single_read': {}, 'bufferevent_set_max_single_write': {}, 'bufferevent_set_rate_limit': {}, 'ev_token_bucket_cfg_free': {}, 'ev_token_bucket_cfg_new': {}, 'ev_token_bucket_get_tick_': {}, 'ev_token_bucket_init_': {}, 'ev_token_bucket_update_': {}}, 'bufferevent_filter.c.o': {'bufferevent_filter_new': {}}, 'bufferevent_pair.c.o': {'bufferevent_pair_get_partner': {}, 'bufferevent_pair_new': {}}, 'evthread.c.o': {'evthread_debug_get_real_lock_': {}, 'evthread_enable_lock_debugging': {}, 'evthread_enable_lock_debuging': {}, 'evthread_get_condition_callbacks': {}, 'evthread_get_lock_callbacks': {}, 'evthread_is_debug_lock_held_': {}, 'evthread_lock_debugging_enabled_': {}, 'evthread_set_condition_callbacks': {}, 'evthread_set_id_callback': {}, 'evthread_set_lock_callbacks': {}}, 'evutil.c.o': {'evutil_accept4_': {}, 'evutil_addrinfo_append_': {}, 'evutil_adjust_hints_for_addrconfig_': {}, 'evutil_ascii_strcasecmp': {}, 'evutil_ascii_strncasecmp': {}, 'evutil_ersatz_socketpair_': {}, 'evutil_format_sockaddr_port_': {}, 'evutil_gai_strerror': {}, 'evutil_getaddrinfo': {}, 'evutil_getaddrinfo_common_': {}, 'evutil_inet_ntop': {}, 'evutil_inet_pton': {}, 'evutil_inet_pton_scope': {}, 'EVUTIL_ISALNUM_': {}, 'EVUTIL_ISALPHA_': {}, 'EVUTIL_ISDIGIT_': {}, 'EVUTIL_ISLOWER_': {}, 'EVUTIL_ISPRINT_': {}, 'EVUTIL_ISSPACE_': {}, 'EVUTIL_ISUPPER_': {}, 'evutil_make_listen_socket_ipv6only': {}, 'evutil_make_listen_socket_reuseable': {}, 'evutil_make_listen_socket_reuseable_port': {}, 'evutil_make_socket_nonblocking': {}, 'evutil_make_tcp_listen_socket_deferred': {}, 'evutil_memset_volatile_': {}, 'evutil_new_addrinfo_': {}, 'evutil_parse_sockaddr_port': {}, 'evutil_read_file_': {}, 'evutil_rtrim_lws_': {}, 'evutil_set_evdns_getaddrinfo_cancel_fn_': {}, 'evutil_set_evdns_getaddrinfo_fn_': {}, 'evutil_sockaddr_cmp': {}, 'evutil_sockaddr_is_loopback_': {}, 'evutil_socketpair': {}, 'evutil_strtoll': {}, 'EVUTIL_TOLOWER_': {}, 'evutil_v4addr_is_local_': {}, 'evutil_v6addr_is_local_': {}, 'evutil_weakrand_': {}}}
+finish unused symbols find:  {'evutil_time.c.o': {'evutil_configure_monotonic_time': 'evutil_configure_monotonic_time(struct evutil_monotonic_timer *timer,', 'evutil_date_rfc1123': 'evutil_date_rfc1123(char *date, const size_t datelen, const struct tm *tm)', 'evutil_gettime_monotonic': 'evutil_gettime_monotonic(struct evutil_monotonic_timer *timer,', 'evutil_monotonic_timer_free': 'evutil_monotonic_timer_free(struct evutil_monotonic_timer *timer)', 'evutil_monotonic_timer_new': 'evutil_monotonic_timer_new(void)', 'evutil_usleep_': 'evutil_usleep_(const struct timeval *tv)', 'evutil_time.c.o_path': 'depends_source_code_tmux/libevent-2.1.12-stable/evutil_time.c'}, 'log.c.o': {'event_enable_debug_logging': 'event_enable_debug_logging(ev_uint32_t which)', 'event_logv_': 'event_logv_(int severity, const char *errstr, const char *fmt, va_list ap)', 'event_set_fatal_callback': 'event_set_fatal_callback(event_fatal_cb cb)', 'log.c.o_path': 'depends_source_code_tmux/libevent-2.1.12-stable/log.c'}, 'signal.c.o': {'evsig_restore_handler_': 'evsig_restore_handler_(struct event_base *base, int evsignal)', 'evsig_set_handler_': 'evsig_set_handler_(struct event_base *base,', 'signal.c.o_path': 'depends_source_code_tmux/libevent-2.1.12-stable/signal.c'}, 'buffer.c.o': {'evbuffer_add_buffer_reference': 'evbuffer_add_buffer_reference(struct evbuffer *outbuf, struct evbuffer *inbuf)', 'evbuffer_add_file': 'evbuffer_add_file(struct evbuffer *buf, int fd, ev_off_t offset, ev_off_t length)', 'evbuffer_add_file_segment': 'evbuffer_add_file_segment(struct evbuffer *buf,', 'evbuffer_add_iovec': 'evbuffer_add_iovec(struct evbuffer * buf, struct evbuffer_iovec * vec, int n_vec) {', 'evbuffer_add_reference': 'evbuffer_add_reference(struct evbuffer *outbuf,', 'evbuffer_chain_pin_': 'evbuffer_chain_pin_(struct evbuffer_chain *chain, unsigned flag)', 'evbuffer_chain_unpin_': 'evbuffer_chain_unpin_(struct evbuffer_chain *chain, unsigned flag)', 'evbuffer_clear_flags': 'evbuffer_clear_flags(struct evbuffer *buf, ev_uint64_t flags)', 'evbuffer_commit_space': 'evbuffer_commit_space(struct evbuffer *buf,', 'evbuffer_copyout': 'evbuffer_copyout(struct evbuffer *buf, void *data_out, size_t datlen)', 'evbuffer_copyout_from': 'evbuffer_copyout_from(struct evbuffer *buf, const struct evbuffer_ptr *pos,', 'evbuffer_decref_and_unlock_': 'evbuffer_decref_and_unlock_(struct evbuffer *buffer)', 'evbuffer_defer_callbacks': 'evbuffer_defer_callbacks(struct evbuffer *buffer, struct event_base *base)', 'evbuffer_expand': 'evbuffer_expand(struct evbuffer *buf, size_t datlen)', 'evbuffer_expand_fast_': 'evbuffer_expand_fast_(struct evbuffer *buf, size_t datlen, int n)', 'evbuffer_file_segment_add_cleanup_cb': 'void evbuffer_file_segment_add_cleanup_cb(struct evbuffer_file_segment *seg,', 'evbuffer_file_segment_free': 'evbuffer_file_segment_free(struct evbuffer_file_segment *seg)', 'evbuffer_file_segment_new': 'evbuffer_file_segment_new(', 'evbuffer_find': 'evbuffer_find(struct evbuffer *buffer, const unsigned char *what, size_t len)', 'evbuffer_get_contiguous_space': 'evbuffer_get_contiguous_space(const struct evbuffer *buf)', 'evbuffer_incref_': 'evbuffer_incref_(struct evbuffer *buf)', 'evbuffer_incref_and_lock_': 'evbuffer_incref_and_lock_(struct evbuffer *buf)', 'evbuffer_invoke_callbacks_': 'evbuffer_invoke_callbacks_(struct evbuffer *buffer)', 'evbuffer_lock': 'evbuffer_lock(struct evbuffer *buf)', 'evbuffer_peek': 'evbuffer_peek(struct evbuffer *buffer, ev_ssize_t len,', 'evbuffer_prepend': 'evbuffer_prepend(struct evbuffer *buf, const void *data, size_t datlen)', 'evbuffer_prepend_buffer': 'evbuffer_prepend_buffer(struct evbuffer *outbuf, struct evbuffer *inbuf)', 'evbuffer_ptr_set': 'evbuffer_ptr_set(struct evbuffer *buf, struct evbuffer_ptr *pos,', 'evbuffer_read_setup_vecs_': 'evbuffer_read_setup_vecs_(struct evbuffer *buf, ev_ssize_t howmuch,', 'evbuffer_remove_cb': 'evbuffer_remove_cb(struct evbuffer *buffer, evbuffer_cb_func cb, void *cbarg)', 'evbuffer_reserve_space': 'evbuffer_reserve_space(struct evbuffer *buf, ev_ssize_t size,', 'evbuffer_search': 'evbuffer_search(struct evbuffer *buffer, const char *what, size_t len, const struct evbuffer_pt', 'evbuffer_search_eol': 'evbuffer_search_eol(struct evbuffer *buffer,', 'evbuffer_search_range': 'evbuffer_search_range(struct evbuffer *buffer, const char *what, size_t len, const struct evbuf', 'evbuffer_setcb': 'evbuffer_setcb(struct evbuffer *buffer, evbuffer_cb cb, void *cbarg)', 'evbuffer_unlock': 'evbuffer_unlock(struct evbuffer *buf)', 'buffer.c.o_path': 'depends_source_code_tmux/libevent-2.1.12-stable/buffer.c'}, 'bufferevent_sock.c.o': {'bufferevent_base_set': 'bufferevent_base_set(struct event_base *base, struct bufferevent *bufev)', 'bufferevent_ops_socket': {}, 'bufferevent_priority_set': 'bufferevent_priority_set(struct bufferevent *bufev, int priority)', 'bufferevent_socket_connect': 'bufferevent_socket_connect(struct bufferevent *bev,', 'bufferevent_socket_connect_hostname': 'bufferevent_socket_connect_hostname(struct bufferevent *bev,', 'bufferevent_socket_get_conn_address_': 'bufferevent_socket_get_conn_address_(struct bufferevent *bev)', 'bufferevent_socket_get_dns_error': 'bufferevent_socket_get_dns_error(struct bufferevent *bev)', 'bufferevent_socket_new': 'bufferevent_socket_new(struct event_base *base, evutil_socket_t fd,', 'bufferevent_socket_set_conn_address_': 'bufferevent_socket_set_conn_address_(struct bufferevent *bev,', 'bufferevent_socket_set_conn_address_fd_': 'bufferevent_socket_set_conn_address_fd_(struct bufferevent *bev,', 'bufferevent_sock.c.o_path': 'depends_source_code_tmux/libevent-2.1.12-stable/bufferevent_sock.c'}, 'bufferevent.c.o': {'bufferevent_disable_hard_': 'bufferevent_disable_hard_(struct bufferevent *bufev, short event)', 'bufferevent_get_base': 'bufferevent_get_base(struct bufferevent *bufev)', 'bufferevent_getcb': 'bufferevent_getcb(struct bufferevent *bufev,', 'bufferevent_get_enabled': 'bufferevent_get_enabled(struct bufferevent *bufev)', 'bufferevent_get_input': 'bufferevent_get_input(struct bufferevent *bufev)', 'bufferevent_get_options_': 'bufferevent_get_options_(struct bufferevent *bev)', 'bufferevent_get_priority': 'bufferevent_get_priority(const struct bufferevent *bufev)', 'bufferevent_get_underlying': 'bufferevent_get_underlying(struct bufferevent *bev)', 'bufferevent_getwatermark': 'bufferevent_getwatermark(struct bufferevent *bufev, short events,', 'bufferevent_lock': 'bufferevent_lock(struct bufferevent *bev)', 'bufferevent_read': 'bufferevent_read(struct bufferevent *bufev, void *data, size_t size)', 'bufferevent_read_buffer': 'bufferevent_read_buffer(struct bufferevent *bufev, struct evbuffer *buf)', 'bufferevent_settimeout': 'bufferevent_settimeout(struct bufferevent *bufev,', 'bufferevent_set_timeouts': 'bufferevent_set_timeouts(struct bufferevent *bufev,', 'bufferevent_trigger': 'bufferevent_trigger(struct bufferevent *bufev, short iotype, int options)', 'bufferevent_trigger_event': 'bufferevent_trigger_event(struct bufferevent *bufev, short what, int options)', 'bufferevent_unlock': 'bufferevent_unlock(struct bufferevent *bev)', 'bufferevent.c.o_path': 'depends_source_code_tmux/libevent-2.1.12-stable/bufferevent.c'}, 'event.c.o': {'event_active_later_': 'event_active_later_(struct event *ev, int res)', 'event_active_later_nolock_': 'event_active_later_nolock_(struct event *ev, int res)', 'event_base_active_by_fd': 'event_base_active_by_fd(struct event_base *base, evutil_socket_t fd, short events)', 'event_base_active_by_signal': 'event_base_active_by_signal(struct event_base *base, int sig)', 'event_base_add_virtual_': 'event_base_add_virtual_(struct event_base *base)', 'event_base_assert_ok_': 'event_base_assert_ok_(struct event_base *base)', 'event_base_assert_ok_nolock_': 'event_base_assert_ok_nolock_(struct event_base *base)', 'event_base_del_virtual_': 'event_base_del_virtual_(struct event_base *base)', 'event_base_dispatch': 'event_base_dispatch(struct event_base *event_base)', 'event_base_dump_events': 'event_base_dump_events(struct event_base *base, FILE *output)', 'event_base_foreach_event': 'event_base_foreach_event(struct event_base *base,', 'event_base_foreach_event_nolock_': 'event_base_foreach_event_nolock_(struct event_base *base,', 'event_base_free': 'event_base_free(struct event_base *base)', 'event_base_free_nofinalize': 'event_base_free_nofinalize(struct event_base *base)', 'event_base_get_features': 'event_base_get_features(const struct event_base *base)', 'event_base_get_max_events': 'event_base_get_max_events(struct event_base *base, unsigned int type, int clear)', 'event_base_get_method': 'event_base_get_method(const struct event_base *base)', 'event_base_get_num_events': 'event_base_get_num_events(struct event_base *base, unsigned int type)', 'event_base_get_running_event': 'event_base_get_running_event(struct event_base *base)', 'event_base_got_break': 'event_base_got_break(struct event_base *event_base)', 'event_base_got_exit': 'event_base_got_exit(struct event_base *event_base)', 'event_base_init_common_timeout': 'event_base_init_common_timeout(struct event_base *base,', 'event_base_loop': 'event_base_loop(struct event_base *base, int flags)', 'event_base_loopbreak': 'event_base_loopbreak(struct event_base *event_base)', 'event_base_loopcontinue': 'event_base_loopcontinue(struct event_base *event_base)', 'event_base_loopexit': 'event_base_loopexit(struct event_base *event_base, const struct timeval *tv)', 'event_base_new': 'event_base_new(void)', 'event_base_new_with_config': 'event_base_new_with_config(const struct event_config *cfg)', 'event_base_once': 'event_base_once(struct event_base *base, evutil_socket_t fd, short events,', 'event_base_priority_init': 'event_base_priority_init(struct event_base *base, int npriorities)', 'event_base_start_iocp_': 'event_base_start_iocp_(struct event_base *base, int n_cpus)', 'event_base_stop_iocp_': 'event_base_stop_iocp_(struct event_base *base)', 'event_base_update_cache_time': 'event_base_update_cache_time(struct event_base *base)', 'event_callback_activate_': 'event_callback_activate_(struct event_base *base,', 'event_callback_activate_later_nolock_': 'event_callback_activate_later_nolock_(struct event_base *base,', 'event_callback_activate_nolock_': 'event_callback_activate_nolock_(struct event_base *base,', 'event_callback_cancel_': 'event_callback_cancel_(struct event_base *base,', 'event_callback_cancel_nolock_': 'event_callback_cancel_nolock_(struct event_base *base,', 'event_callback_finalize_': 'event_callback_finalize_(struct event_base *base, unsigned flags, struct event_callback *evcb, ', 'event_callback_finalize_nolock_': 'event_callback_finalize_nolock_(struct event_base *base, unsigned flags, struct event_callback ', 'event_callback_init_': 'event_callback_init_(struct event_base *base,', 'event_config_avoid_method': 'event_config_avoid_method(struct event_config *cfg, const char *method)', 'event_config_free': 'event_config_free(struct event_config *cfg)', 'event_config_new': 'event_config_new(void)', 'event_config_require_features': 'event_config_require_features(struct event_config *cfg,', 'event_config_set_flag': 'event_config_set_flag(struct event_config *cfg, int flag)', 'event_config_set_max_dispatch_interval': 'event_config_set_max_dispatch_interval(struct event_config *cfg,', 'event_config_set_num_cpus_hint': 'event_config_set_num_cpus_hint(struct event_config *cfg, int cpus)', 'event_debug_map_HT_CLEAR': {}, 'event_debug_map_HT_GROW': {}, 'event_debug_map_HT_REP_IS_BAD_': {}, 'event_del_block': 'event_del_block(struct event *ev)', 'event_del_noblock': 'event_del_noblock(struct event *ev)', 'event_del_nolock_': 'event_del_nolock_(struct event *ev, int blocking)', 'event_disable_debug_mode': 'event_disable_debug_mode(void)', 'event_dispatch': 'event_dispatch(void)', 'event_enable_debug_mode': 'event_enable_debug_mode(void)', 'event_finalize': 'event_finalize(unsigned flags, struct event *ev, event_finalize_callback_fn cb)', 'event_free': 'event_free(struct event *ev)', 'event_free_finalize': 'event_free_finalize(unsigned flags, struct event *ev, event_finalize_callback_fn cb)', 'event_get_assignment': 'event_get_assignment(const struct event *event, struct event_base **base_out, evutil_socket_t *', 'event_get_callback': 'event_get_callback(const struct event *ev)', 'event_get_callback_arg': 'event_get_callback_arg(const struct event *ev)', 'event_get_events': 'event_get_events(const struct event *ev)', 'event_get_struct_event_size': 'event_get_struct_event_size(void)', 'event_get_supported_methods': 'event_get_supported_methods(void)', 'event_gettime_monotonic': 'event_gettime_monotonic(struct event_base *base, struct timeval *tv)', 'event_get_version_number': 'event_get_version_number(void)', 'event_global_current_base_': {}, 'event_loopbreak': 'event_loopbreak(void)', 'event_loopexit': 'event_loopexit(const struct timeval *tv)', 'event_new': 'event_new(struct event_base *base, evutil_socket_t fd, short events, void (*cb)(evutil_socket_t', 'event_priority_init': 'event_priority_init(int npriorities)', 'event_remove_timer_nolock_': 'event_remove_timer_nolock_(struct event *ev)', 'event_self_cbarg': 'event_self_cbarg(void)', 'event_set_mem_functions': 'event_set_mem_functions(void *(*malloc_fn)(size_t sz),', 'evthread_make_base_notifiable': 'evthread_make_base_notifiable(struct event_base *base)', 'libevent_global_shutdown': 'libevent_global_shutdown(void)', 'nil_eventop': {}, 'event.c.o_path': 'depends_source_code_tmux/libevent-2.1.12-stable/event.c'}, 'evutil_rand.c.o': {'evutil_secure_rng_add_bytes': 'evutil_secure_rng_add_bytes(const char *buf, size_t n)', 'evutil_secure_rng_get_bytes': 'evutil_secure_rng_get_bytes(void *buf, size_t n)', 'evutil_secure_rng_init': 'evutil_secure_rng_init(void)', 'evutil_secure_rng_set_urandom_device_file': 'evutil_secure_rng_set_urandom_device_file(char *fname)', 'evutil_rand.c.o_path': 'depends_source_code_tmux/libevent-2.1.12-stable/evutil_rand.c'}, 'bufferevent_ratelim.c.o': {'bufferevent_add_to_rate_limit_group': 'bufferevent_add_to_rate_limit_group(struct bufferevent *bev,', 'bufferevent_decrement_read_limit': 'bufferevent_decrement_read_limit(struct bufferevent *bev, ev_ssize_t decr)', 'bufferevent_decrement_write_limit': 'bufferevent_decrement_write_limit(struct bufferevent *bev, ev_ssize_t decr)', 'bufferevent_get_max_single_read': 'bufferevent_get_max_single_read(struct bufferevent *bev)', 'bufferevent_get_max_single_write': 'bufferevent_get_max_single_write(struct bufferevent *bev)', 'bufferevent_get_max_to_read': 'bufferevent_get_max_to_read(struct bufferevent *bev)', 'bufferevent_get_max_to_write': 'bufferevent_get_max_to_write(struct bufferevent *bev)', 'bufferevent_get_read_limit': 'bufferevent_get_read_limit(struct bufferevent *bev)', 'bufferevent_get_token_bucket_cfg': 'bufferevent_get_token_bucket_cfg(const struct bufferevent *bev) {', 'bufferevent_get_write_limit': 'bufferevent_get_write_limit(struct bufferevent *bev)', 'bufferevent_rate_limit_group_decrement_read': 'bufferevent_rate_limit_group_decrement_read(', 'bufferevent_rate_limit_group_decrement_write': 'bufferevent_rate_limit_group_decrement_write(', 'bufferevent_rate_limit_group_free': 'bufferevent_rate_limit_group_free(struct bufferevent_rate_limit_group *g)', 'bufferevent_rate_limit_group_get_read_limit': 'bufferevent_rate_limit_group_get_read_limit(', 'bufferevent_rate_limit_group_get_totals': 'bufferevent_rate_limit_group_get_totals(struct bufferevent_rate_limit_group *grp,', 'bufferevent_rate_limit_group_get_write_limit': 'bufferevent_rate_limit_group_get_write_limit(', 'bufferevent_rate_limit_group_new': 'bufferevent_rate_limit_group_new(struct event_base *base,', 'bufferevent_rate_limit_group_reset_totals': 'bufferevent_rate_limit_group_reset_totals(struct bufferevent_rate_limit_group *grp)', 'bufferevent_rate_limit_group_set_cfg': 'bufferevent_rate_limit_group_set_cfg(', 'bufferevent_rate_limit_group_set_min_share': 'bufferevent_rate_limit_group_set_min_share(', 'bufferevent_remove_from_rate_limit_group': 'bufferevent_remove_from_rate_limit_group(struct bufferevent *bev)', 'bufferevent_set_max_single_read': 'bufferevent_set_max_single_read(struct bufferevent *bev, size_t size)', 'bufferevent_set_max_single_write': 'bufferevent_set_max_single_write(struct bufferevent *bev, size_t size)', 'bufferevent_set_rate_limit': 'bufferevent_set_rate_limit(struct bufferevent *bev,', 'ev_token_bucket_cfg_free': 'ev_token_bucket_cfg_free(struct ev_token_bucket_cfg *cfg)', 'ev_token_bucket_cfg_new': 'ev_token_bucket_cfg_new(size_t read_rate, size_t read_burst,', 'ev_token_bucket_get_tick_': 'ev_token_bucket_get_tick_(const struct timeval *tv,', 'ev_token_bucket_init_': 'ev_token_bucket_init_(struct ev_token_bucket *bucket,', 'ev_token_bucket_update_': 'ev_token_bucket_update_(struct ev_token_bucket *bucket,', 'bufferevent_ratelim.c.o_path': 'depends_source_code_tmux/libevent-2.1.12-stable/bufferevent_ratelim.c'}, 'bufferevent_filter.c.o': {'bufferevent_filter_new': 'bufferevent_filter_new(struct bufferevent *underlying,', 'bufferevent_filter.c.o_path': 'depends_source_code_tmux/libevent-2.1.12-stable/bufferevent_filter.c'}, 'bufferevent_pair.c.o': {'bufferevent_pair_get_partner': 'bufferevent_pair_get_partner(struct bufferevent *bev)', 'bufferevent_pair_new': 'bufferevent_pair_new(struct event_base *base, int options,', 'bufferevent_pair.c.o_path': 'depends_source_code_tmux/libevent-2.1.12-stable/bufferevent_pair.c'}, 'evthread.c.o': {'evthread_debug_get_real_lock_': 'evthread_debug_get_real_lock_(void *lock_)', 'evthread_enable_lock_debugging': 'evthread_enable_lock_debugging(void)', 'evthread_enable_lock_debuging': 'evthread_enable_lock_debuging(void)', 'evthread_get_condition_callbacks': 'struct evthread_condition_callbacks *evthread_get_condition_callbacks()', 'evthread_get_lock_callbacks': 'struct evthread_lock_callbacks *evthread_get_lock_callbacks()', 'evthread_is_debug_lock_held_': 'evthread_is_debug_lock_held_(void *lock_)', 'evthread_lock_debugging_enabled_': {}, 'evthread_set_condition_callbacks': 'evthread_set_condition_callbacks(const struct evthread_condition_callbacks *cbs)', 'evthread_set_id_callback': 'evthread_set_id_callback(unsigned long (*id_fn)(void))', 'evthread_set_lock_callbacks': 'evthread_set_lock_callbacks(const struct evthread_lock_callbacks *cbs)', 'evthread.c.o_path': 'depends_source_code_tmux/libevent-2.1.12-stable/evthread.c'}, 'evutil.c.o': {'evutil_accept4_': 'evutil_accept4_(evutil_socket_t sockfd, struct sockaddr *addr,', 'evutil_addrinfo_append_': 'evutil_addrinfo_append_(struct evutil_addrinfo *first,', 'evutil_adjust_hints_for_addrconfig_': 'evutil_adjust_hints_for_addrconfig_(struct evutil_addrinfo *hints)', 'evutil_ascii_strcasecmp': 'evutil_ascii_strcasecmp(const char *s1, const char *s2)', 'evutil_ascii_strncasecmp': 'int evutil_ascii_strncasecmp(const char *s1, const char *s2, size_t n)', 'evutil_ersatz_socketpair_': 'evutil_ersatz_socketpair_(int family, int type, int protocol,', 'evutil_format_sockaddr_port_': 'evutil_format_sockaddr_port_(const struct sockaddr *sa, char *out, size_t outlen)', 'evutil_gai_strerror': 'evutil_gai_strerror(int err)', 'evutil_getaddrinfo': 'evutil_getaddrinfo(const char *nodename, const char *servname,', 'evutil_getaddrinfo_common_': 'evutil_getaddrinfo_common_(const char *nodename, const char *servname,', 'evutil_inet_ntop': 'evutil_inet_ntop(int af, const void *src, char *dst, size_t len)', 'evutil_inet_pton': 'evutil_inet_pton(int af, const char *src, void *dst)', 'evutil_inet_pton_scope': 'evutil_inet_pton_scope(int af, const char *src, void *dst, unsigned *indexp)', 'EVUTIL_ISALNUM_': {}, 'EVUTIL_ISALPHA_': {}, 'EVUTIL_ISDIGIT_': {}, 'EVUTIL_ISLOWER_': {}, 'EVUTIL_ISPRINT_': {}, 'EVUTIL_ISSPACE_': {}, 'EVUTIL_ISUPPER_': {}, 'evutil_make_listen_socket_ipv6only': 'evutil_make_listen_socket_ipv6only(evutil_socket_t sock)', 'evutil_make_listen_socket_reuseable': 'evutil_make_listen_socket_reuseable(evutil_socket_t sock)', 'evutil_make_listen_socket_reuseable_port': 'evutil_make_listen_socket_reuseable_port(evutil_socket_t sock)', 'evutil_make_socket_nonblocking': 'evutil_make_socket_nonblocking(evutil_socket_t fd)', 'evutil_make_tcp_listen_socket_deferred': 'evutil_make_tcp_listen_socket_deferred(evutil_socket_t sock)', 'evutil_memset_volatile_': {}, 'evutil_new_addrinfo_': 'evutil_new_addrinfo_(struct sockaddr *sa, ev_socklen_t socklen,', 'evutil_parse_sockaddr_port': 'evutil_parse_sockaddr_port(const char *ip_as_string, struct sockaddr *out, int *outlen)', 'evutil_read_file_': 'evutil_read_file_(const char *filename, char **content_out, size_t *len_out,', 'evutil_rtrim_lws_': 'evutil_rtrim_lws_(char *str)', 'evutil_set_evdns_getaddrinfo_cancel_fn_': 'evutil_set_evdns_getaddrinfo_cancel_fn_(evdns_getaddrinfo_cancel_fn fn)', 'evutil_set_evdns_getaddrinfo_fn_': 'evutil_set_evdns_getaddrinfo_fn_(evdns_getaddrinfo_fn fn)', 'evutil_sockaddr_cmp': 'evutil_sockaddr_cmp(const struct sockaddr *sa1, const struct sockaddr *sa2,', 'evutil_sockaddr_is_loopback_': 'evutil_sockaddr_is_loopback_(const struct sockaddr *addr)', 'evutil_socketpair': 'evutil_socketpair(int family, int type, int protocol, evutil_socket_t fd[2])', 'evutil_strtoll': 'evutil_strtoll(const char *s, char **endptr, int base)', 'EVUTIL_TOLOWER_': {}, 'evutil_v4addr_is_local_': 'evutil_v4addr_is_local_(const struct in_addr *in)', 'evutil_v6addr_is_local_': 'evutil_v6addr_is_local_(const struct in6_addr *in)', 'evutil_weakrand_': 'evutil_weakrand_(struct evutil_weakrand_state *state)', 'evutil.c.o_path': 'depends_source_code_tmux/libevent-2.1.12-stable/evutil.c'}}
+evutil_time.c.o depends_source_code_tmux/libevent-2.1.12-stable/evutil_time.c
+evutil_configure_monotonic_time |||| evutil_configure_monotonic_time(struct evutil_monotonic_timer *timer, line:  279
+278 283
+evutil_date_rfc1123 |||| evutil_date_rfc1123(char *date, const size_t datelen, const struct tm *tm) line:  184
+183 222
+evutil_gettime_monotonic |||| evutil_gettime_monotonic(struct evutil_monotonic_timer *timer, line:  289
+288 293
+evutil_monotonic_timer_free |||| evutil_monotonic_timer_free(struct evutil_monotonic_timer *timer) line:  268
+267 273
+evutil_monotonic_timer_new |||| evutil_monotonic_timer_new(void) line:  251
+250 262
+evutil_usleep_ |||| evutil_usleep_(const struct timeval *tv) line:  141
+140 181
+log.c.o depends_source_code_tmux/libevent-2.1.12-stable/log.c
+event_enable_debug_logging |||| event_enable_debug_logging(ev_uint32_t which) line:  76
+75 81
+event_logv_ |||| event_logv_(int severity, const char *errstr, const char *fmt, va_list ap) line:  187
+186 208
+event_set_fatal_callback |||| event_set_fatal_callback(event_fatal_cb cb) line:  84
+83 87
+signal.c.o depends_source_code_tmux/libevent-2.1.12-stable/signal.c
+evsig_restore_handler_ |||| evsig_restore_handler_(struct event_base *base, int evsignal) line:  326
+325 360
+evsig_set_handler_ |||| evsig_set_handler_(struct event_base *base, line:  214
+213 277
+buffer.c.o depends_source_code_tmux/libevent-2.1.12-stable/buffer.c
+evbuffer_add_buffer_reference |||| evbuffer_add_buffer_reference(struct evbuffer *outbuf, struct evbuffer *inbuf) line:  1012
+1011 1052
+evbuffer_add_file |||| evbuffer_add_file(struct evbuffer *buf, int fd, ev_off_t offset, ev_off_t length) line:  3296
+3295 3309
+evbuffer_add_file_segment |||| evbuffer_add_file_segment(struct evbuffer *buf, line:  3194
+3193 3293
+evbuffer_add_iovec |||| evbuffer_add_iovec(struct evbuffer * buf, struct evbuffer_iovec * vec, int n_vec) { line:  635
+634 668
+evbuffer_add_reference |||| evbuffer_add_reference(struct evbuffer *outbuf, line:  2921
+2920 2958
+evbuffer_chain_pin_ |||| evbuffer_chain_pin_(struct evbuffer_chain *chain, unsigned flag) line:  340
+339 344
+evbuffer_chain_unpin_ |||| evbuffer_chain_unpin_(struct evbuffer_chain *chain, unsigned flag) line:  347
+346 353
+evbuffer_clear_flags |||| evbuffer_clear_flags(struct evbuffer *buf, ev_uint64_t flags) line:  387
+386 393
+evbuffer_commit_space |||| evbuffer_commit_space(struct evbuffer *buf, line:  724
+723 791
+evbuffer_copyout |||| evbuffer_copyout(struct evbuffer *buf, void *data_out, size_t datlen) line:  1184
+1183 1187
+evbuffer_copyout_from |||| evbuffer_copyout_from(struct evbuffer *buf, const struct evbuffer_ptr *pos, line:  1190
+1189 1254
+evbuffer_decref_and_unlock_ |||| evbuffer_decref_and_unlock_(struct evbuffer *buffer) line:  561
+560 585
+evbuffer_defer_callbacks |||| evbuffer_defer_callbacks(struct evbuffer *buffer, struct event_base *base) line:  411
+410 421
+evbuffer_expand |||| evbuffer_expand(struct evbuffer *buf, size_t datlen) line:  2161
+2160 2169
+evbuffer_expand_fast_ |||| evbuffer_expand_fast_(struct evbuffer *buf, size_t datlen, int n) line:  2051
+2050 2158
+evbuffer_file_segment_add_cleanup_cb |||| void evbuffer_file_segment_add_cleanup_cb(struct evbuffer_file_segment *seg, line:  3146
+3146 3152
+evbuffer_file_segment_free |||| evbuffer_file_segment_free(struct evbuffer_file_segment *seg) line:  3155
+3154 3191
+evbuffer_file_segment_new |||| evbuffer_file_segment_new( line:  2964
+2963 3021
+evbuffer_find |||| evbuffer_find(struct evbuffer *buffer, const unsigned char *what, size_t len) line:  2578
+2577 2595
+evbuffer_get_contiguous_space |||| evbuffer_get_contiguous_space(const struct evbuffer *buf) line:  621
+620 632
+evbuffer_incref_ |||| evbuffer_incref_(struct evbuffer *buf) line:  396
+395 401
+evbuffer_incref_and_lock_ |||| evbuffer_incref_and_lock_(struct evbuffer *buf) line:  404
+403 408
+evbuffer_invoke_callbacks_ |||| evbuffer_invoke_callbacks_(struct evbuffer *buffer) line:  514
+513 531
+evbuffer_lock |||| evbuffer_lock(struct evbuffer *buf) line:  595
+594 598
+evbuffer_peek |||| evbuffer_peek(struct evbuffer *buffer, ev_ssize_t len, line:  2785
+2784 2840
+evbuffer_prepend |||| evbuffer_prepend(struct evbuffer *buf, const void *data, size_t datlen) line:  1827
+1826 1910
+evbuffer_prepend_buffer |||| evbuffer_prepend_buffer(struct evbuffer *outbuf, struct evbuffer *inbuf) line:  1055
+1054 1098
+evbuffer_ptr_set |||| evbuffer_ptr_set(struct evbuffer *buf, struct evbuffer_ptr *pos, line:  2623
+2622 2672
+evbuffer_read_setup_vecs_ |||| evbuffer_read_setup_vecs_(struct evbuffer *buf, ev_ssize_t howmuch, line:  2225
+2224 2260
+evbuffer_remove_cb |||| evbuffer_remove_cb(struct evbuffer *buffer, evbuffer_cb_func cb, void *cbarg) line:  3360
+3359 3374
+evbuffer_reserve_space |||| evbuffer_reserve_space(struct evbuffer *buf, ev_ssize_t size, line:  671
+670 701
+evbuffer_search_eol |||| evbuffer_search_eol(struct evbuffer *buffer, line:  1597
+1596 1684
+evbuffer_setcb |||| evbuffer_setcb(struct evbuffer *buffer, evbuffer_cb cb, void *cbarg) line:  3312
+3311 3331
+evbuffer_unlock |||| evbuffer_unlock(struct evbuffer *buf) line:  601
+600 604
+bufferevent_sock.c.o depends_source_code_tmux/libevent-2.1.12-stable/bufferevent_sock.c
+bufferevent_base_set |||| bufferevent_base_set(struct event_base *base, struct bufferevent *bufev) line:  671
+670 689
+bufferevent_priority_set |||| bufferevent_priority_set(struct bufferevent *bufev, int priority) line:  647
+646 667
+bufferevent_socket_connect |||| bufferevent_socket_connect(struct bufferevent *bev, line:  380
+379 454
+bufferevent_socket_connect_hostname |||| bufferevent_socket_connect_hostname(struct bufferevent *bev, line:  494
+493 525
+bufferevent_socket_get_conn_address_ |||| bufferevent_socket_get_conn_address_(struct bufferevent *bev) line:  100
+99 104
+bufferevent_socket_get_dns_error |||| bufferevent_socket_get_dns_error(struct bufferevent *bev) line:  528
+527 538
+bufferevent_socket_new |||| bufferevent_socket_new(struct event_base *base, evutil_socket_t fd, line:  344
+343 377
+bufferevent_socket_set_conn_address_ |||| bufferevent_socket_set_conn_address_(struct bufferevent *bev, line:  120
+119 126
+bufferevent_socket_set_conn_address_fd_ |||| bufferevent_socket_set_conn_address_fd_(struct bufferevent *bev, line:  107
+106 117
+bufferevent.c.o depends_source_code_tmux/libevent-2.1.12-stable/bufferevent.c
+bufferevent_disable_hard_ |||| bufferevent_disable_hard_(struct bufferevent *bufev, short event) line:  556
+555 570
+bufferevent_get_base |||| bufferevent_get_base(struct bufferevent *bufev) line:  436
+435 439
+bufferevent_getcb |||| bufferevent_getcb(struct bufferevent *bufev, line:  404
+403 421
+bufferevent_get_enabled |||| bufferevent_get_enabled(struct bufferevent *bufev) line:  919
+918 926
+bufferevent_get_input |||| bufferevent_get_input(struct bufferevent *bufev) line:  424
+423 427
+bufferevent_get_options_ |||| bufferevent_get_options_(struct bufferevent *bev) line:  895
+894 904
+bufferevent_get_priority |||| bufferevent_get_priority(const struct bufferevent *bufev) line:  442
+441 449
+bufferevent_get_underlying |||| bufferevent_get_underlying(struct bufferevent *bev) line:  929
+928 939
+bufferevent_getwatermark |||| bufferevent_getwatermark(struct bufferevent *bufev, short events, line:  641
+640 664
+bufferevent_lock |||| bufferevent_lock(struct bufferevent *bev) line:  1027
+1026 1030
+bufferevent_read |||| bufferevent_read(struct bufferevent *bufev, void *data, size_t size) line:  470
+469 473
+bufferevent_read_buffer |||| bufferevent_read_buffer(struct bufferevent *bufev, struct evbuffer *buf) line:  476
+475 479
+bufferevent_settimeout |||| bufferevent_settimeout(struct bufferevent *bufev, line:  533
+532 552
+bufferevent_set_timeouts |||| bufferevent_set_timeouts(struct bufferevent *bufev, line:  506
+505 528
+bufferevent_trigger |||| bufferevent_trigger(struct bufferevent *bufev, short iotype, int options) line:  277
+276 282
+bufferevent_trigger_event |||| bufferevent_trigger_event(struct bufferevent *bufev, short what, int options) line:  301
+300 306
+bufferevent_unlock |||| bufferevent_unlock(struct bufferevent *bev) line:  1033
+1032 1036
+event.c.o depends_source_code_tmux/libevent-2.1.12-stable/event.c
+event_active_later_ |||| event_active_later_(struct event *ev, int res) line:  2970
+2969 2975
+event_active_later_nolock_ |||| event_active_later_nolock_(struct event *ev, int res) line:  2978
+2977 2992
+event_base_active_by_fd |||| event_base_active_by_fd(struct event_base *base, evutil_socket_t fd, short events) line:  3826
+3825 3859
+event_base_active_by_signal |||| event_base_active_by_signal(struct event_base *base, int sig) line:  3862
+3861 3867
+event_base_add_virtual_ |||| event_base_add_virtual_(struct event_base *base) line:  3871
+3870 3877
+event_base_assert_ok_ |||| event_base_assert_ok_(struct event_base *base) line:  3956
+3955 3961
+event_base_assert_ok_nolock_ |||| event_base_assert_ok_nolock_(struct event_base *base) line:  3964
+3963 4020
+event_base_del_virtual_ |||| event_base_del_virtual_(struct event_base *base) line:  3880
+3879 3888
+event_base_dispatch |||| event_base_dispatch(struct event_base *event_base) line:  1815
+1814 1818
+event_base_dump_events |||| event_base_dump_events(struct event_base *base, FILE *output) line:  3814
+3813 3823
+event_base_foreach_event |||| event_base_foreach_event(struct event_base *base, line:  3799
+3798 3810
+event_base_foreach_event_nolock_ |||| event_base_foreach_event_nolock_(struct event_base *base, line:  3680
+3679 3737
+event_base_free |||| event_base_free(struct event_base *base) line:  955
+954 958
+event_base_free_nofinalize |||| event_base_free_nofinalize(struct event_base *base) line:  949
+948 952
+event_base_get_features |||| event_base_get_features(const struct event_base *base) line:  564
+563 567
+event_base_get_max_events |||| event_base_get_max_events(struct event_base *base, unsigned int type, int clear) line:  1315
+1314 1342
+event_base_get_method |||| event_base_get_method(const struct event_base *base) line:  1821
+1820 1825
+event_base_get_num_events |||| event_base_get_num_events(struct event_base *base, unsigned int type) line:  1294
+1293 1312
+event_base_get_running_event |||| event_base_get_running_event(struct event_base *base) line:  2194
+2193 2205
+event_base_got_break |||| event_base_got_break(struct event_base *event_base) line:  1895
+1894 1902
+event_base_got_exit |||| event_base_got_exit(struct event_base *event_base) line:  1905
+1904 1912
+event_base_init_common_timeout |||| event_base_init_common_timeout(struct event_base *base, line:  1487
+1486 1558
+event_base_loop |||| event_base_loop(struct event_base *base, int flags) line:  1923
+1922 2023
+event_base_loopbreak |||| event_base_loopbreak(struct event_base *event_base) line:  1857
+1856 1873
+event_base_loopcontinue |||| event_base_loopcontinue(struct event_base *event_base) line:  1876
+1875 1892
+event_base_loopexit |||| event_base_loopexit(struct event_base *event_base, const struct timeval *tv) line:  1844
+1843 1848
+event_base_new |||| event_base_new(void) line:  520
+519 529
+event_base_new_with_config |||| event_base_new_with_config(const struct event_config *cfg) line:  605
+604 741
+event_base_once |||| event_base_once(struct event_base *base, evutil_socket_t fd, short events, line:  2051
+2050 2110
+event_base_priority_init |||| event_base_priority_init(struct event_base *base, int npriorities) line:  1240
+1239 1277
+event_base_start_iocp_ |||| event_base_start_iocp_(struct event_base *base, int n_cpus) line:  744
+743 758
+event_base_stop_iocp_ |||| event_base_stop_iocp_(struct event_base *base) line:  761
+760 772
+event_base_update_cache_time |||| event_base_update_cache_time(struct event_base *base) line:  475
+474 489
+event_callback_activate_ |||| event_callback_activate_(struct event_base *base, line:  2995
+2994 3003
+event_callback_activate_later_nolock_ |||| event_callback_activate_later_nolock_(struct event_base *base, line:  3037
+3036 3047
+event_callback_activate_nolock_ |||| event_callback_activate_nolock_(struct event_base *base, line:  3006
+3005 3034
+event_callback_cancel_ |||| event_callback_cancel_(struct event_base *base, line:  3058
+3057 3066
+event_callback_cancel_nolock_ |||| event_callback_cancel_nolock_(struct event_base *base, line:  3069
+3068 3096
+event_callback_init_ |||| event_callback_init_(struct event_base *base, line:  3050
+3049 3055
+event_config_avoid_method |||| event_config_avoid_method(struct event_config *cfg, const char *method) line:  1181
+1180 1195
+event_config_free |||| event_config_free(struct event_config *cfg) line:  1160
+1159 1169
+event_config_new |||| event_config_new(void) line:  1136
+1135 1149
+event_config_require_features |||| event_config_require_features(struct event_config *cfg, line:  1198
+1197 1205
+event_config_set_flag |||| event_config_set_flag(struct event_config *cfg, int flag) line:  1172
+1171 1178
+event_config_set_max_dispatch_interval |||| event_config_set_max_dispatch_interval(struct event_config *cfg, line:  1217
+1216 1231
+event_config_set_num_cpus_hint |||| event_config_set_num_cpus_hint(struct event_config *cfg, int cpus) line:  1208
+1207 1214
+event_del_block |||| event_del_block(struct event *ev) line:  2793
+2792 2796
+event_del_noblock |||| event_del_noblock(struct event *ev) line:  2799
+2798 2802
+event_del_nolock_ |||| event_del_nolock_(struct event *ev, int blocking) line:  2810
+2809 2898
+event_disable_debug_mode |||| event_disable_debug_mode(void) line:  586
+585 602
+event_dispatch |||| event_dispatch(void) line:  1809
+1808 1812
+event_enable_debug_mode |||| event_enable_debug_mode(void) line:  570
+569 583
+event_finalize |||| event_finalize(unsigned flags, struct event *ev, event_finalize_callback_fn cb) line:  2277
+2276 2280
+event_free |||| event_free(struct event *ev) line:  2223
+2222 2234
+event_free_finalize |||| event_free_finalize(unsigned flags, struct event *ev, event_finalize_callback_fn cb) line:  2283
+2282 2286
+event_get_callback |||| event_get_callback(const struct event *ev) line:  2463
+2462 2467
+event_get_callback_arg |||| event_get_callback_arg(const struct event *ev) line:  2470
+2469 2474
+event_get_events |||| event_get_events(const struct event *ev) line:  2456
+2455 2460
+event_get_struct_event_size |||| event_get_struct_event_size(void) line:  2436
+2435 2439
+event_get_supported_methods |||| event_get_supported_methods(void) line:  1104
+1103 1133
+event_gettime_monotonic |||| event_gettime_monotonic(struct event_base *base, struct timeval *tv) line:  1090
+1089 1101
+event_get_version_number |||| event_get_version_number(void) line:  3462
+3461 3465
+event_loopbreak |||| event_loopbreak(void) line:  1851
+1850 1854
+event_loopexit |||| event_loopexit(const struct timeval *tv) line:  1837
+1836 1841
+event_priority_init |||| event_priority_init(int npriorities) line:  1234
+1233 1237
+event_remove_timer_nolock_ |||| event_remove_timer_nolock_(struct event *ev) line:  2555
+2554 2571
+event_self_cbarg |||| event_self_cbarg(void) line:  2188
+2187 2191
+event_set_mem_functions |||| event_set_mem_functions(void *(*malloc_fn)(size_t sz), line:  3571
+3570 3578
+evthread_make_base_notifiable |||| evthread_make_base_notifiable(struct event_base *base) line:  3618
+3617 3628
+libevent_global_shutdown |||| libevent_global_shutdown(void) line:  3932
+3931 3936
+evutil_rand.c.o depends_source_code_tmux/libevent-2.1.12-stable/evutil_rand.c
+evutil_secure_rng_add_bytes |||| evutil_secure_rng_add_bytes(const char *buf, size_t n) line:  195
+194 199
+evutil_secure_rng_get_bytes |||| evutil_secure_rng_get_bytes(void *buf, size_t n) line:  188
+187 191
+evutil_secure_rng_init |||| evutil_secure_rng_init(void) line:  53
+52 58
+evutil_secure_rng_init |||| evutil_secure_rng_init(void) line:  169
+168 177
+evutil_secure_rng_set_urandom_device_file |||| evutil_secure_rng_set_urandom_device_file(char *fname) line:  47
+46 51
+evutil_secure_rng_set_urandom_device_file |||| evutil_secure_rng_set_urandom_device_file(char *fname) line:  158
+157 166
+bufferevent_ratelim.c.o depends_source_code_tmux/libevent-2.1.12-stable/bufferevent_ratelim.c
+bufferevent_add_to_rate_limit_group |||| bufferevent_add_to_rate_limit_group(struct bufferevent *bev, line:  735
+734 778
+bufferevent_decrement_read_limit |||| bufferevent_decrement_read_limit(struct bufferevent *bev, ev_ssize_t decr) line:  969
+968 993
+bufferevent_decrement_write_limit |||| bufferevent_decrement_write_limit(struct bufferevent *bev, ev_ssize_t decr) line:  996
+995 1022
+bufferevent_get_max_single_read |||| bufferevent_get_max_single_read(struct bufferevent *bev) line:  883
+882 891
+bufferevent_get_max_single_write |||| bufferevent_get_max_single_write(struct bufferevent *bev) line:  894
+893 902
+bufferevent_get_max_to_read |||| bufferevent_get_max_to_read(struct bufferevent *bev) line:  905
+904 912
+bufferevent_get_max_to_write |||| bufferevent_get_max_to_write(struct bufferevent *bev) line:  915
+914 922
+bufferevent_get_read_limit |||| bufferevent_get_read_limit(struct bufferevent *bev) line:  819
+818 833
+bufferevent_get_token_bucket_cfg |||| bufferevent_get_token_bucket_cfg(const struct bufferevent *bev) { line:  925
+924 940
+bufferevent_get_write_limit |||| bufferevent_get_write_limit(struct bufferevent *bev) line:  838
+837 852
+bufferevent_rate_limit_group_decrement_read |||| bufferevent_rate_limit_group_decrement_read( line:  1025
+1024 1042
+bufferevent_rate_limit_group_decrement_write |||| bufferevent_rate_limit_group_decrement_write( line:  1045
+1044 1062
+bufferevent_rate_limit_group_free |||| bufferevent_rate_limit_group_free(struct bufferevent_rate_limit_group *g) line:  724
+723 732
+bufferevent_rate_limit_group_get_read_limit |||| bufferevent_rate_limit_group_get_read_limit( line:  945
+944 953
+bufferevent_rate_limit_group_get_totals |||| bufferevent_rate_limit_group_get_totals(struct bufferevent_rate_limit_group *grp, line:  1065
+1064 1073
+bufferevent_rate_limit_group_get_write_limit |||| bufferevent_rate_limit_group_get_write_limit( line:  958
+957 966
+bufferevent_rate_limit_group_new |||| bufferevent_rate_limit_group_new(struct event_base *base, line:  638
+637 669
+bufferevent_rate_limit_group_reset_totals |||| bufferevent_rate_limit_group_reset_totals(struct bufferevent_rate_limit_group *grp) line:  1076
+1075 1079
+bufferevent_rate_limit_group_set_cfg |||| bufferevent_rate_limit_group_set_cfg( line:  672
+671 700
+bufferevent_rate_limit_group_set_min_share |||| bufferevent_rate_limit_group_set_min_share( line:  703
+702 721
+bufferevent_remove_from_rate_limit_group |||| bufferevent_remove_from_rate_limit_group(struct bufferevent *bev) line:  781
+780 784
+bufferevent_set_max_single_read |||| bufferevent_set_max_single_read(struct bufferevent *bev, size_t size) line:  855
+854 866
+bufferevent_set_max_single_write |||| bufferevent_set_max_single_write(struct bufferevent *bev, size_t size) line:  869
+868 880
+bufferevent_set_rate_limit |||| bufferevent_set_rate_limit(struct bufferevent *bev, line:  560
+559 635
+ev_token_bucket_cfg_free |||| ev_token_bucket_cfg_free(struct ev_token_bucket_cfg *cfg) line:  176
+175 179
+ev_token_bucket_cfg_new |||| ev_token_bucket_cfg_new(size_t read_rate, size_t read_burst, line:  143
+142 173
+ev_token_bucket_get_tick_ |||| ev_token_bucket_get_tick_(const struct timeval *tv, line:  127
+126 140
+ev_token_bucket_init_ |||| ev_token_bucket_init_(struct ev_token_bucket *bucket, line:  50
+49 71
+ev_token_bucket_update_ |||| ev_token_bucket_update_(struct ev_token_bucket *bucket, line:  74
+73 111
+bufferevent_filter.c.o depends_source_code_tmux/libevent-2.1.12-stable/bufferevent_filter.c
+bufferevent_filter_new |||| bufferevent_filter_new(struct bufferevent *underlying, line:  170
+169 226
+bufferevent_pair.c.o depends_source_code_tmux/libevent-2.1.12-stable/bufferevent_pair.c
+bufferevent_pair_get_partner |||| bufferevent_pair_get_partner(struct bufferevent *bev) line:  340
+339 353
+bufferevent_pair_new |||| bufferevent_pair_new(struct event_base *base, int options, line:  115
+114 150
+evthread.c.o depends_source_code_tmux/libevent-2.1.12-stable/evthread.c
+evthread_debug_get_real_lock_ |||| evthread_debug_get_real_lock_(void *lock_) line:  359
+358 363
+evthread_enable_lock_debugging |||| evthread_enable_lock_debugging(void) line:  318
+317 342
+evthread_enable_lock_debuging |||| evthread_enable_lock_debuging(void) line:  312
+311 315
+evthread_get_condition_callbacks |||| struct evthread_condition_callbacks *evthread_get_condition_callbacks() line:  82
+82 86
+evthread_get_lock_callbacks |||| struct evthread_lock_callbacks *evthread_get_lock_callbacks() line:  77
+77 81
+evthread_is_debug_lock_held_ |||| evthread_is_debug_lock_held_(void *lock_) line:  345
+344 356
+evthread_set_condition_callbacks |||| evthread_set_condition_callbacks(const struct evthread_condition_callbacks *cbs) line:  136
+135 180
+evthread_set_id_callback |||| evthread_set_id_callback(unsigned long (*id_fn)(void)) line:  72
+71 75
+evthread_set_lock_callbacks |||| evthread_set_lock_callbacks(const struct evthread_lock_callbacks *cbs) line:  93
+92 133
+evutil.c.o depends_source_code_tmux/libevent-2.1.12-stable/evutil.c
+evutil_accept4_ |||| evutil_accept4_(evutil_socket_t sockfd, struct sockaddr *addr, line:  2633
+2632 2665
+evutil_addrinfo_append_ |||| evutil_addrinfo_append_(struct evutil_addrinfo *first, line:  877
+876 888
+evutil_adjust_hints_for_addrconfig_ |||| evutil_adjust_hints_for_addrconfig_(struct evutil_addrinfo *hints) line:  1236
+1235 1248
+evutil_ascii_strcasecmp |||| evutil_ascii_strcasecmp(const char *s1, const char *s2) line:  2392
+2391 2405
+evutil_ascii_strncasecmp |||| int evutil_ascii_strncasecmp(const char *s1, const char *s2, size_t n) line:  2406
+2406 2420
+evutil_ersatz_socketpair_ |||| evutil_ersatz_socketpair_(int family, int type, int protocol, line:  212
+211 315
+evutil_format_sockaddr_port_ |||| evutil_format_sockaddr_port_(const struct sockaddr *sa, char *out, size_t outlen) line:  2246
+2245 2272
+evutil_gai_strerror |||| evutil_gai_strerror(int err) line:  1639
+1638 1681
+evutil_getaddrinfo |||| evutil_getaddrinfo(const char *nodename, const char *servname, line:  1385
+1384 1573
+evutil_getaddrinfo_common_ |||| evutil_getaddrinfo_common_(const char *nodename, const char *servname, line:  993
+992 1110
+evutil_inet_ntop |||| evutil_inet_ntop(int af, const void *src, char *dst, size_t len) line:  1896
+1895 1989
+evutil_inet_pton |||| evutil_inet_pton(int af, const char *src, void *dst) line:  2027
+2026 2136
+evutil_inet_pton_scope |||| evutil_inet_pton_scope(int af, const char *src, void *dst, unsigned *indexp) line:  1992
+1991 2024
+evutil_make_listen_socket_ipv6only |||| evutil_make_listen_socket_ipv6only(evutil_socket_t sock) line:  394
+393 402
+evutil_make_listen_socket_reuseable |||| evutil_make_listen_socket_reuseable(evutil_socket_t sock) line:  365
+364 377
+evutil_make_listen_socket_reuseable_port |||| evutil_make_listen_socket_reuseable_port(evutil_socket_t sock) line:  380
+379 391
+evutil_make_socket_nonblocking |||| evutil_make_socket_nonblocking(evutil_socket_t fd) line:  318
+317 344
+evutil_make_tcp_listen_socket_deferred |||| evutil_make_tcp_listen_socket_deferred(evutil_socket_t sock) line:  405
+404 416
+evutil_new_addrinfo_ |||| evutil_new_addrinfo_(struct sockaddr *sa, ev_socklen_t socklen, line:  832
+831 871
+evutil_parse_sockaddr_port |||| evutil_parse_sockaddr_port(const char *ip_as_string, struct sockaddr *out, int *outlen) line:  2139
+2138 2243
+evutil_read_file_ |||| evutil_read_file_(const char *filename, char **content_out, size_t *len_out, line:  145
+144 199
+evutil_rtrim_lws_ |||| evutil_rtrim_lws_(char *str) line:  2423
+2422 2441
+evutil_set_evdns_getaddrinfo_cancel_fn_ |||| evutil_set_evdns_getaddrinfo_cancel_fn_(evdns_getaddrinfo_cancel_fn fn) line:  1603
+1602 1607
+evutil_set_evdns_getaddrinfo_fn_ |||| evutil_set_evdns_getaddrinfo_fn_(evdns_getaddrinfo_fn fn) line:  1597
+1596 1601
+evutil_sockaddr_cmp |||| evutil_sockaddr_cmp(const struct sockaddr *sa1, const struct sockaddr *sa2, line:  2275
+2274 2311
+evutil_sockaddr_is_loopback_ |||| evutil_sockaddr_is_loopback_(const struct sockaddr *addr) line:  2532
+2531 2544
+evutil_socketpair |||| evutil_socketpair(int family, int type, int protocol, evutil_socket_t fd[2]) line:  202
+201 209
+evutil_strtoll |||| evutil_strtoll(const char *s, char **endptr, int base) line:  464
+463 521
+evutil_v4addr_is_local_ |||| evutil_v4addr_is_local_(const struct in_addr *in) line:  629
+628 636
+evutil_v6addr_is_local_ |||| evutil_v6addr_is_local_(const struct in6_addr *in) line:  638
+637 650
+evutil_weakrand_ |||| evutil_weakrand_(struct evutil_weakrand_state *state) line:  2489
+2488 2501
+libutempter-1.2.1
+print y to handle this dependency...
+slimming ends! {'glibc-2.35': 'no', 'ncurses-6.3': 'no', 'libevent-2.1.12-stable': 'yes', 'libutempter-1.2.1': 'no'}
+now_handle_package:  {'tmux'}
+now_handle_dependency:  {'libtinfo6', 'libevent-core-2.1-7', 'libc6', 'libutempter0'}
+all_dependency_info:  {'libtinfo6': {'Source': 'ncurses', 'Depend': {'libc6'}, 'IfHandle': 'no'}, 'libevent-core-2.1-7': {'Source': 'libevent', 'Depend': {'libc6'}}, 'libc6': {'Source': 'glibc', 'Depend': {'libcrypt1', 'libgcc-s1'}, 'IfHandle': 'no'}, 'libutempter0': {'Source': 'libutempter', 'Depend': {'libc6'}, 'IfHandle': 'no'}}
+package:  libtinfo6  has been assigned not to slim
+package:  libevent-core-2.1-7  has been assigned not to slim
+package:  libc6  has been assigned not to slim
+package:  libutempter0  has been assigned not to slim

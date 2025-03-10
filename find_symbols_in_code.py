@@ -223,8 +223,20 @@ def generate_need_object_file(target_dir, need_files):
                 with open(file_path, "r", encoding="utf-8") as f:
                     lines = f.readlines()
 
+                has_main_func = False
                 # 注释掉所有行（避免重复注释已存在的注释行）
                 commented_lines = ["// " + line if not line.lstrip().startswith("//") else line for line in lines]
+                # 考虑原本有main函数的情况，不能全部注释掉，否则会报错
+                for line in lines:
+                    # 还有可能有这种鬼东西，所以单main()前面得有个空格判断一下
+                    # tinytest_main(int c, const char **v, struct testgroup_t *groups)
+                    if " main (" in line or " main(" in line or line.startswith("main("):
+                        has_main_func = True
+                
+                if has_main_func:
+                    print("====================================", file_path)
+                    commented_lines.append("int main(){return 0;}")
+                         
 
                 # 写回文件
                 with open(file_path, "w", encoding="utf-8") as f:
@@ -253,7 +265,6 @@ def functional_trimming(target_dir):
             file_output_symbols = extract_exported_symbols_from_file(file_path)
             for symbol in file_output_symbols:
                 # 记录每个符号是哪个文件提供的
-                # TODO：提前这部分，可以优化
                 if symbol not in all_export_symbols:
                     all_export_symbols[symbol] = []
                 all_export_symbols[symbol].append(file)
@@ -274,7 +285,6 @@ def functional_trimming(target_dir):
 
     # 获取symbol的位置
     # TODO：考虑同名问题：符号&文件
-    # TODO：修改tags文件名字
     with open("tags_" + target_dir[:-2], "r", encoding="utf-8") as f:
         for line in f:
             parts = line.strip().split("\t")
@@ -325,7 +335,9 @@ def functional_trimming(target_dir):
                     left_count = 0
                     right_count = 0
                     end_line = i
-                    for j in range(i, len(lines)):
+                    # 2025/3/10：这里有一个问题，i是行数，从下标i开始会忽略起始行to_match_pattern，但是这里也可能有括号。。
+                    # 所以从i-1开始，也就是从函数名所在行开始计算
+                    for j in range(i - 1, len(lines)):
                         line_j = lines[j]
                         for ch in line_j:
                             # print(line_j)
@@ -339,15 +351,19 @@ def functional_trimming(target_dir):
                             end_line = j + 1
                             break
                     # 注释掉[i,end_line]内的全部内容，写回文件， 注意这两个都是在文件内的行数目，不是下标（要-1）
-                    print(i ,end_line)
+                    # print(i ,end_line)
                     # 确认开始行，防止函数返回值和函数名称不在同一行的情况，以(为检查点
+                    # 满足一下两种情况说明是不用前移的
+                    # 1. xx foo( : (前面有东西，而且在整个行内至少是第二个
+                    # 2. xx foo ( : (前面没有东西，而且在整个行内至少是第三个
                     line_start = lines[i-1]
                     line_start_split = line_start.split(" ")
                     check_point = -1
-                    for s in range(0, len(line_start_split) - 1):
+                    for s in range(0, len(line_start_split)):
                         if '(' in line_start_split[s]:
                             check_point = s
                             break;
+                    # print("========", line_start_split, check_point)
                     if (lines[check_point][0] == '(' and check_point <= 1) or (lines[check_point][0] != '(' and check_point == 0):
                         i -= 1 
                     for k in range(i - 1, end_line):

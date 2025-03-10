@@ -2,6 +2,17 @@ import os
 import subprocess
 import sys
 
+def get_depends(package):
+    # 运行依赖脚本
+    try:
+        output = subprocess.check_output(
+            ['./get_depends.sh', package],
+            stderr=subprocess.DEVNULL,
+            text=True
+        )
+    except subprocess.CalledProcessError:
+        print(f"Error: Failed to get package info for '{package}'.")
+
 def compile_with_cmake(folder_path):
     build_dir = os.path.join(folder_path, "build")
     if not os.path.exists(build_dir):
@@ -78,17 +89,17 @@ def compile_subfolders(root_folder):
             if os.path.exists(cmake_lists):
                 print("Found CMakeLists.txt, building with CMake...")
                 if compile_with_cmake(subfolder_path):
-                    output_dir = os.path.join(root_folder, subfolder + "_o")
+                    output_dir = os.path.join(root_folder + "/../", subfolder + "_o")
                     copy_object_files(subfolder_path, output_dir)
             elif os.path.exists(configure_script):
                 print("Found configure script, building with Autotools...")
                 if compile_with_autotools(subfolder_path):
-                    output_dir = os.path.join(root_folder, subfolder + "_o")
+                    output_dir = os.path.join(root_folder + "/../", subfolder + "_o")
                     copy_object_files(subfolder_path, output_dir)
             elif os.path.exists(makefile_script):
                 print("Found Makefile script, building with Autotools...")
                 if compile_with_makefile(subfolder_path):
-                    output_dir = os.path.join(root_folder, subfolder + "_o")
+                    output_dir = os.path.join(root_folder + "/../", subfolder + "_o")
                     copy_object_files(subfolder_path, output_dir)
             else:
                 print("No build script found!! please check!!")
@@ -98,9 +109,11 @@ if __name__ == "__main__":
         print("Usage: python compile_packages.py <folder_path>")
         sys.exit(1)
     
-    folder_path = sys.argv[1]
-    if not os.path.isdir(folder_path):
-        print(f"Error: {folder_path} is not a valid directory.")
-        sys.exit(1)
+    package_name = sys.argv[1]
+    # if not os.path.isdir(folder_path):
+    #     print(f"Error: {folder_path} is not a valid directory.")
+    #     sys.exit(1)
+        
+    # get_depends(package_name)
     
-    compile_subfolders(folder_path)
+    compile_subfolders(os.getcwd() + "/depends_source_code_" + package_name)
