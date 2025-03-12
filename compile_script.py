@@ -79,13 +79,17 @@ def copy_object_files(folder_path, output_dir):
     except subprocess.CalledProcessError as e:
         print(f"Failed to copy object files from {folder_path}: {e}")
 
-def compile_subfolders(package_name):
+def compile_subfolders(package_name, isCompileAfterTrimming : bool):
     root_folder = os.getcwd() + "/depends_source_code_" + package_name
     if root_folder in has_compile:
         return
     has_compile.add(root_folder)
     get_depends(package_name)
     for subfolder in os.listdir(root_folder):
+        # 如果不是最后编译而且已经存在_o的目标文件输出目录，就不用编译了，因为都相当于初始编译
+        output_dir = os.path.join(root_folder + "/../", subfolder + "_o")
+        if isCompileAfterTrimming == False and os.path.exists(output_dir):
+            continue
         subfolder_path = os.path.join(root_folder, subfolder)
         # 写死了glibc不要编译
         if os.path.isdir(subfolder_path) and "glibc" not in subfolder_path:
@@ -99,17 +103,14 @@ def compile_subfolders(package_name):
             if os.path.exists(cmake_lists):
                 print("Found CMakeLists.txt, building with CMake...")
                 if compile_with_cmake(subfolder_path):
-                    output_dir = os.path.join(root_folder + "/../", subfolder + "_o")
                     copy_object_files(subfolder_path, output_dir)
             elif os.path.exists(configure_script):
                 print("Found configure script, building with Autotools...")
                 if compile_with_autotools(subfolder_path):
-                    output_dir = os.path.join(root_folder + "/../", subfolder + "_o")
                     copy_object_files(subfolder_path, output_dir)
             elif os.path.exists(makefile_script):
                 print("Found Makefile script, building with Autotools...")
                 if compile_with_makefile(subfolder_path):
-                    output_dir = os.path.join(root_folder + "/../", subfolder + "_o")
                     copy_object_files(subfolder_path, output_dir)
             else:
                 print("No build script found!! please check!!")

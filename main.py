@@ -84,7 +84,7 @@ if __name__ == "__main__":
         # 获取源码&开始裁减
         for package_name in now_handle_package:
             print("now handle dependencies of package: ", package_name)
-            compile_script.compile_subfolders(package_name)
+            compile_script.compile_subfolders(package_name, False)
             print("compile ends!")
             extract_symbols.run(package_name, ifInit=ifInit, package_name_2_version=package_name_2_version)
             print("extract ends!")
@@ -141,7 +141,7 @@ if __name__ == "__main__":
         # 目前是写死了glibc不要编译
         for package_name in now_handle_package:
             print("now rehandle dependencies of package: ", package_name)
-            compile_script.compile_subfolders(package_name)
+            compile_script.compile_subfolders(package_name, True)
             print("compile after trimming ends!")
 
         now_handle_package.clear()
