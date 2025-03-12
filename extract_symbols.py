@@ -236,9 +236,9 @@ def run(now_handle_package_name:str, ifInit:bool, package_name_2_version:set):
     symbols_in_ctags_file = {}
 
     folder_name = "depends_source_code_" + package_name
-    if os.path.isdir(folder_name):
-        print(f"folder '{folder_name}' exists, this package has been handled")
-        return
+    # if os.path.isdir(folder_name):
+    #     print(f"folder '{folder_name}' exists, this package has been handled")
+    #     return
     # 获取源码
     print("downloading dependencies...")
     get_depends(package_name)

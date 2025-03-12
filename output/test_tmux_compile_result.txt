@@ -1,0 +1,527 @@
+checking for ggrep... no
+checking for grep... grep
+checking for egrep... grep -E
+Configuring NCURSES 6.3 ABI 6 (Wed Mar 12 16:37:57 CST 2025)
+checking for package version... 6.3
+checking for package patch date... 20211021
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+Configuring for linux-gnu
+checking for fgrep... grep -F
+checking for prefix... /usr
+checking for gnatgcc... no
+checking for gcc... gcc
+checking for C compiler default output... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for executable suffix... 
+checking for object suffix... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking version of gcc... 11.2.0
+checking if this is really Intel C compiler... no
+checking if this is really Clang C compiler... no
+checking for gcc option to accept ANSI C... none needed
+checking $CFLAGS variable... ok
+checking $CC variable... ok
+checking how to run the C preprocessor... gcc -E
+checking whether gcc needs -traditional... no
+checking whether gcc understands -c and -o together... yes
+checking for ldconfig... /usr/sbin/ldconfig
+checking if you want to ensure bool is consistent with C++... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking if g++ works... yes
+checking for g++... /usr/bin/g++
+checking version of /usr/bin/g++... 11.2.0
+checking if you want to build C++ binding and demo... yes
+checking if you want to build with Ada... yes
+checking if you want to install terminal database... yes
+checking if you want to install manpages... yes
+checking if you want to build programs such as tic... yes
+checking if you want to build test-programs... yes
+checking if you wish to install curses.h... yes
+checking for mawk... mawk
+checking for a BSD compatible install... /usr/bin/install -c
+checking for lint... no
+checking for cppcheck... no
+checking for splint... no
+checking whether ln -s works... yes
+checking if ln -s -f options work... yes
+checking for long file names... yes
+checking if you want to use pkg-config... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking for /usr/bin/pkg-config library directory... checking for search-list...  /usr/lib/x86_64-linux-gnu/pkgconfig /usr/share/pkgconfig /usr/lib/pkgconfig
+checking for first directory... /usr/lib/x86_64-linux-gnu/pkgconfig
+checking if we should install .pc files for /usr/bin/pkg-config... no
+checking if we should assume mixed-case filenames... auto
+checking if filesystem supports mixed-case filenames... yes
+checking whether make sets ${MAKE}... yes
+checking for ".PHONY" make-support... yes
+checking for exctags... no
+checking for ctags... ctags
+checking for exetags... no
+checking for etags... etags
+checking for ctags... yes
+checking for etags... yes
+checking for makeflags variable... 
+checking for ranlib... ranlib
+checking for ld... ld
+checking for ar... ar
+checking for nm... nm
+checking for ar... (cached) ar
+checking for options to update archives... -curvU
+checking if you have specified an install-prefix... 
+checking if libtool -version-number should be used... yes
+checking if you want to build libraries with libtool... no
+checking if you want to build shared libraries... no
+checking if you want to build static libraries... yes
+checking if you want to build debug libraries... yes
+checking if you want to build profiling libraries... no
+checking for specified models...  normal debug
+checking for default model... normal
+checking if you want to have a library-prefix... auto
+checking for PATH separator... :
+checking if you want to build a separate terminfo library... no
+checking if you want to build a separate tic library... no
+checking for default loader flags... 
+checking for an rpath option... -Wl,-rpath,
+checking if release/abi version should be used for shared libs... auto
+checking which gcc option to use... -fPIC
+checking if you want to link with the GPM mouse library... maybe
+checking for gpm.h... no
+checking if you want to use PCRE2 for regular-expressions... no
+checking if you want to disable library suffixes... no
+checking if you want to disable extra LDFLAGS for package-scripts... no
+checking if you wish to append extra suffix to header/library paths... 
+checking if you wish to install ncurses overwriting curses... yes
+checking if external terminfo-database is used... yes
+checking which terminfo source-file will be installed... ${top_srcdir}/misc/terminfo.src
+checking whether to use hashed database instead of directory/tree... no
+checking for list of fallback descriptions... 
+checking for tic... tic
+checking for infocmp... infocmp
+checking if you want modern xterm or antique... xterm-new
+checking if xterm backspace sends BS or DEL... BS
+checking for list of terminfo directories... /usr/share/terminfo
+checking for default terminfo directory... /usr/share/terminfo
+checking if big-core option selected... yes
+checking if big-strings option selected... yes
+checking if you want termcap-fallback support... no
+checking if ~/.terminfo is wanted... yes
+checking if you want to permit root to use ncurses environment variables... yes
+checking if you want to permit setuid programs to access all files... yes
+checking for unistd.h... yes
+checking for remove... yes
+checking for unlink... yes
+checking if link/symlink functions work...  link symlink
+checking if tic should use symbolic links... no
+checking if tic should use hard links... yes
+checking if you want broken-linker support code... no
+checking if tputs should process BSD-style prefix padding... no
+checking if the POSIX test-macros are already defined... no
+checking if this is the GNU C library... yes
+checking if _DEFAULT_SOURCE can be used as a basis... yes
+checking if _XOPEN_SOURCE=600 works with _DEFAULT_SOURCE... yes
+checking if _XOPEN_SOURCE really is set... yes
+checking if SIGWINCH is defined... yes
+checking for nl_langinfo and CODESET... yes
+checking if you want wide-character code... no
+checking whether to enable _LP64 definition in curses.h... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for _LARGE_FILES value needed for large files... no
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for fseeko... yes
+checking whether to use struct dirent64... no
+checking if you want tparm not to use X/Open fixed-parameter list... yes
+checking if you want to enable wattr* macros... no
+checking for X11 rgb file... ${exec_prefix}/lib/X11/rgb.txt
+checking for type of bool... auto
+checking for alternate terminal capabilities file... Caps
+checking for type of chtype... uint32_t
+checking for type of ospeed... short
+checking for type of mmask_t... uint32_t
+checking for size CCHARW_MAX... 5
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... (cached) yes
+checking for signed char... yes
+checking size of signed char... 1
+checking if you want to use signed Boolean array in term.h... no
+checking for type of tparm args... intptr_t
+checking if RCS identifiers should be compiled-in... no
+checking format of man-pages...  gzip
+checking for manpage renaming... /home/PkgBlade/depends_source_code_tmux/ncurses-6.3/man/man_db.renames
+checking if manpage aliases will be installed... yes
+checking if manpage symlinks should be used... yes
+checking for manpage tbl... no
+checking if you want to build with function extensions... yes
+checking if you want to build with SCREEN extensions... yes
+checking if you want to build with terminal-driver... no
+checking for extended use of const keyword... yes
+checking if you want to use extended colors... yes
+checking if you want to use extended mouse encoding... yes
+checking if you want to use extended putwin/screendump... yes
+checking if you want $NCURSES_NO_PADDING code... yes
+checking if you want SIGWINCH handler... yes
+checking if you want user-definable terminal capabilities like termcap... yes
+checking if you want to link with the pthread library... no
+checking if you want reentrant code... no
+checking if you want opaque curses-library structures... no
+checking if you want opaque form-library structures... no
+checking if you want opaque menu-library structures... no
+checking if you want opaque panel-library structures... no
+checking if you want all development code... no
+checking if you want hard-tabs code... no
+checking if you want limited support for xmc... no
+checking if you do not want to assume colors are white-on-black... yes
+checking if you want hashmap scrolling-optimization code... yes
+checking if you want colorfgbg code... no
+checking if you want to use gcc -fvisibility option... no
+checking if you want interop bindings... yes
+checking if you want experimental safe-sprintf code... no
+checking if you want wgetch-events code... no
+checking if you want to see long compiling messages... yes
+checking if you want to install stripped executables... yes
+checking if install accepts -p option... yes
+checking if install needs to be told about ownership... no
+checking if you want to use C11 _Noreturn feature... no
+checking if you want to turn on gcc warnings... no
+configure: checking for gcc __attribute__ directives...
+... scanf
+... printf
+... unused
+... noreturn
+checking if you want to work around bogus compiler/loader warnings... no
+checking if you want to enable runtime assertions... no
+checking if you want to use dmalloc for testing... no
+checking if you want to use dbmalloc for testing... no
+checking if you want to use valgrind for testing... no
+checking if you want to perform memory-leak testing... no
+checking whether to add trace feature to all models... no
+checking if we want to use GNAT projects... yes
+checking for gettimeofday... yes
+checking if -lm needed for math functions... yes
+checking for ANSI C header files... (cached) yes
+checking for dirent.h that defines DIR... yes
+checking for opendir in -ldir... no
+checking whether time.h and sys/time.h may both be included... yes
+checking for regcomp... yes
+checking for regular-expression headers... regex.h
+checking for fcntl.h... yes
+checking for getopt.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for math.h... yes
+checking for poll.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/param.h... yes
+checking for sys/poll.h... yes
+checking for sys/select.h... yes
+checking for sys/time.h... yes
+checking for sys/times.h... yes
+checking for ttyent.h... yes
+checking for unistd.h... (cached) yes
+checking for wctype.h... yes
+checking for unistd.h... (cached) yes
+checking for getopt.h... (cached) yes
+checking for header declaring getopt variables... unistd.h
+checking if external environ is declared... no
+checking if external environ exists... yes
+checking for getenv... yes
+checking for putenv... yes
+checking for setenv... yes
+checking for strdup... yes
+checking if getenv returns consistent values... yes
+checking if sys/time.h works with sys/select.h... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking if gcc supports options to tune inlining... yes
+checking for signal global datatype... volatile sig_atomic_t
+checking if unsigned literals are legal... yes
+checking if external errno is declared... yes
+checking if external errno exists... no
+checking if data-only library module links... yes
+checking for getcwd... yes
+checking for getegid... yes
+checking for geteuid... yes
+checking for getopt... yes
+checking for getttynam... yes
+checking for issetugid... no
+checking for localeconv... yes
+checking for poll... yes
+checking for putenv... (cached) yes
+checking for remove... (cached) yes
+checking for select... yes
+checking for setbuf... yes
+checking for setbuffer... yes
+checking for setenv... (cached) yes
+checking for setfsuid... yes
+checking for setvbuf... yes
+checking for sigaction... yes
+checking for sigvec... no
+checking for snprintf... yes
+checking for strdup... (cached) yes
+checking for strstr... yes
+checking for sysconf... yes
+checking for tcgetpgrp... yes
+checking for times... yes
+checking for tsearch... yes
+checking for vsnprintf... yes
+checking for isascii... yes
+checking whether sigaction needs _POSIX_SOURCE... no
+checking if nanosleep really works... yes
+checking for termio.h... yes
+checking for termios.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/ioctl.h... (cached) yes
+checking for sys/termio.h... no
+checking whether termios.h needs _POSIX_SOURCE... no
+checking for tcgetattr... yes
+checking for vsscanf function or workaround... vsscanf
+checking for unistd.h... (cached) yes
+checking for working mkstemp... yes
+checking whether setvbuf arguments are reversed... no
+checking for intptr_t... yes
+checking for ssize_t... yes
+checking for type sigaction_t... no
+checking declaration of size-change... yes
+checking for memmove... yes
+checking if poll really works... yes
+checking for va_copy... yes
+checking for pid_t... yes
+checking for unistd.h... (cached) yes
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... (cached) yes
+checking for working vfork... (cached) yes
+checking if fopen accepts explicit binary mode... yes
+checking for openpty in -lutil... yes
+checking for openpty header... pty.h
+checking if we should include stdbool.h... yes
+checking for builtin bool type... no
+checking if we already have C++ library... yes
+checking whether /usr/bin/g++ understands -c and -o together... yes
+checking how to run the C++ preprocessor... /usr/bin/g++ -E
+checking for typeinfo... yes
+checking for iostream... yes
+checking if iostream uses std-namespace... yes
+checking if we should include stdbool.h... (cached) yes
+checking for builtin bool type... yes
+checking for bool... yes
+checking size of bool... 1
+checking for type of bool... unsigned char
+checking for special defines needed for etip.h...  
+checking if /usr/bin/g++ accepts parameter initialization... no
+checking if /usr/bin/g++ accepts static_cast... yes
+checking for gnat... no
+checking for gnatmake... no
+checking for gprconfig... no
+checking for gprbuild... no
+checking for library subsets... ticlib+termlib+ext_tinfo+base+ext_funcs
+checking default library suffix... 
+checking default library-dependency suffix... .a
+checking default object directory... objects
+checking c++ library-dependency suffix... .a
+checking if linker supports switching between static/dynamic... no
+checking where we will install curses.h... ${prefix}/include
+checking for desired basename for form library... form
+checking for desired basename for menu library... menu
+checking for desired basename for panel library... panel
+checking for desired basename for cxx library... ncurses++
+checking for src modules... ncurses progs panel menu form
+checking for defines to add to ncurses6-config script...  -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600
+package: ncurses
+checking for linker search path... /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu /lib64 /usr/lib64 /usr/local/lib /lib /usr/lib
+configure: creating ./config.status
+config.status: creating include/MKterm.h.awk
+config.status: creating include/curses.head
+config.status: creating include/ncurses_dll.h
+config.status: creating include/termcap.h
+config.status: creating include/unctrl.h
+config.status: creating man/Makefile
+config.status: creating include/Makefile
+config.status: creating ncurses/Makefile
+config.status: creating progs/Makefile
+config.status: creating panel/Makefile
+config.status: creating menu/Makefile
+config.status: creating form/Makefile
+config.status: creating test/Makefile
+config.status: creating misc/Makefile
+config.status: creating c++/Makefile
+config.status: creating misc/run_tic.sh
+config.status: creating misc/ncurses-config
+config.status: creating man/ncurses6-config.1
+config.status: creating Makefile
+config.status: creating include/ncurses_cfg.h
+config.status: include/ncurses_cfg.h is unchanged
+Appending rules for normal model (ncurses: ticlib+termlib+ext_tinfo+base+ext_funcs)
+Appending rules for debug model (ncurses: ticlib+termlib+ext_tinfo+base+ext_funcs)
+Appending rules for normal model (progs: ticlib+termlib+ext_tinfo+base+ext_funcs)
+Appending rules for debug model (progs: ticlib+termlib+ext_tinfo+base+ext_funcs)
+Appending rules for normal model (panel: ticlib+termlib+ext_tinfo+base+ext_funcs)
+Appending rules for debug model (panel: ticlib+termlib+ext_tinfo+base+ext_funcs)
+Appending rules for normal model (menu: ticlib+termlib+ext_tinfo+base+ext_funcs)
+Appending rules for debug model (menu: ticlib+termlib+ext_tinfo+base+ext_funcs)
+Appending rules for normal model (form: ticlib+termlib+ext_tinfo+base+ext_funcs)
+Appending rules for debug model (form: ticlib+termlib+ext_tinfo+base+ext_funcs)
+Appending rules for normal model (test: ticlib+termlib+ext_tinfo+base+ext_funcs)
+Appending rules for debug model (test: ticlib+termlib+ext_tinfo+base+ext_funcs)
+Appending rules for normal model (c++: ticlib+termlib+ext_tinfo+base+ext_funcs)
+Appending rules for debug model (c++: ticlib+termlib+ext_tinfo+base+ext_funcs)
+creating headers.sh
+
+** Configuration summary for NCURSES 6.3 20211021:
+
+       extended funcs: yes
+       xterm terminfo: xterm-new
+
+        bin directory: /usr/bin
+        lib directory: /usr/lib
+    include directory: /usr/include
+        man directory: /usr/share/man
+   terminfo directory: /usr/share/terminfo
+
+( cd man && make DESTDIR="" RPATH_LIST="/usr/lib" all )
+make[1]: Entering directory '/home/PkgBlade/depends_source_code_tmux/ncurses-6.3/man'
+/bin/sh ./MKterminfo.sh ./terminfo.head ./../include/Caps ./../include/Caps-ncurses ./terminfo.tail >terminfo.5
+make[1]: Leaving directory '/home/PkgBlade/depends_source_code_tmux/ncurses-6.3/man'
+( cd include && make DESTDIR="" RPATH_LIST="/usr/lib" all )
+make[1]: Entering directory '/home/PkgBlade/depends_source_code_tmux/ncurses-6.3/include'
+cat curses.head >curses.h
+AWK=mawk /bin/sh ./MKkey_defs.sh ./Caps ./Caps-ncurses >>curses.h
+/bin/sh -c 'if test "0" = "1" ; then cat ./curses.events >>curses.h ; fi'
+/bin/sh -c 'if test "chtype" = "cchar_t" ; then cat ./curses.wide >>curses.h ; fi'
+cat ./curses.tail >>curses.h
+mawk -f MKterm.h.awk ./Caps ./Caps-ncurses > term.h
+/bin/sh ./edit_cfg.sh ../include/ncurses_cfg.h term.h
+** edit: HAVE_TCGETATTR 1
+** edit: HAVE_TERMIOS_H 1
+** edit: HAVE_TERMIO_H 1
+** edit: BROKEN_LINKER 0
+make[1]: Leaving directory '/home/PkgBlade/depends_source_code_tmux/ncurses-6.3/include'
+( cd ncurses && make DESTDIR="" RPATH_LIST="/usr/lib" all )
+make[1]: Entering directory '/home/PkgBlade/depends_source_code_tmux/ncurses-6.3/ncurses'
+/bin/sh -e ./base/MKlib_gen.sh "gcc -E -DHAVE_CONFIG_H -DBUILDING_NCURSES -I../ncurses -I. -I../include -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -DNDEBUG" "mawk" generated <../include/curses.h >lib_gen.c
+/bin/sh -e ./base/MKlib_gen.sh "gcc -E -DHAVE_CONFIG_H -DBUILDING_NCURSES -I../ncurses -I. -I../include -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -DNDEBUG" "mawk" implemented <../include/curses.h >link_test.c
+gcc -o make_keys -DHAVE_CONFIG_H -DUSE_BUILD_CC -I../ncurses -I. -I../include -I./../include -DHAVE_CONFIG_H -DBUILDING_NCURSES -I../ncurses -I. -I../include -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -DNDEBUG -O2 --param max-inline-insns-single=1200  ./tinfo/make_keys.c  
+make[1]: Leaving directory '/home/PkgBlade/depends_source_code_tmux/ncurses-6.3/ncurses'
+-- OpenSSL include: /usr/include
+-- OpenSSL lib: /usr/lib/x86_64-linux-gnu/libssl.so;/usr/lib/x86_64-linux-gnu/libcrypto.so
+-- Generating regress tests...
+-- 
+--         ---( Libevent 2.1.12-stable )---
+-- 
+-- Available event backends: EPOLL;SELECT;POLL
+-- CMAKE_BINARY_DIR:         /home/PkgBlade/depends_source_code_tmux/libevent-2.1.12-stable/build
+-- CMAKE_CURRENT_BINARY_DIR: /home/PkgBlade/depends_source_code_tmux/libevent-2.1.12-stable/build
+-- CMAKE_SOURCE_DIR:         /home/PkgBlade/depends_source_code_tmux/libevent-2.1.12-stable
+-- CMAKE_CURRENT_SOURCE_DIR: /home/PkgBlade/depends_source_code_tmux/libevent-2.1.12-stable
+-- PROJECT_BINARY_DIR:       /home/PkgBlade/depends_source_code_tmux/libevent-2.1.12-stable/build
+-- PROJECT_SOURCE_DIR:       /home/PkgBlade/depends_source_code_tmux/libevent-2.1.12-stable
+-- CMAKE_MODULE_PATH:        /home/PkgBlade/depends_source_code_tmux/libevent-2.1.12-stable/cmake/
+-- CMAKE_COMMAND:            /usr/bin/cmake
+-- CMAKE_ROOT:               /usr/share/cmake-3.22
+-- CMAKE_SYSTEM:             Linux-5.15.0-106-generic
+-- CMAKE_SYSTEM_NAME:        Linux
+-- CMAKE_SYSTEM_VERSION:     5.15.0-106-generic
+-- CMAKE_SYSTEM_PROCESSOR:   x86_64
+-- CMAKE_SKIP_RPATH:         NO
+-- CMAKE_VERBOSE_MAKEFILE:   FALSE
+-- CMAKE_C_FLAGS:             -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings
+-- CMAKE_BUILD_TYPE:         Release
+-- CMAKE_C_COMPILER:         /usr/bin/cc (id GNU, clang 0, GNUC 1)
+-- CMAKE_AR:                 /usr/bin/ar
+-- CMAKE_RANLIB:             /usr/bin/ranlib
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/PkgBlade/depends_source_code_tmux/libevent-2.1.12-stable/build
+Consolidate compiler generated dependencies of target event_core_static
+[ 12%] Built target event_core_static
+Consolidate compiler generated dependencies of target event_core_shared
+[ 24%] Built target event_core_shared
+Consolidate compiler generated dependencies of target event_extra_static
+[ 27%] Built target event_extra_static
+Consolidate compiler generated dependencies of target event_extra_shared
+[ 30%] Built target event_extra_shared
+Consolidate compiler generated dependencies of target event_openssl_static
+[ 31%] Built target event_openssl_static
+Consolidate compiler generated dependencies of target event_openssl_shared
+[ 32%] Built target event_openssl_shared
+Consolidate compiler generated dependencies of target event_pthreads_static
+[ 33%] Built target event_pthreads_static
+Consolidate compiler generated dependencies of target event_pthreads_shared
+[ 34%] Built target event_pthreads_shared
+Consolidate compiler generated dependencies of target event_static
+[ 48%] Built target event_static
+Consolidate compiler generated dependencies of target event_shared
+[ 62%] Built target event_shared
+Consolidate compiler generated dependencies of target event-read-fifo
+[ 63%] Built target event-read-fifo
+Consolidate compiler generated dependencies of target hello-world
+[ 64%] Built target hello-world
+Consolidate compiler generated dependencies of target signal-test
+[ 65%] Built target signal-test
+Consolidate compiler generated dependencies of target http-connect
+[ 66%] Built target http-connect
+Consolidate compiler generated dependencies of target time-test
+[ 68%] Built target time-test
+Consolidate compiler generated dependencies of target https-client
+[ 70%] Built target https-client
+Consolidate compiler generated dependencies of target le-proxy
+[ 71%] Built target le-proxy
+Consolidate compiler generated dependencies of target dns-example
+[ 72%] Built target dns-example
+Consolidate compiler generated dependencies of target http-server
+[ 74%] Built target http-server
+Consolidate compiler generated dependencies of target bench_http
+[ 75%] Built target bench_http
+Consolidate compiler generated dependencies of target bench_httpclient
+[ 76%] Built target bench_httpclient
+Consolidate compiler generated dependencies of target bench
+[ 77%] Built target bench
+Consolidate compiler generated dependencies of target bench_cascade
+[ 78%] Built target bench_cascade
+Consolidate compiler generated dependencies of target regress
+[ 90%] Built target regress
+Consolidate compiler generated dependencies of target test-changelist
+[ 91%] Built target test-changelist
+Consolidate compiler generated dependencies of target test-eof
+[ 93%] Built target test-eof
+Consolidate compiler generated dependencies of target test-closed
+[ 94%] Built target test-closed
+Consolidate compiler generated dependencies of target test-fdleak
+[ 95%] Built target test-fdleak
+Consolidate compiler generated dependencies of target test-init
+[ 96%] Built target test-init
+Consolidate compiler generated dependencies of target test-time
+[ 97%] Built target test-time
+Consolidate compiler generated dependencies of target test-weof
+[ 98%] Built target test-weof
+Consolidate compiler generated dependencies of target test-dumpevents
+[ 99%] Built target test-dumpevents
+Consolidate compiler generated dependencies of target test-ratelim
+[100%] Built target test-ratelim
+make: Nothing to be done for 'all'.
+Processing /home/PkgBlade/depends_source_code_tmux/ncurses-6.3...
+Found configure script, building with Autotools...
+make failed in /home/PkgBlade/depends_source_code_tmux/ncurses-6.3, attempting to regenerate build files and retry...
+make failed again in /home/PkgBlade/depends_source_code_tmux/ncurses-6.3: Command '['automake']' returned non-zero exit status 1.
+Processing /home/PkgBlade/depends_source_code_tmux/libevent-2.1.12-stable...
+Found CMakeLists.txt, building with CMake...
+Failed to copy object files from /home/PkgBlade/depends_source_code_tmux/libevent-2.1.12-stable: Command '['find', '.', '-type', 'f', '-name', '*.o', '-exec', 'cp', '-t', '/home/PkgBlade/depends_source_code_tmux/../libevent-2.1.12-stable_o', '{}', '+']' returned non-zero exit status 1.
+Processing /home/PkgBlade/depends_source_code_tmux/libutempter-1.2.1...
+Found Makefile script, building with Autotools...
+Copied .o files from /home/PkgBlade/depends_source_code_tmux/libutempter-1.2.1 to /home/PkgBlade/depends_source_code_tmux/../libutempter-1.2.1_o

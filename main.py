@@ -3,6 +3,8 @@ import subprocess
 import re
 import extract_symbols
 import find_symbols_in_code
+import compile_script
+import os
 
 
 # 当前处理的package名
@@ -82,6 +84,8 @@ if __name__ == "__main__":
         # 获取源码&开始裁减
         for package_name in now_handle_package:
             print("now handle dependencies of package: ", package_name)
+            compile_script.compile_subfolders(package_name)
+            print("compile ends!")
             extract_symbols.run(package_name, ifInit=ifInit, package_name_2_version=package_name_2_version)
             print("extract ends!")
             handle_result = find_symbols_in_code.run(package_name)
@@ -109,8 +113,9 @@ if __name__ == "__main__":
                 if line.startswith("Depends"):
                     all_dependcies_info[depend]["Depend"] = extract_depends(line=line)
         
-        # 重新处理handle_result
-        # 现在才处理的原因是裁减函数不知道depend的包名
+        # 重新处理handle_result，现在才处理的原因是裁减函数不知道depend的包名
+        # 看处理情况
+        print("handle result: ", handle_result)
         for depend in all_dependcies_info:
             # debconf直接没有Source，跳过
             if "Source" not in all_dependcies_info[depend]:
@@ -118,7 +123,9 @@ if __name__ == "__main__":
                 continue
             depend_source = all_dependcies_info[depend]["Source"]
             for depend_source_detail in handle_result:
-                if depend_source_detail.rsplit("-", 1)[0] == depend_source:
+                # 2025/3/12：右边第一个-好像也不对，可能还得是左边第一个，不然右边第一个-前面可能还有版本号。。。
+                # 例如：libevent-2.1.12-stable
+                if depend_source_detail.split("-")[0] == depend_source:
                     # 这里要额外考虑一种情况，就是以前已经确定是不处理的情况
                     if "IfHandle" in all_dependcies_info[depend] and all_dependcies_info[depend]["IfHandle"] == "no":
                         break
@@ -127,6 +134,15 @@ if __name__ == "__main__":
                     break
 
         print("all_dependency_info: ", all_dependcies_info)
+        
+        # 2025/3/13：干脆直接全部都编译一下算了
+        # TODO：如果声明了不要编译，感觉最好的办法还是通过相似度判断一下要不要编译，compile加一个参数
+        # difflib.SequenceMatcher 可以计算两个字符串的相似度（基于编辑距离的改进算法）
+        # 目前是写死了glibc不要编译
+        for package_name in now_handle_package:
+            print("now rehandle dependencies of package: ", package_name)
+            compile_script.compile_subfolders(package_name)
+            print("compile after trimming ends!")
 
         now_handle_package.clear()
         for package in now_handle_package_dependcies:
@@ -146,3 +162,5 @@ if __name__ == "__main__":
                 print("package: ", package_name ," has been assigned not to slim")
 
         ifInit = False
+
+    

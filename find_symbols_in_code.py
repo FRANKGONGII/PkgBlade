@@ -159,6 +159,7 @@ def generate_need_object_file(target_dir, need_files):
     复制需要的目标文件，对于不要的文件实现(.c)注释掉全部
     """
     new_dir = target_dir + "_needed"
+    # -2是_o
     source_dir = "depends_source_code_" +  target_package + "/" + target_dir[:-2]
     print(source_dir, "------")
     inneed_files = []
@@ -225,16 +226,26 @@ def generate_need_object_file(target_dir, need_files):
 
                 has_main_func = False
                 # 注释掉所有行（避免重复注释已存在的注释行）
-                commented_lines = ["// " + line if not line.lstrip().startswith("//") else line for line in lines]
-                # 考虑原本有main函数的情况，不能全部注释掉，否则会报错
-                for line in lines:
-                    # 还有可能有这种鬼东西，所以单main()前面得有个空格判断一下
-                    # tinytest_main(int c, const char **v, struct testgroup_t *groups)
-                    if " main (" in line or " main(" in line or line.startswith("main("):
+                # -2是去掉.c
+                if (target_dir + "/" + filename[:-2] +  ".o" in file_export_symbols):
+                    if "main" in file_export_symbols[target_dir + "/" + filename[:-2] +  ".o"]:
                         has_main_func = True
+                if (target_dir + "/" + filename[:-2] +  ".c.o" in file_export_symbols):
+                    if "main" in file_export_symbols[target_dir + "/" + filename[:-2] +  ".c.o"]:
+                        has_main_func = True
+                    
+                commented_lines = ["// " + line if not line.lstrip().startswith("//") else line for line in lines]
+                
+                
+                # 这种判断方法不太准确。。
+                # # 考虑原本有main函数的情况，不能全部注释掉，否则会报错
+                # for line in lines:
+                #     # 还有可能有这种鬼东西，所以单main()前面得有个空格判断一下
+                #     # tinytest_main(int c, const char **v, struct testgroup_t *groups)
+                #     if " main (" in line or " main(" in line or line.startswith("main("):
+                #         has_main_func = True
                 
                 if has_main_func:
-                    print("====================================", file_path)
                     commented_lines.append("int main(){return 0;}")
                          
 

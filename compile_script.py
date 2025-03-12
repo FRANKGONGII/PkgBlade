@@ -2,6 +2,10 @@ import os
 import subprocess
 import sys
 
+
+has_compile = set()
+
+
 def get_depends(package):
     # 运行依赖脚本
     try:
@@ -30,7 +34,7 @@ def compile_with_cmake(folder_path):
 def compile_with_autotools(folder_path):
     try:
         # 运行 ./configure
-        subprocess.check_call(["./configure", "CFLAGS=-O2", "CXXFLAGS=-O2", "--enable-shared=yes"], cwd=folder_path)
+        subprocess.check_call(["./configure", "CFLAGS=-O2", "CXXFLAGS=-O2", "--with-shared"], cwd=folder_path)
     except subprocess.CalledProcessError as e:
         print(f"./configure failed in {folder_path}: {e}")
         return False
@@ -46,7 +50,7 @@ def compile_with_autotools(folder_path):
             subprocess.check_call(["aclocal"], cwd=folder_path)
             subprocess.check_call(["automake"], cwd=folder_path)
             # 再次尝试运行
-            subprocess.check_call(["./configure", "CFLAGS=-O2", "CXXFLAGS=-O2", "--enable-shared=yes"], cwd=folder_path)
+            subprocess.check_call(["./configure", "CFLAGS=-O2", "CXXFLAGS=-O2", "--with-shared"], cwd=folder_path)
             subprocess.check_call(["make"], cwd=folder_path)
             return True
         except subprocess.CalledProcessError as e:
@@ -75,9 +79,15 @@ def copy_object_files(folder_path, output_dir):
     except subprocess.CalledProcessError as e:
         print(f"Failed to copy object files from {folder_path}: {e}")
 
-def compile_subfolders(root_folder):
+def compile_subfolders(package_name):
+    root_folder = os.getcwd() + "/depends_source_code_" + package_name
+    if root_folder in has_compile:
+        return
+    has_compile.add(root_folder)
+    get_depends(package_name)
     for subfolder in os.listdir(root_folder):
         subfolder_path = os.path.join(root_folder, subfolder)
+        # 写死了glibc不要编译
         if os.path.isdir(subfolder_path) and "glibc" not in subfolder_path:
             print(f"Processing {subfolder_path}...")
             
@@ -103,7 +113,8 @@ def compile_subfolders(root_folder):
                     copy_object_files(subfolder_path, output_dir)
             else:
                 print("No build script found!! please check!!")
-
+                
+                
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python compile_packages.py <folder_path>")
@@ -116,4 +127,4 @@ if __name__ == "__main__":
         
     # get_depends(package_name)
     
-    compile_subfolders(os.getcwd() + "/depends_source_code_" + package_name)
+    compile_subfolders(package_name)
