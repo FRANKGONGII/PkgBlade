@@ -34,7 +34,9 @@ def compile_with_cmake(folder_path):
 def compile_with_autotools(folder_path):
     try:
         # 运行 ./configure
-        subprocess.check_call(["./configure", "CFLAGS=-O2", "CXXFLAGS=-O2", "--with-shared"], cwd=folder_path)
+        # 2025/3/13：这些参数还不是都支持的。。干脆改成全部默认算了。。。。
+        # subprocess.check_call(["./configure", "CFLAGS=-O2", "CXXFLAGS=-O2", "--with-shared"], cwd=folder_path)
+        subprocess.check_call(["./configure"], cwd=folder_path)
     except subprocess.CalledProcessError as e:
         print(f"./configure failed in {folder_path}: {e}")
         return False
@@ -50,7 +52,8 @@ def compile_with_autotools(folder_path):
             subprocess.check_call(["aclocal"], cwd=folder_path)
             subprocess.check_call(["automake"], cwd=folder_path)
             # 再次尝试运行
-            subprocess.check_call(["./configure", "CFLAGS=-O2", "CXXFLAGS=-O2", "--with-shared"], cwd=folder_path)
+            # subprocess.check_call(["./configure", "CFLAGS=-O2", "CXXFLAGS=-O2", "--with-shared"], cwd=folder_path)
+            subprocess.check_call(["./configure"], cwd=folder_path)
             subprocess.check_call(["make"], cwd=folder_path)
             return True
         except subprocess.CalledProcessError as e:

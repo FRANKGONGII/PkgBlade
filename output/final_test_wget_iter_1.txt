@@ -1,0 +1,2917 @@
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking how to create a pax tar archive... gnutar
+checking dependency style of gcc... gcc3
+checking whether make supports nested variables... (cached) yes
+checking for ar... ar
+checking the archiver (ar) interface... ar
+configure: Default --exec-prefix detected.
+configure:   --bindir defaults to /bin
+configure:   --sbindir defaults to /sbin
+configure:   --libdir defaults to /lib
+configure: Default --prefix detected.
+configure:   --localstatedir defaults to /var
+configure:   --sysconfdir defaults to /etc
+configure:   --runstatedir defaults to /run
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking for bison... bison -y
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for an ANSI C-conforming const... yes
+checking for working volatile... yes
+checking whether byte ordering is bigendian... no
+checking whether compiler handles -fno-common... yes
+checking whether compiler handles -Wall... yes
+checking whether compiler handles -Wextra... yes
+checking whether compiler handles -Waddress-of-packed-member... yes
+checking whether compiler handles -Wdiscarded-qualifiers... yes
+checking whether compiler handles -Wembedded-directive... no
+checking whether compiler handles -Wextra-semi... no
+checking whether compiler handles -Wformat-security... yes
+checking whether compiler handles -Wimplicit-function-declaration... yes
+checking whether compiler handles -Wmissing-declarations... yes
+checking whether compiler handles -Wmissing-parameter-type... yes
+checking whether compiler handles -Wmissing-prototypes... yes
+checking whether compiler handles -Wnested-externs... yes
+checking whether compiler handles -Wno-missing-field-initializers... yes
+checking whether compiler handles -Wpointer-arith... yes
+checking whether compiler handles -Wredundant-decls... yes
+checking whether compiler handles -Wsign-compare... yes
+checking whether compiler handles -Wstrict-prototypes... yes
+checking whether compiler handles -Wtype-limits... yes
+checking whether compiler handles -Wuninitialized... yes
+checking whether compiler handles -Wunused-but-set-parameter... yes
+checking whether compiler handles -Wunused-but-set-variable... yes
+checking whether compiler handles -Wunused-parameter... yes
+checking whether compiler handles -Wunused-result... yes
+checking whether compiler handles -Wunused-variable... yes
+checking whether compiler handles -Werror=sequence-point... yes
+checking whether compiler handles -Wno-clobbered... yes
+checking whether compiler handles -Wno-cast-function-type... yes
+checking whether compiler handles -Wno-unused-parameter... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking linker version script flag... --version-script
+checking if version scripts can use complex wildcards... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether to build gtk-doc documentation... no
+checking for gtkdoc-check... /usr/bin/gtkdoc-check
+checking for xsltproc... /usr/bin/xsltproc
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking whether to enable assertions... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for linux/compiler.h... no
+checking for linux/blkpg.h... yes
+checking for linux/major.h... yes
+checking asm/io.h usability... no
+checking asm/io.h presence... no
+checking for asm/io.h... no
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking endian.h usability... yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking err.h usability... yes
+checking err.h presence... yes
+checking for err.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking for inttypes.h... (cached) yes
+checking lastlog.h usability... yes
+checking lastlog.h presence... yes
+checking for lastlog.h... yes
+checking libutil.h usability... no
+checking libutil.h presence... no
+checking for libutil.h... no
+checking linux/btrfs.h usability... yes
+checking linux/btrfs.h presence... yes
+checking for linux/btrfs.h... yes
+checking linux/capability.h usability... yes
+checking linux/capability.h presence... yes
+checking for linux/capability.h... yes
+checking linux/cdrom.h usability... yes
+checking linux/cdrom.h presence... yes
+checking for linux/cdrom.h... yes
+checking linux/falloc.h usability... yes
+checking linux/falloc.h presence... yes
+checking for linux/falloc.h... yes
+checking linux/fd.h usability... yes
+checking linux/fd.h presence... yes
+checking for linux/fd.h... yes
+checking linux/fiemap.h usability... yes
+checking linux/fiemap.h presence... yes
+checking for linux/fiemap.h... yes
+checking linux/net_namespace.h usability... yes
+checking linux/net_namespace.h presence... yes
+checking for linux/net_namespace.h... yes
+checking linux/nsfs.h usability... yes
+checking linux/nsfs.h presence... yes
+checking for linux/nsfs.h... yes
+checking linux/raw.h usability... no
+checking linux/raw.h presence... no
+checking for linux/raw.h... no
+checking linux/securebits.h usability... yes
+checking linux/securebits.h presence... yes
+checking for linux/securebits.h... yes
+checking linux/tiocl.h usability... yes
+checking linux/tiocl.h presence... yes
+checking for linux/tiocl.h... yes
+checking linux/version.h usability... yes
+checking linux/version.h presence... yes
+checking for linux/version.h... yes
+checking linux/watchdog.h usability... yes
+checking linux/watchdog.h presence... yes
+checking for linux/watchdog.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking mntent.h usability... yes
+checking mntent.h presence... yes
+checking for mntent.h... yes
+checking net/if_dl.h usability... no
+checking net/if_dl.h presence... no
+checking for net/if_dl.h... no
+checking net/if.h usability... yes
+checking net/if.h presence... yes
+checking for net/if.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking paths.h usability... yes
+checking paths.h presence... yes
+checking for paths.h... yes
+checking pty.h usability... yes
+checking pty.h presence... yes
+checking for pty.h... yes
+checking security/pam_appl.h usability... no
+checking security/pam_appl.h presence... no
+checking for security/pam_appl.h... no
+checking shadow.h usability... yes
+checking shadow.h presence... yes
+checking for shadow.h... yes
+checking for stdint.h... (cached) yes
+checking stdio_ext.h usability... yes
+checking stdio_ext.h presence... yes
+checking for stdio_ext.h... yes
+checking for stdlib.h... (cached) yes
+checking sys/disk.h usability... no
+checking sys/disk.h presence... no
+checking for sys/disk.h... no
+checking sys/disklabel.h usability... no
+checking sys/disklabel.h presence... no
+checking for sys/disklabel.h... no
+checking sys/endian.h usability... no
+checking sys/endian.h presence... no
+checking for sys/endian.h... no
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/ioccom.h usability... no
+checking sys/ioccom.h presence... no
+checking for sys/ioccom.h... no
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/io.h usability... yes
+checking sys/io.h presence... yes
+checking for sys/io.h... yes
+checking sys/mkdev.h usability... no
+checking sys/mkdev.h presence... no
+checking for sys/mkdev.h... no
+checking sys/mount.h usability... yes
+checking sys/mount.h presence... yes
+checking for sys/mount.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/prctl.h usability... yes
+checking sys/prctl.h presence... yes
+checking for sys/prctl.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/sendfile.h usability... yes
+checking sys/sendfile.h presence... yes
+checking for sys/sendfile.h... yes
+checking sys/signalfd.h usability... yes
+checking sys/signalfd.h presence... yes
+checking for sys/signalfd.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/sockio.h usability... no
+checking sys/sockio.h presence... no
+checking for sys/sockio.h... no
+checking for sys/stat.h... (cached) yes
+checking sys/swap.h usability... yes
+checking sys/swap.h presence... yes
+checking for sys/swap.h... yes
+checking sys/syscall.h usability... yes
+checking sys/syscall.h presence... yes
+checking for sys/syscall.h... yes
+checking sys/sysmacros.h usability... yes
+checking sys/sysmacros.h presence... yes
+checking for sys/sysmacros.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/timex.h usability... yes
+checking sys/timex.h presence... yes
+checking for sys/timex.h... yes
+checking sys/ttydefaults.h usability... yes
+checking sys/ttydefaults.h presence... yes
+checking for sys/ttydefaults.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/ucred.h usability... no
+checking sys/ucred.h presence... no
+checking for sys/ucred.h... no
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking sys/xattr.h usability... yes
+checking sys/xattr.h presence... yes
+checking for sys/xattr.h... yes
+checking for unistd.h... (cached) yes
+checking utmp.h usability... yes
+checking utmp.h presence... yes
+checking for utmp.h... yes
+checking utmpx.h usability... yes
+checking utmpx.h presence... yes
+checking for utmpx.h... yes
+checking for linux/fs.h... no
+checking for linux/gsmmux.h... yes
+checking for security/pam_misc.h... no
+checking linux/blkzoned.h usability... yes
+checking linux/blkzoned.h presence... yes
+checking for linux/blkzoned.h... yes
+checking whether BLK_ZONE_REP_CAPACITY is declared... yes
+checking for security/openpam.h... no
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking whether langinfo.h defines ALTMON_x constants... yes
+checking whether langinfo.h defines _NL_ABALTMON_x constants... yes
+checking for struct termios.c_line... yes
+checking for struct stat.st_mtim.tv_nsec... yes
+checking whether _NL_TIME_WEEK_1STDAY is declared... yes
+checking whether environ is declared... yes
+checking whether strsignal is declared... yes
+checking whether TIOCGLCKTRMIOS is declared... yes
+checking whether SOCK_CLOEXEC is declared... yes
+checking whether SOCK_NONBLOCK is declared... yes
+checking whether SO_PASSCRED is declared... yes
+checking for clearenv... yes
+checking for close_range... yes
+checking for eaccess... yes
+checking for err... yes
+checking for errx... yes
+checking for explicit_bzero... yes
+checking for __fpending... yes
+checking for __fpurge... yes
+checking for fpurge... no
+checking for fsync... yes
+checking for getdomainname... yes
+checking for getdtablesize... yes
+checking for getexecname... no
+checking for getmntinfo... no
+checking for getrandom... yes
+checking for getrlimit... yes
+checking for getsgnam... yes
+checking for inotify_init... yes
+checking for jrand48... yes
+checking for lchown... yes
+checking for llseek... no
+checking for mempcpy... yes
+checking for mkostemp... yes
+checking for nanosleep... yes
+checking for ntp_gettime... yes
+checking for personality... yes
+checking for pidfd_open... no
+checking for pidfd_send_signal... no
+checking for posix_fadvise... yes
+checking for prctl... yes
+checking for qsort_r... yes
+checking for rpmatch... yes
+checking for scandirat... yes
+checking for sched_setattr... no
+checking for sched_setscheduler... yes
+checking for __secure_getenv... no
+checking for secure_getenv... yes
+checking for sendfile... yes
+checking for setprogname... no
+checking for setresgid... yes
+checking for setresuid... yes
+checking for sigqueue... yes
+checking for srandom... yes
+checking for strnchr... no
+checking for strndup... yes
+checking for strnlen... yes
+checking for sysconf... yes
+checking for sysinfo... yes
+checking for timegm... yes
+checking for usleep... yes
+checking for utimensat... yes
+checking for vwarnx... yes
+checking for warn... yes
+checking for warnx... yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for futimens... yes
+checking for getusershell... yes
+checking for inotify_init1... yes
+checking for ioperm... yes
+checking for iopl... yes
+checking for openat... yes
+checking for fstatat... yes
+checking for unlinkat... yes
+checking for open_memstream... yes
+checking for reboot... yes
+checking for updwtmpx... yes
+checking for updwtmpx... (cached) yes
+checking for syscall setns... SYS_setns
+checking for syscall pidfd_open... SYS_pidfd_open
+checking for syscall pidfd_send_signal... SYS_pidfd_send_signal
+checking for syscall close_range... SYS_close_range
+checking for isnan... yes
+checking for clock_gettime... yes
+checking for timer_create... yes
+checking for rtas_get_sysparm in -lrtas... no
+checking for struct sockaddr.sa_len... no
+checking for library containing socket... none required
+checking for dirfd... yes
+checking whether program_invocation_short_name is defined... yes
+checking whether __progname is defined... yes
+checking for asciidoctor... no
+configure: re-use already generated man-pages.
+checking whether the target supports thread-local storage... yes
+checking for openpty in -lutil... yes
+checking for union semun... no
+checking for loff_t... yes
+checking wchar_t support... yes
+checking for cpu_set_t... yes
+checking for sighandler_t... yes
+checking whether CPU_ALLOC is declared... yes
+checking crypt.h usability... yes
+checking crypt.h presence... yes
+checking for crypt.h... yes
+checking for udev_new in -ludev... no
+checking for ncursesw6-config... no
+checking for ncursesw5-config... no
+checking for NCURSESW... no
+checking for initscr in -lncursesw... no
+checking for ncurses6-config... no
+checking for ncurses5-config... no
+checking for NCURSES... no
+checking for initscr in -lncurses... no
+checking for TINFO... no
+checking for tgetent in -ltinfo... no
+checking for readline in -lreadline... no
+checking for syscall fallocate... SYS_fallocate
+checking for valid fallocate() function... yes
+checking for valid posix_fallocate() function... yes
+checking for syscall unshare... SYS_unshare
+checking for unshare... yes
+checking for setns... yes
+checking for capng_apply in -lcap-ng... no
+checking for crc32 in -lz... yes
+checking for magic_open in -lmagic... no
+checking for syscall swapon... SYS_swapon
+checking for syscall swapoff... SYS_swapoff
+checking for swapon... yes
+checking for swapoff... yes
+checking for syscall prlimit64... SYS_prlimit64
+checking for prlimit... yes
+checking for syscall pivot_root... SYS_pivot_root
+checking for LIBUSER... no
+checking for syscall ioprio_set... SYS_ioprio_set
+checking for syscall ioprio_get... SYS_ioprio_get
+checking for syscall sched_getaffinity... SYS_sched_getaffinity
+checking for syscall sched_setattr... SYS_sched_setattr
+checking for syscall sched_setattr... (cached) SYS_sched_setattr
+checking for SYSTEMD... no
+checking for SYSTEMD_DAEMON... no
+checking for SYSTEMD_JOURNAL... no
+checking for ECONF... no
+checking for a Python interpreter with version >= 2... python3
+checking for python3... /usr/bin/python3
+checking for python3 version... 3.10
+checking for python3 platform... linux
+checking for python3 script directory... ${prefix}/local/lib/python3.10/dist-packages
+checking for python3 extension module directory... ${exec_prefix}/local/lib/python3.10/dist-packages
+checking for PYTHON... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libblkid/docs/Makefile
+config.status: creating libblkid/docs/version.xml
+config.status: creating libblkid/src/blkid.h
+config.status: creating libfdisk/docs/Makefile
+config.status: creating libfdisk/docs/version.xml
+config.status: creating libfdisk/src/libfdisk.h
+config.status: creating libmount/docs/Makefile
+config.status: creating libmount/docs/version.xml
+config.status: creating libmount/src/libmount.h
+config.status: creating libsmartcols/docs/Makefile
+config.status: creating libsmartcols/docs/version.xml
+config.status: creating libsmartcols/src/libsmartcols.h
+config.status: creating po/Makefile.in
+config.status: creating po-man/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: setting ALL_LINGUAS in configure.in is obsolete
+config.status: creating po/Makefile
+
+        util-linux  2.37.2
+
+        prefix:                    /usr
+        exec prefix:               ${prefix}
+
+        bindir:                    /bin
+        sbindir:                   /sbin
+        libdir:                    /lib
+        usrbin_execdir:            ${exec_prefix}/bin
+        usrsbin_execdir:           ${exec_prefix}/sbin
+        usrlib_execdir:            ${exec_prefix}/lib
+
+        localstatedir:             /var
+        runstatedir:               /run
+        includedir:                ${prefix}/include
+        sysconfdir:                /etc
+        sysconfstaticdir:          ${prefix}/lib
+
+        vendordir:                 
+
+        Python:                    /usr/bin/python3
+        Python version:            3.10
+        Python libs:               ${exec_prefix}/local/lib/python3.10/dist-packages
+
+        Bash completions:          /usr/share/bash-completion/completions
+        Systemd support:           no
+        Systemd unitdir:           no
+        libeconf support:          no
+        Btrfs support:             yes
+        Wide-char support:         yes
+        libcryptsetup support:     
+
+        Manual pages:              no
+        Manual pages translated:   no
+
+        compiler:                  gcc
+        suid cflags:               
+        ldflags:                   
+        suid ldflags:              
+        ASAN enabled:              no
+
+        cflags:                    -O2
+
+        warnings:
+
+ -fno-common -Wall -Wextra -Waddress-of-packed-member -Wdiscarded-qualifiers -Wformat-security -Wimplicit-function-declaration -Wmissing-declarations -Wmissing-parameter-type -Wmissing-prototypes -Wnested-externs -Wno-missing-field-initializers -Wpointer-arith -Wredundant-decls -Wsign-compare -Wstrict-prototypes -Wtype-limits -Wuninitialized -Wunused-but-set-parameter -Wunused-but-set-variable -Wunused-parameter -Wunused-result -Wunused-variable -Werror=sequence-point
+
+ Type 'make' or 'make <utilname>' to compile.
+
+ cd . && /bin/bash /home/PkgBlade/depends_source_code_wget/util-linux-2.37.2/config/missing automake-1.16 --foreign Makefile
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking how to create a pax tar archive... gnutar
+checking dependency style of gcc... gcc3
+checking whether make supports nested variables... (cached) yes
+checking for ar... ar
+checking the archiver (ar) interface... ar
+configure: Default --exec-prefix detected.
+configure:   --bindir defaults to /bin
+configure:   --sbindir defaults to /sbin
+configure:   --libdir defaults to /lib
+configure: Default --prefix detected.
+configure:   --localstatedir defaults to /var
+configure:   --sysconfdir defaults to /etc
+configure:   --runstatedir defaults to /run
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking for bison... bison -y
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for an ANSI C-conforming const... yes
+checking for working volatile... yes
+checking whether byte ordering is bigendian... no
+checking whether compiler handles -fno-common... yes
+checking whether compiler handles -Wall... yes
+checking whether compiler handles -Wextra... yes
+checking whether compiler handles -Waddress-of-packed-member... yes
+checking whether compiler handles -Wdiscarded-qualifiers... yes
+checking whether compiler handles -Wembedded-directive... no
+checking whether compiler handles -Wextra-semi... no
+checking whether compiler handles -Wformat-security... yes
+checking whether compiler handles -Wimplicit-function-declaration... yes
+checking whether compiler handles -Wmissing-declarations... yes
+checking whether compiler handles -Wmissing-parameter-type... yes
+checking whether compiler handles -Wmissing-prototypes... yes
+checking whether compiler handles -Wnested-externs... yes
+checking whether compiler handles -Wno-missing-field-initializers... yes
+checking whether compiler handles -Wpointer-arith... yes
+checking whether compiler handles -Wredundant-decls... yes
+checking whether compiler handles -Wsign-compare... yes
+checking whether compiler handles -Wstrict-prototypes... yes
+checking whether compiler handles -Wtype-limits... yes
+checking whether compiler handles -Wuninitialized... yes
+checking whether compiler handles -Wunused-but-set-parameter... yes
+checking whether compiler handles -Wunused-but-set-variable... yes
+checking whether compiler handles -Wunused-parameter... yes
+checking whether compiler handles -Wunused-result... yes
+checking whether compiler handles -Wunused-variable... yes
+checking whether compiler handles -Werror=sequence-point... yes
+checking whether compiler handles -Wno-clobbered... yes
+checking whether compiler handles -Wno-cast-function-type... yes
+checking whether compiler handles -Wno-unused-parameter... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking linker version script flag... --version-script
+checking if version scripts can use complex wildcards... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether to build gtk-doc documentation... no
+checking for gtkdoc-check... /usr/bin/gtkdoc-check
+checking for xsltproc... /usr/bin/xsltproc
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking whether to enable assertions... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for linux/compiler.h... no
+checking for linux/blkpg.h... yes
+checking for linux/major.h... yes
+checking asm/io.h usability... no
+checking asm/io.h presence... no
+checking for asm/io.h... no
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking endian.h usability... yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking err.h usability... yes
+checking err.h presence... yes
+checking for err.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking for inttypes.h... (cached) yes
+checking lastlog.h usability... yes
+checking lastlog.h presence... yes
+checking for lastlog.h... yes
+checking libutil.h usability... no
+checking libutil.h presence... no
+checking for libutil.h... no
+checking linux/btrfs.h usability... yes
+checking linux/btrfs.h presence... yes
+checking for linux/btrfs.h... yes
+checking linux/capability.h usability... yes
+checking linux/capability.h presence... yes
+checking for linux/capability.h... yes
+checking linux/cdrom.h usability... yes
+checking linux/cdrom.h presence... yes
+checking for linux/cdrom.h... yes
+checking linux/falloc.h usability... yes
+checking linux/falloc.h presence... yes
+checking for linux/falloc.h... yes
+checking linux/fd.h usability... yes
+checking linux/fd.h presence... yes
+checking for linux/fd.h... yes
+checking linux/fiemap.h usability... yes
+checking linux/fiemap.h presence... yes
+checking for linux/fiemap.h... yes
+checking linux/net_namespace.h usability... yes
+checking linux/net_namespace.h presence... yes
+checking for linux/net_namespace.h... yes
+checking linux/nsfs.h usability... yes
+checking linux/nsfs.h presence... yes
+checking for linux/nsfs.h... yes
+checking linux/raw.h usability... no
+checking linux/raw.h presence... no
+checking for linux/raw.h... no
+checking linux/securebits.h usability... yes
+checking linux/securebits.h presence... yes
+checking for linux/securebits.h... yes
+checking linux/tiocl.h usability... yes
+checking linux/tiocl.h presence... yes
+checking for linux/tiocl.h... yes
+checking linux/version.h usability... yes
+checking linux/version.h presence... yes
+checking for linux/version.h... yes
+checking linux/watchdog.h usability... yes
+checking linux/watchdog.h presence... yes
+checking for linux/watchdog.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking mntent.h usability... yes
+checking mntent.h presence... yes
+checking for mntent.h... yes
+checking net/if_dl.h usability... no
+checking net/if_dl.h presence... no
+checking for net/if_dl.h... no
+checking net/if.h usability... yes
+checking net/if.h presence... yes
+checking for net/if.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking paths.h usability... yes
+checking paths.h presence... yes
+checking for paths.h... yes
+checking pty.h usability... yes
+checking pty.h presence... yes
+checking for pty.h... yes
+checking security/pam_appl.h usability... no
+checking security/pam_appl.h presence... no
+checking for security/pam_appl.h... no
+checking shadow.h usability... yes
+checking shadow.h presence... yes
+checking for shadow.h... yes
+checking for stdint.h... (cached) yes
+checking stdio_ext.h usability... yes
+checking stdio_ext.h presence... yes
+checking for stdio_ext.h... yes
+checking for stdlib.h... (cached) yes
+checking sys/disk.h usability... no
+checking sys/disk.h presence... no
+checking for sys/disk.h... no
+checking sys/disklabel.h usability... no
+checking sys/disklabel.h presence... no
+checking for sys/disklabel.h... no
+checking sys/endian.h usability... no
+checking sys/endian.h presence... no
+checking for sys/endian.h... no
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/ioccom.h usability... no
+checking sys/ioccom.h presence... no
+checking for sys/ioccom.h... no
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/io.h usability... yes
+checking sys/io.h presence... yes
+checking for sys/io.h... yes
+checking sys/mkdev.h usability... no
+checking sys/mkdev.h presence... no
+checking for sys/mkdev.h... no
+checking sys/mount.h usability... yes
+checking sys/mount.h presence... yes
+checking for sys/mount.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/prctl.h usability... yes
+checking sys/prctl.h presence... yes
+checking for sys/prctl.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/sendfile.h usability... yes
+checking sys/sendfile.h presence... yes
+checking for sys/sendfile.h... yes
+checking sys/signalfd.h usability... yes
+checking sys/signalfd.h presence... yes
+checking for sys/signalfd.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/sockio.h usability... no
+checking sys/sockio.h presence... no
+checking for sys/sockio.h... no
+checking for sys/stat.h... (cached) yes
+checking sys/swap.h usability... yes
+checking sys/swap.h presence... yes
+checking for sys/swap.h... yes
+checking sys/syscall.h usability... yes
+checking sys/syscall.h presence... yes
+checking for sys/syscall.h... yes
+checking sys/sysmacros.h usability... yes
+checking sys/sysmacros.h presence... yes
+checking for sys/sysmacros.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/timex.h usability... yes
+checking sys/timex.h presence... yes
+checking for sys/timex.h... yes
+checking sys/ttydefaults.h usability... yes
+checking sys/ttydefaults.h presence... yes
+checking for sys/ttydefaults.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/ucred.h usability... no
+checking sys/ucred.h presence... no
+checking for sys/ucred.h... no
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking sys/xattr.h usability... yes
+checking sys/xattr.h presence... yes
+checking for sys/xattr.h... yes
+checking for unistd.h... (cached) yes
+checking utmp.h usability... yes
+checking utmp.h presence... yes
+checking for utmp.h... yes
+checking utmpx.h usability... yes
+checking utmpx.h presence... yes
+checking for utmpx.h... yes
+checking for linux/fs.h... no
+checking for linux/gsmmux.h... yes
+checking for security/pam_misc.h... no
+checking linux/blkzoned.h usability... yes
+checking linux/blkzoned.h presence... yes
+checking for linux/blkzoned.h... yes
+checking whether BLK_ZONE_REP_CAPACITY is declared... yes
+checking for security/openpam.h... no
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking whether langinfo.h defines ALTMON_x constants... yes
+checking whether langinfo.h defines _NL_ABALTMON_x constants... yes
+checking for struct termios.c_line... yes
+checking for struct stat.st_mtim.tv_nsec... yes
+checking whether _NL_TIME_WEEK_1STDAY is declared... yes
+checking whether environ is declared... yes
+checking whether strsignal is declared... yes
+checking whether TIOCGLCKTRMIOS is declared... yes
+checking whether SOCK_CLOEXEC is declared... yes
+checking whether SOCK_NONBLOCK is declared... yes
+checking whether SO_PASSCRED is declared... yes
+checking for clearenv... yes
+checking for close_range... yes
+checking for eaccess... yes
+checking for err... yes
+checking for errx... yes
+checking for explicit_bzero... yes
+checking for __fpending... yes
+checking for __fpurge... yes
+checking for fpurge... no
+checking for fsync... yes
+checking for getdomainname... yes
+checking for getdtablesize... yes
+checking for getexecname... no
+checking for getmntinfo... no
+checking for getrandom... yes
+checking for getrlimit... yes
+checking for getsgnam... yes
+checking for inotify_init... yes
+checking for jrand48... yes
+checking for lchown... yes
+checking for llseek... no
+checking for mempcpy... yes
+checking for mkostemp... yes
+checking for nanosleep... yes
+checking for ntp_gettime... yes
+checking for personality... yes
+checking for pidfd_open... no
+checking for pidfd_send_signal... no
+checking for posix_fadvise... yes
+checking for prctl... yes
+checking for qsort_r... yes
+checking for rpmatch... yes
+checking for scandirat... yes
+checking for sched_setattr... no
+checking for sched_setscheduler... yes
+checking for __secure_getenv... no
+checking for secure_getenv... yes
+checking for sendfile... yes
+checking for setprogname... no
+checking for setresgid... yes
+checking for setresuid... yes
+checking for sigqueue... yes
+checking for srandom... yes
+checking for strnchr... no
+checking for strndup... yes
+checking for strnlen... yes
+checking for sysconf... yes
+checking for sysinfo... yes
+checking for timegm... yes
+checking for usleep... yes
+checking for utimensat... yes
+checking for vwarnx... yes
+checking for warn... yes
+checking for warnx... yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for futimens... yes
+checking for getusershell... yes
+checking for inotify_init1... yes
+checking for ioperm... yes
+checking for iopl... yes
+checking for openat... yes
+checking for fstatat... yes
+checking for unlinkat... yes
+checking for open_memstream... yes
+checking for reboot... yes
+checking for updwtmpx... yes
+checking for updwtmpx... (cached) yes
+checking for syscall setns... SYS_setns
+checking for syscall pidfd_open... SYS_pidfd_open
+checking for syscall pidfd_send_signal... SYS_pidfd_send_signal
+checking for syscall close_range... SYS_close_range
+checking for isnan... yes
+checking for clock_gettime... yes
+checking for timer_create... yes
+checking for rtas_get_sysparm in -lrtas... no
+checking for struct sockaddr.sa_len... no
+checking for library containing socket... none required
+checking for dirfd... yes
+checking whether program_invocation_short_name is defined... yes
+checking whether __progname is defined... yes
+checking for asciidoctor... no
+configure: re-use already generated man-pages.
+checking whether the target supports thread-local storage... yes
+checking for openpty in -lutil... yes
+checking for union semun... no
+checking for loff_t... yes
+checking wchar_t support... yes
+checking for cpu_set_t... yes
+checking for sighandler_t... yes
+checking whether CPU_ALLOC is declared... yes
+checking crypt.h usability... yes
+checking crypt.h presence... yes
+checking for crypt.h... yes
+checking for udev_new in -ludev... no
+checking for ncursesw6-config... no
+checking for ncursesw5-config... no
+checking for NCURSESW... no
+checking for initscr in -lncursesw... no
+checking for ncurses6-config... no
+checking for ncurses5-config... no
+checking for NCURSES... no
+checking for initscr in -lncurses... no
+checking for TINFO... no
+checking for tgetent in -ltinfo... no
+checking for readline in -lreadline... no
+checking for syscall fallocate... SYS_fallocate
+checking for valid fallocate() function... yes
+checking for valid posix_fallocate() function... yes
+checking for syscall unshare... SYS_unshare
+checking for unshare... yes
+checking for setns... yes
+checking for capng_apply in -lcap-ng... no
+checking for crc32 in -lz... yes
+checking for magic_open in -lmagic... no
+checking for syscall swapon... SYS_swapon
+checking for syscall swapoff... SYS_swapoff
+checking for swapon... yes
+checking for swapoff... yes
+checking for syscall prlimit64... SYS_prlimit64
+checking for prlimit... yes
+checking for syscall pivot_root... SYS_pivot_root
+checking for LIBUSER... no
+checking for syscall ioprio_set... SYS_ioprio_set
+checking for syscall ioprio_get... SYS_ioprio_get
+checking for syscall sched_getaffinity... SYS_sched_getaffinity
+checking for syscall sched_setattr... SYS_sched_setattr
+checking for syscall sched_setattr... (cached) SYS_sched_setattr
+checking for SYSTEMD... no
+checking for SYSTEMD_DAEMON... no
+checking for SYSTEMD_JOURNAL... no
+checking for ECONF... no
+checking for a Python interpreter with version >= 2... python3
+checking for python3... /usr/bin/python3
+checking for python3 version... 3.10
+checking for python3 platform... linux
+checking for python3 script directory... ${prefix}/local/lib/python3.10/dist-packages
+checking for python3 extension module directory... ${exec_prefix}/local/lib/python3.10/dist-packages
+checking for PYTHON... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libblkid/docs/Makefile
+config.status: creating libblkid/docs/version.xml
+config.status: creating libblkid/src/blkid.h
+config.status: creating libfdisk/docs/Makefile
+config.status: creating libfdisk/docs/version.xml
+config.status: creating libfdisk/src/libfdisk.h
+config.status: creating libmount/docs/Makefile
+config.status: creating libmount/docs/version.xml
+config.status: creating libmount/src/libmount.h
+config.status: creating libsmartcols/docs/Makefile
+config.status: creating libsmartcols/docs/version.xml
+config.status: creating libsmartcols/src/libsmartcols.h
+config.status: creating po/Makefile.in
+config.status: creating po-man/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: setting ALL_LINGUAS in configure.in is obsolete
+config.status: creating po/Makefile
+
+        util-linux  2.37.2
+
+        prefix:                    /usr
+        exec prefix:               ${prefix}
+
+        bindir:                    /bin
+        sbindir:                   /sbin
+        libdir:                    /lib
+        usrbin_execdir:            ${exec_prefix}/bin
+        usrsbin_execdir:           ${exec_prefix}/sbin
+        usrlib_execdir:            ${exec_prefix}/lib
+
+        localstatedir:             /var
+        runstatedir:               /run
+        includedir:                ${prefix}/include
+        sysconfdir:                /etc
+        sysconfstaticdir:          ${prefix}/lib
+
+        vendordir:                 
+
+        Python:                    /usr/bin/python3
+        Python version:            3.10
+        Python libs:               ${exec_prefix}/local/lib/python3.10/dist-packages
+
+        Bash completions:          /usr/share/bash-completion/completions
+        Systemd support:           no
+        Systemd unitdir:           no
+        libeconf support:          no
+        Btrfs support:             yes
+        Wide-char support:         yes
+        libcryptsetup support:     
+
+        Manual pages:              no
+        Manual pages translated:   no
+
+        compiler:                  gcc
+        suid cflags:               
+        ldflags:                   
+        suid ldflags:              
+        ASAN enabled:              no
+
+        cflags:                    -O2
+
+        warnings:
+
+ -fno-common -Wall -Wextra -Waddress-of-packed-member -Wdiscarded-qualifiers -Wformat-security -Wimplicit-function-declaration -Wmissing-declarations -Wmissing-parameter-type -Wmissing-prototypes -Wnested-externs -Wno-missing-field-initializers -Wpointer-arith -Wredundant-decls -Wsign-compare -Wstrict-prototypes -Wtype-limits -Wuninitialized -Wunused-but-set-parameter -Wunused-but-set-variable -Wunused-parameter -Wunused-result -Wunused-variable -Werror=sequence-point
+
+ Type 'make' or 'make <utilname>' to compile.
+
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /home/PkgBlade/depends_source_code_wget/util-linux-2.37.2/config/missing autoconf
+/bin/bash ./config.status --recheck
+running CONFIG_SHELL=/bin/bash /bin/bash ./configure CFLAGS=-O2 CXXFLAGS=-O2 --with-shared --no-create --no-recursion
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking how to create a pax tar archive... gnutar
+checking dependency style of gcc... gcc3
+checking whether make supports nested variables... (cached) yes
+checking for ar... ar
+checking the archiver (ar) interface... ar
+configure: Default --exec-prefix detected.
+configure:   --bindir defaults to /bin
+configure:   --sbindir defaults to /sbin
+configure:   --libdir defaults to /lib
+configure: Default --prefix detected.
+configure:   --localstatedir defaults to /var
+configure:   --sysconfdir defaults to /etc
+configure:   --runstatedir defaults to /run
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking for bison... bison -y
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for an ANSI C-conforming const... yes
+checking for working volatile... yes
+checking whether byte ordering is bigendian... no
+checking how to run the C preprocessor... gcc -E
+checking whether compiler handles -fno-common... yes
+checking whether compiler handles -Wall... yes
+checking whether compiler handles -Wextra... yes
+checking whether compiler handles -Waddress-of-packed-member... yes
+checking whether compiler handles -Wdiscarded-qualifiers... yes
+checking whether compiler handles -Wembedded-directive... no
+checking whether compiler handles -Wextra-semi... no
+checking whether compiler handles -Wformat-security... yes
+checking whether compiler handles -Wimplicit-function-declaration... yes
+checking whether compiler handles -Wmissing-declarations... yes
+checking whether compiler handles -Wmissing-parameter-type... yes
+checking whether compiler handles -Wmissing-prototypes... yes
+checking whether compiler handles -Wnested-externs... yes
+checking whether compiler handles -Wno-missing-field-initializers... yes
+checking whether compiler handles -Wpointer-arith... yes
+checking whether compiler handles -Wredundant-decls... yes
+checking whether compiler handles -Wsign-compare... yes
+checking whether compiler handles -Wstrict-prototypes... yes
+checking whether compiler handles -Wtype-limits... yes
+checking whether compiler handles -Wuninitialized... yes
+checking whether compiler handles -Wunused-but-set-parameter... yes
+checking whether compiler handles -Wunused-but-set-variable... yes
+checking whether compiler handles -Wunused-parameter... yes
+checking whether compiler handles -Wunused-result... yes
+checking whether compiler handles -Wunused-variable... yes
+checking whether compiler handles -Werror=sequence-point... yes
+checking whether compiler handles -Wno-clobbered... yes
+checking whether compiler handles -Wno-cast-function-type... yes
+checking whether compiler handles -Wno-unused-parameter... yes
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... gcc3
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking linker version script flag... --version-script
+checking if version scripts can use complex wildcards... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether to build gtk-doc documentation... no
+checking for gtkdoc-check... /usr/bin/gtkdoc-check
+checking for xsltproc... /usr/bin/xsltproc
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking whether to enable assertions... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for gcc options needed to detect all undeclared functions... none needed
+checking for struct tm.tm_zone... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for linux/compiler.h... no
+checking for linux/blkpg.h... yes
+checking for linux/major.h... yes
+checking for asm/io.h... no
+checking for byteswap.h... yes
+checking for endian.h... yes
+checking for err.h... yes
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for getopt.h... yes
+checking for inttypes.h... (cached) yes
+checking for lastlog.h... yes
+checking for libutil.h... no
+checking for linux/btrfs.h... yes
+checking for linux/capability.h... yes
+checking for linux/cdrom.h... yes
+checking for linux/falloc.h... yes
+checking for linux/fd.h... yes
+checking for linux/fiemap.h... yes
+checking for linux/net_namespace.h... yes
+checking for linux/nsfs.h... yes
+checking for linux/raw.h... no
+checking for linux/securebits.h... yes
+checking for linux/tiocl.h... yes
+checking for linux/version.h... yes
+checking for linux/watchdog.h... yes
+checking for locale.h... yes
+checking for mntent.h... yes
+checking for net/if_dl.h... no
+checking for net/if.h... yes
+checking for netinet/in.h... yes
+checking for paths.h... yes
+checking for pty.h... yes
+checking for security/pam_appl.h... no
+checking for shadow.h... yes
+checking for stdint.h... (cached) yes
+checking for stdio_ext.h... yes
+checking for stdlib.h... (cached) yes
+checking for sys/disk.h... no
+checking for sys/disklabel.h... no
+checking for sys/endian.h... no
+checking for sys/file.h... yes
+checking for sys/ioccom.h... no
+checking for sys/ioctl.h... yes
+checking for sys/io.h... yes
+checking for sys/mkdev.h... no
+checking for sys/mount.h... yes
+checking for sys/param.h... yes
+checking for sys/prctl.h... yes
+checking for sys/resource.h... yes
+checking for sys/sendfile.h... yes
+checking for sys/signalfd.h... yes
+checking for sys/socket.h... yes
+checking for sys/sockio.h... no
+checking for sys/stat.h... (cached) yes
+checking for sys/swap.h... yes
+checking for sys/syscall.h... yes
+checking for sys/sysmacros.h... yes
+checking for sys/time.h... yes
+checking for sys/timex.h... yes
+checking for sys/ttydefaults.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/ucred.h... no
+checking for sys/un.h... yes
+checking for sys/xattr.h... yes
+checking for unistd.h... (cached) yes
+checking for utmp.h... yes
+checking for utmpx.h... yes
+checking for linux/fs.h... no
+checking for linux/gsmmux.h... yes
+checking for security/pam_misc.h... no
+checking for linux/blkzoned.h... yes
+checking whether BLK_ZONE_REP_CAPACITY is declared... yes
+checking for security/openpam.h... no
+checking for langinfo.h... yes
+checking whether langinfo.h defines ALTMON_x constants... yes
+checking whether langinfo.h defines _NL_ABALTMON_x constants... yes
+checking for struct termios.c_line... yes
+checking for struct stat.st_mtim.tv_nsec... yes
+checking whether _NL_TIME_WEEK_1STDAY is declared... yes
+checking whether environ is declared... yes
+checking whether strsignal is declared... yes
+checking whether TIOCGLCKTRMIOS is declared... yes
+checking whether SOCK_CLOEXEC is declared... yes
+checking whether SOCK_NONBLOCK is declared... yes
+checking whether SO_PASSCRED is declared... yes
+checking for clearenv... yes
+checking for close_range... yes
+checking for eaccess... yes
+checking for err... yes
+checking for errx... yes
+checking for explicit_bzero... yes
+checking for __fpending... yes
+checking for __fpurge... yes
+checking for fpurge... no
+checking for fsync... yes
+checking for getdomainname... yes
+checking for getdtablesize... yes
+checking for getexecname... no
+checking for getmntinfo... no
+checking for getrandom... yes
+checking for getrlimit... yes
+checking for getsgnam... yes
+checking for inotify_init... yes
+checking for jrand48... yes
+checking for lchown... yes
+checking for llseek... no
+checking for mempcpy... yes
+checking for mkostemp... yes
+checking for nanosleep... yes
+checking for ntp_gettime... yes
+checking for personality... yes
+checking for pidfd_open... no
+checking for pidfd_send_signal... no
+checking for posix_fadvise... yes
+checking for prctl... yes
+checking for qsort_r... yes
+checking for rpmatch... yes
+checking for scandirat... yes
+checking for sched_setattr... no
+checking for sched_setscheduler... yes
+checking for __secure_getenv... no
+checking for secure_getenv... yes
+checking for sendfile... yes
+checking for setprogname... no
+checking for setresgid... yes
+checking for setresuid... yes
+checking for sigqueue... yes
+checking for srandom... yes
+checking for strnchr... no
+checking for strndup... yes
+checking for strnlen... yes
+checking for sysconf... yes
+checking for sysinfo... yes
+checking for timegm... yes
+checking for usleep... yes
+checking for utimensat... yes
+checking for vwarnx... yes
+checking for warn... yes
+checking for warnx... yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for futimens... yes
+checking for getusershell... yes
+checking for inotify_init1... yes
+checking for ioperm... yes
+checking for iopl... yes
+checking for openat... yes
+checking for fstatat... yes
+checking for unlinkat... yes
+checking for open_memstream... yes
+checking for reboot... yes
+checking for updwtmpx... yes
+checking for updwtmpx... (cached) yes
+checking for syscall setns... SYS_setns
+checking for syscall pidfd_open... SYS_pidfd_open
+checking for syscall pidfd_send_signal... SYS_pidfd_send_signal
+checking for syscall close_range... SYS_close_range
+checking for isnan... yes
+checking for clock_gettime... yes
+checking for timer_create... yes
+checking for rtas_get_sysparm in -lrtas... no
+checking for struct sockaddr.sa_len... no
+checking for library containing socket... none required
+checking for dirfd... yes
+checking whether program_invocation_short_name is defined... yes
+checking whether __progname is defined... yes
+checking for asciidoctor... no
+configure: re-use already generated man-pages.
+checking whether the target supports thread-local storage... yes
+checking for openpty in -lutil... yes
+checking for union semun... no
+checking for loff_t... yes
+checking wchar_t support... yes
+checking for cpu_set_t... yes
+checking for sighandler_t... yes
+checking whether CPU_ALLOC is declared... yes
+checking for crypt.h... yes
+checking for udev_new in -ludev... no
+checking for ncursesw6-config... no
+checking for ncursesw5-config... no
+checking for ncursesw... no
+checking for initscr in -lncursesw... no
+checking for ncurses6-config... no
+checking for ncurses5-config... no
+checking for ncurses... no
+checking for initscr in -lncurses... no
+checking for tinfo... no
+checking for tgetent in -ltinfo... no
+checking for readline in -lreadline... no
+checking for syscall fallocate... SYS_fallocate
+checking for valid fallocate() function... yes
+checking for valid posix_fallocate() function... yes
+checking for syscall unshare... SYS_unshare
+checking for unshare... yes
+checking for setns... yes
+checking for capng_apply in -lcap-ng... no
+checking for crc32 in -lz... yes
+checking for magic_open in -lmagic... no
+checking for syscall swapon... SYS_swapon
+checking for syscall swapoff... SYS_swapoff
+checking for swapon... yes
+checking for swapoff... yes
+checking for syscall prlimit64... SYS_prlimit64
+checking for prlimit... yes
+checking for syscall pivot_root... SYS_pivot_root
+checking for libuser >= 0.58... no
+checking for syscall ioprio_set... SYS_ioprio_set
+checking for syscall ioprio_get... SYS_ioprio_get
+checking for syscall sched_getaffinity... SYS_sched_getaffinity
+checking for syscall sched_setattr... SYS_sched_setattr
+checking for syscall sched_setattr... (cached) SYS_sched_setattr
+checking for libsystemd... no
+checking for libsystemd-daemon... no
+checking for libsystemd-journal... no
+checking for libeconf... no
+checking for a Python interpreter with version >= 2... python3
+checking for python3... /usr/bin/python3
+checking for python3 version... 3.10
+checking for python3 platform... linux
+checking for GNU default python3 prefix... ${prefix}
+checking for GNU default python3 exec_prefix... ${exec_prefix}
+checking for python3 script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.10/site-packages
+checking for python3 extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.10/site-packages
+checking for python-3.10... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+
+        util-linux  2.37.2
+
+        prefix:                    /usr
+        exec prefix:               ${prefix}
+
+        bindir:                    /bin
+        sbindir:                   /sbin
+        libdir:                    /lib
+        usrbin_execdir:            ${exec_prefix}/bin
+        usrsbin_execdir:           ${exec_prefix}/sbin
+        usrlib_execdir:            ${exec_prefix}/lib
+
+        localstatedir:             /var
+        runstatedir:               /run
+        includedir:                ${prefix}/include
+        sysconfdir:                /etc
+        sysconfstaticdir:          ${prefix}/lib
+
+        vendordir:                 
+
+        Python:                    /usr/bin/python3
+        Python version:            3.10
+        Python libs:               ${PYTHON_EXEC_PREFIX}/lib/python3.10/site-packages
+
+        Bash completions:          /usr/share/bash-completion/completions
+        Systemd support:           no
+        Systemd unitdir:           no
+        libeconf support:          no
+        Btrfs support:             yes
+        Wide-char support:         yes
+        libcryptsetup support:     
+
+        Manual pages:              no
+        Manual pages translated:   no
+
+        compiler:                  gcc
+        suid cflags:               
+        ldflags:                   
+        suid ldflags:              
+        ASAN enabled:              no
+
+        cflags:                    -O2
+
+        warnings:
+
+ -fno-common -Wall -Wextra -Waddress-of-packed-member -Wdiscarded-qualifiers -Wformat-security -Wimplicit-function-declaration -Wmissing-declarations -Wmissing-parameter-type -Wmissing-prototypes -Wnested-externs -Wno-missing-field-initializers -Wpointer-arith -Wredundant-decls -Wsign-compare -Wstrict-prototypes -Wtype-limits -Wuninitialized -Wunused-but-set-parameter -Wunused-but-set-variable -Wunused-parameter -Wunused-result -Wunused-variable -Werror=sequence-point
+
+ Type 'make' or 'make <utilname>' to compile.
+
+ /bin/bash ./config.status
+config.status: creating Makefile
+config.status: creating libblkid/docs/Makefile
+config.status: creating libblkid/docs/version.xml
+config.status: creating libblkid/src/blkid.h
+config.status: creating libfdisk/docs/Makefile
+config.status: creating libfdisk/docs/version.xml
+config.status: creating libfdisk/src/libfdisk.h
+config.status: creating libmount/docs/Makefile
+config.status: creating libmount/docs/version.xml
+config.status: creating libmount/src/libmount.h
+config.status: creating libsmartcols/docs/Makefile
+config.status: creating libsmartcols/docs/version.xml
+config.status: creating libsmartcols/src/libsmartcols.h
+config.status: creating po/Makefile.in
+config.status: creating po-man/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: setting ALL_LINGUAS in configure.in is obsolete
+config.status: creating po/Makefile
+(CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash '/home/PkgBlade/depends_source_code_wget/util-linux-2.37.2/config/missing' autoheader)
+rm -f stamp-h1
+touch config.h.in
+cd . && /bin/bash ./config.status config.h
+config.status: creating config.h
+make  all-recursive
+make[1]: Entering directory '/home/PkgBlade/depends_source_code_wget/util-linux-2.37.2'
+Making all in po
+make[2]: Entering directory '/home/PkgBlade/depends_source_code_wget/util-linux-2.37.2/po'
+test ! -f ./util-linux.pot || \
+  test -z "ca.gmo cs.gmo da.gmo de.gmo es.gmo et.gmo eu.gmo fi.gmo fr.gmo gl.gmo hr.gmo hu.gmo id.gmo it.gmo ja.gmo nl.gmo pl.gmo pt_BR.gmo pt.gmo ru.gmo sl.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo" || make ca.gmo cs.gmo da.gmo de.gmo es.gmo et.gmo eu.gmo fi.gmo fr.gmo gl.gmo hr.gmo hu.gmo id.gmo it.gmo ja.gmo nl.gmo pl.gmo pt_BR.gmo pt.gmo ru.gmo sl.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo
+make[3]: Entering directory '/home/PkgBlade/depends_source_code_wget/util-linux-2.37.2/po'
+rm -f ca.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ca.gmo ca.po
+rm -f cs.gmo && /usr/bin/msgfmt -c --statistics --verbose -o cs.gmo cs.po
+rm -f da.gmo && /usr/bin/msgfmt -c --statistics --verbose -o da.gmo da.po
+rm -f de.gmo && /usr/bin/msgfmt -c --statistics --verbose -o de.gmo de.po
+rm -f es.gmo && /usr/bin/msgfmt -c --statistics --verbose -o es.gmo es.po
+rm -f et.gmo && /usr/bin/msgfmt -c --statistics --verbose -o et.gmo et.po
+rm -f eu.gmo && /usr/bin/msgfmt -c --statistics --verbose -o eu.gmo eu.po
+rm -f fi.gmo && /usr/bin/msgfmt -c --statistics --verbose -o fi.gmo fi.po
+rm -f fr.gmo && /usr/bin/msgfmt -c --statistics --verbose -o fr.gmo fr.po
+rm -f gl.gmo && /usr/bin/msgfmt -c --statistics --verbose -o gl.gmo gl.po
+rm -f hr.gmo && /usr/bin/msgfmt -c --statistics --verbose -o hr.gmo hr.po
+rm -f hu.gmo && /usr/bin/msgfmt -c --statistics --verbose -o hu.gmo hu.po
+rm -f id.gmo && /usr/bin/msgfmt -c --statistics --verbose -o id.gmo id.po
+rm -f it.gmo && /usr/bin/msgfmt -c --statistics --verbose -o it.gmo it.po
+rm -f ja.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ja.gmo ja.po
+rm -f nl.gmo && /usr/bin/msgfmt -c --statistics --verbose -o nl.gmo nl.po
+rm -f pl.gmo && /usr/bin/msgfmt -c --statistics --verbose -o pl.gmo pl.po
+rm -f pt_BR.gmo && /usr/bin/msgfmt -c --statistics --verbose -o pt_BR.gmo pt_BR.po
+rm -f pt.gmo && /usr/bin/msgfmt -c --statistics --verbose -o pt.gmo pt.po
+rm -f ru.gmo && /usr/bin/msgfmt -c --statistics --verbose -o ru.gmo ru.po
+rm -f sl.gmo && /usr/bin/msgfmt -c --statistics --verbose -o sl.gmo sl.po
+rm -f sv.gmo && /usr/bin/msgfmt -c --statistics --verbose -o sv.gmo sv.po
+rm -f tr.gmo && /usr/bin/msgfmt -c --statistics --verbose -o tr.gmo tr.po
+rm -f uk.gmo && /usr/bin/msgfmt -c --statistics --verbose -o uk.gmo uk.po
+rm -f vi.gmo && /usr/bin/msgfmt -c --statistics --verbose -o vi.gmo vi.po
+rm -f zh_CN.gmo && /usr/bin/msgfmt -c --statistics --verbose -o zh_CN.gmo zh_CN.po
+rm -f zh_TW.gmo && /usr/bin/msgfmt -c --statistics --verbose -o zh_TW.gmo zh_TW.po
+make[3]: Leaving directory '/home/PkgBlade/depends_source_code_wget/util-linux-2.37.2/po'
+touch stamp-po
+make[2]: Leaving directory '/home/PkgBlade/depends_source_code_wget/util-linux-2.37.2/po'
+make[2]: Entering directory '/home/PkgBlade/depends_source_code_wget/util-linux-2.37.2'
+  CC       sys-utils/dmesg-dmesg.o
+  CC       lib/dmesg-monotonic.o
+  CC       lib/libcommon_la-blkdev.lo
+  CC       lib/libcommon_la-buffer.lo
+  CC       lib/libcommon_la-canonicalize.lo
+  CC       lib/libcommon_la-color-names.lo
+  CC       lib/libcommon_la-crc32.lo
+  CC       lib/libcommon_la-crc32c.lo
+  CC       lib/libcommon_la-encode.lo
+  CC       lib/libcommon_la-env.lo
+  CC       lib/libcommon_la-fileutils.lo
+  CC       lib/libcommon_la-idcache.lo
+  CC       lib/libcommon_la-jsonwrt.lo
+  CC       lib/libcommon_la-mangle.lo
+  CC       lib/libcommon_la-match.lo
+  CC       lib/libcommon_la-mbsalign.lo
+  CC       lib/libcommon_la-mbsedit.lo
+  CC       lib/libcommon_la-md5.lo
+  CC       lib/libcommon_la-pager.lo
+  CC       lib/libcommon_la-pwdutils.lo
+  CC       lib/libcommon_la-randutils.lo
+  CC       lib/libcommon_la-sha1.lo
+  CC       lib/libcommon_la-signames.lo
+  CC       lib/libcommon_la-strutils.lo
+  CC       lib/libcommon_la-strv.lo
+  CC       lib/libcommon_la-timeutils.lo
+  CC       lib/libcommon_la-ttyutils.lo
+  CC       lib/libcommon_la-linux_version.lo
+  CC       lib/libcommon_la-procutils.lo
+  CC       lib/libcommon_la-loopdev.lo
+  CC       lib/libcommon_la-cpuset.lo
+  CC       lib/libcommon_la-path.lo
+  CC       lib/libcommon_la-sysfs.lo
+  CCLD     libcommon.la
+  CC       lib/libtcolors_la-colors.lo
+  CC       lib/libtcolors_la-color-names.lo
+  CCLD     libtcolors.la
+  CCLD     dmesg
+  CC       sys-utils/mount-mount.o
+  CC       lib/libmount_la-monotonic.lo
+  CC       libmount/src/la-cache.lo
+  CC       libmount/src/la-fs.lo
+  CC       libmount/src/la-init.lo
+  CC       libmount/src/la-iter.lo
+  CC       libmount/src/la-lock.lo
+  CC       libmount/src/la-optmap.lo
+  CC       libmount/src/la-optstr.lo
+  CC       libmount/src/la-tab.lo
+  CC       libmount/src/la-tab_diff.lo
+  CC       libmount/src/la-tab_parse.lo
+  CC       libmount/src/la-tab_update.lo
+  CC       libmount/src/la-test.lo
+  CC       libmount/src/la-utils.lo
+  CC       libmount/src/la-version.lo
+  CC       libmount/src/la-context.lo
+  CC       libmount/src/la-context_loopdev.lo
+  CC       libmount/src/la-context_veritydev.lo
+  CC       libmount/src/la-context_mount.lo
+  CC       libmount/src/la-context_umount.lo
+  CC       libmount/src/la-monitor.lo
+  CC       libmount/src/la-btrfs.lo
+  CC       libblkid/src/la-init.lo
+  CC       libblkid/src/la-cache.lo
+  CC       libblkid/src/la-config.lo
+  CC       libblkid/src/la-dev.lo
+  CC       libblkid/src/la-devname.lo
+  CC       libblkid/src/la-devno.lo
+  CC       libblkid/src/la-encode.lo
+  CC       libblkid/src/la-evaluate.lo
+  CC       libblkid/src/la-getsize.lo
+  CC       libblkid/src/la-probe.lo
+  CC       libblkid/src/la-read.lo
+  CC       libblkid/src/la-resolve.lo
+  CC       libblkid/src/la-save.lo
+  CC       libblkid/src/la-tag.lo
+  CC       libblkid/src/la-verify.lo
+  CC       libblkid/src/la-version.lo
+  CC       libblkid/src/partitions/la-aix.lo
+  CC       libblkid/src/partitions/la-atari.lo
+  CC       libblkid/src/partitions/la-bsd.lo
+  CC       libblkid/src/partitions/la-dos.lo
+  CC       libblkid/src/partitions/la-gpt.lo
+  CC       libblkid/src/partitions/la-mac.lo
+  CC       libblkid/src/partitions/la-minix.lo
+  CC       libblkid/src/partitions/la-partitions.lo
+  CC       libblkid/src/partitions/la-sgi.lo
+  CC       libblkid/src/partitions/la-solaris_x86.lo
+  CC       libblkid/src/partitions/la-sun.lo
+  CC       libblkid/src/partitions/la-ultrix.lo
+  CC       libblkid/src/partitions/la-unixware.lo
+  CC       libblkid/src/superblocks/la-adaptec_raid.lo
+  CC       libblkid/src/superblocks/la-apfs.lo
+  CC       libblkid/src/superblocks/la-bcache.lo
+  CC       libblkid/src/superblocks/la-befs.lo
+  CC       libblkid/src/superblocks/la-bfs.lo
+  CC       libblkid/src/superblocks/la-bitlocker.lo
+  CC       libblkid/src/superblocks/la-bluestore.lo
+  CC       libblkid/src/superblocks/la-btrfs.lo
+  CC       libblkid/src/superblocks/la-cramfs.lo
+  CC       libblkid/src/superblocks/la-ddf_raid.lo
+  CC       libblkid/src/superblocks/la-drbd.lo
+  CC       libblkid/src/superblocks/la-drbdproxy_datalog.lo
+  CC       libblkid/src/superblocks/la-drbdmanage.lo
+  CC       libblkid/src/superblocks/la-exfat.lo
+  CC       libblkid/src/superblocks/la-exfs.lo
+  CC       libblkid/src/superblocks/la-ext.lo
+  CC       libblkid/src/superblocks/la-f2fs.lo
+  CC       libblkid/src/superblocks/la-gfs.lo
+  CC       libblkid/src/superblocks/la-hfs.lo
+  CC       libblkid/src/superblocks/la-highpoint_raid.lo
+  CC       libblkid/src/superblocks/la-hpfs.lo
+  CC       libblkid/src/superblocks/la-iso9660.lo
+  CC       libblkid/src/superblocks/la-isw_raid.lo
+  CC       libblkid/src/superblocks/la-jfs.lo
+  CC       libblkid/src/superblocks/la-jmicron_raid.lo
+  CC       libblkid/src/superblocks/la-linux_raid.lo
+  CC       libblkid/src/superblocks/la-lsi_raid.lo
+  CC       libblkid/src/superblocks/la-luks.lo
+  CC       libblkid/src/superblocks/la-lvm.lo
+  CC       libblkid/src/superblocks/la-minix.lo
+  CC       libblkid/src/superblocks/la-mpool.lo
+  CC       libblkid/src/superblocks/la-netware.lo
+  CC       libblkid/src/superblocks/la-nilfs.lo
+  CC       libblkid/src/superblocks/la-ntfs.lo
+  CC       libblkid/src/superblocks/la-refs.lo
+  CC       libblkid/src/superblocks/la-nvidia_raid.lo
+  CC       libblkid/src/superblocks/la-ocfs.lo
+  CC       libblkid/src/superblocks/la-promise_raid.lo
+  CC       libblkid/src/superblocks/la-reiserfs.lo
+  CC       libblkid/src/superblocks/la-romfs.lo
+  CC       libblkid/src/superblocks/la-silicon_raid.lo
+  CC       libblkid/src/superblocks/la-squashfs.lo
+  CC       libblkid/src/superblocks/la-stratis.lo
+  CC       libblkid/src/superblocks/la-superblocks.lo
+  CC       libblkid/src/superblocks/la-swap.lo
+  CC       libblkid/src/superblocks/la-sysv.lo
+  CC       libblkid/src/superblocks/la-ubi.lo
+  CC       libblkid/src/superblocks/la-ubifs.lo
+  CC       libblkid/src/superblocks/la-udf.lo
+  CC       libblkid/src/superblocks/la-ufs.lo
+  CC       libblkid/src/superblocks/la-vdo.lo
+  CC       libblkid/src/superblocks/la-vfat.lo
+  CC       libblkid/src/superblocks/la-via_raid.lo
+  CC       libblkid/src/superblocks/la-vmfs.lo
+  CC       libblkid/src/superblocks/la-vxfs.lo
+  CC       libblkid/src/superblocks/la-xfs.lo
+  CC       libblkid/src/superblocks/la-zfs.lo
+  CC       libblkid/src/superblocks/la-zonefs.lo
+  CC       libblkid/src/superblocks/la-erofs.lo
+  CC       libblkid/src/topology/la-topology.lo
+  CC       libblkid/src/topology/la-dm.lo
+  CC       libblkid/src/topology/la-evms.lo
+  CC       libblkid/src/topology/la-ioctl.lo
+  CC       libblkid/src/topology/la-lvm.lo
+  CC       libblkid/src/topology/la-md.lo
+  CC       libblkid/src/topology/la-sysfs.lo
+  CCLD     libblkid.la
+copying selected object files to avoid basename conflicts...
+  CCLD     libmount.la
+  CCLD     mount
+  CC       sys-utils/umount-umount.o
+  CCLD     umount
+  CC       sys-utils/wdctl-wdctl.o
+  CC       libsmartcols/src/la-iter.lo
+  CC       libsmartcols/src/la-symbols.lo
+  CC       libsmartcols/src/la-cell.lo
+  CC       libsmartcols/src/la-column.lo
+  CC       libsmartcols/src/la-line.lo
+  CC       libsmartcols/src/la-table.lo
+  CC       libsmartcols/src/la-print.lo
+  CC       libsmartcols/src/la-print-api.lo
+  CC       libsmartcols/src/la-version.lo
+  CC       libsmartcols/src/la-buffer.lo
+  CC       libsmartcols/src/la-calculate.lo
+  CC       libsmartcols/src/la-grouping.lo
+  CC       libsmartcols/src/la-walk.lo
+  CC       libsmartcols/src/la-init.lo
+  CCLD     libsmartcols.la
+  CCLD     wdctl
+  CC       sys-utils/mountpoint-mountpoint.o
+  CCLD     mountpoint
+  CC       misc-utils/lsblk-lsblk.o
+  CC       misc-utils/lsblk-lsblk-mnt.o
+  CC       misc-utils/lsblk-lsblk-properties.o
+  CC       misc-utils/lsblk-lsblk-devtree.o
+  CCLD     lsblk
+  CC       misc-utils/findmnt-findmnt.o
+  CC       misc-utils/findmnt-findmnt-verify.o
+  CCLD     findmnt
+  CC       misc-utils/kill.o
+  CCLD     kill
+  CC       term-utils/agetty.o
+  CC       lib/plymouth-ctrl.o
+  CCLD     agetty
+  CC       login-utils/sulogin.o
+  CC       login-utils/sulogin-consoles.o
+  CCLD     sulogin
+  CC       login-utils/nologin.o
+  CCLD     nologin
+  CC       sys-utils/fstrim-fstrim.o
+  CCLD     fstrim
+  CC       sys-utils/ctrlaltdel.o
+  CCLD     ctrlaltdel
+  CC       sys-utils/fsfreeze.o
+  CCLD     fsfreeze
+  CC       sys-utils/blkdiscard-blkdiscard.o
+  CC       lib/blkdiscard-monotonic.o
+  CCLD     blkdiscard
+  CC       sys-utils/blkzone.o
+  CCLD     blkzone
+  CC       sys-utils/losetup-losetup.o
+  CCLD     losetup
+  CC       sys-utils/zramctl-zramctl.o
+  CC       lib/zramctl-ismounted.o
+  CCLD     zramctl
+  CC       sys-utils/swapon-swapon.o
+  CC       sys-utils/swapon-swapon-common.o
+  CC       lib/swapon-swapprober.o
+  CCLD     swapon
+  CC       sys-utils/swapoff-swapoff.o
+  CC       sys-utils/swapoff-swapon-common.o
+  CC       lib/swapoff-swapprober.o
+  CCLD     swapoff
+  CC       sys-utils/chcpu.o
+  CCLD     chcpu
+  CC       sys-utils/pivot_root.o
+  CCLD     pivot_root
+  CC       sys-utils/switch_root.o
+  CCLD     switch_root
+  CC       sys-utils/hwclock-hwclock.o
+  CC       sys-utils/hwclock-hwclock-parse-date.o
+  CC       sys-utils/hwclock-hwclock-cmos.o
+  CC       sys-utils/hwclock-hwclock-rtc.o
+  CC       lib/hwclock-monotonic.o
+  CCLD     hwclock
+  CC       misc-utils/blkid-blkid.o
+  CC       lib/blkid-ismounted.o
+  CCLD     blkid
+  CC       misc-utils/findfs-findfs.o
+  CCLD     findfs
+  CC       misc-utils/wipefs-wipefs.o
+  CCLD     wipefs
+  CC       disk-utils/fsck.minix.o
+  CC       lib/ismounted.o
+  CCLD     fsck.minix
+  CC       disk-utils/mkfs.minix.o
+  CCLD     mkfs.minix
+  CC       disk-utils/mkfs.o
+  CCLD     mkfs
+  CC       disk-utils/mkfs.bfs.o
+  CCLD     mkfs.bfs
+  CC       disk-utils/mkswap-mkswap.o
+  CC       lib/mkswap-ismounted.o
+  CC       libuuid/src/la-clear.lo
+  CC       libuuid/src/la-compare.lo
+  CC       libuuid/src/la-copy.lo
+  CC       libuuid/src/la-gen_uuid.lo
+  CC       libuuid/src/la-isnull.lo
+  CC       libuuid/src/la-pack.lo
+  CC       libuuid/src/la-parse.lo
+  CC       libuuid/src/la-unpack.lo
+  CC       libuuid/src/la-unparse.lo
+  CC       libuuid/src/la-uuid_time.lo
+  CC       libuuid/src/la-predefined.lo
+  CC       lib/libuuid_la-randutils.lo
+  CC       lib/libuuid_la-md5.lo
+  CC       lib/libuuid_la-sha1.lo
+  CCLD     libuuid.la
+  CCLD     mkswap
+  CC       disk-utils/swaplabel-swaplabel.o
+  CC       lib/swaplabel-swapprober.o
+  CCLD     swaplabel
+  CC       disk-utils/fsck-fsck.o
+  CC       lib/fsck-monotonic.o
+  CCLD     fsck
+  CC       disk-utils/fsck.cramfs.o
+  CC       disk-utils/cramfs_common.o
+  CCLD     fsck.cramfs
+  CC       disk-utils/mkfs.cramfs.o
+  CCLD     mkfs.cramfs
+  CC       disk-utils/blockdev.o
+  CCLD     blockdev
+  CC       disk-utils/fdisk-fdisk.o
+  CC       disk-utils/fdisk-fdisk-menu.o
+  CC       disk-utils/fdisk-fdisk-list.o
+  CC       libfdisk/src/la-init.lo
+  CC       libfdisk/src/la-field.lo
+  CC       libfdisk/src/la-item.lo
+  CC       libfdisk/src/la-test.lo
+  CC       libfdisk/src/la-ask.lo
+  CC       libfdisk/src/la-alignment.lo
+  CC       libfdisk/src/la-label.lo
+  CC       libfdisk/src/la-utils.lo
+  CC       libfdisk/src/la-context.lo
+  CC       libfdisk/src/la-parttype.lo
+  CC       libfdisk/src/la-partition.lo
+  CC       libfdisk/src/la-table.lo
+  CC       libfdisk/src/la-iter.lo
+  CC       libfdisk/src/la-script.lo
+  CC       libfdisk/src/la-version.lo
+  CC       libfdisk/src/la-wipe.lo
+  CC       libfdisk/src/la-sun.lo
+  CC       libfdisk/src/la-sgi.lo
+  CC       libfdisk/src/la-dos.lo
+  CC       libfdisk/src/la-bsd.lo
+  CC       libfdisk/src/la-gpt.lo
+  CCLD     libfdisk.la
+  CCLD     fdisk
+  CC       disk-utils/sfdisk-sfdisk.o
+  CC       disk-utils/sfdisk-fdisk-list.o
+  CCLD     sfdisk
+  CC       schedutils/chrt.o
+  CCLD     chrt
+  CC       schedutils/ionice.o
+  CCLD     ionice
+  CC       schedutils/taskset.o
+  CCLD     taskset
+  CC       schedutils/uclampset.o
+  CCLD     uclampset
+  CC       text-utils/col.o
+  CCLD     col
+  CC       text-utils/colcrt.o
+  CCLD     colcrt
+  CC       text-utils/colrm.o
+  CCLD     colrm
+  CC       text-utils/column-column.o
+  CCLD     column
+  CC       text-utils/hexdump-conv.o
+  CC       text-utils/hexdump-display.o
+  CC       text-utils/hexdump.o
+  CC       text-utils/hexdump-parse.o
+  CCLD     hexdump
+  CC       text-utils/rev.o
+  CCLD     rev
+  CC       term-utils/script-script.o
+  CC       lib/script-pty-session.o
+  CC       lib/script-monotonic.o
+  CCLD     script
+  CC       term-utils/scriptreplay.o
+  CC       term-utils/script-playutils.o
+  CCLD     scriptreplay
+  CC       term-utils/scriptlive.o
+  CC       lib/pty-session.o
+  CC       lib/monotonic.o
+  CCLD     scriptlive
+  CC       term-utils/mesg.o
+  CCLD     mesg
+  CC       term-utils/wall-wall.o
+  CC       term-utils/wall-ttymsg.o
+  CCLD     wall
+  CC       login-utils/last.o
+  CCLD     last
+  CC       login-utils/utmpdump.o
+  CCLD     utmpdump
+  CC       login-utils/lslogins-lslogins.o
+  CC       login-utils/lslogins-logindefs.o
+  CCLD     lslogins
+  CC       sys-utils/lsmem-lsmem.o
+  CCLD     lsmem
+  CC       sys-utils/chmem.o
+  CCLD     chmem
+  CC       sys-utils/flock.o
+  CC       lib/timer.o
+  CCLD     flock
+  CC       sys-utils/choom.o
+  CCLD     choom
+  CC       sys-utils/ipcmk.o
+  CCLD     ipcmk
+  CC       sys-utils/ipcrm.o
+  CCLD     ipcrm
+  CC       sys-utils/ipcs.o
+  CC       sys-utils/ipcutils.o
+  CCLD     ipcs
+  CC       sys-utils/lsirq-lsirq.o
+  CC       sys-utils/lsirq-irq-common.o
+  CCLD     lsirq
+  CC       sys-utils/lsipc-lsipc.o
+  CC       sys-utils/lsipc-ipcutils.o
+  CCLD     lsipc
+  CC       sys-utils/renice.o
+  CCLD     renice
+  CC       sys-utils/setsid.o
+  CCLD     setsid
+  CC       sys-utils/setarch.o
+  CCLD     setarch
+  CC       sys-utils/eject-eject.o
+  CC       lib/eject-monotonic.o
+  CCLD     eject
+  CC       sys-utils/prlimit-prlimit.o
+  CCLD     prlimit
+  CC       sys-utils/lsns-lsns.o
+  CCLD     lsns
+  CC       sys-utils/lscpu-lscpu.o
+  CC       sys-utils/lscpu-lscpu-cputype.o
+  CC       sys-utils/lscpu-lscpu-cpu.o
+  CC       sys-utils/lscpu-lscpu-topology.o
+  CC       sys-utils/lscpu-lscpu-virt.o
+  CC       sys-utils/lscpu-lscpu-arm.o
+  CC       sys-utils/lscpu-lscpu-dmi.o
+  CCLD     lscpu
+  CC       sys-utils/fallocate.o
+  CCLD     fallocate
+  CC       sys-utils/unshare-unshare.o
+  CC       lib/unshare-caputils.o
+  CC       lib/unshare-exec_shell.o
+  CCLD     unshare
+  CC       sys-utils/nsenter.o
+  CC       lib/exec_shell.o
+  CCLD     nsenter
+  CC       misc-utils/cal-cal.o
+  CCLD     cal
+  CC       misc-utils/logger-logger.o
+  CC       lib/logger-strutils.o
+  CC       lib/logger-strv.o
+  CCLD     logger
+  CC       misc-utils/look.o
+  CCLD     look
+  CC       misc-utils/mcookie.o
+  CC       lib/md5.o
+  CCLD     mcookie
+  CC       misc-utils/namei.o
+  CC       lib/strutils.o
+  CC       lib/idcache.o
+  CCLD     namei
+  CC       misc-utils/whereis.o
+  CCLD     whereis
+  CC       misc-utils/lslocks-lslocks.o
+  CCLD     lslocks
+  CC       misc-utils/uuidgen-uuidgen.o
+  CCLD     uuidgen
+  CC       misc-utils/uuidparse-uuidparse.o
+  CCLD     uuidparse
+  CC       misc-utils/rename.o
+  CCLD     rename
+  CC       misc-utils/getopt.o
+  CCLD     getopt
+  CC       misc-utils/fincore-fincore.o
+  CCLD     fincore
+  CC       misc-utils/hardlink-hardlink.o
+  CC       lib/hardlink-monotonic.o
+  CCLD     hardlink
+  CC       disk-utils/isosize.o
+  CCLD     isosize
+  CC       sys-utils/rfkill-rfkill.o
+  CCLD     rfkill
+  CC       sys-utils/readprofile.o
+  CCLD     readprofile
+  CC       sys-utils/ldattach.o
+  CCLD     ldattach
+  CC       sys-utils/rtcwake.o
+  CCLD     rtcwake
+  CC       misc-utils/uuidd-uuidd.o
+  CC       lib/uuidd-monotonic.o
+  CC       lib/uuidd-timer.o
+  CCLD     uuidd
+  CC       disk-utils/partx-partx.o
+  CCLD     partx
+  CC       disk-utils/addpart.o
+  CCLD     addpart
+  CC       disk-utils/delpart.o
+  CCLD     delpart
+  CC       disk-utils/resizepart.o
+  CCLD     resizepart
+  CC       libmount/python/pylibmount_la-pylibmount.lo
+  CC       libmount/python/pylibmount_la-fs.lo
+  CC       libmount/python/pylibmount_la-tab.lo
+  CC       libmount/python/pylibmount_la-context.lo
+  CCLD     pylibmount.la
+  GEN      libuuid/uuid.pc
+  GEN      libblkid/blkid.pc
+  GEN      libmount/mount.pc
+  GEN      libsmartcols/smartcols.pc
+  GEN      libfdisk/fdisk.pc
+make[2]: Leaving directory '/home/PkgBlade/depends_source_code_wget/util-linux-2.37.2'
+make[1]: Leaving directory '/home/PkgBlade/depends_source_code_wget/util-linux-2.37.2'
+configure: Libidn2 2.3.2 libidn2 2.3.2 0x02030002 3:7:3 0
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether the compiler is clang... no
+checking for compiler option needed when checking for declarations... none
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/socket.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for getopt.h... yes
+checking for sys/cdefs.h... yes
+checking for limits.h... yes
+checking for sys/param.h... yes
+checking for sys/time.h... yes
+checking for inttypes.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for iconv.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for Minix Amsterdam compiler... no
+checking for ar... ar
+checking for ranlib... ranlib
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... (cached) ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for _set_invalid_parameter_handler... no
+checking for fcntl... yes
+checking for symlink... yes
+checking for getdelim... yes
+checking for getdtablesize... yes
+checking for getprogname... no
+checking for getexecname... no
+checking for lstat... yes
+checking whether the preprocessor supports include_next... yes
+checking whether source code line length is unlimited... yes
+checking for complete errno.h... yes
+checking whether strerror_r is declared... yes
+checking for strerror_r... yes
+checking whether strerror_r returns char *... yes
+checking for working fcntl.h... yes
+checking for pid_t... yes
+checking for mode_t... yes
+checking whether stat file-mode macros are broken... no
+checking for C/C++ restrict keyword... __restrict__
+checking for nlink_t... yes
+checking whether getdelim is declared... yes
+checking whether getdtablesize is declared... yes
+checking whether getline is declared... yes
+checking for getopt.h... (cached) yes
+checking for getopt_long_only... yes
+checking whether getopt is POSIX compatible... yes
+checking for working GNU getopt function... yes
+checking for working GNU getopt_long function... yes
+checking for inline... inline
+checking whether limits.h has LLONG_MAX, WORD_BIT, ULLONG_WIDTH etc.... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking whether the compiler produces multi-arch binaries... no
+checking for O_CLOEXEC... yes
+checking for promoted mode_t type... mode_t
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for wchar_t... yes
+checking for good max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking for wint_t... yes
+checking whether wint_t is large enough... yes
+checking whether stdint.h conforms to C99... yes
+checking whether stdint.h works without ISO C predefines... yes
+checking whether stdint.h has UINTMAX_WIDTH etc.... yes
+checking whether fcloseall is declared... yes
+checking which flavor of printf attribute matches inttypes macros... system
+checking whether strerror(0) succeeds... yes
+checking for struct timespec in <time.h>... yes
+checking for TIME_UTC in <time.h>... yes
+checking whether execvpe is declared... yes
+checking for valgrind... no
+checking for C compiler option to allow warnings... -Wno-error
+checking for alloca as a compiler built-in... yes
+checking whether // is distinct from /... no
+checking whether dup2 works... yes
+checking for error_at_line... yes
+checking whether fcntl handles F_DUPFD correctly... yes
+checking whether fcntl understands F_DUPFD_CLOEXEC... needs runtime check
+checking for working getdelim function... yes
+checking whether getdtablesize works... yes
+checking for getline... yes
+checking for working getline function... yes
+checking whether program_invocation_name is declared... yes
+checking whether program_invocation_short_name is declared... yes
+checking whether __argv is declared... no
+checking whether the compiler generally respects inline... yes
+checking if gcc/ld supports -Wl,--output-def... no
+checking if LD -Wl,--version-script works... yes
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking whether the compiler supports the __inline keyword... yes
+checking whether open recognizes a trailing slash... yes
+checking whether program_invocation_name is declared... (cached) yes
+checking whether program_invocation_short_name is declared... (cached) yes
+checking for rawmemchr... yes
+checking for ssize_t... yes
+checking whether stat handles trailing slashes on files... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_birthtimensec... no
+checking for struct stat.st_birthtim.tv_nsec... no
+checking for va_copy... yes
+checking for strchrnul... yes
+checking whether strchrnul works... yes
+checking for working strerror function... yes
+checking for strverscmp... yes
+checking for ld used by gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for libunistring... no, consider installing GNU libunistring
+checking for nl_langinfo and CODESET... yes
+checking whether ecvt is declared... yes
+checking whether fcvt is declared... yes
+checking whether gcvt is declared... yes
+checking whether free is known to preserve errno... yes
+checking whether the compiler generally respects inline... (cached) yes
+checking for ssize_t... (cached) yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gtk-doc... yes
+checking for gtkdoc-check... gtkdoc-check.test
+checking for gtkdoc-check... /usr/bin/gtkdoc-check
+checking for gtkdoc-rebase... /usr/bin/gtkdoc-rebase
+checking for gtkdoc-mkpdf... /usr/bin/gtkdoc-mkpdf
+checking whether to build gtk-doc documentation... no
+checking for glib-2.0 >= 2.10.0 gobject-2.0  >= 2.10.0... no
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking whether to build with code coverage support... no
+checking whether -Wno-missing-field-initializers is supported... yes
+checking whether -Wno-missing-field-initializers is needed... no
+checking whether -Wuninitialized is supported... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... no
+checking whether C compiler handles -fanalyzer... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -fno-common... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wall... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Warith-conversion... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wbad-function-cast... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wcast-align=strict... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wdate-time... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wdisabled-optimization... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wdouble-promotion... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wduplicated-branches... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wduplicated-cond... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wextra... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wformat-signedness... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Winit-self... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Winline... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Winvalid-pch... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wlogical-op... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wmissing-declarations... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wmissing-include-dirs... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wmissing-prototypes... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wnested-externs... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wnull-dereference... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wold-style-definition... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wopenmp-simd... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Woverlength-strings... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wpacked... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wpointer-arith... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wshadow... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wstack-protector... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wstrict-overflow... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wstrict-prototypes... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=cold... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=const... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=format... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=malloc... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=noreturn... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=pure... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-final-methods... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-final-types... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsync-nand... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wtrampolines... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wuninitialized... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wunknown-pragmas... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wunsafe-loop-optimizations... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wunused-macros... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wvariadic-macros... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wvector-operation-performance... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wvla... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wwrite-strings... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Warray-bounds=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wattribute-alias=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wformat-overflow=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wformat=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wformat-truncation=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wimplicit-fallthrough=5... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wshift-overflow=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wunused-const-variable=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wvla-larger-than=4031... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wno-analyzer-double-free... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wno-analyzer-malloc-leak... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wno-analyzer-null-dereference... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wno-analyzer-use-after-free... yes
+checking whether C compiler handles -fdiagnostics-show-option... yes
+checking whether C compiler handles -fdiagnostics-color=always... yes
+checking whether C compiler handles -Wno-missing-field-initializers... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating doc/Makefile
+config.status: creating doc/reference/Makefile
+config.status: creating doc/reference/version.xml
+config.status: creating Makefile
+config.status: creating examples/Makefile
+config.status: creating lib/idn2.h
+config.status: creating lib/Makefile
+config.status: creating unistring/Makefile
+config.status: creating gl/Makefile
+config.status: creating libidn2.pc
+config.status: creating po/Makefile.in
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating fuzz/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+configure: Summary of build options:
+
+  Version:           2.3.2
+  Libtool version    3:7:3
+  DLL version:       0
+  Header version:    major 2 minor 3 patch 2 number 0x02030002
+  Build/host system: x86_64-pc-linux-gnu / x86_64-pc-linux-gnu
+  Install prefix:    /usr/local
+  Compiler:          gcc
+  Warning flags:      -fanalyzer -fno-common -Wall -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdisabled-optimization -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wnested-externs -Wnull-dereference -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wshadow -Wstack-protector -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=const -Wsuggest-attribute=format -Wsuggest-attribute=malloc -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wunused-macros -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-double-free -Wno-analyzer-malloc-leak -Wno-analyzer-null-dereference -Wno-analyzer-use-after-free -fdiagnostics-show-option -fdiagnostics-color=always -Wno-missing-field-initializers
+  CFLAGS:            -O2 
+  LDFlags:           
+  Documentation:     yes
+  Library types:     Shared=yes, Static=yes
+  Libiconv:          yes 
+  Libunistring:      no, consider installing GNU libunistring  
+  Valgrind:          
+  Version script:    yes
+
+make  all-recursive
+make[1]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2'
+Making all in gl
+make[2]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/gl'
+  GEN      alloca.h
+  GEN      fcntl.h
+  GEN      limits.h
+  GEN      stdio.h
+  GEN      string.h
+  GEN      sys/stat.h
+  GEN      sys/types.h
+  GEN      time.h
+  GEN      unistd.h
+make  all-recursive
+make[3]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/gl'
+make[4]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/gl'
+  CC       basename-lgpl.lo
+  CC       cloexec.lo
+  CC       fd-hook.lo
+  CC       getprogname.lo
+  CC       malloca.lo
+  CC       progname.lo
+  CC       stat-time.lo
+  CC       unistd.lo
+  CC       version-etc.lo
+  CC       fcntl.lo
+  CCLD     libgnu.la
+make[4]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/gl'
+make[3]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/gl'
+make[2]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/gl'
+Making all in unistring
+make[2]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/unistring'
+  GEN      iconv.h
+  GEN      limits.h
+  GEN      stdlib.h
+  GEN      sys/types.h
+  GEN      uniconv.h
+  GEN      unictype.h
+  GEN      uninorm.h
+  GEN      unistd.h
+  GEN      unistr.h
+  GEN      unitypes.h
+make  all-am
+make[3]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/unistring'
+  CC       c-ctype.lo
+  CC       c-strcasecmp.lo
+  CC       c-strncasecmp.lo
+  CC       localcharset.lo
+  CC       striconveh.lo
+  CC       striconveha.lo
+  CC       uniconv/u8-conv-from-enc.lo
+  CC       uniconv/u8-strconv-from-enc.lo
+  CC       uniconv/u8-strconv-from-locale.lo
+  CC       uniconv/u8-strconv-to-enc.lo
+  CC       uniconv/u8-strconv-to-locale.lo
+  CC       unictype/bidi_of.lo
+  CC       unictype/categ_M.lo
+  CC       unictype/categ_none.lo
+  CC       unictype/categ_of.lo
+  CC       unictype/categ_test.lo
+  CC       unictype/combiningclass.lo
+  CC       unictype/joiningtype_of.lo
+  CC       unictype/scripts.lo
+  CC       uninorm/canonical-decomposition.lo
+  CC       uninorm/composition.lo
+  CC       uninorm/decompose-internal.lo
+  CC       uninorm/decomposition-table.lo
+  CC       uninorm/nfc.lo
+  CC       uninorm/nfd.lo
+  CC       uninorm/u32-normalize.lo
+  CC       unistd.lo
+  CC       unistr/u32-cmp.lo
+  CC       unistr/u32-cpy.lo
+  CC       unistr/u32-cpy-alloc.lo
+  CC       unistr/u32-mbtouc-unsafe.lo
+  CC       unistr/u32-strlen.lo
+  CC       unistr/u32-to-u8.lo
+  CC       unistr/u32-uctomb.lo
+  CC       unistr/u8-check.lo
+  CC       unistr/u8-mblen.lo
+  CC       unistr/u8-mbtouc.lo
+  CC       unistr/u8-mbtouc-aux.lo
+  CC       unistr/u8-mbtouc-unsafe.lo
+  CC       unistr/u8-mbtouc-unsafe-aux.lo
+  CC       unistr/u8-mbtoucr.lo
+  CC       unistr/u8-prev.lo
+  CC       unistr/u8-strlen.lo
+  CC       unistr/u8-to-u32.lo
+  CC       unistr/u8-uctomb.lo
+  CC       unistr/u8-uctomb-aux.lo
+  CCLD     libunistring.la
+make[3]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/unistring'
+make[2]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/unistring'
+Making all in lib
+make[2]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/lib'
+make  all-am
+make[3]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/lib'
+  CC       idna.lo
+  CC       lookup.lo
+  CC       decode.lo
+  CC       register.lo
+  CC       bidi.lo
+  CC       version.lo
+  CC       error.lo
+  CC       puny_encode.lo
+  CC       puny_decode.lo
+  CC       free.lo
+  CC       data.lo
+  CC       tr46map.lo
+  CC       tables.lo
+  CC       context.lo
+  CCLD     libidn2.la
+copying selected object files to avoid basename conflicts...
+make[3]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/lib'
+make[2]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/lib'
+Making all in src
+make[2]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/src'
+make  all-am
+make[3]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/src'
+  CC       idn2.o
+  CC       libidn2_cmd_la-idn2_cmd.lo
+  CCLD     libidn2_cmd.la
+copying selected object files to avoid basename conflicts...
+  CCLD     idn2
+make[3]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/src'
+make[2]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/src'
+Making all in examples
+make[2]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/examples'
+  CC       decode.o
+  CCLD     decode
+  CC       lookup.o
+  CCLD     lookup
+  CC       register.o
+  CCLD     register
+  CC       example-toascii.o
+  CCLD     example-toascii
+  CC       example-tounicode.o
+  CCLD     example-tounicode
+make[2]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/examples'
+Making all in tests
+make[2]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/tests'
+make  all-am
+make[3]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/tests'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/tests'
+make[2]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/tests'
+Making all in fuzz
+make[2]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/fuzz'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/fuzz'
+Making all in po
+make[2]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/po'
+Making all in doc
+make[2]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/doc'
+make  all-recursive
+make[3]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/doc'
+Making all in reference
+make[4]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/doc/reference'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/doc/reference'
+make[4]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/doc'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/doc'
+make[3]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/doc'
+make[2]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2/doc'
+make[2]: Entering directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2'
+make[2]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2'
+make[1]: Leaving directory '/home/PkgBlade/depends_source_code_wget/libidn2-2.3.2'
+-- The C compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Could NOT find BZip2 (missing: BZIP2_LIBRARIES BZIP2_INCLUDE_DIR) 
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+-- Could not find OPTIONAL package Readline
+-- Could not find OPTIONAL package Editline
+-- Looking for dirent.h
+-- Looking for dirent.h - found
+-- Looking for sys/stat.h
+-- Looking for sys/stat.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Looking for windows.h
+-- Looking for windows.h - not found
+-- Looking for bcopy
+-- Looking for bcopy - found
+-- Looking for memfd_create
+-- Looking for memfd_create - not found
+-- Looking for memmove
+-- Looking for memmove - found
+-- Looking for realpath
+-- Looking for realpath - found
+-- Looking for secure_getenv
+-- Looking for secure_getenv - not found
+-- Looking for strerror
+-- Looking for strerror - found
+-- Performing Test HAVE_ATTRIBUTE_UNINITIALIZED
+-- Performing Test HAVE_ATTRIBUTE_UNINITIALIZED - Failed
+-- Performing Test INTEL_CET_ENABLED
+-- Performing Test INTEL_CET_ENABLED - Success
+-- 
+-- 
+-- PCRE2-10.39 configuration summary:
+-- 
+--   Install prefix .................. : /usr/local
+--   C compiler ...................... : /usr/bin/cc
+--   C compiler flags ................ :  -mshstk -O3 -DNDEBUG
+-- 
+--   Build 8 bit PCRE2 library ....... : ON
+--   Build 16 bit PCRE2 library ...... : OFF
+--   Build 32 bit PCRE2 library ...... : OFF
+--   Enable JIT compiling support .... : OFF
+--   Use SELinux allocator in JIT .... : OFF
+--   Enable Unicode support .......... : ON
+--   Newline char/sequence ........... : LF
+--   \R matches only ANYCRLF ......... : OFF
+--   \C is disabled .................. : OFF
+--   EBCDIC coding ................... : OFF
+--   EBCDIC coding with NL=0x25 ...... : OFF
+--   Rebuild char tables ............. : OFF
+--   Internal link size .............. : 2
+--   Parentheses nest limit .......... : 250
+--   Heap limit ...................... : 20000000
+--   Match limit ..................... : 10000000
+--   Match depth limit ............... : MATCH_LIMIT
+--   Build shared libs ............... : OFF
+--   Build static libs ............... : ON
+--      with PIC enabled ............. : OFF
+--   Build pcre2grep ................. : ON
+--   Enable JIT in pcre2grep ......... : ON
+--   Enable callouts in pcre2grep .... : ON
+--   Enable callout fork in pcre2grep. : ON
+--   Buffer size for pcre2grep ....... : 20480
+--   Build tests (implies pcre2test .. : ON
+--                and pcre2grep)
+--   Link pcre2grep with libz ........ : ON
+--   Link pcre2grep with libbz2 ...... : Library not found
+--   Link pcre2test with libeditline . : Library not found
+--   Link pcre2test with libreadline . : Library not found
+--   Support Valgrind .................: OFF
+--   Use %zu and %td ..................: AUTO
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/PkgBlade/depends_source_code_wget/pcre2-10.39/build
+[  2%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_auto_possess.c.o
+[  5%] Building C object CMakeFiles/pcre2-8-static.dir/pcre2_chartables.c.o
+[  8%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_compile.c.o
+[ 11%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_config.c.o
+[ 14%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_context.c.o
+[ 17%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_convert.c.o
+[ 20%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_dfa_match.c.o
+[ 23%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_error.c.o
+[ 26%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_extuni.c.o
+[ 29%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_find_bracket.c.o
+[ 32%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_jit_compile.c.o
+[ 35%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_maketables.c.o
+[ 38%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_match.c.o
+[ 41%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_match_data.c.o
+[ 44%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_newline.c.o
+[ 47%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_ord2utf.c.o
+[ 50%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_pattern_info.c.o
+[ 52%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_script_run.c.o
+[ 55%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_serialize.c.o
+[ 58%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_string_utils.c.o
+[ 61%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_study.c.o
+[ 64%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_substitute.c.o
+[ 67%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_substring.c.o
+[ 70%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_tables.c.o
+[ 73%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_ucd.c.o
+[ 76%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_valid_utf.c.o
+[ 79%] Building C object CMakeFiles/pcre2-8-static.dir/src/pcre2_xclass.c.o
+[ 82%] Linking C static library libpcre2-8.a
+[ 82%] Built target pcre2-8-static
+[ 85%] Building C object CMakeFiles/pcre2-posix-static.dir/src/pcre2posix.c.o
+[ 88%] Linking C static library libpcre2-posix.a
+[ 88%] Built target pcre2-posix-static
+[ 91%] Building C object CMakeFiles/pcre2grep.dir/src/pcre2grep.c.o
+[ 94%] Linking C executable pcre2grep
+[ 94%] Built target pcre2grep
+[ 97%] Building C object CMakeFiles/pcre2test.dir/src/pcre2test.c.o
+[100%] Linking C executable pcre2test
+[100%] Built target pcre2test
+-- The C compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of off64_t
+-- Check size of off64_t - done
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Renaming
+--     /home/PkgBlade/depends_source_code_wget/zlib-1.2.11.dfsg/zconf.h
+-- to 'zconf.h.included' because this file is included with zlib
+-- but CMake generates it automatically in the build directory.
+-- Configuring done
+now handle dependencies of package:  wget
+Processing /home/PkgBlade/depends_source_code_wget/util-linux-2.37.2...
+Found configure script, building with Autotools...
+make failed in /home/PkgBlade/depends_source_code_wget/util-linux-2.37.2, attempting to regenerate build files and retry...
+Creating output directory: /home/PkgBlade/depends_source_code_wget/../util-linux-2.37.2_o
+Failed to copy object files from /home/PkgBlade/depends_source_code_wget/util-linux-2.37.2: Command '['find', '.', '-type', 'f', '-name', '*.o', '-exec', 'cp', '-t', '/home/PkgBlade/depends_source_code_wget/../util-linux-2.37.2_o', '{}', '+']' returned non-zero exit status 1.
+Processing /home/PkgBlade/depends_source_code_wget/libidn2-2.3.2...
+Found configure script, building with Autotools...
+Creating output directory: /home/PkgBlade/depends_source_code_wget/../libidn2-2.3.2_o
+Failed to copy object files from /home/PkgBlade/depends_source_code_wget/libidn2-2.3.2: Command '['find', '.', '-type', 'f', '-name', '*.o', '-exec', 'cp', '-t', '/home/PkgBlade/depends_source_code_wget/../libidn2-2.3.2_o', '{}', '+']' returned non-zero exit status 1.
+Processing /home/PkgBlade/depends_source_code_wget/libpsl-0.21.0...
+No build script found!! please check!!
+Processing /home/PkgBlade/depends_source_code_wget/pcre2-10.39...
+Found CMakeLists.txt, building with CMake...
+Creating output directory: /home/PkgBlade/depends_source_code_wget/../pcre2-10.39_o
+Copied .o files from /home/PkgBlade/depends_source_code_wget/pcre2-10.39 to /home/PkgBlade/depends_source_code_wget/../pcre2-10.39_o
+Processing /home/PkgBlade/depends_source_code_wget/openssl-3.0.2...
+No build script found!! please check!!
+Processing /home/PkgBlade/depends_source_code_wget/zlib-1.2.11.dfsg...
+Found CMakeLists.txt, building with CMake...
+CMake build failed in /home/PkgBlade/depends_source_code_wget/zlib-1.2.11.dfsg: Command '['cmake', '..', '-DCMAKE_BUILD_TYPE=Release']' returned non-zero exit status 1.
+compile ends!
+downloading dependencies...
+copying executable file...
+get exe or so for:  wget
+sucessfully copy exe_file '/usr/bin/wget' 
+check point: get dynamic symbols True {} wget
+run objdump for:  wget
+tags_glibc-2.35
+tags_util-linux-2.37.2
+tags_libidn2-2.3.2
+tags_libpsl-0.21.0
+tags_pcre2-10.39
+tags_openssl-3.0.2
+tags_zlib-1.2.11.dfsg
+extract ends!
+intial symbols: ['elf64-x86-64', '__printf_chk', 'SSL_CTX_use_PrivateKey_file', 'MD4_Init', 'SSL_get_error', 'ERR_peek_last_error', '__errno_location', 'X509_NAME_print_ex', 'symlink', 'SSL_read', 'stdout', 'SSL_CTX_free', 'strcspn', 'strptime', '__ctype_get_mb_cur_max', 'strndup', '__ctype_toupper_loc', 'rewind', 'strtoll', 'bind', '__ctype_tolower_loc', 'clearerr', 'sprintf', 'DES_set_odd_parity', '__longjmp_chk', 'idn2_free', 'i2d_X509_PUBKEY', 'strstr', 'srandom', 'SSL_CTX_set_verify', 'socket', 'fork', '__vfprintf_chk', '__environ', 'getc', 'ASN1_OCTET_STRING_free', 'wcrtomb', 'SSL_CTX_set_post_handshake_auth', 'getpgrp', 'accept', 'ERR_error_string', 'recv', 'idn2_strerror', 'strerror', 'write', 'SSL_set_connect_state', 'strchr', 'SSL_get_verify_result', 'SSL_ctrl', 'strspn', 'strlen', 'memcmp', 'mkdir', 'ftruncate64', 'RAND_file_name', 'unlink', 'strncmp', '__strncat_chk', 'DES_ecb_encrypt', 'X509_VERIFY_PARAM_free', 'getuid', 'OPENSSL_sk_num', 'TLS_client_method', 'psl_is_cookie_domain_acceptable', 'random', 'iswctype', 'pcre2_compile_8', 'X509_free', 'utime', 'optarg', 'memset', 'abort', 'wctype', 'SSL_free', 'munmap', 'SSL_CTX_set1_param', '__sprintf_chk', 'SSL_set_fd', '__snprintf_chk', 'tcgetpgrp', 'rename', 'sysconf', 'CRYPTO_free', 'calloc', 'mktime', 'dcgettext', 'group_member', 'X509_verify_cert_error_string', 'GENERAL_NAME_free', 'strchrnul', 'getpeername', 'localtime', '__libc_start_main', 'X509_STORE_set_flags', 'sleep', 'pthread_mutex_unlock', 'iconv_open', 'psl_str_to_utf8lower', 'inflate', 'uuid_generate', 'BIO_number_written', 'btowc', 'iconv_close', 'strftime', 'stdin', '__vsnprintf_chk', 'memcpy', '__freading', 'connect', 'SSL_set_session', 'perror', 'MD4_Final', 'mbsinit', 'lseek64', 'inflateInit2_', 'pcre2_match_data_free_8', 'gmtime', 'BIO_s_mem', 'mkostemp64', 'X509_STORE_add_lookup', 'OPENSSL_init_ssl', 'setlocale', 'SSL_CTX_ctrl', 'towlower', 'posix_spawn_file_actions_adddup2', 'pcre2_match_8', 'clock_gettime', 'chmod', 'time', 'getsockname', 'strcpy', 'SSL_peek', 'uuid_unparse', 'freopen64', 'select', 'mmap64', 'ASN1_STRING_to_UTF8', 'SSL_CTX_set_cipher_list', 'nl_langinfo', '__isoc99_sscanf', 'fclose', 'X509_get_issuer_name', 'SSL_new', 'wcwidth', 'BIO_free', 'bindtextdomain', 'inet_ntop', 'inflateEnd', 'fileno', 'fdopen', 'X509_get_subject_name', 'readlink', '__ctype_b_loc', 'RAND_load_file', 'setsid', 'SSL_CTX_set_default_verify_paths', 'strrchr', 'memchr', '__stack_chk_fail', 'DES_set_key', 'SSL_shutdown', 'fopen64', 'fputs', 'listen', 'RAND_status', 'BIO_read', 'dcngettext', 'getpwuid', 'X509_NAME_get_entry', 'pthread_mutex_destroy', 'fflush', 'X509_NAME_get_text_by_NID', 'signal', 'free', 'exit', 'getenv', 'X509_LOOKUP_file', 'SSL_is_init_finished', 'towupper', 'pcre2_match_data_create_from_pattern_8', 'X509_get_ext_d2i', 'posix_spawn_file_actions_init', 'fputc', 'SSL_CTX_load_verify_locations', 'getaddrinfo', 'strncasecmp', 'X509_NAME_get_index_by_NID', 'OPENSSL_sk_value', 'freeaddrinfo', 'ERR_get_error', 'X509_get_X509_PUBKEY', 'malloc', 'ERR_clear_error', 'a2i_IPADDRESS', 'iswprint', 'MD4_Update', 'stderr', 'SSL_CTX_use_certificate_file', 'pipe', 'fread_unlocked', 'X509_VERIFY_PARAM_new', 'optind', 'SSL_get_session', 'gai_strerror', 'strtol', 'SSL_connect', 'ioctl', 'lstat64', 'usleep', '__sigsetjmp', 'SSL_CTX_new', 'read', 'gzwrite', 'getpid', 'pthread_mutex_lock', 'X509_VERIFY_PARAM_set_flags', 'setitimer', 'idn2_lookup_u8', 'pthread_mutex_init', 'fread', 'dup', 'ftello64', 'feof', 'pathconf', 'strtok', 'fgetc', 'textdomain', 'mbrtowc', '__fdelt_chk', 'fcntl64', 'memrchr', 'memmove', 'realloc', '__fprintf_chk', 'fseeko64', 'getopt_long', 'iswalnum', 'error', 'BIO_new', 'environ', '__memcpy_chk', 'gzclose', 'opterr', 'timegm', 'stat64', 'open64', 'getpass', 'isatty', '_ITM_deregisterTMCloneTable', 'strpbrk', 'iconv', 'OPENSSL_sk_pop_free', 'setsockopt', 'fstat64', 'gzdopen', 'strtok_r', 'fsetxattr', 'posix_spawnp', 'strdup', '__vasprintf_chk', 'SSL_get1_peer_certificate', 'CRYPTO_malloc', 'ASN1_STRING_length', 'SSL_CTX_get_cert_store', 'secure_getenv', 'ferror', 'ERR_reason_error_string', 'flock', 'SSL_CTX_set_options', '__gmon_start__', 'clock_getres', 'iswcntrl', 'qsort', 'psl_latest', '_ITM_registerTMCloneTable', 'X509_load_crl_file', 'SSL_write', 'putc', 'fwrite', 'close', 'SSL_pending', 'ASN1_STRING_cmp', '__getdelim', 'X509_NAME_ENTRY_get_data', '__cxa_finalize', 'fnmatch', 'strcasecmp', 'strcmp', 'locale_charset']
+package dependencies:  ['glibc-2.35', 'util-linux-2.37.2', 'libidn2-2.3.2', 'libpsl-0.21.0', 'pcre2-10.39', 'openssl-3.0.2', 'zlib-1.2.11.dfsg']
+glibc-2.35
+print y to handle this dependency...
