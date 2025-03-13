@@ -34,6 +34,9 @@ symbols_file = 'symbols.txt'  # 符号列表文件
 # target_dir = "glibc_o"
 # dependency_real_name = 'pcre2-10.39'  
 
+# 为了把符号裁剪移到最后保存一些东西
+trimming_record = {}
+
 
 
 def extract_imported_symbols_from_file(file_path):
@@ -97,6 +100,8 @@ def find_symbols_in_files(symbols, target_dir):
     查找所有符号在目标文件中的导出符号
     """
     # 修改一下，首先构建文件的符号
+    # print("find symbols in files: ", now_handle_files_depends, target_dir)
+    # print("file export symbols: ", file_export_symbols)
     for symbol in symbols:
         iffind = False
         for root, dirs, files in os.walk(target_dir):
@@ -106,7 +111,7 @@ def find_symbols_in_files(symbols, target_dir):
                     # print(f"Checking file: {file_path}")
                     # 提取目标文件的导出符号
                     target_symbols = extract_exported_symbols_from_file(file_path)
-                    # print("symbols: ",target_symbols)
+                    # print("file symbols: ",target_symbols)
                     if symbol in target_symbols:
                         # print(f"Symbol '{symbol}' found in {file_path}")
                         iffind = True
@@ -114,9 +119,10 @@ def find_symbols_in_files(symbols, target_dir):
                         if file not in need_files and file not in now_handle_files_depends:
                             now_handle_files_depends.append(file)
         if iffind == False:
-            # print("cannot find symbol", symbol)
+            print("cannot find symbol", symbol)
             a = 1
-
+    # print("find symbols in files end: ", now_handle_files_depends)
+    
 def load_symbols(symbols_file):
     """
     加载符号列表，符号按行存储
@@ -259,12 +265,17 @@ def functional_trimming(target_dir):
     """
     处理筛选出的需要的目标文件集合，找出其中没有被使用的符号
     """
-    print("start symbols check")
+    print("start symbols check: ", target_dir)
+    print("trimming record: ", trimming_record)
     # print(symbols)
+    # 不处理libc，保证key存在
+    if "glibc" in target_dir.split("-") or target_dir not in trimming_record:
+        return 
     need_dir = target_dir + "_needed"
     all_import_symbols = set()
     # 这里是把目标软件包的直接依赖也加进来
-    for s in symbols:
+    # trimming_record[target] 里面是 symbol
+    for s in trimming_record[target_dir]:
         all_import_symbols.add(s)
     all_export_symbols = {}
     # 遍历所有需要的目标文件
@@ -383,6 +394,8 @@ def functional_trimming(target_dir):
         # 写回
         with open(source_file_path, "w") as f:
             f.writelines(lines)
+            
+    inneed_file_symbols.clear()
 
                     
 
@@ -393,20 +406,20 @@ def handle_each_depend(now_target_dir):
     """
     以每个文件夹为单位处理依赖
     """
-    # print("now target: ", now_target_dir, "symbols:", symbols)
+    print("now target: ", now_target_dir, "symbols:", symbols)
     # 查找符号在目标文件中的导出情况
     find_symbols_in_files(symbols, now_target_dir)
     # print("now_handle_files_depends: ", now_handle_files_depends)
     need_files = copy.deepcopy(now_handle_files_depends)
     now_handle_files = copy.deepcopy(need_files)
 
-    # print("initial round ends, ", now_handle_files, now_handle_files_depends)
+    print("initial round ends, ", now_handle_files, now_handle_files_depends)
 
     # 目前now_handle_files就是需要的文件(第一轮)
     while now_handle_files:
         # 当前待处理文件
         current_files = copy.deepcopy(now_handle_files)
-        # print("current files. ",current_files)
+        print("current files. ",current_files)
         now_handle_files_depends.clear()
         # 对每个文件进行符号导入检查
         for file in current_files:
@@ -434,11 +447,15 @@ def handle_each_depend(now_target_dir):
         print("a round ends!", len(need_files))
 
 
-    # print(len(need_files), need_files)
+    print(len(need_files), need_files)
     generate_need_object_file(now_target_dir, need_files)
-    if "glibc" not in now_target_dir.split("-"):
-        functional_trimming(now_target_dir)
-
+    
+    # 本来是直接trimming的，但是现在要延后。。
+    if now_target_dir not in trimming_record:
+        trimming_record[now_target_dir] = set()
+    for s in symbols:
+        trimming_record[now_target_dir].add(s)
+    
 
 
 def run(target_package_name : str) -> map:

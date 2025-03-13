@@ -54,6 +54,15 @@ def ifEnd():
     return len(now_handle_package) >= 1
 
 
+def get_o_folders():
+    """获取当前目录下所有以 '_o' 结尾的文件夹名称"""
+    o_folders = [
+        entry
+        for entry in os.listdir('.')
+        if os.path.isdir(entry) and entry.endswith('_o')
+    ]
+    return o_folders
+
 if __name__ == "__main__":
     # 检查输入参数，这个后续再完善设计
     if len(sys.argv) < 0:
@@ -135,14 +144,25 @@ if __name__ == "__main__":
 
         print("all_dependency_info: ", all_dependcies_info)
         
-        # 2025/3/13：干脆直接全部都编译一下算了
-        # TODO：如果声明了不要编译，感觉最好的办法还是通过相似度判断一下要不要编译，compile加一个参数
-        # difflib.SequenceMatcher 可以计算两个字符串的相似度（基于编辑距离的改进算法）
-        # 目前是写死了glibc不要编译
-        for package_name in now_handle_package:
-            print("now rehandle dependencies of package: ", package_name)
-            compile_script.compile_subfolders(package_name, True)
-            print("compile after trimming ends!")
+        # # 2025/3/13：干脆直接全部都编译一下算了
+        # # TODO：如果声明了不要编译，感觉最好的办法还是通过相似度判断一下要不要编译，compile加一个参数
+        # # difflib.SequenceMatcher 可以计算两个字符串的相似度（基于编辑距离的改进算法）
+        # # 目前是写死了glibc不要编译
+        # for package_name in now_handle_package:
+        #     print("now rehandle dependencies of package: ", package_name)
+        #     compile_script.compile_subfolders(package_name, True)
+        #     print("compile after trimming ends!")
+        #     folder_path = os.getcwd()
+        #     output_dir = "./" + package_name + "_so"
+        #     if not os.path.exists(output_dir):
+        #         os.makedirs(output_dir)
+        #     try: 
+        #         subprocess.check_call(["find", ".", "-type", "f", "-name", "*.so*", "-exec", "cp", "-t", output_dir, "{}", "+"], cwd=folder_path)
+        #         print(f"Copied .o files from {folder_path} to {output_dir}")
+        #     except subprocess.CalledProcessError as e:
+        #         print(f"Failed to copy object files from {folder_path}: {e}")
+            
+
 
         now_handle_package.clear()
         for package in now_handle_package_dependcies:
@@ -163,4 +183,8 @@ if __name__ == "__main__":
 
         ifInit = False
 
-    
+
+    # 最后再执行函数级别的裁剪
+    o_folders = get_o_folders()
+    for o_folder in o_folders:
+        find_symbols_in_code.functional_trimming(o_folder)

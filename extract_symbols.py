@@ -112,7 +112,7 @@ def get_dynamic_libraries():
                 # vdso 格式: linux-vdso.so.1 (address)
                 lib_name = parts[0].strip().split()[0]
                 libraries[lib_name] = "(vdso)"
-        print("ldd result: ", libraries)
+        # print("ldd result: ", libraries)
         return libraries
     except subprocess.CalledProcessError as e:
         print(f"Error running ldd: {e}")

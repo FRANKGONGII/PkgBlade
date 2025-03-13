@@ -128,4 +128,4 @@ if __name__ == "__main__":
         
     # get_depends(package_name)
     
-    compile_subfolders(package_name)
+    compile_subfolders(package_name, False)
