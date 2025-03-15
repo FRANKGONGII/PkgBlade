@@ -87,17 +87,27 @@ if __name__ == "__main__":
         if line.startswith("Depends:"):
             now_handle_package_dependcies = extract_depends(line=line)
 
+
+    iter_cnt = 0
+    
     ifInit = True
     while ifEnd():
         # 开始处理
         # 获取源码&开始裁减
+        print("now come to iter: ", iter_cnt)
+        iter_cnt += 1
+        handle_result = {}
         for package_name in now_handle_package:
             print("now handle dependencies of package: ", package_name)
-            compile_script.compile_subfolders(package_name, False)
+            compile_script.compile_subfolders(package_name, False, False)
+            
+            print("==================================================================================")
             print("compile ends!")
             extract_symbols.run(package_name, ifInit=ifInit, package_name_2_version=package_name_2_version)
+            print("==================================================================================")
             print("extract ends!")
-            handle_result = find_symbols_in_code.run(package_name)
+            handle_result.update(find_symbols_in_code.run(package_name))
+            print("==================================================================================")
             print("slimming ends!", handle_result)
 
         # 对于每个依赖获取它们的仓库名字和依赖的依赖
@@ -182,9 +192,12 @@ if __name__ == "__main__":
                 print("package: ", package_name ," has been assigned not to slim")
 
         ifInit = False
+        handle_result.clear()
 
 
     # 最后再执行函数级别的裁剪
+    print("==================================================================================")
     o_folders = get_o_folders()
     for o_folder in o_folders:
         find_symbols_in_code.functional_trimming(o_folder)
+    print("==================================================================================")

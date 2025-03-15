@@ -119,7 +119,7 @@ def find_symbols_in_files(symbols, target_dir):
                         if file not in need_files and file not in now_handle_files_depends:
                             now_handle_files_depends.append(file)
         if iffind == False:
-            print("cannot find symbol", symbol)
+            # print("cannot find symbol", symbol)
             a = 1
     # print("find symbols in files end: ", now_handle_files_depends)
     
@@ -303,7 +303,7 @@ def functional_trimming(target_dir):
                 if file not in inneed_file_symbols:
                     inneed_file_symbols[file] = {}
                 inneed_file_symbols[file][export_symbol] = {}
-    print("finish unused symbols check: ", inneed_file_symbols)
+    # print("finish unused symbols check: ", inneed_file_symbols)
 
     # 获取symbol的位置
     # TODO：考虑同名问题：符号&文件
@@ -390,7 +390,7 @@ def functional_trimming(target_dir):
                         i -= 1 
                     for k in range(i - 1, end_line):
                         lines[k] = "// " + lines[k]
-                    print(i ,end_line)
+                    #print(i ,end_line)
         # 写回
         with open(source_file_path, "w") as f:
             f.writelines(lines)
@@ -451,6 +451,9 @@ def handle_each_depend(now_target_dir):
     generate_need_object_file(now_target_dir, need_files)
     
     # 本来是直接trimming的，但是现在要延后。。
+    # 这里要考虑一个情况
+    # A - C， B - C，多个包依赖同一个
+    # 所以每次都是往里面加符号就行
     if now_target_dir not in trimming_record:
         trimming_record[now_target_dir] = set()
     for s in symbols:
@@ -472,8 +475,7 @@ def run(target_package_name : str) -> map:
 
     dependencies_source_code = [entry.name for entry in os.scandir(folder_path) if entry.is_dir()]
 
-    print("package dependencies: ", dependencies_source_code)
-
+    print("package dependencies: ", dependencies_source_code)    
     if_handle_dependency = {}
 
     for depends in dependencies_source_code:
