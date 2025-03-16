@@ -295,9 +295,29 @@ def functional_trimming(target_dir):
                 all_import_symbols.add(symbol)
             # print(file, file_import_symbols, file_output_symbols)
     # 处理不需要的符号
+    # TODO: 一个问题估计是内部有用的怎么办。。也就是其他文件没有用，但是自己用了
     for export_symbol in all_export_symbols:
         if export_symbol not in all_import_symbols:
             # 这个符号不在需要的import里面，就先标记
+            # TODO：检查这个符号在自己文件里面的使用情况，出现多于一次就保留了
+            if_use_in_export_file = False
+            for export_file in all_export_symbols[export_symbol]:
+                 try:
+                    with open(export_file, 'r', encoding='utf-8') as file:
+                        content = file.read()
+                    occurrences = content.count(target_string)
+                    if occurrences > 1:
+                        if_use_in_export_file = True
+                except FileNotFoundError:
+                    print(f"符号裁剪时未找到源文件: {export_file}")
+                except Exception as e:
+                    print(f"符号裁剪时发生错误: {e}")
+                    
+            if if_use_in_export_file == True:
+                # 如果自己用了就不删除了
+                # 更细节的例如是可以删除的符号用了这个符号，就不考虑了
+                continue
+            
             # 所有相关的文件都要标记，可能有多个文件定义同名符号
             for file in all_export_symbols[export_symbol]:
                 if file not in inneed_file_symbols:
