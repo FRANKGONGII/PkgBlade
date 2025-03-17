@@ -297,27 +297,7 @@ def functional_trimming(target_dir):
     # 处理不需要的符号
     # TODO: 一个问题估计是内部有用的怎么办。。也就是其他文件没有用，但是自己用了
     for export_symbol in all_export_symbols:
-        if export_symbol not in all_import_symbols:
-            # 这个符号不在需要的import里面，就先标记
-            # TODO：检查这个符号在自己文件里面的使用情况，出现多于一次就保留了
-            if_use_in_export_file = False
-            for export_file in all_export_symbols[export_symbol]:
-                 try:
-                    with open(export_file, 'r', encoding='utf-8') as file:
-                        content = file.read()
-                    occurrences = content.count(target_string)
-                    if occurrences > 1:
-                        if_use_in_export_file = True
-                except FileNotFoundError:
-                    print(f"符号裁剪时未找到源文件: {export_file}")
-                except Exception as e:
-                    print(f"符号裁剪时发生错误: {e}")
-                    
-            if if_use_in_export_file == True:
-                # 如果自己用了就不删除了
-                # 更细节的例如是可以删除的符号用了这个符号，就不考虑了
-                continue
-            
+        if export_symbol not in all_import_symbols:            
             # 所有相关的文件都要标记，可能有多个文件定义同名符号
             for file in all_export_symbols[export_symbol]:
                 if file not in inneed_file_symbols:
@@ -325,7 +305,9 @@ def functional_trimming(target_dir):
                 inneed_file_symbols[file][export_symbol] = {}
     # print("finish unused symbols check: ", inneed_file_symbols)
 
-    # 获取symbol的位置
+
+        
+    # 通过tags文件获取symbol的位置
     # TODO：考虑同名问题：符号&文件
     with open("tags_" + target_dir[:-2], "r", encoding="utf-8") as f:
         for line in f:
@@ -344,11 +326,14 @@ def functional_trimming(target_dir):
                     # 找到了
                     inneed_file_symbols[file_name][symbol] = search_pattern[2:-4]
                     inneed_file_symbols[file_name][file_name + "_path"] = file_path
+
     print("finish unused symbols find: ", inneed_file_symbols)
+
     
     # 开始在文件中删除
     for file_name in inneed_file_symbols:
         # TODO: 这里是和前面一起的，我暂时只处理函数
+        # 没有获取到地址就跳过
         if file_name + "_path" not in inneed_file_symbols[file_name]:
             continue
         source_file_path = inneed_file_symbols[file_name][file_name + "_path"]
@@ -359,11 +344,19 @@ def functional_trimming(target_dir):
             return
 
         # 读取文件内容
-        print(file_name, source_file_path)
+        # print(file_name, source_file_path)
         with open(source_file_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
         # print(lines)
         for to_match_symbol in to_comment_symbols:
+            
+            # 检查这个符号在定义它的文件内出现的次数，如果大于1就有可能有别的引用，可以不删除
+            occurrences = sum(line.count(to_match_symbol) for line in lines)
+            print("symbol: ", to_match_symbol,  occurrences)
+            if occurrences > 1:
+                print("symbol ", to_match_symbol, " may use in ", file_name, " skip symbol delete")
+                continue
+            
             to_match_pattern = to_comment_symbols[to_match_symbol]
             # print(to_match_pattern)
             for i, line in enumerate(lines, start=1):

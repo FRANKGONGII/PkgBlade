@@ -1,5 +1,0 @@
-find . -type f -name "*.o" -exec cp -t ./../../curl_o {} +
-cmake .. -DCMAKE_BUILD_TYPE=Release
-./configure CFLAGS="-O2" CXXFLAGS="-O2" 
---enable-shared=yes --enable-static=no
-–-with-shared 
