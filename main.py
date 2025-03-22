@@ -6,6 +6,7 @@ import find_symbols_in_code
 import compile_script
 import os
 
+from output import append_or_create_file
 
 # 当前处理的package名
 now_handle_package = set()
@@ -22,6 +23,7 @@ all_dependcies_info = {}
 libpcre2-8-10 - Source:pcre2 - Folder Name:pcre2-10.39
 """
 package_name_2_version = {}
+
 
 def extract_depends(line: str) -> list:
     """
@@ -45,7 +47,7 @@ def extract_depends(line: str) -> list:
         return ret
     else:
         return ret
-    
+
 
 def ifEnd():
     """
@@ -63,10 +65,11 @@ def get_o_folders():
     ]
     return o_folders
 
+
 if __name__ == "__main__":
     # 检查输入参数，这个后续再完善设计
     if len(sys.argv) < 0:
-        print("Usage: python extract_symbol.py <symbol> <directory>")
+        append_or_create_file('FILE_CUTTING.txt', "Usage: python extract_symbol.py <symbol> <directory>", "Wrong")
         sys.exit(1)
 
     # 初始情况下只有一个依赖
@@ -75,54 +78,63 @@ if __name__ == "__main__":
 
     try:
         output = subprocess.check_output(
-            ['apt', 'show',  start_package_name],
+            ['apt', 'show', start_package_name],
             stderr=subprocess.DEVNULL,
             text=True
         )
     except subprocess.CalledProcessError:
-        print(f"Error: Failed to get package info for '{start_package_name}'.")
-    
+        append_or_create_file('FILE_CUTTING.txt', f"Error: Failed to get package info for '{start_package_name}'.",
+                              "Wrong")
+
     # 找到依赖
     for line in output.splitlines():
         if line.startswith("Depends:"):
             now_handle_package_dependcies = extract_depends(line=line)
 
-
     iter_cnt = 0
-    
+
     ifInit = True
     while ifEnd():
         # 开始处理
         # 获取源码&开始裁减
-        print("now come to iter: ", iter_cnt)
+        append_or_create_file('FILE_CUTTING.txt', "now come to iter: " + str(iter_cnt), "Info")
         iter_cnt += 1
         handle_result = {}
         for package_name in now_handle_package:
-            print("now handle dependencies of package: ", package_name)
+            append_or_create_file('FILE_CUTTING.txt', "now handle dependencies of package: " + str(package_name),
+                                  "Command")
             compile_script.compile_subfolders(package_name, False, False)
-            
-            print("==================================================================================")
-            print("compile ends!")
+
+            append_or_create_file('FILE_CUTTING.txt', "compile ends!", "Command")
+            append_or_create_file('FILE_CUTTING.txt',
+                                  "\n==================================================================================\n\n")
+
             extract_symbols.run(package_name, ifInit=ifInit, package_name_2_version=package_name_2_version)
-            print("==================================================================================")
-            print("extract ends!")
+            append_or_create_file('FILE_CUTTING.txt', "extract ends!", "Command")
+            append_or_create_file('FILE_CUTTING.txt',
+                                  "\n==================================================================================\n\n")
+
             handle_result.update(find_symbols_in_code.run(package_name))
-            print("==================================================================================")
-            print("slimming ends!", handle_result)
+            append_or_create_file('FILE_CUTTING.txt', "slimming ends!\nHandle Result: ", "Command")
+            append_or_create_file('FILE_CUTTING.txt', str(handle_result))
+            append_or_create_file('FILE_CUTTING.txt',
+                                  "\n==================================================================================\n\n")
 
         # 对于每个依赖获取它们的仓库名字和依赖的依赖
         # TODO：如果没有Source那么需要特殊处理，可能只能用字符串相似度
-        print("now_handle_package: ", now_handle_package)
-        print("now_handle_dependency: ", now_handle_package_dependcies)
+        append_or_create_file('FILE_CUTTING.txt', "now_handle_package: ", "Command")
+        append_or_create_file('FILE_CUTTING.txt', str(now_handle_package))
+        append_or_create_file('FILE_CUTTING.txt', "now_handle_dependency: ", "Commmand")
+        append_or_create_file('FILE_CUTTING.txt', str(now_handle_package_dependcies))
         for depend in now_handle_package_dependcies:
             try:
                 output = subprocess.check_output(
-                    ['apt', 'show',  depend],
+                    ['apt', 'show', depend],
                     stderr=subprocess.DEVNULL,
                     text=True
                 )
             except subprocess.CalledProcessError:
-                print(f"Error: Failed to get package info for '{depend}'.")
+                append_or_create_file('FILE_CUTTING.txt', f"Error: Failed to get package info for '{depend}'.", "Wrong")
             if depend not in all_dependcies_info:
                 all_dependcies_info[depend] = {}
             for line in output.splitlines():
@@ -131,10 +143,11 @@ if __name__ == "__main__":
                     all_dependcies_info[depend]["Source"] = line
                 if line.startswith("Depends"):
                     all_dependcies_info[depend]["Depend"] = extract_depends(line=line)
-        
+
         # 重新处理handle_result，现在才处理的原因是裁减函数不知道depend的包名
         # 看处理情况
-        print("handle result: ", handle_result)
+        append_or_create_file('FILE_CUTTING.txt', "handle result: ", "Command")
+        append_or_create_file('FILE_CUTTING.txt', str(handle_result))
         for depend in all_dependcies_info:
             # debconf直接没有Source，跳过
             if "Source" not in all_dependcies_info[depend]:
@@ -152,34 +165,33 @@ if __name__ == "__main__":
                     package_name_2_version[depend] = depend_source_detail
                     break
 
-        print("all_dependency_info: ", all_dependcies_info)
-        
+        append_or_create_file('FILE_CUTTING.txt', "all_dependency_info: ", "Command")
+        append_or_create_file("FILE_CUTTING.txt", str(all_dependcies_info))
+
         # # 2025/3/13：干脆直接全部都编译一下算了
         # # TODO：如果声明了不要编译，感觉最好的办法还是通过相似度判断一下要不要编译，compile加一个参数
         # # difflib.SequenceMatcher 可以计算两个字符串的相似度（基于编辑距离的改进算法）
         # # 目前是写死了glibc不要编译
         # for package_name in now_handle_package:
-        #     print("now rehandle dependencies of package: ", package_name)
+        #     append_or_create_file('output.txt', "now rehandle dependencies of package: " + package_name)
         #     compile_script.compile_subfolders(package_name, True)
-        #     print("compile after trimming ends!")
+        #     append_or_create_file('output.txt', "compile after trimming ends!")
         #     folder_path = os.getcwd()
         #     output_dir = "./" + package_name + "_so"
         #     if not os.path.exists(output_dir):
         #         os.makedirs(output_dir)
-        #     try: 
+        #     try:
         #         subprocess.check_call(["find", ".", "-type", "f", "-name", "*.so*", "-exec", "cp", "-t", output_dir, "{}", "+"], cwd=folder_path)
-        #         print(f"Copied .o files from {folder_path} to {output_dir}")
+        #         append_or_create_file('output.txt', f"Copied .o files from {folder_path} to {output_dir}")
         #     except subprocess.CalledProcessError as e:
-        #         print(f"Failed to copy object files from {folder_path}: {e}")
-            
-
+        #         append_or_create_file('output.txt', f"Failed to copy object files from {folder_path}: {e}")
 
         now_handle_package.clear()
         for package in now_handle_package_dependcies:
             if "IfHandle" in all_dependcies_info[package] and all_dependcies_info[package]["IfHandle"] == "yes":
                 now_handle_package.add(package)
             else:
-                print("package: ", package ," has been assigned not to slim")
+                append_or_create_file('FILE_CUTTING.txt', "package: " + str(package) + " has been assigned not to slim")
 
         now_handle_package_dependcies.clear()
 
@@ -189,15 +201,18 @@ if __name__ == "__main__":
                 for package_depend in all_dependcies_info[package]["Depend"]:
                     now_handle_package_dependcies.add(package_depend)
             else:
-                print("package: ", package_name ," has been assigned not to slim")
+                append_or_create_file('FILE_CUTTING.txt',
+                                      "package: " + str(package_name) + " has been assigned not to slim")
 
         ifInit = False
         handle_result.clear()
 
+    append_or_create_file('FILE_CUTTING.txt', "\nFILE_CUTTING is over", "Info")
 
     # 最后再执行函数级别的裁剪
-    print("==================================================================================")
+    append_or_create_file('FUNCTION_CUTTING.txt', "FUNCTION_CUTTING is beginning", "Command")
     o_folders = get_o_folders()
     for o_folder in o_folders:
         find_symbols_in_code.functional_trimming(o_folder)
-    print("==================================================================================")
+
+    append_or_create_file('FUNCTION_CUTTING.txt', "\nFUNCTION_CUTTING is over", "Info")
